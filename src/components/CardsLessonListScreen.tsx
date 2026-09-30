@@ -12,6 +12,7 @@ interface Props {
 const DIRECTION_LABELS: Record<Direction, string> = {
   'ru-vi': 'Рус → Вьет',
   'vi-ru': 'Вьет → Рус',
+  listening: 'Аудирование',
 };
 
 function DirectionProgressRow({ summary }: { summary: LessonDirectionSummary }) {
@@ -48,6 +49,7 @@ export function CardsLessonListScreen({ onBack, onOpenLesson }: Props) {
           const count = cardIds.length;
           const ruVi = summarizeLessonDirection(progress, cardIds, 'ru-vi');
           const viRu = summarizeLessonDirection(progress, cardIds, 'vi-ru');
+          const listening = summarizeLessonDirection(progress, cardIds, 'listening');
           return (
             <li key={lesson.id}>
               <button className="lesson-item" onClick={() => onOpenLesson(lesson.id)}>
@@ -61,6 +63,7 @@ export function CardsLessonListScreen({ onBack, onOpenLesson }: Props) {
                   <div className="lesson-progress">
                     <DirectionProgressRow summary={ruVi} />
                     <DirectionProgressRow summary={viRu} />
+                    {listening.attempted > 0 && <DirectionProgressRow summary={listening} />}
                   </div>
                 )}
               </button>

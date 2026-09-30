@@ -26,6 +26,11 @@ import {
 import { BackButton } from './BackButton';
 import { SpeakerOffIcon, SpeakerOnIcon } from './icons';
 
+const RESULT_LABELS: Record<'remembered' | 'not-remembered', { listening: string; default: string }> = {
+  remembered: { listening: 'Услышал', default: 'Вспомнил' },
+  'not-remembered': { listening: 'Не услышал', default: 'Не вспомнил' },
+};
+
 interface Props {
   lessonId: string;
   direction: Direction;
@@ -62,7 +67,10 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
   // на видимой стороне карточки: в направлении рус → вьет это перевод
   // после переворота, в направлении вьет → рус — сама лицевая сторона
   // (сразу при показе карточки, без переворота). Русский не озвучиваем.
+  // В аудировании автопроигрывания нет вовсе — слово звучит только по
+  // нажатию кнопки «Озвучить», в этом весь смысл режима.
   useEffect(() => {
+    if (session.direction === 'listening') return;
     const visibleCard = currentCard(session);
     if (!visibleCard) return;
     const showingVietnamese = session.direction === 'ru-vi' ? session.flipped : !session.flipped;
@@ -102,6 +110,8 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
     setSession((s) => answer(s, result));
   };
 
+  const isListening = session.direction === 'listening';
+
   if (isFinished(session)) {
     const summary = summarize(session);
     const hasWrong = summary.wrongCardIds.length > 0;
@@ -111,7 +121,10 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
         <h1 className="screen-title">Тренировка завершена</h1>
         <div className="summary-box">
           <p>Всего карточек: {summary.total}</p>
-          <p>Вспомнил: {summary.remembered}</p>
+          <p>
+            {isListening ? RESULT_LABELS.remembered.listening : RESULT_LABELS.remembered.default}:{' '}
+            {summary.remembered}
+          </p>
           <p>Нужно повторить: {summary.notRemembered}</p>
         </div>
         <div className="summary-actions">
@@ -167,32 +180,59 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
         Карточка {session.index + 1} из {session.queue.length}
       </p>
 
-      <div className="flashcard-scene">
-        <button
-          key={card.id}
-          type="button"
-          className={session.flipped ? 'flashcard-card is-flipped' : 'flashcard-card'}
-          onClick={() => setSession((s) => flip(s))}
-          aria-pressed={session.flipped}
-          aria-label={session.flipped ? 'Скрыть перевод' : 'Показать перевод'}
-        >
-          <span className="flashcard-face flashcard-face-front">
-            <span className="flashcard-text">{front}</span>
-            <span className="flashcard-hint">Нажмите, чтобы перевернуть</span>
-          </span>
-          <span className="flashcard-face flashcard-face-back">
-            <span className="flashcard-text">{back}</span>
-          </span>
-        </button>
+      <div className={isListening ? 'flashcard-row' : undefined}>
+        <div className="flashcard-scene">
+          <button
+            key={card.id}
+            type="button"
+            className={session.flipped ? 'flashcard-card is-flipped' : 'flashcard-card'}
+            onClick={() => setSession((s) => flip(s))}
+            aria-pressed={session.flipped}
+            aria-label={session.flipped ? 'Скрыть перевод' : 'Показать перевод'}
+          >
+            <span className="flashcard-face flashcard-face-front">
+              {isListening ? (
+                <>
+                  <SpeakerOnIcon className="flashcard-placeholder-icon" />
+                  <span className="flashcard-hint">
+                    Нажмите «Озвучить», затем переверните карточку, чтобы увидеть ответ
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span className="flashcard-text">{front}</span>
+                  <span className="flashcard-hint">Нажмите, чтобы перевернуть</span>
+                </>
+              )}
+            </span>
+            <span className="flashcard-face flashcard-face-back">
+              {isListening ? (
+                <>
+                  <span className="flashcard-text">{card.vi}</span>
+                  <span className="flashcard-text-secondary">{card.ru}</span>
+                </>
+              ) : (
+                <span className="flashcard-text">{back}</span>
+              )}
+            </span>
+          </button>
+        </div>
+
+        {isListening && (
+          <button type="button" className="listen-button" onClick={() => speakVietnamese(card.vi)}>
+            <SpeakerOnIcon />
+            Озвучить
+          </button>
+        )}
       </div>
 
       {session.flipped && (
         <div className="answer-actions">
           <button className="answer-button answer-no" onClick={() => handleAnswer('not-remembered')}>
-            Не вспомнил
+            {isListening ? RESULT_LABELS['not-remembered'].listening : RESULT_LABELS['not-remembered'].default}
           </button>
           <button className="answer-button answer-yes" onClick={() => handleAnswer('remembered')}>
-            Вспомнил
+            {isListening ? RESULT_LABELS.remembered.listening : RESULT_LABELS.remembered.default}
           </button>
         </div>
       )}

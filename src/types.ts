@@ -6,8 +6,10 @@
 export type LessonId = string;
 export type CardId = string;
 
-// Направление перевода на тренировке.
-export type Direction = 'ru-vi' | 'vi-ru';
+// Направление перевода на тренировке. 'listening' — режим аудирования:
+// карточка спереди пустая, слово озвучивается по нажатию кнопки, а не
+// показывается текстом, на обороте — сразу оба языка.
+export type Direction = 'ru-vi' | 'vi-ru' | 'listening';
 
 // Порядок показа карточек в тренировке.
 export type CardOrder = 'sequential' | 'shuffled';

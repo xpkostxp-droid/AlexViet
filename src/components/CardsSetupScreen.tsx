@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { getLessonById } from '../content/lessons';
 import { getCardsForLesson } from '../content/cards';
 import type { CardOrder, Direction } from '../types';
+import { hasVietnameseVoice, onVoicesChanged } from '../domain/speech';
 import { BackButton } from './BackButton';
 
 interface Props {
@@ -15,6 +16,14 @@ export function CardsSetupScreen({ lessonId, onBack, onStart }: Props) {
   const cards = getCardsForLesson(lessonId);
   const [direction, setDirection] = useState<Direction>('ru-vi');
   const [order, setOrder] = useState<CardOrder>('sequential');
+
+  // Аудирование целиком строится на озвучке — на устройстве без
+  // вьетнамского голоса этот режим показывать нет смысла, кнопка сама
+  // появится, как только (и если) голос найдётся.
+  const [voiceAvailable, setVoiceAvailable] = useState(() => hasVietnameseVoice());
+  useEffect(() => {
+    return onVoicesChanged(() => setVoiceAvailable(hasVietnameseVoice()));
+  }, []);
 
   if (!lesson) {
     return (
@@ -53,7 +62,21 @@ export function CardsSetupScreen({ lessonId, onBack, onStart }: Props) {
               >
                 Вьетнамский → Русский
               </button>
+              {voiceAvailable && (
+                <button
+                  className={direction === 'listening' ? 'choice-button choice-button-active' : 'choice-button'}
+                  onClick={() => setDirection('listening')}
+                >
+                  Аудирование (на слух)
+                </button>
+              )}
             </div>
+            {direction === 'listening' && (
+              <p className="hint-text">
+                Слово не показывается текстом — только звучит по нажатию кнопки «Озвучить».
+                Переверните карточку, чтобы увидеть ответ на обоих языках.
+              </p>
+            )}
           </section>
 
           <section className="setup-section">
