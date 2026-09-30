@@ -1,0 +1,888 @@
+/* ==========================================================================
+   Палитра: тёплый кремовый фон + бирюзовые акценты (вариант «Бирюзовый»).
+   Основной бирюзовый цвет подобран так, чтобы белый текст на кнопках
+   проходил проверку контраста (≈5:1, что выше требуемых 4.5:1 для AA).
+   Тёмно-зелёные и оранжевые заливки кнопок сознательно не используются.
+   ========================================================================== */
+:root {
+  color-scheme: light;
+
+  --color-bg: #fbf3e6;
+  --color-surface: #ffffff;
+  --color-surface-alt: #fffdf8;
+
+  --color-text: #23313a;
+  --color-muted: #6c7a86;
+
+  /* Основной бирюзовый — кнопки, активные состояния. */
+  --color-primary: #0f7a72;
+  --color-primary-dark: #0b5f59;
+  --color-primary-soft: #e1f5f3;
+  --color-primary-soft-border: #bfe3df;
+
+  /* Светло-голубой — плитка «Теория» и её акцент. */
+  --color-blue-soft: #e5f1fb;
+  --color-blue-soft-border: #c9e2f6;
+  --color-blue-text: #1c6fa0;
+
+  /* Мягкий акцент для «нужно повторить» — только текст, не заливка кнопки. */
+  --color-alert-text: #b0524a;
+
+  --color-border: #ecdfc4;
+  --radius: 18px;
+  --radius-lg: 24px;
+  --shadow-soft: 0 10px 24px -12px rgba(52, 38, 15, 0.28);
+  --shadow-tile: 0 6px 16px -8px rgba(52, 38, 15, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  /* Лёгкая бумажная фактура: тонкий шум поверх кремового фона. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+    'Noto Sans', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  font-family: inherit;
+  font-size: 1rem;
+  /* Без явного color кнопки в Safari на iPhone показывают текст
+     системным синим (акцентный цвет iOS), а не чёрным, как на
+     компьютере, — цвет текста кнопки по умолчанию не наследуется
+     от родителя, если не сказать это явно. */
+  color: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Общий каркас экрана
+   ========================================================================== */
+
+.screen {
+  width: 100%;
+  max-width: 560px;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: calc(env(safe-area-inset-top, 0px) + 20px) 20px calc(env(safe-area-inset-bottom, 0px) + 24px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.screen-training {
+  gap: 12px;
+}
+
+.screen-title {
+  font-size: clamp(1.3rem, 4.5vw, 1.7rem);
+  margin: 4px 0;
+  overflow-wrap: break-word;
+}
+
+.back-button {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: var(--color-muted);
+  font-size: 1rem;
+  padding: 8px 0;
+  min-height: 44px;
+}
+
+/* ==========================================================================
+   Фоновые иллюстрации на остальных экранах (не главном).
+   Сама картинка задаётся переменной --photo-url в модификаторе экрана;
+   поверх неё — кремовая вуаль, которая почти прозрачна вверху (там у всех
+   картинок небо/пустое место, как раз под заголовок) и уплотняется книзу,
+   чтобы список уроков и карточки не спорили с рисунком за читаемость.
+   Карточки уроков, кнопки выбора и итоговый блок — тоже стеклянные,
+   полупрозрачные, чтобы фото было видно сквозь них; читаемость текста
+   держится на белой подсветке (text-shadow) и небольшом размытии подложки.
+   Важно: селектор написан как .screen.screen-photo (а не просто
+   .screen-photo) — иначе его перебивает правило для широких экранов
+   ниже по файлу (.screen { background: transparent }), из-за чего фон
+   не показывался на десктопе. */
+.screen.screen-photo {
+  background-image: linear-gradient(
+      180deg,
+      rgba(251, 243, 230, 0.12) 0px,
+      rgba(251, 243, 230, 0.55) 320px,
+      rgba(251, 243, 230, 0.72) 480px
+    ),
+    var(--photo-url);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.screen-photo .screen-title,
+.screen-photo .back-button {
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.75);
+}
+
+.screen-photo .setup-heading,
+.screen-photo .hint-text,
+.screen-photo .counter {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+/* Стеклянные карточки/кнопки поверх фото: сама заливка полупрозрачная,
+   лёгкое размытие держит текст читаемым, белая подсветка текста —
+   дополнительная подстраховка на пёстрых участках картинки. */
+.screen-photo .lesson-item,
+.screen-photo .choice-button,
+.screen-photo .summary-box,
+.screen-photo .placeholder-box,
+.screen-photo .sound-toggle {
+  background: rgba(255, 255, 255, 0.4);
+  border-color: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.screen-photo .choice-button-active {
+  background: rgba(225, 245, 243, 0.55);
+  border-color: var(--color-primary);
+}
+
+.screen-photo .lesson-title,
+.screen-photo .lesson-number,
+.screen-photo .lesson-meta,
+.screen-photo .lesson-progress-item,
+.screen-photo .choice-button,
+.screen-photo .summary-box p {
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.65);
+}
+
+.screen-theory-list {
+  --photo-url: url('/images/theory-hero.png');
+}
+
+.screen-cards-list {
+  --photo-url: url('/images/cards-hero.png');
+}
+
+.screen-cards-setup {
+  --photo-url: url('/images/setup-hero.png');
+}
+
+.screen-summary {
+  --photo-url: url('/images/summary-hero.png');
+}
+
+/* ==========================================================================
+   Главный экран
+   ========================================================================== */
+
+/* Фото на главном экране — задний фон на весь экран. Поверх — только
+   две полупрозрачные плитки, отбрасывающие тень на фон; больше ничего
+   не перекрывает картинку. */
+.screen.screen-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 36px);
+  background-image: url('/images/home-hero-tieng-viet.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.home-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.home-tile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 84px;
+  padding: 16px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--radius);
+  text-align: left;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  /* Стеклянные плитки: фон просвечивает сильнее (меньше размытия и
+     плотности заливки), а объёмный вид дают внешняя тень (плитка будто
+     приподнята над фото) и внутренние блики сверху/снизу (выпуклость). */
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  box-shadow:
+    0 18px 30px -12px rgba(15, 10, 5, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.65),
+    inset 0 -3px 8px rgba(15, 10, 5, 0.1);
+}
+
+.home-tile:active {
+  transform: scale(0.98);
+  box-shadow:
+    0 8px 16px -10px rgba(15, 10, 5, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.home-tile-blue {
+  background: rgba(229, 241, 251, 0.28);
+  color: var(--color-blue-text);
+}
+
+.home-tile-teal {
+  background: rgba(225, 245, 243, 0.28);
+  color: var(--color-primary-dark);
+}
+
+.home-tile-icon {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  filter: drop-shadow(0 1px 2px rgba(255, 255, 255, 0.7));
+}
+
+.home-tile-label {
+  flex: 1;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7), 0 0 7px rgba(255, 255, 255, 0.4);
+}
+
+.home-tile-chevron {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  opacity: 0.55;
+}
+
+/* ==========================================================================
+   Кнопки общего назначения
+   ========================================================================== */
+
+.big-button {
+  min-height: 60px;
+  padding: 16px 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-tile);
+  transition: background-color 0.15s ease;
+}
+
+.big-button:active {
+  background: var(--color-primary-dark);
+}
+
+.secondary-button {
+  min-height: 54px;
+  padding: 14px 20px;
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+/* ==========================================================================
+   Списки уроков (Теория и Карточки)
+   ========================================================================== */
+
+.lesson-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lesson-item {
+  width: 100%;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 16px;
+  min-height: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: var(--shadow-tile);
+}
+
+.lesson-number {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.lesson-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+.lesson-meta {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.lesson-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.lesson-progress-item {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.lesson-progress-alert {
+  color: var(--color-alert-text);
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+
+.placeholder-box {
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius);
+  padding: 24px 16px;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+/* ==========================================================================
+   Теория урока: блоки конспекта (таблицы, слова, конструкции, диалоги).
+   Специально сделаны не настоящими HTML-таблицами, а списками карточек —
+   на узком экране телефона обычная таблица либо сжимается до нечитаемого
+   размера, либо требует горизонтальной прокрутки. Карточки со значениями
+   друг под другом читаются на телефоне так же удобно, как и на компьютере.
+   ========================================================================== */
+
+.theory-body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.theory-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theory-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.theory-note {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Таблица -> список карточек-строк. */
+.theory-table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theory-row-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--shadow-tile);
+}
+
+.theory-row-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.theory-row-cell:first-child .theory-row-value {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.theory-row-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+}
+
+.theory-row-value {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  overflow-wrap: break-word;
+}
+
+/* Словарные карточки. */
+.theory-vocab-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theory-vocab-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: var(--shadow-tile);
+}
+
+.theory-vocab-main {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.theory-vocab-vi {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  overflow-wrap: break-word;
+}
+
+.theory-vocab-pron {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.theory-vocab-ru {
+  font-size: 0.95rem;
+  color: var(--color-text);
+  overflow-wrap: break-word;
+}
+
+.theory-vocab-example {
+  margin-top: 4px;
+  padding-top: 6px;
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Конструкции фраз (формулы). */
+.theory-pattern-box {
+  background: var(--color-primary-soft);
+  border: 1px solid var(--color-primary-soft-border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+
+.theory-pattern-formula {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0;
+  overflow-wrap: break-word;
+}
+
+.theory-pattern-note {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  margin: 6px 0 0;
+}
+
+.theory-example-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theory-example-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.theory-example-vi {
+  font-size: 0.95rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+.theory-example-ru {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  overflow-wrap: break-word;
+}
+
+/* Мини-диалоги — чат-пузыри, реплики поочерёдно слева/справа. */
+.theory-dialogue {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.theory-dialogue-line {
+  max-width: 85%;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.theory-dialogue-a {
+  align-self: flex-start;
+}
+
+.theory-dialogue-b {
+  align-self: flex-end;
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary-soft-border);
+}
+
+.theory-dialogue-speaker {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+}
+
+.theory-dialogue-vi {
+  font-size: 1rem;
+  font-weight: 600;
+  overflow-wrap: break-word;
+}
+
+.theory-dialogue-ru {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  overflow-wrap: break-word;
+}
+
+/* Короткие подсказки/памятки. */
+.theory-tip-box {
+  margin: 0;
+  padding: 14px 18px 14px 34px;
+  background: var(--color-blue-soft);
+  border: 1px solid var(--color-blue-soft-border);
+  border-radius: var(--radius);
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: var(--color-blue-text);
+  font-size: 0.95rem;
+}
+
+.theory-tip-box li {
+  overflow-wrap: break-word;
+}
+
+/* Обычный текст конспекта (пояснения, тексты для практики). */
+.theory-text-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.theory-text-paragraph {
+  margin: 0;
+  font-size: 0.97rem;
+  line-height: 1.5;
+  overflow-wrap: break-word;
+}
+
+.theory-text-vi {
+  font-weight: 600;
+}
+
+.theory-text-ru {
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Настройка тренировки
+   ========================================================================== */
+
+.setup-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.setup-heading {
+  font-size: 1rem;
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.choice-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-button {
+  min-height: 54px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 1rem;
+  text-align: left;
+}
+
+.choice-button-active {
+  border-color: var(--color-primary);
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+  font-weight: 600;
+}
+
+.hint-text {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Тренировка: карточка и переворот
+   ========================================================================== */
+
+.training-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.sound-toggle {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.sound-toggle svg {
+  width: 22px;
+  height: 22px;
+}
+
+.sound-toggle[aria-pressed='true'] {
+  color: var(--color-muted);
+}
+
+.counter {
+  text-align: center;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.flashcard-scene {
+  perspective: 1200px;
+}
+
+.flashcard-card {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: clamp(170px, 30vh, 230px);
+  padding: 0;
+  border: none;
+  background: none;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.flashcard-card.is-flipped {
+  transform: rotateY(180deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flashcard-card {
+    transition: none;
+  }
+}
+
+.flashcard-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 24px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.flashcard-face-back {
+  transform: rotateY(180deg);
+}
+
+.flashcard-text {
+  font-size: clamp(1.5rem, 6.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+}
+
+.flashcard-hint {
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+
+.answer-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.answer-button {
+  flex: 1;
+  min-height: 58px;
+  border-radius: var(--radius);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.answer-no {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 2px solid var(--color-border);
+}
+
+.answer-no:active {
+  background: var(--color-bg);
+}
+
+.answer-yes {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: 2px solid var(--color-primary);
+}
+
+.answer-yes:active {
+  background: var(--color-primary-dark);
+}
+
+/* ==========================================================================
+   Итоги тренировки
+   ========================================================================== */
+
+.summary-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.05rem;
+  box-shadow: var(--shadow-tile);
+}
+
+.summary-box p {
+  margin: 0;
+}
+
+.summary-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ==========================================================================
+   Адаптация под более широкий экран (планшет/компьютер)
+   ========================================================================== */
+
+@media (min-width: 640px) {
+  .screen {
+    min-height: auto;
+    margin: 32px 0;
+    border-radius: var(--radius-lg);
+    background: transparent;
+  }
+}
