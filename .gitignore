@@ -1,0 +1,11 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+
+# Служебные файлы проверки типов (появляются после tsc -b/npm run build,
+# публикации не нужны — заново создадутся сами при следующей сборке).
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
