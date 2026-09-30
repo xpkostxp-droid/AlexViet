@@ -117,4 +117,9 @@ describe('frontText / backText', () => {
     expect(frontText(cards[0], 'vi-ru')).toBe('nước');
     expect(backText(cards[0], 'vi-ru')).toBe('вода');
   });
+
+  it('listening: спереди пусто, сзади оба языка', () => {
+    expect(frontText(cards[0], 'listening')).toBe('');
+    expect(backText(cards[0], 'listening')).toBe('nước — вода');
+  });
 });

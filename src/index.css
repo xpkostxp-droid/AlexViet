@@ -815,6 +815,64 @@ a:focus-visible {
   color: var(--color-muted);
 }
 
+.flashcard-text-secondary {
+  font-size: clamp(1.05rem, 4.5vw, 1.3rem);
+  font-weight: 500;
+  color: var(--color-muted);
+  overflow-wrap: break-word;
+}
+
+.flashcard-placeholder-icon {
+  width: 48px;
+  height: 48px;
+  color: var(--color-muted);
+  opacity: 0.5;
+}
+
+/* Ряд «карточка + кнопка озвучки сбоку» в режиме аудирования. */
+.flashcard-row {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+}
+
+.flashcard-row .flashcard-scene {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Кнопка озвучки — отдельная от самой карточки (не переворачивает её),
+   поэтому стоит сбоку узкой колонкой на всю высоту карточки. */
+.listen-button {
+  flex: 0 0 auto;
+  width: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: #ffffff;
+  background: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-tile);
+}
+
+.listen-button:active {
+  background: var(--color-primary-dark);
+}
+
+.listen-button svg {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
 .answer-actions {
   display: flex;
   gap: 12px;

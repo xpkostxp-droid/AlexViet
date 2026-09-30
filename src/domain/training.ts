@@ -102,9 +102,11 @@ export function restartWithWrongOnly(state: SessionState, order: CardOrder): Ses
 }
 
 export function frontText(card: FlashCard, direction: Direction): string {
+  if (direction === 'listening') return '';
   return direction === 'ru-vi' ? card.ru : card.vi;
 }
 
 export function backText(card: FlashCard, direction: Direction): string {
+  if (direction === 'listening') return `${card.vi} — ${card.ru}`;
   return direction === 'ru-vi' ? card.vi : card.ru;
 }
