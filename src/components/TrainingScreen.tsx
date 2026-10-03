@@ -50,6 +50,14 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
   // отрисовки — подписываемся на событие, чтобы не пропустить это.
   const [voiceAvailable, setVoiceAvailable] = useState(() => hasVietnameseVoice());
   const [speechOn, setSpeechOn] = useState(() => isSpeechEnabled());
+  // Подсказка-картинка: открывается кнопкой «Подсказка», закрывается тапом
+  // по самой картинке. Сбрасываем при переходе к следующей карточке, чтобы
+  // подсказка не осталась открытой поверх уже другого слова.
+  const [hintOpen, setHintOpen] = useState(false);
+
+  useEffect(() => {
+    setHintOpen(false);
+  }, [session.index]);
 
   useEffect(() => {
     const unsubscribe = onVoicesChanged(() => setVoiceAvailable(hasVietnameseVoice()));
@@ -158,6 +166,7 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
 
   const front = frontText(card, session.direction);
   const back = backText(card, session.direction);
+  const canShowHint = !isListening && Boolean(card.imageUrl);
 
   return (
     <div className="screen screen-training screen-photo screen-cards-setup">
@@ -225,6 +234,18 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
           </button>
         )}
       </div>
+
+      {canShowHint && (
+        <button type="button" className="hint-button" onClick={() => setHintOpen(true)}>
+          Подсказка
+        </button>
+      )}
+
+      {hintOpen && card.imageUrl && (
+        <button type="button" className="hint-overlay" onClick={() => setHintOpen(false)} aria-label="Скрыть подсказку">
+          <img className="hint-overlay-image" src={card.imageUrl} alt="" />
+        </button>
+      )}
 
       {session.flipped && (
         <div className="answer-actions">
