@@ -86,6 +86,9 @@ export interface FlashCard {
   lessonId: LessonId;
   ru: string;
   vi: string;
+  // Необязательная картинка-подсказка (мнемоника) для запоминания слова.
+  // Показывается рядом с вьетнамским текстом карточки.
+  imageUrl?: string;
 }
 
 export type TrainingResult = 'remembered' | 'not-remembered';
