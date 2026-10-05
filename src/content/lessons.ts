@@ -10,6 +10,7 @@ import { lesson3Theory } from './theory/lesson3';
 import { lesson4Theory } from './theory/lesson4';
 import { lesson5Theory } from './theory/lesson5';
 import { lesson6Theory } from './theory/lesson6';
+import { lesson7Theory } from './theory/lesson7';
 
 export const lessons: Lesson[] = [
   {
@@ -42,6 +43,11 @@ export const lessons: Lesson[] = [
     number: 6,
     title: 'Вопросы «верно?» и «не является»',
   },
+  {
+    id: 'lesson-7',
+    number: 7,
+    title: 'Страны, города и путешествия',
+  },
 ];
 
 // Материалы теории по урокам. У урока без содержимого — sections: null,
@@ -53,6 +59,7 @@ const theoryByLessonId: Record<string, TheoryMaterial['sections']> = {
   'lesson-4': lesson4Theory,
   'lesson-5': lesson5Theory,
   'lesson-6': lesson6Theory,
+  'lesson-7': lesson7Theory,
 };
 
 export const theoryMaterials: TheoryMaterial[] = lessons.map((lesson) => ({
