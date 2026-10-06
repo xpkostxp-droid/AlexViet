@@ -49,6 +49,11 @@ function VocabBlock({ block }: { block: Extract<TheoryBlock, { kind: 'vocab' }> 
         {block.items.map((item, index) => (
           <li className="theory-vocab-item" key={index}>
             <div className="theory-vocab-main">
+              {item.flag && (
+                <span className="theory-vocab-flag" aria-hidden="true">
+                  {item.flag}
+                </span>
+              )}
               <span className="theory-vocab-vi">{item.vi}</span>
               {item.pronunciation && <span className="theory-vocab-pron">[{item.pronunciation}]</span>}
             </div>

@@ -167,6 +167,11 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
   const front = frontText(card, session.direction);
   const back = backText(card, session.direction);
   const canShowHint = !isListening && Boolean(card.imageUrl);
+  // Флаг показываем рядом с вьетнамским словом — именно на той стороне
+  // карточки, где оно видно: при вьет → рус это перёд, при рус → вьет
+  // и в аудировании вьетнамское слово открывается только после переворота.
+  const showFlagOnFront = session.direction === 'vi-ru';
+  const showFlagOnBack = session.direction === 'ru-vi' || isListening;
 
   return (
     <div className="screen screen-training screen-photo screen-cards-setup">
@@ -209,7 +214,14 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
                 </>
               ) : (
                 <>
-                  <span className="flashcard-text">{front}</span>
+                  <span className="flashcard-text">
+                    {showFlagOnFront && card.flag && (
+                      <span className="flashcard-flag" aria-hidden="true">
+                        {card.flag}
+                      </span>
+                    )}
+                    {front}
+                  </span>
                   <span className="flashcard-hint">Нажмите, чтобы перевернуть</span>
                 </>
               )}
@@ -217,11 +229,25 @@ export function TrainingScreen({ lessonId, direction, order, onExit }: Props) {
             <span className="flashcard-face flashcard-face-back">
               {isListening ? (
                 <>
-                  <span className="flashcard-text">{card.vi}</span>
+                  <span className="flashcard-text">
+                    {showFlagOnBack && card.flag && (
+                      <span className="flashcard-flag" aria-hidden="true">
+                        {card.flag}
+                      </span>
+                    )}
+                    {card.vi}
+                  </span>
                   <span className="flashcard-text-secondary">{card.ru}</span>
                 </>
               ) : (
-                <span className="flashcard-text">{back}</span>
+                <span className="flashcard-text">
+                  {showFlagOnBack && card.flag && (
+                    <span className="flashcard-flag" aria-hidden="true">
+                      {card.flag}
+                    </span>
+                  )}
+                  {back}
+                </span>
               )}
             </span>
           </button>

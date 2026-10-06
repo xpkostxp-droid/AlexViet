@@ -51,32 +51,38 @@ export const lesson7Theory: TheoryBlock[] = [
       {
         "vi": "Trung Quốc",
         "pronunciation": "чунг куок",
-        "ru": "Китай"
+        "ru": "Китай",
+        "flag": "🇨🇳"
       },
       {
         "vi": "Hàn Quốc",
         "pronunciation": "хан куок",
-        "ru": "Южная Корея"
+        "ru": "Южная Корея",
+        "flag": "🇰🇷"
       },
       {
         "vi": "Lào",
         "pronunciation": "лао",
-        "ru": "Лаос"
+        "ru": "Лаос",
+        "flag": "🇱🇦"
       },
       {
         "vi": "Campuchia",
         "pronunciation": "кам-пу-чиа",
-        "ru": "Камбоджа"
+        "ru": "Камбоджа",
+        "flag": "🇰🇭"
       },
       {
         "vi": "Nhật Bản",
         "pronunciation": "нят бан",
-        "ru": "Япония"
+        "ru": "Япония",
+        "flag": "🇯🇵"
       },
       {
         "vi": "Việt Nam",
         "pronunciation": "вьет нам",
-        "ru": "Вьетнам"
+        "ru": "Вьетнам",
+        "flag": "🇻🇳"
       }
     ]
   },
@@ -87,27 +93,32 @@ export const lesson7Theory: TheoryBlock[] = [
       {
         "vi": "Ý",
         "pronunciation": "и",
-        "ru": "Италия"
+        "ru": "Италия",
+        "flag": "🇮🇹"
       },
       {
         "vi": "Pháp",
         "pronunciation": "фап",
-        "ru": "Франция"
+        "ru": "Франция",
+        "flag": "🇫🇷"
       },
       {
         "vi": "Đức",
         "pronunciation": "дык",
-        "ru": "Германия"
+        "ru": "Германия",
+        "flag": "🇩🇪"
       },
       {
         "vi": "Anh",
         "pronunciation": "ань",
-        "ru": "Англия"
+        "ru": "Англия",
+        "flag": "🇬🇧"
       },
       {
         "vi": "Tây Ban Nha",
         "pronunciation": "тэй бан ня",
-        "ru": "Испания"
+        "ru": "Испания",
+        "flag": "🇪🇸"
       }
     ]
   },
@@ -118,12 +129,14 @@ export const lesson7Theory: TheoryBlock[] = [
       {
         "vi": "Mỹ",
         "pronunciation": "ми",
-        "ru": "США"
+        "ru": "США",
+        "flag": "🇺🇸"
       },
       {
         "vi": "Úc",
         "pronunciation": "ук",
-        "ru": "Австралия"
+        "ru": "Австралия",
+        "flag": "🇦🇺"
       }
     ]
   },
@@ -134,12 +147,14 @@ export const lesson7Theory: TheoryBlock[] = [
       {
         "vi": "Thái Lan",
         "pronunciation": "тхай лан",
-        "ru": "Таиланд"
+        "ru": "Таиланд",
+        "flag": "🇹🇭"
       },
       {
         "vi": "Nga",
         "pronunciation": "нга",
-        "ru": "Россия"
+        "ru": "Россия",
+        "flag": "🇷🇺"
       }
     ]
   },

@@ -37,6 +37,8 @@ export interface VocabItem {
   // Необязательный пример употребления слова.
   example?: string;
   exampleRu?: string;
+  // Необязательный флаг-эмодзи рядом со словом (например, для названий стран).
+  flag?: string;
 }
 
 export type TheoryBlock =
@@ -89,6 +91,9 @@ export interface FlashCard {
   // Необязательная картинка-подсказка (мнемоника) для запоминания слова.
   // Показывается рядом с вьетнамским текстом карточки.
   imageUrl?: string;
+  // Необязательный флаг-эмодзи (для названий стран). Показывается рядом
+  // с вьетнамским словом на той стороне карточки, где оно видно.
+  flag?: string;
 }
 
 export type TrainingResult = 'remembered' | 'not-remembered';

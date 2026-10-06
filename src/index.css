@@ -506,6 +506,11 @@ a:focus-visible {
   overflow-wrap: break-word;
 }
 
+.theory-vocab-flag {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
 .theory-vocab-pron {
   font-size: 0.85rem;
   color: var(--color-muted);
@@ -808,6 +813,12 @@ a:focus-visible {
   overflow-wrap: break-word;
   word-break: normal;
   hyphens: none;
+}
+
+.flashcard-flag {
+  display: inline-block;
+  margin-right: 8px;
+  font-size: 0.85em;
 }
 
 .flashcard-hint {
