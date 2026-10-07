@@ -9,3 +9,7 @@ dist-ssr
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
+
+# Локальные PDF, иллюстрации и временные файлы проверки.
+/output/
+/tmp/
