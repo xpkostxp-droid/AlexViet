@@ -227,11 +227,24 @@ a:focus-visible {
   min-width: 0;
   overflow-wrap: anywhere;
 }
-.home-tile-pronunciation ~ .home-tile { grid-row: 2; }
+.home-tile-study { grid-row: 2; }
+.home-tile-phonetics-test { grid-column: 2; grid-row: 1; min-width: 0; padding: 10px; gap: 6px; }
+.home-tile-phonetics-test .home-tile-icon { width: 26px; height: 26px; }
+.home-tile-phonetics-test .home-tile-label { min-width: 0; overflow-wrap: anywhere; }
+.phonetics-test-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.phonetics-test-options button { font-size: 1.6rem; font-weight: 700; min-height: 90px; }
+.phonetics-test-options button:disabled { opacity: 1; cursor: default; }
+.phonetics-test-options .is-correct { border: 2px solid var(--color-primary); background: var(--color-primary-soft); }
+.phonetics-test-options .is-wrong { border: 2px solid var(--color-alert-text); background: #fff0eb; }
+.phonetics-test-feedback { min-height: 48px; font-weight: 600; }
 @media (max-width: 600px) {
   .home-tile-pronunciation .home-tile-chevron { display: none; }
   .home-tile-pronunciation { padding: 10px; gap: 6px; }
   .home-tile-pronunciation .home-tile-icon { width: 26px; height: 26px; }
+  .home-tile-study { padding: 10px; gap: 6px; min-width: 0; }
+  .home-tile-study .home-tile-icon { width: 26px; height: 26px; }
+  .home-tile-study .home-tile-chevron { width: 14px; height: 14px; }
+  .home-tile-study .home-tile-label { min-width: 0; overflow-wrap: anywhere; }
 }
 
 .screen-pronunciation { max-width: 1000px; }

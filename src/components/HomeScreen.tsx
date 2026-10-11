@@ -4,9 +4,10 @@ interface Props {
   onOpenTheory: () => void;
   onOpenCards: () => void;
   onOpenPronunciation: () => void;
+  onOpenPhoneticaTest: () => void;
 }
 
-export function HomeScreen({ onOpenTheory, onOpenCards, onOpenPronunciation }: Props) {
+export function HomeScreen({ onOpenTheory, onOpenCards, onOpenPronunciation, onOpenPhoneticaTest }: Props) {
   return (
     <div className="screen screen-home">
       <div className="home-tiles">
@@ -15,12 +16,16 @@ export function HomeScreen({ onOpenTheory, onOpenCards, onOpenPronunciation }: P
           <span className="home-tile-label">Фонетика</span>
           <ChevronRightIcon className="home-tile-chevron" />
         </button>
-        <button className="home-tile home-tile-blue" onClick={onOpenTheory}>
+        <button className="home-tile home-tile-teal home-tile-phonetics-test" onClick={onOpenPhoneticaTest}>
+          <SpeakerOnIcon className="home-tile-icon" />
+          <span className="home-tile-label">Фонетика тест</span>
+        </button>
+        <button className="home-tile home-tile-blue home-tile-study" onClick={onOpenTheory}>
           <BookIcon className="home-tile-icon" />
           <span className="home-tile-label">Теория</span>
           <ChevronRightIcon className="home-tile-chevron" />
         </button>
-        <button className="home-tile home-tile-teal" onClick={onOpenCards}>
+        <button className="home-tile home-tile-teal home-tile-study" onClick={onOpenCards}>
           <CardsIcon className="home-tile-icon" />
           <span className="home-tile-label">Карточки</span>
           <ChevronRightIcon className="home-tile-chevron" />
