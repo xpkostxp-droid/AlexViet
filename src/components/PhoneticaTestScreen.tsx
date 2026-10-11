@@ -12,7 +12,8 @@ function shuffle<T,>(items: T[]): T[] {
 }
 function makeRound(questions: readonly { syllable: string; start: number; end: number }[], useSourceOptions = false) {
   const vowels = ['u', 'i', 'ư', 'ơ', 'ô', 'ê', 'a', 'e', 'o'];
-  return questions.map(item => ({
+  return questions.map((item, sourceIndex) => ({
+    sourceIndex,
     ...item,
     options: shuffle([item.syllable, ...shuffle(
       (useSourceOptions ? [...new Set(questions.map(question => question.syllable))] : item.syllable.length === 1 ? vowels : vowels.map(vowel => item.syllable.replace(/[uiươôêaeo]+$/, vowel)))
@@ -31,10 +32,10 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
   const [roundNumber, setRoundNumber] = useState(1);
   const [firstPassScore, setFirstPassScore] = useState<number | null>(null);
   const [heard, setHeard] = useState(false);
+  const [showIntroHint, setShowIntroHint] = useState(true);
   const [playing, setPlaying] = useState(false);
   const [error, setError] = useState('');
   const audioRef = useRef<HTMLAudioElement>(null);
-  const stopRef = useRef(0);
   const requestRef = useRef(0);
   const autoplayRef = useRef(false);
   const item = round[index];
@@ -78,13 +79,7 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
 
   useEffect(() => {
     const audio = audioRef.current!;
-    let frame = 0;
-    function tick() {
-      if (!audio.paused && audio.currentTime >= stopRef.current) audio.pause();
-      frame = requestAnimationFrame(tick);
-    }
-    frame = requestAnimationFrame(tick);
-    return () => { requestRef.current++; cancelAnimationFrame(frame); audio.pause(); };
+    return () => { requestRef.current++; audio.pause(); };
   }, []);
 
   async function listen() {
@@ -93,11 +88,12 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
     const request = ++requestRef.current;
     audio.pause();
     setError('');
-    audio.currentTime = item.start;
-    stopRef.current = item.end;
+    setHeard(false);
+    // Each sound has its own complete file, so playback never seeks into an MP3.
+    audio.currentTime = 0;
     try {
       await audio.play();
-      if (request === requestRef.current) setHeard(true);
+
     } catch {
       if (request === requestRef.current) setError('Не удалось включить запись. Нажмите «Слушать» ещё раз.');
     }
@@ -105,6 +101,7 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
 
   function choose(value: string) {
     if (answer !== null || !heard) return;
+    setShowIntroHint(false);
     setAnswer(value);
     audioRef.current?.pause();
     if (value === item.syllable) setScore(current => current + 1);
@@ -125,8 +122,9 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
     <BackButton onClick={onBack} />
     <h1 className="screen-title">Фонетика тест</h1>
     <span className="badge">Тест {testId} · {test.title}</span>
-    <audio ref={audioRef} src={`${import.meta.env.BASE_URL}audio/phonetics-test-${test.track}.mp3`} preload="auto"
+    <audio ref={audioRef} src={item ? `${import.meta.env.BASE_URL}audio/phonetics-clips/${testId}/${item.sourceIndex + 1}.mp3` : undefined} preload="auto"
       onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)}
+      onEnded={() => { setPlaying(false); setHeard(true); }}
       onError={() => { setPlaying(false); setError('Запись не загрузилась. Проверьте подключение.'); }} />
     {item ? <>
       <p className="counter">Слог {index + 1} из {round.length}</p>
@@ -139,7 +137,7 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
           className={`secondary-button${answer !== null && value === item.syllable ? ' is-correct' : ''}${answer === value && value !== item.syllable ? ' is-wrong' : ''}`}
           onClick={() => choose(value)}>{value}</button>)}
       </div>
-      <p className="phonetics-test-feedback" role="status">{answer === null ? (heard ? 'Какой слог вы услышали?' : 'Сначала нажмите «Слушать».') : answer === item.syllable ? '✓ Верно!' : `Правильный ответ: ${item.syllable}`}</p>
+      {(showIntroHint || answer !== null) && <p className="phonetics-test-feedback" role="status">{answer === null ? (heard ? 'Какой слог вы услышали?' : 'Сначала нажмите «Слушать».') : answer === item.syllable ? '✓ Верно!' : `Правильный ответ: ${item.syllable}`}</p>}
       {answer !== null && answer !== item.syllable && <button className="big-button" onClick={next}>Следующий слог</button>}
     </> : <>
       <div className="summary-box">
