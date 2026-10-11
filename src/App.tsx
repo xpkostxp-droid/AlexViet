@@ -7,9 +7,11 @@ import { TheoryLessonScreen } from './components/TheoryLessonScreen';
 import { CardsLessonListScreen } from './components/CardsLessonListScreen';
 import { CardsSetupScreen } from './components/CardsSetupScreen';
 import { TrainingScreen } from './components/TrainingScreen';
+import { PronunciationScreen } from './components/PronunciationScreen';
 
 type Screen =
   | { name: 'home' }
+  | { name: 'pronunciation' }
   | { name: 'theory-list' }
   | { name: 'theory-lesson'; lessonId: string }
   | { name: 'cards-lesson-list' }
@@ -28,8 +30,12 @@ function App() {
         <HomeScreen
           onOpenTheory={() => setScreen({ name: 'theory-list' })}
           onOpenCards={() => setScreen({ name: 'cards-lesson-list' })}
+          onOpenPronunciation={() => setScreen({ name: 'pronunciation' })}
         />
       );
+
+    case 'pronunciation':
+      return <PronunciationScreen onBack={() => setScreen({ name: 'home' })} />;
 
     case 'theory-list':
       return (

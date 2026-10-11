@@ -222,6 +222,68 @@ a:focus-visible {
   gap: 14px;
 }
 
+.home-tile-pronunciation { grid-column: 1 / -1; }
+
+.screen-pronunciation { max-width: 1000px; }
+.pronunciation-controls {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 12px 0;
+  background: var(--color-bg);
+}
+.pronunciation-repeat {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 44px;
+  font-size: .9rem;
+}
+.pronunciation-repeat input { width: 22px; height: 22px; accent-color: var(--color-primary); }
+.pronunciation-rows { display: grid; gap: 18px; }
+.pronunciation-row {
+  padding: 16px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+.pronunciation-row-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 14px; }
+.pronunciation-row-heading h2 { margin: 0; font-size: 1rem; }
+.pronunciation-row-heading h2 span { color: var(--color-primary-dark); font-size: 1.3rem; }
+.pronunciation-row-heading button { min-height: 44px; padding: 8px 12px; font-size: .85rem; }
+.pronunciation-syllables { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+.pronunciation-syllable {
+  min-width: 0;
+  min-height: 68px;
+  padding: 6px 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: var(--color-primary-soft);
+  font-size: clamp(1rem, 4.3vw, 1.35rem);
+  font-weight: 700;
+}
+.pronunciation-vowel { font-size: .7rem; font-weight: 400; color: var(--color-muted); }
+.pronunciation-syllable-long { font-size: clamp(.8rem, 3.8vw, 1.15rem); }
+.pronunciation-syllable.is-current { background: #ffe49a; border-color: #aa7400; color: #493200; }
+.pronunciation-syllable.is-current .pronunciation-vowel { color: #70500c; }
+.pronunciation-error { color: var(--color-alert-text); margin: 0; }
+@media (min-width: 800px) {
+  .pronunciation-syllables { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+}
+@media (max-width: 360px) {
+  .screen-pronunciation { padding-left: 12px; padding-right: 12px; }
+  .pronunciation-row { padding-left: 8px; padding-right: 8px; }
+  .pronunciation-syllables { gap: 4px; }
+}
+
 .home-tile {
   display: flex;
   align-items: center;

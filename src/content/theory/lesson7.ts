@@ -330,28 +330,6 @@ export const lesson7Theory: TheoryBlock[] = [
     "examples": []
   },
   {
-    "kind": "vocab",
-    "heading": "Пример из конспекта",
-    "items": [
-      {
-        "vi": "Người Việt Nam không thích người Trung Quốc, phải không?",
-        "pronunciation": "ныой вьет нам хонг тхить ныой чунг куок, фай хонг?",
-        "ru": "Вьетнамцы не любят китайцев, верно?"
-      }
-    ],
-    "note": "Это пример построения вопроса из учебного материала, а не утверждение об отношении всех людей этих национальностей."
-  },
-  {
-    "kind": "tip",
-    "heading": "Разбор примера",
-    "items": [
-      "người Việt Nam — вьетнамцы.",
-      "người Trung Quốc — китайцы.",
-      "không thích — не любить.",
-      "phải không? — верно? / не так ли?"
-    ]
-  },
-  {
     "kind": "table",
     "heading": "8. Главное для запоминания",
     "columns": [
