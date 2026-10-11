@@ -12,7 +12,7 @@ export function HomeScreen({ onOpenTheory, onOpenCards, onOpenPronunciation }: P
       <div className="home-tiles">
         <button className="home-tile home-tile-blue home-tile-pronunciation" onClick={onOpenPronunciation}>
           <SpeakerOnIcon className="home-tile-icon" />
-          <span className="home-tile-label">Произношение</span>
+          <span className="home-tile-label">Произно&shy;шение</span>
           <ChevronRightIcon className="home-tile-chevron" />
         </button>
         <button className="home-tile home-tile-blue" onClick={onOpenTheory}>

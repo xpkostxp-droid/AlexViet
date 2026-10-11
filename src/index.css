@@ -229,10 +229,9 @@ a:focus-visible {
 }
 .home-tile-pronunciation ~ .home-tile { grid-row: 2; }
 @media (max-width: 600px) {
-  .home-tile-pronunciation .home-tile-icon,
   .home-tile-pronunciation .home-tile-chevron { display: none; }
-  .home-tile-pronunciation { padding: 12px; }
-  .home-tile-pronunciation .home-tile-label { font-size: clamp(.8rem, 3.5vw, 1rem); }
+  .home-tile-pronunciation { padding: 10px; gap: 6px; }
+  .home-tile-pronunciation .home-tile-icon { width: 16px; height: 16px; }
 }
 
 .screen-pronunciation { max-width: 1000px; }
