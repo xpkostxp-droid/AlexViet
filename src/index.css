@@ -231,7 +231,7 @@ a:focus-visible {
 @media (max-width: 600px) {
   .home-tile-pronunciation .home-tile-chevron { display: none; }
   .home-tile-pronunciation { padding: 10px; gap: 6px; }
-  .home-tile-pronunciation .home-tile-icon { width: 16px; height: 16px; }
+  .home-tile-pronunciation .home-tile-icon { width: 26px; height: 26px; }
 }
 
 .screen-pronunciation { max-width: 1000px; }
