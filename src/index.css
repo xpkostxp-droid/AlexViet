@@ -222,13 +222,17 @@ a:focus-visible {
   gap: 14px;
 }
 
-.home-tile-pronunciation { grid-column: 1; }
+.home-tile-pronunciation { grid-column: 1; min-width: 0; }
+.home-tile-pronunciation .home-tile-label {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
 .home-tile-pronunciation ~ .home-tile { grid-row: 2; }
-@media (max-width: 420px) {
+@media (max-width: 600px) {
   .home-tile-pronunciation .home-tile-icon,
   .home-tile-pronunciation .home-tile-chevron { display: none; }
   .home-tile-pronunciation { padding: 12px; }
-  .home-tile-pronunciation .home-tile-label { font-size: .95rem; }
+  .home-tile-pronunciation .home-tile-label { font-size: clamp(.8rem, 3.5vw, 1rem); }
 }
 
 .screen-pronunciation { max-width: 1000px; }
