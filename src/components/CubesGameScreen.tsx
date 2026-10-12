@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react';
 import { BackButton } from './BackButton';
-import { initialCubes, nextCubeNumber, refillCubes } from '../content/games/cubes';
+import { initialCubes, nextCubeNumber, refillCubes, recordCubeAnswer } from '../content/games/cubes';
 import { numberWords } from '../content/games/numbers';
 import type { NumberGameDirection } from './GameDirectionScreen';
 
 type Phase = 'idle' | 'ready' | 'clearing' | 'falling' | 'complete';
 function initialGame() {
   const board = initialCubes();
-  return { board, target: nextCubeNumber(board, []), mastered: [] as number[], score: 0, nextId: 6, phase: 'idle' as Phase, selectedId: -1 };
+  return { board, target: nextCubeNumber(board, []), mastered: [] as number[], retryAfter: {} as Record<number, number>, score: 0, nextId: 6, phase: 'idle' as Phase, selectedId: -1 };
 }
 export function CubesGameScreen({ onBack, direction }: { onBack: () => void; direction: NumberGameDirection }) {
   const [game, setGame] = useState(initialGame);
@@ -19,6 +19,7 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
   const confirmationRef = useRef<HTMLAudioElement>(null);
   const confirmationDoneRef = useRef<Promise<void>>(Promise.resolve());
   const choiceLockedRef = useRef(false);
+  const hadMistakeRef = useRef(false);
 
   async function listen() {
     const audio = audioRef.current;
@@ -42,8 +43,8 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
         setHeard(false); setWrongId(-1);
         setGame(current => {
           if (current.mastered.length === 10) return { ...current, phase: 'complete' };
-          const board = refillCubes(current.board, current.selectedId, current.nextId, current.mastered);
-          return { ...current, board, nextId: current.nextId + 1, target: nextCubeNumber(board, current.mastered), phase: 'falling' };
+          const board = refillCubes(current.board, current.selectedId, current.nextId, current.mastered, current.retryAfter, current.score);
+          return { ...current, board, nextId: current.nextId + 1, target: nextCubeNumber(board, current.mastered, current.retryAfter, current.score), phase: 'falling' };
         });
       }, direction === 'vi-ru' ? 750 : 300);
       return () => { cancelled = true; window.clearTimeout(timer); };
@@ -52,7 +53,7 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
       const timer = window.setTimeout(() => setGame(current => ({ ...current, phase: 'ready' })), 450);
       return () => window.clearTimeout(timer);
     }
-    if (game.phase === 'ready' && !heard) { choiceLockedRef.current = false; void listen(); }
+    if (game.phase === 'ready' && !heard) { choiceLockedRef.current = false; hadMistakeRef.current = false; void listen(); }
   }, [game.phase]);
   useEffect(() => {
     if (wrongId < 0) return;
@@ -68,7 +69,7 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
   function choose(id: number) {
     if (!heard || game.phase !== 'ready' || choiceLockedRef.current) return;
     const cube = game.board.find(cube => cube.id === id)!;
-    if (cube.value !== game.target) { setWrongId(id); return; }
+    if (cube.value !== game.target) { hadMistakeRef.current = true; setWrongId(id); return; }
     choiceLockedRef.current = true;
     if (direction === 'ru-vi' && confirmationRef.current) {
       const confirmation = confirmationRef.current;
@@ -89,14 +90,15 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
         });
       });
     } else confirmationDoneRef.current = Promise.resolve();
+    const hadMistake = hadMistakeRef.current;
     setGame(current => current.phase !== 'ready' ? current : {
       ...current, score: current.score + 1, selectedId: id, phase: 'clearing',
-      mastered: current.mastered.includes(cube.value) ? current.mastered : [...current.mastered, cube.value],
+      ...recordCubeAnswer(current.mastered, current.retryAfter, cube.value, hadMistake, current.score),
     });
   }
   function restart() {
     requestRef.current++; audioRef.current?.pause(); confirmationRef.current?.pause();
-    choiceLockedRef.current = false;
+    choiceLockedRef.current = false; hadMistakeRef.current = false;
     setHeard(false); setWrongId(-1); setError(''); setGame(initialGame());
   }
   const busy = game.phase === 'clearing' || game.phase === 'falling';
@@ -120,10 +122,10 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
             disabled={!heard || game.phase !== 'ready'} lang={direction === 'ru-vi' || (cube.id === game.selectedId && game.phase === 'clearing') ? 'vi' : undefined} data-value={cube.value} aria-label={`Кубик ${direction === 'ru-vi' ? numberWords[cube.value - 1] : cube.value}`} onClick={() => choose(cube.id)}>{direction === 'ru-vi' || (cube.id === game.selectedId && game.phase === 'clearing') ? numberWords[cube.value - 1] : cube.value}</button>
         </div>)}
       </div>
-      <p className="cube-game-feedback" role="status">{game.phase === 'clearing' ? `✓ ${game.target} — ${numberWords[game.target - 1]} · +1 балл` : wrongId >= 0 ? 'Попробуй другой кубик' : '\u00a0'}</p>
+      <p className="cube-game-feedback" role="status">{game.phase === 'clearing' ? `✓ ${game.target} — ${numberWords[game.target - 1]} · +1 балл${hadMistakeRef.current ? ' · Повторим позже' : ''}` : wrongId >= 0 ? 'Попробуй другой кубик' : '\u00a0'}</p>
       <button className="big-button" disabled={busy} onClick={() => void listen()}>{game.phase === 'idle' ? 'Начать игру' : 'Слушать ещё раз'}</button>
       {error && <p className="pronunciation-error" role="alert">{error}</p>}
-      <p className="hint-text">Без таймера. Ошибка не отнимает баллы — попробуй ещё раз.</p>
+      <p className="hint-text">Без таймера. После ошибки цифра вернётся позже. Закрепляем только ответы с первой попытки.</p>
     </>}
   </div>;
 }
