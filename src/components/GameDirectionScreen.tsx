@@ -5,7 +5,7 @@ export function GameDirectionScreen({ onBack, onStart }: { onBack: () => void; o
     <BackButton onClick={onBack} label="К играм" />
     <span className="badge">Урок 9 · Цифры 1–10</span>
     <h1 className="screen-title">Кубики на слух</h1>
-    <p className="theory-note">Выбери направление игры.</p>
+    <p className="theory-note">Выбери направление игры. Каждую цифру нужно угадать дважды.</p>
     <button className="lesson-item" onClick={() => onStart('vi-ru')}>
       <span className="lesson-number">Вьетнамский → Русский</span>
       <span className="lesson-title">Слушай по-вьетнамски, выбирай цифру</span>

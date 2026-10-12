@@ -8,7 +8,7 @@ export function GamesListScreen({ onBack, onOpenNumbers }: { onBack: () => void;
     <button className="lesson-item" onClick={onOpenNumbers}>
       <span className="lesson-number">Цифры 1–10</span>
       <span className="lesson-title">Кубики на слух — послушай и найди цифру</span>
-      <span className="lesson-meta">10 цифр · повтор ошибок до закрепления</span>
+      <span className="lesson-meta">20 ответов · каждую цифру дважды · повтор ошибок</span>
     </button>
   </div>;
 }

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { initialCubes, nextCubeNumber, refillCubes, recordCubeAnswer } from './cubes';
+import { initialCubes, nextCubeNumber, refillCubes, recordCubeAnswer, successfulAttempts } from './cubes';
 
 describe('number cubes', () => {
   it('drops only the cubes above a removed middle cube and fills the top', () => {
@@ -12,33 +12,37 @@ describe('number cubes', () => {
     expect(new Set(result.map(c => c.value)).size).toBe(6);
     expect(new Set(result.map(c => `${c.column}:${c.row}`)).size).toBe(6);
   });
-  it('always offers the target and lets all ten digits be mastered', () => {
+  it('always offers the target and lets all ten digits be mastered twice', () => {
     for (let attempt = 0; attempt < 30; attempt++) {
       let board = initialCubes(); const mastered: number[] = [];
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 20; i++) {
         const target = nextCubeNumber(board, mastered);
-        expect(mastered).not.toContain(target);
+        expect(successfulAttempts(mastered, target)).toBeLessThan(2);
         mastered.push(target);
         board = refillCubes(board, board.find(c => c.value === target)!.id, 6 + i, mastered);
         expect(board).toHaveLength(6);
         expect(new Set(board.map(c => c.value)).size).toBe(6);
       }
-      expect(new Set(mastered).size).toBe(10);
+      expect(mastered).toHaveLength(20);
+      for (let number = 1; number <= 10; number++) expect(successfulAttempts(mastered, number)).toBe(2);
     }
   });
 });
 
 it('repeats mistaken digits only after other questions and masters them on a clean attempt', () => {
-  const failed = recordCubeAnswer([1, 2], {}, 3, true, 4);
-  expect(failed.mastered).toEqual([1, 2]);
+  const failed = recordCubeAnswer([1, 1, 2, 2], {}, 3, true, 4);
+  expect(failed.mastered).toEqual([1, 1, 2, 2]);
   const board = [1, 2, 3].map((value, id) => ({ id, value, column: id % 2, row: 0 }));
   expect(nextCubeNumber(board, failed.mastered, failed.retryAfter, 5)).not.toBe(3);
   expect(nextCubeNumber(board, failed.mastered, failed.retryAfter, 6)).not.toBe(3);
   expect(nextCubeNumber(board, failed.mastered, failed.retryAfter, 7)).toBe(3);
   const passed = recordCubeAnswer(failed.mastered, failed.retryAfter, 3, false, 7);
-  expect(passed.mastered).toEqual([1, 2, 3]);
+  expect(passed.mastered).toEqual([1, 1, 2, 2, 3]);
   expect(passed.retryAfter[3]).toBeUndefined();
-  expect(recordCubeAnswer(passed.mastered, {}, 3, true, 8).mastered).not.toContain(3);
+  expect(recordCubeAnswer(passed.mastered, {}, 3, true, 8).mastered).toEqual(passed.mastered);
+  const twice = recordCubeAnswer(passed.mastered, {}, 3, false, 9);
+  expect(successfulAttempts(twice.mastered, 3)).toBe(2);
+  expect(recordCubeAnswer(twice.mastered, {}, 3, false, 10).mastered).toEqual(twice.mastered);
 });
 
 it('does not drop a mistaken digit back into the well immediately', () => {

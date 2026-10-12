@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { BackButton } from './BackButton';
-import { initialCubes, nextCubeNumber, refillCubes, recordCubeAnswer } from '../content/games/cubes';
+import { initialCubes, nextCubeNumber, refillCubes, recordCubeAnswer, NUMBER_GAME_GOAL } from '../content/games/cubes';
 import { numberWords } from '../content/games/numbers';
 import type { NumberGameDirection } from './GameDirectionScreen';
 
@@ -42,7 +42,7 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
         if (cancelled) return;
         setHeard(false); setWrongId(-1);
         setGame(current => {
-          if (current.mastered.length === 10) return { ...current, phase: 'complete' };
+          if (current.mastered.length === NUMBER_GAME_GOAL) return { ...current, phase: 'complete' };
           const board = refillCubes(current.board, current.selectedId, current.nextId, current.mastered, current.retryAfter, current.score);
           return { ...current, board, nextId: current.nextId + 1, target: nextCubeNumber(board, current.mastered, current.retryAfter, current.score), phase: 'falling' };
         });
@@ -111,10 +111,10 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
       onError={() => setError('Запись не загрузилась. Попробуй послушать ещё раз.')} />
     {direction === 'ru-vi' && <audio ref={confirmationRef} src={game.phase !== 'complete' ? `${import.meta.env.BASE_URL}audio/games/numbers/${game.target}.mp3` : undefined} preload="auto" />}
     {game.phase === 'complete' ? <div className="summary-box">
-      <h2>Все 10 цифр закреплены!</h2><p>Баллы: {game.score}</p>
+      <h2>Все 10 цифр закреплены дважды!</h2><p>Баллы: {game.score}</p>
       <button className="big-button" onClick={restart}>Сыграть ещё раз</button>
     </div> : <>
-      <div className="cube-game-score"><span>Баллы: {game.score}</span>{direction === 'ru-vi' && <span className="cube-current-number" aria-label="Текущая цифра">{game.phase !== 'idle' ? game.target : '—'}</span>}<span>Закреплено: {game.mastered.length} / 10</span></div>
+      <div className="cube-game-score"><span>Баллы: {game.score}</span>{direction === 'ru-vi' && <span className="cube-current-number" aria-label="Текущая цифра">{game.phase !== 'idle' ? game.target : '—'}</span>}<span>Закреплено: {game.mastered.length} / {NUMBER_GAME_GOAL}</span></div>
       <p className="cube-game-instruction">{game.phase === 'idle' ? 'Начни игру и нажми кубик с услышанной цифрой.' : 'Слушай и находи нужный кубик'}</p>
       <div className="cube-well" aria-label="Стакан с шестью кубиками">
         {game.board.map(cube => <div key={cube.id} className="cube-position" style={{ left: `${cube.column * 50}%`, transform: `translateY(${cube.row * 104}px)` }}>
@@ -125,7 +125,7 @@ export function CubesGameScreen({ onBack, direction }: { onBack: () => void; dir
       <p className="cube-game-feedback" role="status">{game.phase === 'clearing' ? `✓ ${game.target} — ${numberWords[game.target - 1]} · +1 балл${hadMistakeRef.current ? ' · Повторим позже' : ''}` : wrongId >= 0 ? 'Попробуй другой кубик' : '\u00a0'}</p>
       <button className="big-button" disabled={busy} onClick={() => void listen()}>{game.phase === 'idle' ? 'Начать игру' : 'Слушать ещё раз'}</button>
       {error && <p className="pronunciation-error" role="alert">{error}</p>}
-      <p className="hint-text">Без таймера. После ошибки цифра вернётся позже. Закрепляем только ответы с первой попытки.</p>
+      <p className="hint-text">Без таймера. После ошибки цифра вернётся позже. Каждую цифру закрепляем дважды — только с первой попытки.</p>
     </>}
   </div>;
 }
