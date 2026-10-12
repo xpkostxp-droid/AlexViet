@@ -80,3 +80,11 @@ export function ChevronRightIcon({ className }: IconProps) {
     </svg>
   );
 }
+
+export function GameIcon({ className }: IconProps) {
+  return <svg className={className} viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M7 7h10c3 0 5 9 3 11-1 1-3-1-5-3H9c-2 2-4 4-5 3-2-2 0-11 3-11Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" />
+    <path d="M8 9v5M5.5 11.5h5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    <circle cx="16" cy="10" r="1" fill="currentColor"/><circle cx="18" cy="13" r="1" fill="currentColor"/>
+  </svg>;
+}

@@ -1,4 +1,7 @@
 import { useState } from 'react';
+import { GamesListScreen } from './components/GamesListScreen';
+import { CubesGameScreen } from './components/CubesGameScreen';
+import { GameDirectionScreen, type NumberGameDirection } from './components/GameDirectionScreen';
 import type { CardOrder, Direction } from './types';
 import { saveLastActivity } from './domain/lastActivity';
 import { HomeScreen } from './components/HomeScreen';
@@ -14,6 +17,9 @@ import type { PhoneticsTestId } from './content/phonetics/tests';
 
 type Screen =
   | { name: 'home' }
+  | { name: 'games-list' }
+  | { name: 'numbers-game-setup' }
+  | { name: 'numbers-game'; direction: NumberGameDirection }
   | { name: 'pronunciation' }
   | { name: 'phonetics-test-list' }
   | { name: 'phonetics-test'; testId: PhoneticsTestId }
@@ -33,12 +39,22 @@ function App() {
       // по-прежнему запоминается через saveLastActivity ниже, на будущее.
       return (
         <HomeScreen
+          onOpenGames={() => setScreen({ name: 'games-list' })}
           onOpenTheory={() => setScreen({ name: 'theory-list' })}
           onOpenCards={() => setScreen({ name: 'cards-lesson-list' })}
           onOpenPronunciation={() => setScreen({ name: 'pronunciation' })}
           onOpenPhoneticaTest={() => setScreen({ name: 'phonetics-test-list' })}
         />
       );
+
+    case 'games-list':
+      return <GamesListScreen onBack={() => setScreen({ name: 'home' })} onOpenNumbers={() => setScreen({ name: 'numbers-game-setup' })} />;
+
+    case 'numbers-game-setup':
+      return <GameDirectionScreen onBack={() => setScreen({ name: 'games-list' })} onStart={direction => setScreen({ name: 'numbers-game', direction })} />;
+
+    case 'numbers-game':
+      return <CubesGameScreen key={screen.direction} direction={screen.direction} onBack={() => setScreen({ name: 'numbers-game-setup' })} />;
 
     case 'pronunciation':
       return <PronunciationScreen onBack={() => setScreen({ name: 'home' })} />;

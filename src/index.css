@@ -209,7 +209,7 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 36px);
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + 12px);
   background-image: url('/images/home-hero-tieng-viet.png');
   background-size: cover;
   background-position: center top;
@@ -222,13 +222,13 @@ a:focus-visible {
   gap: 14px;
 }
 
-.home-tile-pronunciation { grid-column: 1; min-width: 0; }
+.home-tile-pronunciation { grid-column: 1; grid-row: 2; min-width: 0; }
 .home-tile-pronunciation .home-tile-label {
   min-width: 0;
   overflow-wrap: anywhere;
 }
-.home-tile-study { grid-row: 2; }
-.home-tile-phonetics-test { grid-column: 2; grid-row: 1; min-width: 0; padding: 10px; gap: 6px; }
+.home-tile-study { grid-row: 3; }
+.home-tile-phonetics-test { grid-column: 2; grid-row: 2; min-width: 0; padding: 10px; gap: 6px; }
 .home-tile-phonetics-test .home-tile-icon { width: 26px; height: 26px; }
 .home-tile-phonetics-test .home-tile-label { min-width: 0; overflow-wrap: anywhere; }
 .phonetics-test-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -1078,4 +1078,58 @@ a:focus-visible {
     border-radius: var(--radius-lg);
     background: transparent;
   }
+}
+
+.home-tile-game { grid-column: 1 / -1; grid-row: 1; justify-self: center; width: calc((100% - 14px) / 2); min-width: 0; }
+.screen-number-game { max-width: 600px; }
+.number-game-progress { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-weight: 600; margin: 18px 0; }
+.number-game-progress progress { width: 100%; height: 12px; accent-color: var(--color-primary); }
+.number-game-stage { border: 1px solid var(--color-border); border-radius: var(--radius); background: var(--color-surface); padding: 24px 16px; text-align: center; }
+.number-game-speaker { width: 58px; height: 58px; color: var(--color-primary); }
+.number-game-word { font-size: 1.4rem; font-weight: 700; min-height: 34px; margin: 12px 0; }
+.number-game-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 18px; }
+.number-game-options button { min-height: 100px; font-size: 2.4rem; font-weight: 700; }
+.number-game-options button:disabled { opacity: 1; }
+.number-game-options .number-game-correct { background: var(--color-primary-soft); border: 2px solid var(--color-primary); }
+.number-game-options .number-game-wrong { background: #fff0eb; border: 2px solid var(--color-alert-text); }
+.number-game-feedback { min-height: 28px; font-weight: 600; text-align: center; }
+@media (max-width: 600px) {
+  .home-tile-game { padding: 10px; gap: 6px; }
+  .home-tile-game .home-tile-icon { width: 26px; height: 26px; }
+  .home-tile-game .home-tile-chevron { width: 14px; height: 14px; }
+}
+
+.screen-cubes-game { max-width: 460px; text-align: center; }
+.screen-cubes-game > .back-button { text-align: left; }
+.cube-game-score { display: flex; justify-content: space-between; gap: 10px; font-weight: 700; margin: 16px 0; }
+.cube-game-instruction { font-size: .95rem; min-height: 40px; margin: 8px 0; }
+.cube-well { position: relative; width: 100%; flex-shrink: 0; height: 328px; margin: 0 auto; max-width: 320px; border: 3px solid #487b80; border-top: 0; border-radius: 0 0 22px 22px; background: linear-gradient(180deg, #eff9f7, #dbece9); box-shadow: inset 0 -6px 14px #487b8020; overflow: hidden; }
+.cube-position { position: absolute; top: 8px; width: 50%; height: 100px; padding: 4px 8px; transition: transform 400ms cubic-bezier(.35,.1,.7,1); }
+.number-cube { display: block; width: 100%; height: 92px; border: 2px solid #ffffffb0; border-radius: 16px; font-size: 2.5rem; font-weight: 800; color: #173e43; box-shadow: inset 0 -6px 0 #00000012, 0 4px 6px #123c4320; touch-action: manipulation; }
+.number-cube:disabled { opacity: 1; cursor: default; }
+.cube-color-0 { background: #aadcd5; }
+.cube-color-1 { background: #ffe1a0; }
+.cube-color-2 { background: #bcd9f3; }
+.cube-color-3 { background: #dac8ec; }
+.cube-clearing { animation: cube-clear 300ms ease-out forwards; }
+.cube-entering { animation: cube-drop 450ms cubic-bezier(.35,.1,.7,1); }
+.cube-wrong { animation: cube-shake 350ms ease-in-out; border-color: #bd5845; }
+.cube-game-feedback { min-height: 28px; margin: 16px 0 10px; font-weight: 700; color: var(--color-primary-dark); }
+@keyframes cube-clear { to { transform: scale(.35); opacity: 0; } }
+@keyframes cube-drop { from { transform: translateY(-230px); } to { transform: translateY(0); } }
+@keyframes cube-shake { 25%,75% { transform: translateX(-6px); } 50% { transform: translateX(6px); } }
+@media (prefers-reduced-motion: reduce) {
+  .cube-position { transition: none; }
+  .cube-clearing, .cube-entering, .cube-wrong { animation-duration: 1ms; }
+}
+
+.cube-word { font-size: clamp(1.2rem, 5.4vw, 1.8rem); }
+.cube-game-direction { margin: -8px 0 0; color: var(--color-muted); font-size: .9rem; }
+
+.cube-game-score { align-items: center; }
+.cube-current-number { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; width: 60px; height: 60px; border-radius: 14px; background: var(--color-primary-soft); color: var(--color-primary-dark); font-size: 2.8rem; line-height: 1; font-weight: 800; }
+
+.cube-show-word { animation-delay: 450ms; }
+@media (prefers-reduced-motion: reduce) {
+  .cube-show-word { animation-delay: 450ms; }
 }
