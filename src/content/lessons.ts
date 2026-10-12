@@ -12,6 +12,7 @@ import { lesson5Theory } from './theory/lesson5';
 import { lesson6Theory } from './theory/lesson6';
 import { lesson7Theory } from './theory/lesson7';
 import { lesson8Theory } from './theory/lesson8';
+import { lesson9Theory } from './theory/lesson9';
 
 export const lessons: Lesson[] = [
   {
@@ -54,6 +55,7 @@ export const lessons: Lesson[] = [
     number: 8,
     title: 'Как говорить «мы», «они» и «все»',
   },
+  { id: 'lesson-9', number: 9, title: 'Числа, большие числа и возраст' },
 ];
 
 // Материалы теории по урокам. У урока без содержимого — sections: null,
@@ -67,6 +69,7 @@ const theoryByLessonId: Record<string, TheoryMaterial['sections']> = {
   'lesson-6': lesson6Theory,
   'lesson-7': lesson7Theory,
   'lesson-8': lesson8Theory,
+  'lesson-9': lesson9Theory,
 };
 
 export const theoryMaterials: TheoryMaterial[] = lessons.map((lesson) => ({
