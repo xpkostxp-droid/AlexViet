@@ -93,7 +93,7 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
     audio.currentTime = 0;
     try {
       await audio.play();
-
+      if (request === requestRef.current) setHeard(true);
     } catch {
       if (request === requestRef.current) setError('Не удалось включить запись. Нажмите «Слушать» ещё раз.');
     }
@@ -103,7 +103,6 @@ export function PhoneticaTestScreen({ onBack, testId }: { onBack: () => void; te
     if (answer !== null || !heard) return;
     setShowIntroHint(false);
     setAnswer(value);
-    audioRef.current?.pause();
     if (value === item.syllable) setScore(current => current + 1);
     else setMissed(current => [...current, item]);
   }
