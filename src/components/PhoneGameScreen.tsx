@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { phoneToneUrl } from '../content/games/phoneTone';
 import { BackButton } from './BackButton';
 import type { NumberGameDirection } from './GameDirectionScreen';
 import { phoneDigitWords, phoneNumbers } from '../content/games/phone';
@@ -19,11 +20,17 @@ export function PhoneGameScreen({ direction, onBack }: { direction: NumberGameDi
   const ringRef = useRef<HTMLAudioElement>(null);
   const wrongRef = useRef<HTMLAudioElement>(null);
   const toneRef = useRef<HTMLAudioElement>(null);
-  const dialAdvanceRef = useRef(false);
+
   const requestRef = useRef(0);
   const lockedRef = useRef(false);
   const timerRef = useRef<number>();
   const phone = numbers[numberIndex];
+  const [toneUrl, setToneUrl] = useState<string>();
+  useEffect(() => {
+    const url = phone ? phoneToneUrl(phone) : undefined;
+    setToneUrl(url);
+    return () => { if (url) URL.revokeObjectURL(url); };
+  }, [phone]);
   const digit = phone && position < 10 ? Number(phone[position]) : null;
 
   async function listen() {
@@ -51,22 +58,16 @@ export function PhoneGameScreen({ direction, onBack }: { direction: NumberGameDi
     const ring=ringRef.current;
     if(ring){ring.currentTime=0;void ring.play().catch(()=>setError('Номер набран! Нажми «Следующий номер».'));}
   }
-  function advanceDial() {
-    if(dialIndex===null || dialAdvanceRef.current) return;
-    dialAdvanceRef.current=true;
-    timerRef.current=window.setTimeout(()=>{
-      if(dialIndex===9) startRing();
-      else setDialIndex(index=>index===null?null:index+1);
-    },20);
-  }
-  useEffect(()=>{
-    if(dialIndex===null) return;
-    const tone=toneRef.current; if(!tone) return;
-    let cancelled=false; dialAdvanceRef.current=false;
-    tone.currentTime=0;
-    void tone.play().catch(()=>{if(!cancelled) advanceDial();});
-    return ()=>{cancelled=true;tone.pause();};
-  },[dialIndex]);
+  const dialing = dialIndex !== null;
+  useEffect(() => {
+    if (!dialing) return;
+    const tone = toneRef.current;
+    if (!tone) return;
+    tone.currentTime = 0;
+    void tone.play().catch(() => setError('Не удалось включить набор. Нажми «Позвонить».'));
+    const timer = window.setInterval(() => setDialIndex(Math.min(9, Math.floor(tone.currentTime / .095))), 16);
+    return () => { window.clearInterval(timer); tone.pause(); };
+  }, [dialing]);
 
   function finishNumber() {
     if(!ringing) return;
@@ -100,7 +101,7 @@ export function PhoneGameScreen({ direction, onBack }: { direction: NumberGameDi
     <audio ref={voiceRef} src={source} preload="auto" onError={()=>setError('Запись не загрузилась. Попробуй повторить цифру.')} />
     <audio ref={ringRef} src={`${import.meta.env.BASE_URL}audio/games/phone/ring.wav`} preload="auto" onEnded={finishNumber} />
     <audio ref={wrongRef} src={`${import.meta.env.BASE_URL}audio/games/phone/wrong.wav`} preload="auto" />
-    <audio ref={toneRef} src={phone && dialIndex!==null ? `${import.meta.env.BASE_URL}audio/games/phone/tone-${phone[dialIndex]}.wav?v=fast-2` : undefined} preload="auto" onEnded={advanceDial} onError={advanceDial} />
+    <audio ref={toneRef} src={toneUrl} preload="auto" onEnded={startRing} />
     {!phone ? <div className="summary-box"><h2>Все 10 номеров набраны!</h2><p>Верных цифр: 100 · Ошибок: {mistakes}</p><button className="big-button" onClick={restart}>Ещё 10 номеров</button></div> : <>
       <div className="phone-progress"><span>Номер {numberIndex+1} из 10</span><span>Цифра {Math.min(position+1,10)} из 10</span></div>
       <div className={`phone-display${ringing?' phone-ringing':''}`}>
@@ -114,6 +115,7 @@ export function PhoneGameScreen({ direction, onBack }: { direction: NumberGameDi
         {[1,2,3,4,5,6,7,8,9,0].map(value=><button key={value} data-digit={value} lang={direction==='ru-vi'?'vi':undefined} className={`phone-key${value===0?' phone-key-zero':''}${wrong===value?' phone-key-wrong':''}${correct===value?' phone-key-correct':''}`} disabled={!heard||ringing||correct!==null} onClick={()=>choose(value)}>{direction==='ru-vi'?phoneDigitWords[value]:value}</button>)}
       </div>
       {ringing?<button className="secondary-button" onClick={finishNumber}>Следующий номер</button>:<button className="big-button" onClick={()=>void listen()} disabled={correct!==null||dialIndex!==null}>{dialIndex!==null?'Набираем номер…':started?'Повторить цифру':'Начать'}</button>}
+      {error && dialing && <button className="secondary-button" onClick={startRing}>Позвонить</button>}
       {error&&<p role="alert" className="pronunciation-error">{error}</p>}
       <p className="hint-text">Учебные номера. Ошибка не пропускает цифру.</p>
     </>}

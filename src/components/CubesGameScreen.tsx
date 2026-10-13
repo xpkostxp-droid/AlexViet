@@ -95,7 +95,7 @@ export function CubesGameScreen({ onBack, direction, range }: { onBack: () => vo
     const cube = game.board.find(cube => cube.id === id)!;
     if (cube.value !== game.target) { hadMistakeRef.current = true; setWrongId(id); return; }
     choiceLockedRef.current = true;
-    if (!hotel) playEffect(effectRef.current);
+    if (money) playEffect(effectRef.current);
     if (direction === 'ru-vi' && confirmationRef.current) {
       const confirmation = confirmationRef.current;
       audioRef.current?.pause();
@@ -130,7 +130,7 @@ export function CubesGameScreen({ onBack, direction, range }: { onBack: () => vo
   const busy = game.phase === 'clearing' || game.phase === 'falling';
   return <div className={`screen screen-cubes-game${hotel ? ' screen-hotel-game' : ''}${money ? ' screen-banknotes-game' : ''}`}>
     <BackButton onClick={onBack} label="К выбору направления" />
-    <audio ref={effectRef} src={`${import.meta.env.BASE_URL}audio/games/effects/${money ? 'rustle' : hotel ? 'plaque' : 'swoosh'}.wav?v=paper-4`} preload="auto" />
+    <audio ref={effectRef} src={`${import.meta.env.BASE_URL}audio/games/effects/${money ? 'rustle' : hotel ? 'plaque' : 'swoosh'}.wav?v=paper-5`} preload="auto" />
     <audio ref={dropRef} src={`${import.meta.env.BASE_URL}audio/games/effects/${money ? 'banknote-arrive' : 'drop'}.wav`} preload="auto" />
     <span className="badge">Урок 9 · {config.title}</span>
     <h1 className="screen-title">{money ? 'Купюры' : hotel ? 'Номера комнат' : 'Кубики на слух'}</h1>
