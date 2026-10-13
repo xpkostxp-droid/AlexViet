@@ -1133,3 +1133,92 @@ a:focus-visible {
 @media (prefers-reduced-motion: reduce) {
   .cube-show-word { animation-delay: 450ms; }
 }
+
+.cube-long-number.cube-word { font-size: clamp(.9rem, 4.2vw, 1.1rem); line-height: 1.2; padding: 6px; overflow-wrap: normal; }
+
+.cube-game-score-with-number { display: grid; grid-template-columns: minmax(0, 1fr) 60px minmax(0, 1.5fr); gap: 8px; font-size: .9rem; }
+.cube-game-score-with-number > span:first-child, .cube-score-count { white-space: nowrap; }
+.cube-score-count { display: inline-block; }
+
+.screen-hotel-game { max-width: 760px; padding-left: 12px; padding-right: 12px; gap: 10px; }
+.hotel-plaques { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(3, minmax(150px, 1fr)); gap: 16px 12px; width: 100%; }
+.hotel-plaque-slot { min-width: 0; overflow: hidden; padding: 4px; }
+.number-cube.hotel-plaque { position: relative; width: 100%; height: 150px; border: 6px double #18828b; border-radius: 18px; background: linear-gradient(150deg, #fffdf4, #f1e6c8); color: #123f48; box-shadow: inset 0 0 0 3px #fffdf6, inset 0 -7px 14px #bdab7e30, 0 3px 4px #23444a26; font-family: Georgia, serif; font-size: 2.6rem; padding: 25px 10px 16px; }
+.hotel-plaque::before, .hotel-plaque::after { content: ''; position: absolute; top: 10px; width: 13px; height: 13px; border: 1px solid #7c807b; border-radius: 50%; background: linear-gradient(130deg, #d8dad4 42%, #606963 44%, #606963 54%, #e6e8df 56%); box-shadow: 0 1px 2px #0003; }
+.hotel-plaque::before { left: 10px; } .hotel-plaque::after { right: 10px; }
+.hotel-plaque.cube-word { font-size: clamp(.95rem, 4.3vw, 1.4rem); line-height: 1.3; overflow-wrap: normal; }
+.hotel-plaque.cube-clearing { animation-name: hotel-sign-fall; transform-origin: top right; }
+.hotel-plaque.cube-entering { animation: hotel-sign-arrive 450ms ease-out; }
+.hotel-plaque.cube-wrong { border-color: #bf755a; }
+.screen-hotel-game .cube-current-number { width: 76px; font-size: 2.2rem; }
+.screen-hotel-game .cube-game-score-with-number { grid-template-columns: minmax(0, 1fr) 76px minmax(0, 1.5fr); }
+@keyframes hotel-sign-fall { 35% { transform: rotate(-12deg); opacity: 1; } to { transform: translateY(180px) rotate(-25deg); opacity: 0; } }
+@keyframes hotel-sign-arrive { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .hotel-plaque.cube-clearing, .hotel-plaque.cube-entering { animation-duration: 1ms; } }
+
+.screen-hotel-game { gap: 8px; }
+.screen-hotel-game .cube-game-score { margin: 6px 0; }
+.screen-hotel-game .cube-game-instruction { margin: 2px 0; min-height: 28px; }
+.screen-hotel-game .hotel-plaques { grid-template-rows: repeat(3, minmax(130px, 1fr)); gap: 10px 8px; }
+.screen-hotel-game .hotel-plaque { height: 130px; }
+.screen-hotel-game .cube-game-feedback { margin: 6px 0; }
+
+.hotel-plaque.cube-show-word { animation-delay: 975ms; animation-duration: 400ms; }
+@media (prefers-reduced-motion: reduce) {
+  .hotel-plaque.cube-show-word { animation-delay: 975ms; animation-duration: 1ms; }
+}
+
+.screen-banknotes-game { max-width: 700px; gap: 10px; }
+.banknote-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; }
+.banknote-slot { min-width: 0; overflow: hidden; }
+.number-cube.banknote-choice { height: 130px; padding: 8px; border-radius: 12px; background: #fff; color: var(--color-text); font-size: 1.05rem; line-height: 1.3; }
+.banknote-choice img { width: 100%; height: 100%; object-fit: contain; }
+.banknote-featured { width: 100%; max-height: 220px; object-fit: contain; border-radius: 8px; }
+
+.banknote-view { display: block; position: relative; width: 100%; perspective: 900px; }
+.banknote-flipper { display: block; position: absolute; inset: 0; transform-style: preserve-3d; transition: transform 450ms ease-in-out; }
+.banknote-flipped { transform: rotateY(180deg); }
+.banknote-face { display: block; position: absolute; inset: 0; overflow: hidden; backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.banknote-back { transform: rotateY(180deg); }
+.banknote-face img { position: absolute; left: 0; width: 100%; max-width: none; object-fit: fill; pointer-events: none; }
+.number-cube.banknote-photo { display: block; height: auto; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: 0 3px 8px #213d3026; font-size: inherit; }
+.banknote-slot { overflow: visible; }
+.banknote-photo.cube-clearing { animation: banknote-fly 450ms ease-in 1000ms forwards; }
+.banknote-featured { max-width: 440px; margin: 0 auto; max-height: none; }
+.banknote-source { color: var(--color-muted); font-size: .7rem; margin-top: 4px; }
+@keyframes banknote-fly { to { transform: translateY(-65px) rotate(12deg) scale(.75); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .banknote-flipper { transition: none; }
+  .banknote-photo.cube-clearing { animation-duration: 1ms; }
+}
+
+.banknote-featured-leaving { animation: banknote-fly 450ms ease-in 1000ms forwards; }
+@media (prefers-reduced-motion: reduce) {
+  .banknote-featured-leaving { animation-duration: 1ms; }
+}
+
+.screen-phone-game { max-width: 460px; gap: 12px; }
+.phone-direction { color: var(--color-muted); margin: 0; }
+.phone-progress { display: flex; justify-content: space-between; font-size: .9rem; font-weight: 600; }
+.phone-display { display: flex; align-items: center; gap: 10px; background: #e3f1e9; border: 2px solid #9ebbae; border-radius: 16px; padding: 18px 10px; }
+.phone-handset { width: 32px; height: 32px; color: var(--color-primary-dark); flex-shrink: 0; }
+.phone-digits { display: flex; flex: 1; justify-content: center; font-size: clamp(1rem,5vw,1.4rem); font-weight: 700; font-variant-numeric: tabular-nums; }
+.phone-digits span { min-width: .65em; text-align: center; }
+.phone-digit-group { margin-left: 8px; }
+.phone-digit-current { border-bottom: 2px solid var(--color-primary); }
+.phone-keypad { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 10px; }
+.phone-key { min-height: 64px; border: 1px solid var(--color-border); background: var(--color-surface); border-radius: 16px; box-shadow: 0 3px 0 #e2d6c5; font-size: 1.8rem; font-weight: 700; touch-action: manipulation; }
+.phone-keypad-words .phone-key { font-size: 1.2rem; }
+.phone-key:disabled { opacity: .7; }
+.phone-key-zero { grid-column: 2; }
+.phone-key-correct { background: var(--color-primary-soft); border-color: var(--color-primary); }
+.phone-key-wrong { animation: cube-shake 250ms; background: #fff0ea; border-color: #bd5845; }
+.phone-feedback { min-height: 44px; margin: 0; font-weight: 600; }
+.phone-ringing .phone-handset { animation: phone-ring 180ms infinite alternate; }
+@keyframes phone-ring { from { transform: rotate(-15deg); } to { transform: rotate(15deg); } }
+@media (prefers-reduced-motion: reduce) { .phone-ringing .phone-handset { animation: none; } }
+
+.phone-digit-dialing { background: var(--color-primary); color: white; border-radius: 5px; box-shadow: 0 0 0 3px var(--color-primary); }
+
+.game-menu-item { display: flex; align-items: center; gap: 16px; }
+.game-menu-icon { display: grid; place-items: center; flex: 0 0 52px; height: 52px; font-size: 30px; background: #e0f3ef; border-radius: 16px; }

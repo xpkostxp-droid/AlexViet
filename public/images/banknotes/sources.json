@@ -1,0 +1,62 @@
+[
+  {
+    "value": 100,
+    "source": "https://www.banknotes.com/vn105a.htm",
+    "image": "https://www.banknotes.com/VN105A.JPG"
+  },
+  {
+    "value": 200,
+    "source": "https://www.banknotes.com/vn100.htm",
+    "image": "https://www.banknotes.com/VN100.JPG"
+  },
+  {
+    "value": 500,
+    "source": "https://www.banknotes.com/vn101a.htm",
+    "image": "https://www.banknotes.com/VN101A.JPG"
+  },
+  {
+    "value": 1000,
+    "source": "https://www.banknotes.com/vn106.htm",
+    "image": "https://www.banknotes.com/VN106.JPG"
+  },
+  {
+    "value": 2000,
+    "source": "https://www.banknotes.com/vn107.htm",
+    "image": "https://www.banknotes.com/VN107.JPG"
+  },
+  {
+    "value": 5000,
+    "source": "https://www.banknotes.com/vn108.htm",
+    "image": "https://www.banknotes.com/VN108.JPG"
+  },
+  {
+    "value": 10000,
+    "source": "https://www.banknotes.com/vn119.htm",
+    "image": "https://www.banknotes.com/vn119.jpg"
+  },
+  {
+    "value": 20000,
+    "source": "https://www.banknotes.com/vn120.htm",
+    "image": "https://www.banknotes.com/vn120.jpg"
+  },
+  {
+    "value": 50000,
+    "source": "https://www.banknotes.com/vn121.htm",
+    "image": "https://www.banknotes.com/vn121.jpg"
+  },
+  {
+    "value": 100000,
+    "source": "https://www.banknotes.com/vn122.htm",
+    "image": "https://www.banknotes.com/vn122.jpg"
+  },
+  {
+    "value": 200000,
+    "source": "https://www.banknotes.com/vn123.htm",
+    "image": "https://www.banknotes.com/vn123.jpg"
+  },
+  {
+    "value": 500000,
+    "source": "https://www.banknotes.com/vn124.htm",
+    "image": "https://www.banknotes.com/vn124.jpg"
+  }
+]

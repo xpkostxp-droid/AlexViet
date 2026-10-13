@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { PhoneGameScreen } from './components/PhoneGameScreen';
+import type { NumberGameRange } from './content/games/ranges';
 import { GamesListScreen } from './components/GamesListScreen';
 import { CubesGameScreen } from './components/CubesGameScreen';
 import { GameDirectionScreen, type NumberGameDirection } from './components/GameDirectionScreen';
@@ -18,8 +20,8 @@ import type { PhoneticsTestId } from './content/phonetics/tests';
 type Screen =
   | { name: 'home' }
   | { name: 'games-list' }
-  | { name: 'numbers-game-setup' }
-  | { name: 'numbers-game'; direction: NumberGameDirection }
+  | { name: 'numbers-game-setup'; range: NumberGameRange }
+  | { name: 'numbers-game'; direction: NumberGameDirection; range: NumberGameRange }
   | { name: 'pronunciation' }
   | { name: 'phonetics-test-list' }
   | { name: 'phonetics-test'; testId: PhoneticsTestId }
@@ -48,13 +50,14 @@ function App() {
       );
 
     case 'games-list':
-      return <GamesListScreen onBack={() => setScreen({ name: 'home' })} onOpenNumbers={() => setScreen({ name: 'numbers-game-setup' })} />;
+      return <GamesListScreen onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
 
     case 'numbers-game-setup':
-      return <GameDirectionScreen onBack={() => setScreen({ name: 'games-list' })} onStart={direction => setScreen({ name: 'numbers-game', direction })} />;
+      return <GameDirectionScreen range={screen.range} onBack={() => setScreen({ name: 'games-list' })} onStart={direction => setScreen({ name: 'numbers-game', direction, range: screen.range })} />;
 
     case 'numbers-game':
-      return <CubesGameScreen key={screen.direction} direction={screen.direction} onBack={() => setScreen({ name: 'numbers-game-setup' })} />;
+      if(screen.range === 'phone') return <PhoneGameScreen key={screen.direction} direction={screen.direction} onBack={() => setScreen({ name: 'numbers-game-setup', range: 'phone' })} />;
+      return <CubesGameScreen key={`${screen.range}-${screen.direction}`} range={screen.range} direction={screen.direction} onBack={() => setScreen({ name: 'numbers-game-setup', range: screen.range })} />;
 
     case 'pronunciation':
       return <PronunciationScreen onBack={() => setScreen({ name: 'home' })} />;
