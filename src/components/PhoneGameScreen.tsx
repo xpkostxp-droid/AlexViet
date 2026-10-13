@@ -55,23 +55,27 @@ export function PhoneGameScreen({ direction, onBack }: { direction: NumberGameDi
 
   function startRing() {
     setDialIndex(null); setRinging(true);
-    const ring=ringRef.current;
-    if(ring){ring.currentTime=0;void ring.play().catch(()=>setError('Номер набран! Нажми «Следующий номер».'));}
+
   }
   const dialing = dialIndex !== null;
+  const calling = dialing || ringing;
   useEffect(() => {
-    if (!dialing) return;
+    if (!calling) return;
     const tone = toneRef.current;
     if (!tone) return;
     tone.currentTime = 0;
-    void tone.play().catch(() => setError('Не удалось включить набор. Нажми «Позвонить».'));
-    const timer = window.setInterval(() => setDialIndex(Math.min(9, Math.floor(tone.currentTime / .095))), 16);
+    void tone.play().catch(() => { setError('Не удалось включить звук. Нажми «Следующий номер».'); startRing(); });
+    const timer = window.setInterval(() => {
+      if (tone.paused || tone.ended) return;
+      if (tone.currentTime >= .095 * phone.length) { setDialIndex(null); setRinging(true); }
+      else setDialIndex(Math.min(phone.length - 1, Math.floor(tone.currentTime / .095)));
+    }, 16);
     return () => { window.clearInterval(timer); tone.pause(); };
-  }, [dialing]);
+  }, [calling]);
 
   function finishNumber() {
     if(!ringing) return;
-    ringRef.current?.pause(); setRinging(false); setPosition(0); setHeard(false); setCorrect(null);
+    ringRef.current?.pause(); toneRef.current?.pause(); setDialIndex(null); setRinging(false); setPosition(0); setHeard(false); setCorrect(null); setWrong(null);
     setNumberIndex(index=>index+1); lockedRef.current=false;
   }
   function choose(value:number) {
@@ -101,7 +105,7 @@ export function PhoneGameScreen({ direction, onBack }: { direction: NumberGameDi
     <audio ref={voiceRef} src={source} preload="auto" onError={()=>setError('Запись не загрузилась. Попробуй повторить цифру.')} />
     <audio ref={ringRef} src={`${import.meta.env.BASE_URL}audio/games/phone/ring.wav`} preload="auto" onEnded={finishNumber} />
     <audio ref={wrongRef} src={`${import.meta.env.BASE_URL}audio/games/phone/wrong.wav`} preload="auto" />
-    <audio ref={toneRef} src={toneUrl} preload="auto" onEnded={startRing} />
+    <audio ref={toneRef} src={toneUrl} preload="auto" onEnded={finishNumber} />
     {!phone ? <div className="summary-box"><h2>Все 10 номеров набраны!</h2><p>Верных цифр: 100 · Ошибок: {mistakes}</p><button className="big-button" onClick={restart}>Ещё 10 номеров</button></div> : <>
       <div className="phone-progress"><span>Номер {numberIndex+1} из 10</span><span>Цифра {Math.min(position+1,10)} из 10</span></div>
       <div className={`phone-display${ringing?' phone-ringing':''}`}>
