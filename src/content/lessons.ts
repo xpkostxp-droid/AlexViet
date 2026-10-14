@@ -77,8 +77,13 @@ export const theoryMaterials: TheoryMaterial[] = lessons.map((lesson) => ({
   sections: theoryByLessonId[lesson.id] ?? null,
 }));
 
+export const cardLessons: Lesson[] = lessons.flatMap(lesson => lesson.id === 'lesson-9' ? [
+  { id: 'lesson-9-numbers', number: 9, title: 'Числа и большие числа' },
+  { id: 'lesson-9-age', number: 9, title: 'Возраст' },
+] : [lesson]);
+
 export function getLessonById(lessonId: string): Lesson | undefined {
-  return lessons.find((l) => l.id === lessonId);
+  return lessons.find((l) => l.id === lessonId) ?? cardLessons.find((l) => l.id === lessonId);
 }
 
 export function getTheoryForLesson(lessonId: string): TheoryMaterial['sections'] {

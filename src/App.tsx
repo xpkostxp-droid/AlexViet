@@ -1,3 +1,5 @@
+import { BackButton } from './components/BackButton';
+import { BigNumbersGameScreen } from './components/BigNumbersGameScreen';
 import { useState } from 'react';
 import { PhoneGameScreen } from './components/PhoneGameScreen';
 import type { NumberGameRange } from './content/games/ranges';
@@ -20,6 +22,8 @@ import type { PhoneticsTestId } from './content/phonetics/tests';
 type Screen =
   | { name: 'home' }
   | { name: 'games-list' }
+  | { name: 'big-numbers-setup' }
+  | { name: 'big-numbers-game'; reverse: boolean }
   | { name: 'numbers-game-setup'; range: NumberGameRange }
   | { name: 'numbers-game'; direction: NumberGameDirection; range: NumberGameRange }
   | { name: 'pronunciation' }
@@ -50,7 +54,12 @@ function App() {
       );
 
     case 'games-list':
-      return <GamesListScreen onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+      return <GamesListScreen onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+
+    case 'big-numbers-setup':
+      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'games-list' })} label="К играм" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Большие числа</h1><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: false })}>Цифры → Вьетнамский</button><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: true })}>Вьетнамский → Цифры</button></div>;
+    case 'big-numbers-game':
+      return <BigNumbersGameScreen key={String(screen.reverse)} reverse={screen.reverse} onBack={() => setScreen({ name: 'big-numbers-setup' })} />;
 
     case 'numbers-game-setup':
       return <GameDirectionScreen range={screen.range} onBack={() => setScreen({ name: 'games-list' })} onStart={direction => setScreen({ name: 'numbers-game', direction, range: screen.range })} />;

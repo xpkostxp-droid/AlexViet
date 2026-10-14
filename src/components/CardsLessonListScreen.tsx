@@ -1,4 +1,4 @@
-import { lessons } from '../content/lessons';
+import { cardLessons } from '../content/lessons';
 import { getCardsForLesson } from '../content/cards';
 import { loadProgress, summarizeLessonDirection, type LessonDirectionSummary } from '../domain/progress';
 import type { Direction } from '../types';
@@ -44,7 +44,7 @@ export function CardsLessonListScreen({ onBack, onOpenLesson }: Props) {
       <BackButton onClick={onBack} label="На главную" />
       <h1 className="screen-title">Карточки</h1>
       <ul className="lesson-list">
-        {lessons.map((lesson) => {
+        {cardLessons.map((lesson) => {
           const cardIds = getCardsForLesson(lesson.id).map((c) => c.id);
           const count = cardIds.length;
           const ruVi = summarizeLessonDirection(progress, cardIds, 'ru-vi');

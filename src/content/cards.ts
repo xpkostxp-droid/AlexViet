@@ -676,17 +676,45 @@ export const flashCards: FlashCard[] = [
   {"id": "l9-33", "lessonId": "lesson-9", "vi": "bốn triệu lẻ hai", "ru": "4 000 002 — четыре миллиона два; сокращённая форма из конспекта"},
   {"id": "l9-34", "lessonId": "lesson-9", "vi": "một trăm năm mươi mốt nghìn ba trăm ba mươi ba", "ru": "151 333 — сто пятьдесят одна тысяча триста тридцать три"},
   {"id": "l9-35", "lessonId": "lesson-9", "vi": "hai trăm lẻ chín nghìn ba trăm lẻ bốn", "ru": "209 304 — двести девять тысяч триста четыре"},
+  {"id": "l9-44", "lessonId": "lesson-9", "vi": "tuổi", "ru": "возраст в годах; лет"},
+  {"id": "l9-43", "lessonId": "lesson-9", "vi": "năm", "ru": "год"},
+  {"id": "l9-42", "lessonId": "lesson-9", "vi": "năm nay", "ru": "в этом году"},
+  {"id": "l9-45", "lessonId": "lesson-9", "vi": "sinh", "ru": "родиться; рождать"},
+  {"id": "l9-46", "lessonId": "lesson-9", "vi": "sinh năm", "ru": "родиться в … году"},
+  {"id": "l9-47", "lessonId": "lesson-9", "vi": "gốc", "ru": "происхождение; корни"},
+  {"id": "l9-48", "lessonId": "lesson-9", "vi": "gốc Việt", "ru": "вьетнамское происхождение; вьетнамские корни"},
+  {"id": "l9-49", "lessonId": "lesson-9", "vi": "gốc Nga", "ru": "русское происхождение; русские корни"},
+  {"id": "l9-50", "lessonId": "lesson-9", "vi": "Việt kiều", "ru": "вьетнамец, живущий за границей"},
+  {"id": "l9-51", "lessonId": "lesson-9", "vi": "Nga kiều", "ru": "русский, живущий за границей"},
   {"id": "l9-36", "lessonId": "lesson-9", "vi": "mấy", "ru": "сколько? — когда ожидается небольшое количество"},
   {"id": "l9-37", "lessonId": "lesson-9", "vi": "bao nhiêu", "ru": "сколько? — когда количество неизвестно или может быть большим"},
+  {"id": "l9-66", "lessonId": "lesson-9", "vi": "sang", "ru": "перейти; поехать или переехать в другую страну — по контексту"},
+  {"id": "l9-67", "lessonId": "lesson-9", "vi": "bây giờ", "ru": "сейчас; теперь"},
+  {"id": "l9-68", "lessonId": "lesson-9", "vi": "quốc gia", "ru": "страна; государство; национальный, государственный — в названиях"},
   {"id": "l9-38", "lessonId": "lesson-9", "vi": "Anh sinh năm bao nhiêu?", "ru": "В каком году ты родился?"},
   {"id": "l9-39", "lessonId": "lesson-9", "vi": "Anh sinh năm 91.", "ru": "Я родился в 1991 году."},
   {"id": "l9-40", "lessonId": "lesson-9", "vi": "Năm nay anh bao nhiêu tuổi?", "ru": "Сколько тебе лет в этом году?"},
   {"id": "l9-41", "lessonId": "lesson-9", "vi": "Năm nay anh 39 tuổi.", "ru": "В этом году мне 39 лет."},
-  {"id": "l9-42", "lessonId": "lesson-9", "vi": "năm nay", "ru": "в этом году"},
-  {"id": "l9-43", "lessonId": "lesson-9", "vi": "năm", "ru": "год"},
-  {"id": "l9-44", "lessonId": "lesson-9", "vi": "tuổi", "ru": "возраст в годах; лет"},
+  {"id": "l9-52", "lessonId": "lesson-9", "vi": "Năm nay cô ấy bao nhiêu tuổi?", "ru": "Сколько ей лет в этом году?"},
+  {"id": "l9-53", "lessonId": "lesson-9", "vi": "Năm nay cô ấy mười chín tuổi.", "ru": "В этом году ей девятнадцать лет."},
+  {"id": "l9-54", "lessonId": "lesson-9", "vi": "Anh sang Việt Nam năm anh bao nhiêu tuổi?", "ru": "Сколько тебе было лет, когда ты переехал во Вьетнам?"},
+  {"id": "l9-55", "lessonId": "lesson-9", "vi": "Tôi sang Việt Nam năm tôi hai mươi lăm tuổi.", "ru": "Я переехал во Вьетнам, когда мне было двадцать пять лет."},
+  {"id": "l9-56", "lessonId": "lesson-9", "vi": "Anh là người nước nào?", "ru": "Из какой ты страны?"},
+  {"id": "l9-57", "lessonId": "lesson-9", "vi": "Tôi là người Nga.", "ru": "Я из России."},
+  {"id": "l9-58", "lessonId": "lesson-9", "vi": "Anh có phải là người Nga gốc Việt không?", "ru": "Ты русский вьетнамского происхождения?"},
+  {"id": "l9-59", "lessonId": "lesson-9", "vi": "Vâng, tôi là người Nga gốc Việt.", "ru": "Да, я русский вьетнамского происхождения."},
+  {"id": "l9-60", "lessonId": "lesson-9", "vi": "Chị có phải là Việt kiều không?", "ru": "Вы вьетнамка, живущая за границей?"},
+  {"id": "l9-61", "lessonId": "lesson-9", "vi": "Vâng, tôi là người Canada gốc Việt.", "ru": "Да, я канадка вьетнамского происхождения."},
+  {"id": "l9-62", "lessonId": "lesson-9", "vi": "Anh có phải là sinh viên không?", "ru": "Ты студент?"},
+  {"id": "l9-63", "lessonId": "lesson-9", "vi": "Vâng, tôi là sinh viên.", "ru": "Да, я студент."},
+  {"id": "l9-64", "lessonId": "lesson-9", "vi": "Bây giờ chị đang học tiếng Việt ở đâu?", "ru": "Где вы сейчас изучаете вьетнамский язык?"},
+  {"id": "l9-65", "lessonId": "lesson-9", "vi": "Tôi đang học tiếng Việt ở Đại học Quốc gia Hà Nội.", "ru": "Я изучаю вьетнамский язык в Ханойском национальном университете."},
 ];
 
 export function getCardsForLesson(lessonId: string): FlashCard[] {
+  if (lessonId === 'lesson-9-numbers' || lessonId === 'lesson-9-age') {
+    return flashCards.filter(c => c.lessonId === 'lesson-9' &&
+      (lessonId === 'lesson-9-numbers' ? Number(c.id.slice(3)) <= 35 : Number(c.id.slice(3)) >= 36));
+  }
   return flashCards.filter((c) => c.lessonId === lessonId);
 }
