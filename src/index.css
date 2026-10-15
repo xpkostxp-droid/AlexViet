@@ -1262,3 +1262,14 @@ a:focus-visible {
   font-weight: 700;
 }
 .big-number-answer-digits .big-number-group-start { margin-left: 12px; }
+
+.game-section-heading { margin: 8px 0 0; font-size: 1.1rem; color: var(--color-primary-dark); }
+.game-dialogues-section { display: grid; gap: 14px; border-top: 1px solid var(--color-border); padding-top: 20px; margin-top: 10px; }
+
+.screen-dialogue-game { max-width: 760px; }
+.dialogue-translation { background: var(--color-primary-soft); border-radius: 18px; padding: 16px; margin: 0; font-weight: 600; }
+.dialogue-controls { display: flex; flex-wrap: wrap; gap: 10px; }
+.dialogue-controls button { flex: 1; min-width: 130px; }
+.dialogue-word-groups { display: grid; gap: 16px; }
+.dialogue-word-groups h2 { font-size: .85rem; color: var(--color-muted); margin: 0 0 8px; }
+.dialogue-answer { align-content: flex-start; }

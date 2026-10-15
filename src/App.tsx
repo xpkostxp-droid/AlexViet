@@ -1,3 +1,4 @@
+import { DialogueGameScreen } from './components/DialogueGameScreen';
 import { BackButton } from './components/BackButton';
 import { BigNumbersGameScreen } from './components/BigNumbersGameScreen';
 import { useState } from 'react';
@@ -22,6 +23,9 @@ import type { PhoneticsTestId } from './content/phonetics/tests';
 type Screen =
   | { name: 'home' }
   | { name: 'games-list' }
+  | { name: 'dialogue-games-list' }
+  | { name: 'dialogue-game-setup' }
+  | { name: 'dialogue-game'; direction: NumberGameDirection }
   | { name: 'big-numbers-setup' }
   | { name: 'big-numbers-game'; reverse: boolean }
   | { name: 'numbers-game-setup'; range: NumberGameRange }
@@ -54,7 +58,15 @@ function App() {
       );
 
     case 'games-list':
-      return <GamesListScreen onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+      return <GamesListScreen onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+
+    case 'dialogue-games-list':
+      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'games-list' })} label="К играм" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Диалоги</h1><button className="lesson-item game-menu-item" onClick={() => setScreen({ name: 'dialogue-game-setup' })}><span className="game-menu-icon" aria-hidden="true">💬</span><span className="lesson-number">Собери фразу</span><span>17 фраз · Знакомство и возраст</span></button></div>;
+
+    case 'dialogue-game-setup':
+      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'dialogue-games-list' })} label="К диалогам" /><span className="badge">Урок 9 · Диалоги</span><h1 className="screen-title">Собери фразу</h1><button className="big-button" onClick={() => setScreen({ name: 'dialogue-game', direction: 'vi-ru' })}>Вьетнамский → Русский</button><button className="big-button" onClick={() => setScreen({ name: 'dialogue-game', direction: 'ru-vi' })}>Русский → Вьетнамский</button></div>;
+    case 'dialogue-game':
+      return <DialogueGameScreen key={screen.direction} direction={screen.direction} onBack={() => setScreen({ name: 'dialogue-game-setup' })} />;
 
     case 'big-numbers-setup':
       return <div className="screen"><BackButton onClick={() => setScreen({ name: 'games-list' })} label="К играм" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Большие числа</h1><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: false })}>Цифры → Вьетнамский</button><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: true })}>Вьетнамский → Цифры</button></div>;
