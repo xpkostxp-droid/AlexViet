@@ -1,0 +1,2153 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-3",
+  "number": 3,
+  "title": "Знакомство (Giới thiệu)",
+  "cards": [
+    {
+      "id": "l3-01",
+      "lessonId": "lesson-3",
+      "vi": "tên",
+      "ru": "имя"
+    },
+    {
+      "id": "l3-02",
+      "lessonId": "lesson-3",
+      "vi": "gì",
+      "ru": "что; какой (в вопросах)"
+    },
+    {
+      "id": "l3-03",
+      "lessonId": "lesson-3",
+      "vi": "làm quen",
+      "ru": "знакомиться"
+    },
+    {
+      "id": "l3-04",
+      "lessonId": "lesson-3",
+      "vi": "Anh tên là gì?",
+      "ru": "Как тебя зовут? (обращение к мужчине)."
+    },
+    {
+      "id": "l3-05",
+      "lessonId": "lesson-3",
+      "vi": "Em tên là gì?",
+      "ru": "Как тебя зовут? (обращение к младшему собеседнику любого пола)."
+    },
+    {
+      "id": "l3-06",
+      "lessonId": "lesson-3",
+      "vi": "Bạn tên là gì?",
+      "ru": "Как тебя зовут? (нейтральное обращение)."
+    },
+    {
+      "id": "l3-07",
+      "lessonId": "lesson-3",
+      "vi": "Anh tên là Kostya.",
+      "ru": "Меня зовут Костя."
+    },
+    {
+      "id": "l3-08",
+      "lessonId": "lesson-3",
+      "vi": "Em tên là Alex.",
+      "ru": "Меня зовут Алекс (говорящий называет себя em)."
+    },
+    {
+      "id": "l3-09",
+      "lessonId": "lesson-3",
+      "vi": "Rất vui được làm quen.",
+      "ru": "Очень приятно познакомиться."
+    },
+    {
+      "id": "l3-10",
+      "lessonId": "lesson-3",
+      "vi": "Rất vui được gặp anh.",
+      "ru": "Очень рад встрече с тобой (обращение к мужчине)."
+    },
+    {
+      "id": "l3-11",
+      "lessonId": "lesson-3",
+      "vi": "Rất vui được gặp em.",
+      "ru": "Очень рад встрече с тобой (обращение к младшему)."
+    },
+    {
+      "id": "l3-12",
+      "lessonId": "lesson-3",
+      "vi": "khỏe",
+      "ru": "здоровый; хорошо себя чувствующий"
+    },
+    {
+      "id": "l3-13",
+      "lessonId": "lesson-3",
+      "vi": "không khỏe",
+      "ru": "нездоровый; плохо себя чувствующий"
+    },
+    {
+      "id": "l3-14",
+      "lessonId": "lesson-3",
+      "vi": "bình thường",
+      "ru": "нормально; обычный"
+    },
+    {
+      "id": "l3-15",
+      "lessonId": "lesson-3",
+      "vi": "cảm ơn",
+      "ru": "спасибо"
+    },
+    {
+      "id": "l3-16",
+      "lessonId": "lesson-3",
+      "vi": "Anh có khỏe không?",
+      "ru": "Как твоё здоровье? (обращение к мужчине)."
+    },
+    {
+      "id": "l3-17",
+      "lessonId": "lesson-3",
+      "vi": "Em có khỏe không?",
+      "ru": "Как твоё здоровье? (обращение к младшему)."
+    },
+    {
+      "id": "l3-18",
+      "lessonId": "lesson-3",
+      "vi": "Bạn khỏe không?",
+      "ru": "Как ты? / Как твоё здоровье?"
+    },
+    {
+      "id": "l3-19",
+      "lessonId": "lesson-3",
+      "vi": "Có, anh khỏe.",
+      "ru": "Да, я здоров."
+    },
+    {
+      "id": "l3-20",
+      "lessonId": "lesson-3",
+      "vi": "Không, anh không khỏe.",
+      "ru": "Нет, я нездоров (говорящий называет себя anh)."
+    },
+    {
+      "id": "l3-21",
+      "lessonId": "lesson-3",
+      "vi": "Không, em không khỏe.",
+      "ru": "Нет, я нездоров / нездорова (говорящий называет себя em)."
+    },
+    {
+      "id": "l3-22",
+      "lessonId": "lesson-3",
+      "vi": "Anh bình thường.",
+      "ru": "У меня всё нормально."
+    },
+    {
+      "id": "l3-23",
+      "lessonId": "lesson-3",
+      "vi": "Cảm ơn, anh khỏe.",
+      "ru": "Спасибо, я здоров."
+    },
+    {
+      "id": "l3-24",
+      "lessonId": "lesson-3",
+      "vi": "còn",
+      "ru": "а; что касается… (при переходе к другому человеку или предмету)",
+      "imageUrl": "./images/cards/con.png"
+    },
+    {
+      "id": "l3-25",
+      "lessonId": "lesson-3",
+      "vi": "thế nào",
+      "ru": "как?",
+      "imageUrl": "./images/cards/the-nao.png"
+    },
+    {
+      "id": "l3-28",
+      "lessonId": "lesson-3",
+      "vi": "Còn em?",
+      "ru": "А ты?"
+    },
+    {
+      "id": "l3-29",
+      "lessonId": "lesson-3",
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как?"
+    },
+    {
+      "id": "l3-26",
+      "lessonId": "lesson-3",
+      "vi": "cũng",
+      "ru": "тоже; также"
+    },
+    {
+      "id": "l3-27",
+      "lessonId": "lesson-3",
+      "vi": "vậy",
+      "ru": "так"
+    },
+    {
+      "id": "l3-30",
+      "lessonId": "lesson-3",
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров (говорящий называет себя anh)."
+    },
+    {
+      "id": "l3-31",
+      "lessonId": "lesson-3",
+      "vi": "Em cũng khỏe.",
+      "ru": "Я тоже здоров / здорова (говорящий называет себя em)."
+    },
+    {
+      "id": "l3-32",
+      "lessonId": "lesson-3",
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже; у меня так же."
+    },
+    {
+      "id": "l3-33",
+      "lessonId": "lesson-3",
+      "vi": "uống",
+      "ru": "пить"
+    },
+    {
+      "id": "l3-34",
+      "lessonId": "lesson-3",
+      "vi": "cà phê",
+      "ru": "кофе"
+    },
+    {
+      "id": "l3-35",
+      "lessonId": "lesson-3",
+      "vi": "uống cà phê",
+      "ru": "пить кофе"
+    },
+    {
+      "id": "l3-36",
+      "lessonId": "lesson-3",
+      "vi": "Em có uống cà phê không?",
+      "ru": "Ты пьёшь кофе?"
+    },
+    {
+      "id": "l3-37",
+      "lessonId": "lesson-3",
+      "vi": "đi",
+      "ru": "идти; ехать"
+    },
+    {
+      "id": "l3-38",
+      "lessonId": "lesson-3",
+      "vi": "đi Cam Ranh",
+      "ru": "ехать в Камрань"
+    },
+    {
+      "id": "l3-39",
+      "lessonId": "lesson-3",
+      "vi": "Em có đi Cam Ranh không?",
+      "ru": "Ты едешь в Камрань?"
+    },
+    {
+      "id": "l3-40",
+      "lessonId": "lesson-3",
+      "vi": "ăn",
+      "ru": "есть; кушать"
+    },
+    {
+      "id": "l3-41",
+      "lessonId": "lesson-3",
+      "vi": "phở bò",
+      "ru": "фо бо, суп с говядиной"
+    },
+    {
+      "id": "l3-42",
+      "lessonId": "lesson-3",
+      "vi": "ăn phở bò",
+      "ru": "есть фо бо"
+    },
+    {
+      "id": "l3-43",
+      "lessonId": "lesson-3",
+      "vi": "muốn",
+      "ru": "хотеть"
+    },
+    {
+      "id": "l3-44",
+      "lessonId": "lesson-3",
+      "vi": "muốn ăn",
+      "ru": "хотеть есть"
+    },
+    {
+      "id": "l3-45",
+      "lessonId": "lesson-3",
+      "vi": "Em có muốn ăn phở bò không?",
+      "ru": "Ты хочешь поесть фо бо?"
+    },
+    {
+      "id": "l3-46",
+      "lessonId": "lesson-3",
+      "vi": "thích",
+      "ru": "любить; нравиться"
+    },
+    {
+      "id": "l3-47",
+      "lessonId": "lesson-3",
+      "vi": "chơi",
+      "ru": "играть"
+    },
+    {
+      "id": "l3-48",
+      "lessonId": "lesson-3",
+      "vi": "chơi pickleball",
+      "ru": "играть в пиклбол"
+    },
+    {
+      "id": "l3-49",
+      "lessonId": "lesson-3",
+      "vi": "thích chơi pickleball",
+      "ru": "любить играть в пиклбол"
+    },
+    {
+      "id": "l3-50",
+      "lessonId": "lesson-3",
+      "vi": "xe máy",
+      "ru": "мотобайк; мотоцикл"
+    },
+    {
+      "id": "l3-51",
+      "lessonId": "lesson-3",
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравятся мотобайки."
+    },
+    {
+      "id": "l3-52",
+      "lessonId": "lesson-3",
+      "vi": "mua",
+      "ru": "покупать"
+    },
+    {
+      "id": "l3-53",
+      "lessonId": "lesson-3",
+      "vi": "mua xe máy",
+      "ru": "покупать мотобайк"
+    },
+    {
+      "id": "l3-54",
+      "lessonId": "lesson-3",
+      "vi": "muốn mua",
+      "ru": "хотеть купить"
+    },
+    {
+      "id": "l3-55",
+      "lessonId": "lesson-3",
+      "vi": "muốn mua xe máy",
+      "ru": "хотеть купить мотобайк"
+    },
+    {
+      "id": "l3-56",
+      "lessonId": "lesson-3",
+      "vi": "Em có mua xe máy không?",
+      "ru": "Ты покупаешь мотобайк?"
+    }
+  ],
+  "words": [
+    {
+      "id": "l3-01",
+      "lessonId": "lesson-3",
+      "vi": "tên",
+      "ru": "имя",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-01"
+      }
+    },
+    {
+      "id": "l3-02",
+      "lessonId": "lesson-3",
+      "vi": "gì",
+      "ru": "что; какой (в вопросах)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-02"
+      }
+    },
+    {
+      "id": "l3-03",
+      "lessonId": "lesson-3",
+      "vi": "làm quen",
+      "ru": "знакомиться",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-03"
+      }
+    },
+    {
+      "id": "l3-04",
+      "lessonId": "lesson-3",
+      "vi": "Anh tên là gì?",
+      "ru": "Как тебя зовут? (обращение к мужчине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-04"
+      }
+    },
+    {
+      "id": "l3-05",
+      "lessonId": "lesson-3",
+      "vi": "Em tên là gì?",
+      "ru": "Как тебя зовут? (обращение к младшему собеседнику любого пола).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-05"
+      }
+    },
+    {
+      "id": "l3-06",
+      "lessonId": "lesson-3",
+      "vi": "Bạn tên là gì?",
+      "ru": "Как тебя зовут? (нейтральное обращение).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-06"
+      }
+    },
+    {
+      "id": "l3-07",
+      "lessonId": "lesson-3",
+      "vi": "Anh tên là Kostya.",
+      "ru": "Меня зовут Костя.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-07"
+      }
+    },
+    {
+      "id": "l3-08",
+      "lessonId": "lesson-3",
+      "vi": "Em tên là Alex.",
+      "ru": "Меня зовут Алекс (говорящий называет себя em).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-08"
+      }
+    },
+    {
+      "id": "l3-09",
+      "lessonId": "lesson-3",
+      "vi": "Rất vui được làm quen.",
+      "ru": "Очень приятно познакомиться.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-09"
+      }
+    },
+    {
+      "id": "l3-10",
+      "lessonId": "lesson-3",
+      "vi": "Rất vui được gặp anh.",
+      "ru": "Очень рад встрече с тобой (обращение к мужчине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-10"
+      }
+    },
+    {
+      "id": "l3-11",
+      "lessonId": "lesson-3",
+      "vi": "Rất vui được gặp em.",
+      "ru": "Очень рад встрече с тобой (обращение к младшему).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-11"
+      }
+    },
+    {
+      "id": "l3-12",
+      "lessonId": "lesson-3",
+      "vi": "khỏe",
+      "ru": "здоровый; хорошо себя чувствующий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-12"
+      }
+    },
+    {
+      "id": "l3-13",
+      "lessonId": "lesson-3",
+      "vi": "không khỏe",
+      "ru": "нездоровый; плохо себя чувствующий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-13"
+      }
+    },
+    {
+      "id": "l3-14",
+      "lessonId": "lesson-3",
+      "vi": "bình thường",
+      "ru": "нормально; обычный",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-14"
+      }
+    },
+    {
+      "id": "l3-15",
+      "lessonId": "lesson-3",
+      "vi": "cảm ơn",
+      "ru": "спасибо",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-15"
+      }
+    },
+    {
+      "id": "l3-16",
+      "lessonId": "lesson-3",
+      "vi": "Anh có khỏe không?",
+      "ru": "Как твоё здоровье? (обращение к мужчине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-16"
+      }
+    },
+    {
+      "id": "l3-17",
+      "lessonId": "lesson-3",
+      "vi": "Em có khỏe không?",
+      "ru": "Как твоё здоровье? (обращение к младшему).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-17"
+      }
+    },
+    {
+      "id": "l3-18",
+      "lessonId": "lesson-3",
+      "vi": "Bạn khỏe không?",
+      "ru": "Как ты? / Как твоё здоровье?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-18"
+      }
+    },
+    {
+      "id": "l3-19",
+      "lessonId": "lesson-3",
+      "vi": "Có, anh khỏe.",
+      "ru": "Да, я здоров.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-19"
+      }
+    },
+    {
+      "id": "l3-20",
+      "lessonId": "lesson-3",
+      "vi": "Không, anh không khỏe.",
+      "ru": "Нет, я нездоров (говорящий называет себя anh).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-20"
+      }
+    },
+    {
+      "id": "l3-21",
+      "lessonId": "lesson-3",
+      "vi": "Không, em không khỏe.",
+      "ru": "Нет, я нездоров / нездорова (говорящий называет себя em).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-21"
+      }
+    },
+    {
+      "id": "l3-22",
+      "lessonId": "lesson-3",
+      "vi": "Anh bình thường.",
+      "ru": "У меня всё нормально.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-22"
+      }
+    },
+    {
+      "id": "l3-23",
+      "lessonId": "lesson-3",
+      "vi": "Cảm ơn, anh khỏe.",
+      "ru": "Спасибо, я здоров.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-23"
+      }
+    },
+    {
+      "id": "l3-24",
+      "lessonId": "lesson-3",
+      "vi": "còn",
+      "ru": "а; что касается… (при переходе к другому человеку или предмету)",
+      "imageUrl": "./images/cards/con.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-24"
+      }
+    },
+    {
+      "id": "l3-25",
+      "lessonId": "lesson-3",
+      "vi": "thế nào",
+      "ru": "как?",
+      "imageUrl": "./images/cards/the-nao.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-25"
+      }
+    },
+    {
+      "id": "l3-28",
+      "lessonId": "lesson-3",
+      "vi": "Còn em?",
+      "ru": "А ты?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-28"
+      }
+    },
+    {
+      "id": "l3-29",
+      "lessonId": "lesson-3",
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-29"
+      }
+    },
+    {
+      "id": "l3-26",
+      "lessonId": "lesson-3",
+      "vi": "cũng",
+      "ru": "тоже; также",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-26"
+      }
+    },
+    {
+      "id": "l3-27",
+      "lessonId": "lesson-3",
+      "vi": "vậy",
+      "ru": "так",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-27"
+      }
+    },
+    {
+      "id": "l3-30",
+      "lessonId": "lesson-3",
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров (говорящий называет себя anh).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-30"
+      }
+    },
+    {
+      "id": "l3-31",
+      "lessonId": "lesson-3",
+      "vi": "Em cũng khỏe.",
+      "ru": "Я тоже здоров / здорова (говорящий называет себя em).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-31"
+      }
+    },
+    {
+      "id": "l3-32",
+      "lessonId": "lesson-3",
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже; у меня так же.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-32"
+      }
+    },
+    {
+      "id": "l3-33",
+      "lessonId": "lesson-3",
+      "vi": "uống",
+      "ru": "пить",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-33"
+      }
+    },
+    {
+      "id": "l3-34",
+      "lessonId": "lesson-3",
+      "vi": "cà phê",
+      "ru": "кофе",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-34"
+      }
+    },
+    {
+      "id": "l3-35",
+      "lessonId": "lesson-3",
+      "vi": "uống cà phê",
+      "ru": "пить кофе",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-35"
+      }
+    },
+    {
+      "id": "l3-36",
+      "lessonId": "lesson-3",
+      "vi": "Em có uống cà phê không?",
+      "ru": "Ты пьёшь кофе?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-36"
+      }
+    },
+    {
+      "id": "l3-37",
+      "lessonId": "lesson-3",
+      "vi": "đi",
+      "ru": "идти; ехать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-37"
+      }
+    },
+    {
+      "id": "l3-38",
+      "lessonId": "lesson-3",
+      "vi": "đi Cam Ranh",
+      "ru": "ехать в Камрань",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-38"
+      }
+    },
+    {
+      "id": "l3-39",
+      "lessonId": "lesson-3",
+      "vi": "Em có đi Cam Ranh không?",
+      "ru": "Ты едешь в Камрань?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-39"
+      }
+    },
+    {
+      "id": "l3-40",
+      "lessonId": "lesson-3",
+      "vi": "ăn",
+      "ru": "есть; кушать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-40"
+      }
+    },
+    {
+      "id": "l3-41",
+      "lessonId": "lesson-3",
+      "vi": "phở bò",
+      "ru": "фо бо, суп с говядиной",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-41"
+      }
+    },
+    {
+      "id": "l3-42",
+      "lessonId": "lesson-3",
+      "vi": "ăn phở bò",
+      "ru": "есть фо бо",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-42"
+      }
+    },
+    {
+      "id": "l3-43",
+      "lessonId": "lesson-3",
+      "vi": "muốn",
+      "ru": "хотеть",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-43"
+      }
+    },
+    {
+      "id": "l3-44",
+      "lessonId": "lesson-3",
+      "vi": "muốn ăn",
+      "ru": "хотеть есть",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-44"
+      }
+    },
+    {
+      "id": "l3-45",
+      "lessonId": "lesson-3",
+      "vi": "Em có muốn ăn phở bò không?",
+      "ru": "Ты хочешь поесть фо бо?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-45"
+      }
+    },
+    {
+      "id": "l3-46",
+      "lessonId": "lesson-3",
+      "vi": "thích",
+      "ru": "любить; нравиться",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-46"
+      }
+    },
+    {
+      "id": "l3-47",
+      "lessonId": "lesson-3",
+      "vi": "chơi",
+      "ru": "играть",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-47"
+      }
+    },
+    {
+      "id": "l3-48",
+      "lessonId": "lesson-3",
+      "vi": "chơi pickleball",
+      "ru": "играть в пиклбол",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-48"
+      }
+    },
+    {
+      "id": "l3-49",
+      "lessonId": "lesson-3",
+      "vi": "thích chơi pickleball",
+      "ru": "любить играть в пиклбол",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-49"
+      }
+    },
+    {
+      "id": "l3-50",
+      "lessonId": "lesson-3",
+      "vi": "xe máy",
+      "ru": "мотобайк; мотоцикл",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-50"
+      }
+    },
+    {
+      "id": "l3-51",
+      "lessonId": "lesson-3",
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравятся мотобайки.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-51"
+      }
+    },
+    {
+      "id": "l3-52",
+      "lessonId": "lesson-3",
+      "vi": "mua",
+      "ru": "покупать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-52"
+      }
+    },
+    {
+      "id": "l3-53",
+      "lessonId": "lesson-3",
+      "vi": "mua xe máy",
+      "ru": "покупать мотобайк",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-53"
+      }
+    },
+    {
+      "id": "l3-54",
+      "lessonId": "lesson-3",
+      "vi": "muốn mua",
+      "ru": "хотеть купить",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-54"
+      }
+    },
+    {
+      "id": "l3-55",
+      "lessonId": "lesson-3",
+      "vi": "muốn mua xe máy",
+      "ru": "хотеть купить мотобайк",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-55"
+      }
+    },
+    {
+      "id": "l3-56",
+      "lessonId": "lesson-3",
+      "vi": "Em có mua xe máy không?",
+      "ru": "Ты покупаешь мотобайк?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-56"
+      }
+    },
+    {
+      "vi": "uống",
+      "pronunciation": "уонг",
+      "ru": "пить",
+      "example": "uống cà phê",
+      "exampleRu": "пить кофе",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/0"
+      }
+    },
+    {
+      "vi": "đi",
+      "pronunciation": "ди",
+      "ru": "ехать, идти",
+      "example": "đi Cam Ranh",
+      "exampleRu": "ехать в Камрань",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/1"
+      }
+    },
+    {
+      "vi": "ăn",
+      "pronunciation": "ан",
+      "ru": "есть, кушать",
+      "example": "ăn phở bò",
+      "exampleRu": "кушать фо бо",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/2"
+      }
+    },
+    {
+      "vi": "thích",
+      "pronunciation": "тик",
+      "ru": "нравиться",
+      "example": "thích chơi pickleball",
+      "exampleRu": "нравится играть в пиклбол",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/3"
+      }
+    },
+    {
+      "vi": "muốn",
+      "pronunciation": "муон",
+      "ru": "хотеть",
+      "example": "muốn mua xe máy",
+      "exampleRu": "хотеть купить мотобайк",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/4"
+      }
+    },
+    {
+      "vi": "mua",
+      "pronunciation": "муа",
+      "ru": "покупать",
+      "example": "mua xe máy",
+      "exampleRu": "купить мотобайк",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/5"
+      }
+    },
+    {
+      "vi": "Anh tên là gì?",
+      "ru": "Как тебя зовут? (обращение к мужчине)",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "Em tên là gì?",
+      "ru": "Как тебя зовут? (к младшему собеседнику)",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/1"
+      }
+    },
+    {
+      "vi": "Anh tên là Kostya.",
+      "ru": "Меня зовут Костя.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "Rất vui được làm quen.",
+      "ru": "Очень приятно познакомиться.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/3"
+      }
+    },
+    {
+      "vi": "Anh có khỏe không?",
+      "ru": "Ты здоров? / Как самочувствие?",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/4"
+      }
+    },
+    {
+      "vi": "Có, anh khỏe.",
+      "ru": "Да, я здоров.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/5"
+      }
+    },
+    {
+      "vi": "Không, anh không khỏe.",
+      "ru": "Нет, я нездоров.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/6"
+      }
+    },
+    {
+      "vi": "Anh bình thường.",
+      "ru": "Я нормально / всё нормально.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/7"
+      }
+    },
+    {
+      "vi": "Còn em?",
+      "ru": "А ты? / А как насчёт тебя?",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как? / Как у тебя дела?",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "cũng",
+      "ru": "тоже / также",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/2"
+      }
+    },
+    {
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже / У меня так же.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "Bạn tên là gì?",
+      "ru": "Как тебя зовут? (нейтрально, но в живой речи anh/em звучит естественнее).",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/4/1"
+      }
+    },
+    {
+      "vi": "Bạn khỏe không?",
+      "ru": "Как ты? / Ты здоров? (нейтральная форма).",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/4/2"
+      }
+    },
+    {
+      "vi": "Rất vui được gặp anh/em.",
+      "ru": "Очень рад познакомиться / встретиться с тобой.",
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/4/3"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "kind": "pattern",
+      "heading": "Конструкция вопроса «Có ... không?» (есть / делать ...?)",
+      "formula": "Em/Anh + có + [глагол / существительное] + không?",
+      "formulaNote": "кто + есть + что делать / что + частица вопроса → общий вопрос «да/нет»",
+      "examples": [
+        {
+          "vi": "Em có uống cà phê không?",
+          "ru": "Ты пьёшь / хочешь выпить кофе?"
+        },
+        {
+          "vi": "Em có đi Cam Ranh không?",
+          "ru": "Ты едешь в Камрань?"
+        },
+        {
+          "vi": "Em có muốn ăn phở bò không?",
+          "ru": "Ты хочешь поесть фо бо?"
+        },
+        {
+          "vi": "Em có mua xe máy không?",
+          "ru": "Ты покупаешь / хочешь купить мотобайк?"
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/1"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "vi": "Anh tên là gì?",
+      "ru": "Как тебя зовут? (обращение к мужчине).",
+      "tokens": [
+        "Anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-04"
+      }
+    },
+    {
+      "vi": "Em tên là gì?",
+      "ru": "Как тебя зовут? (обращение к младшему собеседнику любого пола).",
+      "tokens": [
+        "Em",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-05"
+      }
+    },
+    {
+      "vi": "Bạn tên là gì?",
+      "ru": "Как тебя зовут? (нейтральное обращение).",
+      "tokens": [
+        "Bạn",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-06"
+      }
+    },
+    {
+      "vi": "Anh tên là Kostya.",
+      "ru": "Меня зовут Костя.",
+      "tokens": [
+        "Anh",
+        "tên",
+        "là",
+        "Kostya"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-07"
+      }
+    },
+    {
+      "vi": "Em tên là Alex.",
+      "ru": "Меня зовут Алекс (говорящий называет себя em).",
+      "tokens": [
+        "Em",
+        "tên",
+        "là",
+        "Alex"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-08"
+      }
+    },
+    {
+      "vi": "Rất vui được làm quen.",
+      "ru": "Очень приятно познакомиться.",
+      "tokens": [
+        "Rất",
+        "vui",
+        "được",
+        "làm",
+        "quen"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-09"
+      }
+    },
+    {
+      "vi": "Rất vui được gặp anh.",
+      "ru": "Очень рад встрече с тобой (обращение к мужчине).",
+      "tokens": [
+        "Rất",
+        "vui",
+        "được",
+        "gặp",
+        "anh"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-10"
+      }
+    },
+    {
+      "vi": "Rất vui được gặp em.",
+      "ru": "Очень рад встрече с тобой (обращение к младшему).",
+      "tokens": [
+        "Rất",
+        "vui",
+        "được",
+        "gặp",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-11"
+      }
+    },
+    {
+      "vi": "Anh có khỏe không?",
+      "ru": "Как твоё здоровье? (обращение к мужчине).",
+      "tokens": [
+        "Anh",
+        "có",
+        "khỏe",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-16"
+      }
+    },
+    {
+      "vi": "Em có khỏe không?",
+      "ru": "Как твоё здоровье? (обращение к младшему).",
+      "tokens": [
+        "Em",
+        "có",
+        "khỏe",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-17"
+      }
+    },
+    {
+      "vi": "Bạn khỏe không?",
+      "ru": "Как ты? / Как твоё здоровье?",
+      "tokens": [
+        "Bạn",
+        "khỏe",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-18"
+      }
+    },
+    {
+      "vi": "Có, anh khỏe.",
+      "ru": "Да, я здоров.",
+      "tokens": [
+        "Có",
+        "anh",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-19"
+      }
+    },
+    {
+      "vi": "Không, anh không khỏe.",
+      "ru": "Нет, я нездоров (говорящий называет себя anh).",
+      "tokens": [
+        "Không",
+        "anh",
+        "không",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-20"
+      }
+    },
+    {
+      "vi": "Không, em không khỏe.",
+      "ru": "Нет, я нездоров / нездорова (говорящий называет себя em).",
+      "tokens": [
+        "Không",
+        "em",
+        "không",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-21"
+      }
+    },
+    {
+      "vi": "Anh bình thường.",
+      "ru": "У меня всё нормально.",
+      "tokens": [
+        "Anh",
+        "bình",
+        "thường"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-22"
+      }
+    },
+    {
+      "vi": "Cảm ơn, anh khỏe.",
+      "ru": "Спасибо, я здоров.",
+      "tokens": [
+        "Cảm",
+        "ơn",
+        "anh",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-23"
+      }
+    },
+    {
+      "vi": "Còn em?",
+      "ru": "А ты?",
+      "tokens": [
+        "Còn",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-28"
+      }
+    },
+    {
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как?",
+      "tokens": [
+        "Còn",
+        "em",
+        "thế",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-29"
+      }
+    },
+    {
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров (говорящий называет себя anh).",
+      "tokens": [
+        "Anh",
+        "cũng",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-30"
+      }
+    },
+    {
+      "vi": "Em cũng khỏe.",
+      "ru": "Я тоже здоров / здорова (говорящий называет себя em).",
+      "tokens": [
+        "Em",
+        "cũng",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-31"
+      }
+    },
+    {
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже; у меня так же.",
+      "tokens": [
+        "Em",
+        "cũng",
+        "vậy"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-32"
+      }
+    },
+    {
+      "vi": "Em có uống cà phê không?",
+      "ru": "Ты пьёшь кофе?",
+      "tokens": [
+        "Em",
+        "có",
+        "uống",
+        "cà",
+        "phê",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-36"
+      }
+    },
+    {
+      "vi": "Em có đi Cam Ranh không?",
+      "ru": "Ты едешь в Камрань?",
+      "tokens": [
+        "Em",
+        "có",
+        "đi",
+        "Cam",
+        "Ranh",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-39"
+      }
+    },
+    {
+      "vi": "Em có muốn ăn phở bò không?",
+      "ru": "Ты хочешь поесть фо бо?",
+      "tokens": [
+        "Em",
+        "có",
+        "muốn",
+        "ăn",
+        "phở",
+        "bò",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-45"
+      }
+    },
+    {
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравятся мотобайки.",
+      "tokens": [
+        "Anh",
+        "thích",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-51"
+      }
+    },
+    {
+      "vi": "Em có mua xe máy không?",
+      "ru": "Ты покупаешь мотобайк?",
+      "tokens": [
+        "Em",
+        "có",
+        "mua",
+        "xe",
+        "máy",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l3-56"
+      }
+    },
+    {
+      "vi": "uống cà phê",
+      "ru": "пить кофе",
+      "tokens": [
+        "uống",
+        "cà",
+        "phê"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/0/example"
+      }
+    },
+    {
+      "vi": "đi Cam Ranh",
+      "ru": "ехать в Камрань",
+      "tokens": [
+        "đi",
+        "Cam",
+        "Ranh"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/1/example"
+      }
+    },
+    {
+      "vi": "ăn phở bò",
+      "ru": "кушать фо бо",
+      "tokens": [
+        "ăn",
+        "phở",
+        "bò"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/2/example"
+      }
+    },
+    {
+      "vi": "thích chơi pickleball",
+      "ru": "нравится играть в пиклбол",
+      "tokens": [
+        "thích",
+        "chơi",
+        "pickleball"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/3/example"
+      }
+    },
+    {
+      "vi": "muốn mua xe máy",
+      "ru": "хотеть купить мотобайк",
+      "tokens": [
+        "muốn",
+        "mua",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/4/example"
+      }
+    },
+    {
+      "vi": "mua xe máy",
+      "ru": "купить мотобайк",
+      "tokens": [
+        "mua",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/0/items/5/example"
+      }
+    },
+    {
+      "vi": "Em có uống cà phê không?",
+      "ru": "Ты пьёшь / хочешь выпить кофе?",
+      "tokens": [
+        "Em",
+        "có",
+        "uống",
+        "cà",
+        "phê",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/1/examples/0"
+      }
+    },
+    {
+      "vi": "Em có đi Cam Ranh không?",
+      "ru": "Ты едешь в Камрань?",
+      "tokens": [
+        "Em",
+        "có",
+        "đi",
+        "Cam",
+        "Ranh",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/1/examples/1"
+      }
+    },
+    {
+      "vi": "Em có muốn ăn phở bò không?",
+      "ru": "Ты хочешь поесть фо бо?",
+      "tokens": [
+        "Em",
+        "có",
+        "muốn",
+        "ăn",
+        "phở",
+        "bò",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/1/examples/2"
+      }
+    },
+    {
+      "vi": "Em có mua xe máy không?",
+      "ru": "Ты покупаешь / хочешь купить мотобайк?",
+      "tokens": [
+        "Em",
+        "có",
+        "mua",
+        "xe",
+        "máy",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/1/examples/3"
+      }
+    },
+    {
+      "vi": "Anh tên là gì?",
+      "ru": "Как тебя зовут? (обращение к мужчине)",
+      "tokens": [
+        "Anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "Em tên là gì?",
+      "ru": "Как тебя зовут? (к младшему собеседнику)",
+      "tokens": [
+        "Em",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/1"
+      }
+    },
+    {
+      "vi": "Anh tên là Kostya.",
+      "ru": "Меня зовут Костя.",
+      "tokens": [
+        "Anh",
+        "tên",
+        "là",
+        "Kostya"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "Rất vui được làm quen.",
+      "ru": "Очень приятно познакомиться.",
+      "tokens": [
+        "Rất",
+        "vui",
+        "được",
+        "làm",
+        "quen"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/3"
+      }
+    },
+    {
+      "vi": "Anh có khỏe không?",
+      "ru": "Ты здоров? / Как самочувствие?",
+      "tokens": [
+        "Anh",
+        "có",
+        "khỏe",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/4"
+      }
+    },
+    {
+      "vi": "Có, anh khỏe.",
+      "ru": "Да, я здоров.",
+      "tokens": [
+        "Có",
+        "anh",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/5"
+      }
+    },
+    {
+      "vi": "Không, anh không khỏe.",
+      "ru": "Нет, я нездоров.",
+      "tokens": [
+        "Không",
+        "anh",
+        "không",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/6"
+      }
+    },
+    {
+      "vi": "Anh bình thường.",
+      "ru": "Я нормально / всё нормально.",
+      "tokens": [
+        "Anh",
+        "bình",
+        "thường"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/2/items/7"
+      }
+    },
+    {
+      "vi": "Còn em?",
+      "ru": "А ты? / А как насчёт тебя?",
+      "tokens": [
+        "Còn",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как? / Как у тебя дела?",
+      "tokens": [
+        "Còn",
+        "em",
+        "thế",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "tokens": [
+        "Anh",
+        "cũng",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже / У меня так же.",
+      "tokens": [
+        "Em",
+        "cũng",
+        "vậy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "Bạn tên là gì?",
+      "ru": "Как тебя зовут? (нейтрально, но в живой речи anh/em звучит естественнее).",
+      "tokens": [
+        "Bạn",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/4/1"
+      }
+    },
+    {
+      "vi": "Bạn khỏe không?",
+      "ru": "Как ты? / Ты здоров? (нейтральная форма).",
+      "tokens": [
+        "Bạn",
+        "khỏe",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/4/2"
+      }
+    },
+    {
+      "vi": "Rất vui được gặp anh/em.",
+      "ru": "Очень рад познакомиться / встретиться с тобой.",
+      "tokens": [
+        "Rất",
+        "vui",
+        "được",
+        "gặp",
+        "anh",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/4/3"
+      }
+    },
+    {
+      "speaker": "A",
+      "vi": "Anh tên là gì?",
+      "ru": "Как тебя зовут?",
+      "tokens": [
+        "Anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/5/lines/0"
+      }
+    },
+    {
+      "speaker": "B",
+      "vi": "Anh tên là Kostya. Còn em?",
+      "ru": "Меня зовут Костя. А тебя?",
+      "tokens": [
+        "Anh",
+        "tên",
+        "là",
+        "Kostya",
+        "Còn",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/5/lines/1"
+      }
+    },
+    {
+      "speaker": "A",
+      "vi": "Em tên là Alex. Anh có khỏe không?",
+      "ru": "Меня зовут Алекс. Ты здоров?",
+      "tokens": [
+        "Em",
+        "tên",
+        "là",
+        "Alex",
+        "Anh",
+        "có",
+        "khỏe",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/5/lines/2"
+      }
+    },
+    {
+      "speaker": "B",
+      "vi": "Có, anh khỏe. Cảm ơn. Còn em?",
+      "ru": "Да, я здоров. Спасибо. А ты?",
+      "tokens": [
+        "Có",
+        "anh",
+        "khỏe",
+        "Cảm",
+        "ơn",
+        "Còn",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/5/lines/3"
+      }
+    },
+    {
+      "speaker": "A",
+      "vi": "Em cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "tokens": [
+        "Em",
+        "cũng",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/5/lines/4"
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "kind": "dialogue",
+      "heading": "Мини-диалог",
+      "lines": [
+        {
+          "speaker": "A",
+          "vi": "Anh tên là gì?",
+          "ru": "Как тебя зовут?"
+        },
+        {
+          "speaker": "B",
+          "vi": "Anh tên là Kostya. Còn em?",
+          "ru": "Меня зовут Костя. А тебя?"
+        },
+        {
+          "speaker": "A",
+          "vi": "Em tên là Alex. Anh có khỏe không?",
+          "ru": "Меня зовут Алекс. Ты здоров?"
+        },
+        {
+          "speaker": "B",
+          "vi": "Có, anh khỏe. Cảm ơn. Còn em?",
+          "ru": "Да, я здоров. Спасибо. А ты?"
+        },
+        {
+          "speaker": "A",
+          "vi": "Em cũng khỏe.",
+          "ru": "Я тоже здоров."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson3.ts",
+        "pointer": "/sections/5"
+      }
+    }
+  ],
+  "theory": [
+    {
+      "kind": "vocab",
+      "heading": "Глаголы (повторение из урока 1)",
+      "items": [
+        {
+          "vi": "uống",
+          "pronunciation": "уонг",
+          "ru": "пить",
+          "example": "uống cà phê",
+          "exampleRu": "пить кофе"
+        },
+        {
+          "vi": "đi",
+          "pronunciation": "ди",
+          "ru": "ехать, идти",
+          "example": "đi Cam Ranh",
+          "exampleRu": "ехать в Камрань"
+        },
+        {
+          "vi": "ăn",
+          "pronunciation": "ан",
+          "ru": "есть, кушать",
+          "example": "ăn phở bò",
+          "exampleRu": "кушать фо бо"
+        },
+        {
+          "vi": "thích",
+          "pronunciation": "тик",
+          "ru": "нравиться",
+          "example": "thích chơi pickleball",
+          "exampleRu": "нравится играть в пиклбол"
+        },
+        {
+          "vi": "muốn",
+          "pronunciation": "муон",
+          "ru": "хотеть",
+          "example": "muốn mua xe máy",
+          "exampleRu": "хотеть купить мотобайк"
+        },
+        {
+          "vi": "mua",
+          "pronunciation": "муа",
+          "ru": "покупать",
+          "example": "mua xe máy",
+          "exampleRu": "купить мотобайк"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "Конструкция вопроса «Có ... không?» (есть / делать ...?)",
+      "formula": "Em/Anh + có + [глагол / существительное] + không?",
+      "formulaNote": "кто + есть + что делать / что + частица вопроса → общий вопрос «да/нет»",
+      "examples": [
+        {
+          "vi": "Em có uống cà phê không?",
+          "ru": "Ты пьёшь / хочешь выпить кофе?"
+        },
+        {
+          "vi": "Em có đi Cam Ranh không?",
+          "ru": "Ты едешь в Камрань?"
+        },
+        {
+          "vi": "Em có muốn ăn phở bò không?",
+          "ru": "Ты хочешь поесть фо бо?"
+        },
+        {
+          "vi": "Em có mua xe máy không?",
+          "ru": "Ты покупаешь / хочешь купить мотобайк?"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Знакомство (Giới thiệu, làm quen)",
+      "items": [
+        {
+          "vi": "Anh tên là gì?",
+          "ru": "Как тебя зовут? (обращение к мужчине)"
+        },
+        {
+          "vi": "Em tên là gì?",
+          "ru": "Как тебя зовут? (к младшему собеседнику)"
+        },
+        {
+          "vi": "Anh tên là Kostya.",
+          "ru": "Меня зовут Костя."
+        },
+        {
+          "vi": "Rất vui được làm quen.",
+          "ru": "Очень приятно познакомиться."
+        },
+        {
+          "vi": "Anh có khỏe không?",
+          "ru": "Ты здоров? / Как самочувствие?"
+        },
+        {
+          "vi": "Có, anh khỏe.",
+          "ru": "Да, я здоров."
+        },
+        {
+          "vi": "Không, anh không khỏe.",
+          "ru": "Нет, я нездоров."
+        },
+        {
+          "vi": "Anh bình thường.",
+          "ru": "Я нормально / всё нормально."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "«А ты?» и «тоже»",
+      "items": [
+        {
+          "vi": "Còn em?",
+          "ru": "А ты? / А как насчёт тебя?"
+        },
+        {
+          "vi": "Còn em thế nào?",
+          "ru": "А ты как? / Как у тебя дела?"
+        },
+        {
+          "vi": "cũng",
+          "ru": "тоже / также"
+        },
+        {
+          "vi": "Anh cũng khỏe.",
+          "ru": "Я тоже здоров."
+        },
+        {
+          "vi": "Em cũng vậy.",
+          "ru": "Я тоже / У меня так же."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "Важное дополнение",
+      "paragraphs": [
+        "Во вьетнамском местоимение часто одновременно является обращением. Поэтому в реальном разговоре естественнее сказать «Anh tên là gì?» или «Em tên là gì?», а не искать одно универсальное «ты».",
+        "Bạn tên là gì? — Как тебя зовут? (нейтрально, но в живой речи anh/em звучит естественнее).",
+        "Bạn khỏe không? — Как ты? / Ты здоров? (нейтральная форма).",
+        "Rất vui được gặp anh/em. — Очень рад познакомиться / встретиться с тобой."
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Мини-диалог",
+      "lines": [
+        {
+          "speaker": "A",
+          "vi": "Anh tên là gì?",
+          "ru": "Как тебя зовут?"
+        },
+        {
+          "speaker": "B",
+          "vi": "Anh tên là Kostya. Còn em?",
+          "ru": "Меня зовут Костя. А тебя?"
+        },
+        {
+          "speaker": "A",
+          "vi": "Em tên là Alex. Anh có khỏe không?",
+          "ru": "Меня зовут Алекс. Ты здоров?"
+        },
+        {
+          "speaker": "B",
+          "vi": "Có, anh khỏe. Cảm ơn. Còn em?",
+          "ru": "Да, я здоров. Спасибо. А ты?"
+        },
+        {
+          "speaker": "A",
+          "vi": "Em cũng khỏe.",
+          "ru": "Я тоже здоров."
+        }
+      ]
+    }
+  ]
+}

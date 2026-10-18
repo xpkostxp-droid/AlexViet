@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "lessons": [
+    {
+      "lessonId": "lesson-1",
+      "number": 1,
+      "title": "Алфавит и звуки",
+      "file": "lesson-01.json",
+      "sha256": "835f2ed09811686740ade3ad0217397a80cfedf77ba87658899ebf22b541c12e",
+      "counts": {
+        "cards": 0,
+        "words": 88,
+        "grammar": 0,
+        "examples": 20,
+        "dialogues": 0
+      }
+    },
+    {
+      "lessonId": "lesson-2",
+      "number": 2,
+      "title": "Согласные, тона, обращения и местоимения",
+      "file": "lesson-02.json",
+      "sha256": "862991d9c00077d133aa66627679a6290f9180f619424833cf1485f97541118b",
+      "counts": {
+        "cards": 33,
+        "words": 165,
+        "grammar": 0,
+        "examples": 68,
+        "dialogues": 0
+      }
+    },
+    {
+      "lessonId": "lesson-3",
+      "number": 3,
+      "title": "Знакомство (Giới thiệu)",
+      "file": "lesson-03.json",
+      "sha256": "1924e37cc3f2d37b88f491d3651ede8c1bbd517f22045ac587012ea7ea31ea3e",
+      "counts": {
+        "cards": 56,
+        "words": 78,
+        "grammar": 1,
+        "examples": 56,
+        "dialogues": 1
+      }
+    },
+    {
+      "lessonId": "lesson-4",
+      "number": 4,
+      "title": "Время глаголов, профессии и места",
+      "file": "lesson-04.json",
+      "sha256": "bf2a645fd325dfcf8defb8c0a7ae83394295e81c7f7f5f909ea12044284ad7db",
+      "counts": {
+        "cards": 77,
+        "words": 144,
+        "grammar": 2,
+        "examples": 85,
+        "dialogues": 0
+      }
+    },
+    {
+      "lessonId": "lesson-5",
+      "number": 5,
+      "title": "Профессия, место работы и семья",
+      "file": "lesson-05.json",
+      "sha256": "68f1a20cc40290a0814d1c71956717ecab7ba45467eb37e36c6b580285a2bc33",
+      "counts": {
+        "cards": 43,
+        "words": 96,
+        "grammar": 1,
+        "examples": 47,
+        "dialogues": 0
+      }
+    },
+    {
+      "lessonId": "lesson-6",
+      "number": 6,
+      "title": "Вопросы «верно?» и «не является»",
+      "file": "lesson-06.json",
+      "sha256": "bba00c13487e60d937d5fd26b06e394bfd8740b04b352333227375ed40df6a0c",
+      "counts": {
+        "cards": 34,
+        "words": 60,
+        "grammar": 5,
+        "examples": 63,
+        "dialogues": 2
+      }
+    },
+    {
+      "lessonId": "lesson-7",
+      "number": 7,
+      "title": "Страны, города и путешествия",
+      "file": "lesson-07.json",
+      "sha256": "90e83cc7120684513499f4b9d68442d94c6bfca2d266a8297c89aa539cc257f5",
+      "counts": {
+        "cards": 40,
+        "words": 91,
+        "grammar": 5,
+        "examples": 36,
+        "dialogues": 0
+      }
+    },
+    {
+      "lessonId": "lesson-8",
+      "number": 8,
+      "title": "Как говорить «мы», «они» и «все»",
+      "file": "lesson-08.json",
+      "sha256": "bb1bc414753db77fa89dfb026f4b9ead8f684b9a653d7ca82d576f48d5a76b9a",
+      "counts": {
+        "cards": 40,
+        "words": 66,
+        "grammar": 2,
+        "examples": 38,
+        "dialogues": 0
+      }
+    },
+    {
+      "lessonId": "lesson-9",
+      "number": 9,
+      "title": "Числа, большие числа и возраст",
+      "file": "lesson-09.json",
+      "sha256": "18119b1a8a003c573f463a6f9ba23c3da9d9559aed7e287b57580b1f6e00f870",
+      "counts": {
+        "cards": 68,
+        "words": 98,
+        "grammar": 4,
+        "examples": 53,
+        "dialogues": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,2764 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-9",
+  "number": 9,
+  "title": "Числа, большие числа и возраст",
+  "cards": [
+    {
+      "id": "l9-01",
+      "lessonId": "lesson-9",
+      "vi": "một",
+      "ru": "1 — один"
+    },
+    {
+      "id": "l9-02",
+      "lessonId": "lesson-9",
+      "vi": "hai",
+      "ru": "2 — два"
+    },
+    {
+      "id": "l9-03",
+      "lessonId": "lesson-9",
+      "vi": "ba",
+      "ru": "3 — три"
+    },
+    {
+      "id": "l9-04",
+      "lessonId": "lesson-9",
+      "vi": "bốn",
+      "ru": "4 — четыре"
+    },
+    {
+      "id": "l9-05",
+      "lessonId": "lesson-9",
+      "vi": "năm",
+      "ru": "5 — пять"
+    },
+    {
+      "id": "l9-06",
+      "lessonId": "lesson-9",
+      "vi": "sáu",
+      "ru": "6 — шесть"
+    },
+    {
+      "id": "l9-07",
+      "lessonId": "lesson-9",
+      "vi": "bảy",
+      "ru": "7 — семь"
+    },
+    {
+      "id": "l9-08",
+      "lessonId": "lesson-9",
+      "vi": "tám",
+      "ru": "8 — восемь"
+    },
+    {
+      "id": "l9-09",
+      "lessonId": "lesson-9",
+      "vi": "chín",
+      "ru": "9 — девять"
+    },
+    {
+      "id": "l9-10",
+      "lessonId": "lesson-9",
+      "vi": "mười",
+      "ru": "10 — десять"
+    },
+    {
+      "id": "l9-11",
+      "lessonId": "lesson-9",
+      "vi": "mười một",
+      "ru": "11 — одиннадцать"
+    },
+    {
+      "id": "l9-12",
+      "lessonId": "lesson-9",
+      "vi": "mười hai",
+      "ru": "12 — двенадцать"
+    },
+    {
+      "id": "l9-13",
+      "lessonId": "lesson-9",
+      "vi": "mười chín",
+      "ru": "19 — девятнадцать"
+    },
+    {
+      "id": "l9-14",
+      "lessonId": "lesson-9",
+      "vi": "hai mươi",
+      "ru": "20 — двадцать"
+    },
+    {
+      "id": "l9-15",
+      "lessonId": "lesson-9",
+      "vi": "ba mươi",
+      "ru": "30 — тридцать"
+    },
+    {
+      "id": "l9-16",
+      "lessonId": "lesson-9",
+      "vi": "chín mươi chín",
+      "ru": "99 — девяносто девять"
+    },
+    {
+      "id": "l9-17",
+      "lessonId": "lesson-9",
+      "vi": "mười lăm",
+      "ru": "15 — пятнадцать"
+    },
+    {
+      "id": "l9-18",
+      "lessonId": "lesson-9",
+      "vi": "hai mươi lăm",
+      "ru": "25 — двадцать пять"
+    },
+    {
+      "id": "l9-19",
+      "lessonId": "lesson-9",
+      "vi": "ba mươi lăm",
+      "ru": "35 — тридцать пять"
+    },
+    {
+      "id": "l9-20",
+      "lessonId": "lesson-9",
+      "vi": "chín mươi lăm",
+      "ru": "95 — девяносто пять"
+    },
+    {
+      "id": "l9-21",
+      "lessonId": "lesson-9",
+      "vi": "hai mươi mốt",
+      "ru": "21 — двадцать один"
+    },
+    {
+      "id": "l9-22",
+      "lessonId": "lesson-9",
+      "vi": "ba mươi mốt",
+      "ru": "31 — тридцать один"
+    },
+    {
+      "id": "l9-23",
+      "lessonId": "lesson-9",
+      "vi": "bốn mươi mốt",
+      "ru": "41 — сорок один"
+    },
+    {
+      "id": "l9-24",
+      "lessonId": "lesson-9",
+      "vi": "chín mươi mốt",
+      "ru": "91 — девяносто один"
+    },
+    {
+      "id": "l9-25",
+      "lessonId": "lesson-9",
+      "vi": "trăm",
+      "ru": "сотня — 100"
+    },
+    {
+      "id": "l9-26",
+      "lessonId": "lesson-9",
+      "vi": "nghìn / ngàn",
+      "ru": "тысяча — 1 000"
+    },
+    {
+      "id": "l9-27",
+      "lessonId": "lesson-9",
+      "vi": "triệu",
+      "ru": "миллион — 1 000 000"
+    },
+    {
+      "id": "l9-28",
+      "lessonId": "lesson-9",
+      "vi": "tỷ",
+      "ru": "миллиард — 1 000 000 000"
+    },
+    {
+      "id": "l9-29",
+      "lessonId": "lesson-9",
+      "vi": "tỏi",
+      "ru": "чеснок"
+    },
+    {
+      "id": "l9-30",
+      "lessonId": "lesson-9",
+      "vi": "hai trăm lẻ chín",
+      "ru": "209 — двести девять"
+    },
+    {
+      "id": "l9-31",
+      "lessonId": "lesson-9",
+      "vi": "hai trăm linh chín",
+      "ru": "209 — двести девять; вариант с linh"
+    },
+    {
+      "id": "l9-32",
+      "lessonId": "lesson-9",
+      "vi": "ba nghìn lẻ một",
+      "ru": "3 001 — три тысячи один"
+    },
+    {
+      "id": "l9-33",
+      "lessonId": "lesson-9",
+      "vi": "bốn triệu lẻ hai",
+      "ru": "4 000 002 — четыре миллиона два; сокращённая форма из конспекта"
+    },
+    {
+      "id": "l9-34",
+      "lessonId": "lesson-9",
+      "vi": "một trăm năm mươi mốt nghìn ba trăm ba mươi ba",
+      "ru": "151 333 — сто пятьдесят одна тысяча триста тридцать три"
+    },
+    {
+      "id": "l9-35",
+      "lessonId": "lesson-9",
+      "vi": "hai trăm lẻ chín nghìn ba trăm lẻ bốn",
+      "ru": "209 304 — двести девять тысяч триста четыре"
+    },
+    {
+      "id": "l9-44",
+      "lessonId": "lesson-9",
+      "vi": "tuổi",
+      "ru": "возраст в годах; лет"
+    },
+    {
+      "id": "l9-43",
+      "lessonId": "lesson-9",
+      "vi": "năm",
+      "ru": "год"
+    },
+    {
+      "id": "l9-42",
+      "lessonId": "lesson-9",
+      "vi": "năm nay",
+      "ru": "в этом году"
+    },
+    {
+      "id": "l9-45",
+      "lessonId": "lesson-9",
+      "vi": "sinh",
+      "ru": "родиться; рождать"
+    },
+    {
+      "id": "l9-46",
+      "lessonId": "lesson-9",
+      "vi": "sinh năm",
+      "ru": "родиться в … году"
+    },
+    {
+      "id": "l9-47",
+      "lessonId": "lesson-9",
+      "vi": "gốc",
+      "ru": "происхождение; корни"
+    },
+    {
+      "id": "l9-48",
+      "lessonId": "lesson-9",
+      "vi": "gốc Việt",
+      "ru": "вьетнамское происхождение; вьетнамские корни"
+    },
+    {
+      "id": "l9-49",
+      "lessonId": "lesson-9",
+      "vi": "gốc Nga",
+      "ru": "русское происхождение; русские корни"
+    },
+    {
+      "id": "l9-50",
+      "lessonId": "lesson-9",
+      "vi": "Việt kiều",
+      "ru": "вьетнамец, живущий за границей"
+    },
+    {
+      "id": "l9-51",
+      "lessonId": "lesson-9",
+      "vi": "Nga kiều",
+      "ru": "русский, живущий за границей"
+    },
+    {
+      "id": "l9-36",
+      "lessonId": "lesson-9",
+      "vi": "mấy",
+      "ru": "сколько? — когда ожидается небольшое количество"
+    },
+    {
+      "id": "l9-37",
+      "lessonId": "lesson-9",
+      "vi": "bao nhiêu",
+      "ru": "сколько? — когда количество неизвестно или может быть большим"
+    },
+    {
+      "id": "l9-66",
+      "lessonId": "lesson-9",
+      "vi": "sang",
+      "ru": "перейти; поехать или переехать в другую страну — по контексту"
+    },
+    {
+      "id": "l9-67",
+      "lessonId": "lesson-9",
+      "vi": "bây giờ",
+      "ru": "сейчас; теперь"
+    },
+    {
+      "id": "l9-68",
+      "lessonId": "lesson-9",
+      "vi": "quốc gia",
+      "ru": "страна; государство; национальный, государственный — в названиях"
+    },
+    {
+      "id": "l9-38",
+      "lessonId": "lesson-9",
+      "vi": "Anh sinh năm bao nhiêu?",
+      "ru": "В каком году ты родился?"
+    },
+    {
+      "id": "l9-39",
+      "lessonId": "lesson-9",
+      "vi": "Anh sinh năm 91.",
+      "ru": "Я родился в 1991 году."
+    },
+    {
+      "id": "l9-40",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет в этом году?"
+    },
+    {
+      "id": "l9-41",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay anh 39 tuổi.",
+      "ru": "В этом году мне 39 лет."
+    },
+    {
+      "id": "l9-52",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay cô ấy bao nhiêu tuổi?",
+      "ru": "Сколько ей лет в этом году?"
+    },
+    {
+      "id": "l9-53",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay cô ấy mười chín tuổi.",
+      "ru": "В этом году ей девятнадцать лет."
+    },
+    {
+      "id": "l9-54",
+      "lessonId": "lesson-9",
+      "vi": "Anh sang Việt Nam năm anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе было лет, когда ты переехал во Вьетнам?"
+    },
+    {
+      "id": "l9-55",
+      "lessonId": "lesson-9",
+      "vi": "Tôi sang Việt Nam năm tôi hai mươi lăm tuổi.",
+      "ru": "Я переехал во Вьетнам, когда мне было двадцать пять лет."
+    },
+    {
+      "id": "l9-56",
+      "lessonId": "lesson-9",
+      "vi": "Anh là người nước nào?",
+      "ru": "Из какой ты страны?"
+    },
+    {
+      "id": "l9-57",
+      "lessonId": "lesson-9",
+      "vi": "Tôi là người Nga.",
+      "ru": "Я из России."
+    },
+    {
+      "id": "l9-58",
+      "lessonId": "lesson-9",
+      "vi": "Anh có phải là người Nga gốc Việt không?",
+      "ru": "Ты русский вьетнамского происхождения?"
+    },
+    {
+      "id": "l9-59",
+      "lessonId": "lesson-9",
+      "vi": "Vâng, tôi là người Nga gốc Việt.",
+      "ru": "Да, я русский вьетнамского происхождения."
+    },
+    {
+      "id": "l9-60",
+      "lessonId": "lesson-9",
+      "vi": "Chị có phải là Việt kiều không?",
+      "ru": "Вы вьетнамка, живущая за границей?"
+    },
+    {
+      "id": "l9-61",
+      "lessonId": "lesson-9",
+      "vi": "Vâng, tôi là người Canada gốc Việt.",
+      "ru": "Да, я канадка вьетнамского происхождения."
+    },
+    {
+      "id": "l9-62",
+      "lessonId": "lesson-9",
+      "vi": "Anh có phải là sinh viên không?",
+      "ru": "Ты студент?"
+    },
+    {
+      "id": "l9-63",
+      "lessonId": "lesson-9",
+      "vi": "Vâng, tôi là sinh viên.",
+      "ru": "Да, я студент."
+    },
+    {
+      "id": "l9-64",
+      "lessonId": "lesson-9",
+      "vi": "Bây giờ chị đang học tiếng Việt ở đâu?",
+      "ru": "Где вы сейчас изучаете вьетнамский язык?"
+    },
+    {
+      "id": "l9-65",
+      "lessonId": "lesson-9",
+      "vi": "Tôi đang học tiếng Việt ở Đại học Quốc gia Hà Nội.",
+      "ru": "Я изучаю вьетнамский язык в Ханойском национальном университете."
+    }
+  ],
+  "words": [
+    {
+      "id": "l9-01",
+      "lessonId": "lesson-9",
+      "vi": "một",
+      "ru": "1 — один",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-01"
+      }
+    },
+    {
+      "id": "l9-02",
+      "lessonId": "lesson-9",
+      "vi": "hai",
+      "ru": "2 — два",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-02"
+      }
+    },
+    {
+      "id": "l9-03",
+      "lessonId": "lesson-9",
+      "vi": "ba",
+      "ru": "3 — три",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-03"
+      }
+    },
+    {
+      "id": "l9-04",
+      "lessonId": "lesson-9",
+      "vi": "bốn",
+      "ru": "4 — четыре",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-04"
+      }
+    },
+    {
+      "id": "l9-05",
+      "lessonId": "lesson-9",
+      "vi": "năm",
+      "ru": "5 — пять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-05"
+      }
+    },
+    {
+      "id": "l9-06",
+      "lessonId": "lesson-9",
+      "vi": "sáu",
+      "ru": "6 — шесть",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-06"
+      }
+    },
+    {
+      "id": "l9-07",
+      "lessonId": "lesson-9",
+      "vi": "bảy",
+      "ru": "7 — семь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-07"
+      }
+    },
+    {
+      "id": "l9-08",
+      "lessonId": "lesson-9",
+      "vi": "tám",
+      "ru": "8 — восемь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-08"
+      }
+    },
+    {
+      "id": "l9-09",
+      "lessonId": "lesson-9",
+      "vi": "chín",
+      "ru": "9 — девять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-09"
+      }
+    },
+    {
+      "id": "l9-10",
+      "lessonId": "lesson-9",
+      "vi": "mười",
+      "ru": "10 — десять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-10"
+      }
+    },
+    {
+      "id": "l9-11",
+      "lessonId": "lesson-9",
+      "vi": "mười một",
+      "ru": "11 — одиннадцать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-11"
+      }
+    },
+    {
+      "id": "l9-12",
+      "lessonId": "lesson-9",
+      "vi": "mười hai",
+      "ru": "12 — двенадцать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-12"
+      }
+    },
+    {
+      "id": "l9-13",
+      "lessonId": "lesson-9",
+      "vi": "mười chín",
+      "ru": "19 — девятнадцать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-13"
+      }
+    },
+    {
+      "id": "l9-14",
+      "lessonId": "lesson-9",
+      "vi": "hai mươi",
+      "ru": "20 — двадцать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-14"
+      }
+    },
+    {
+      "id": "l9-15",
+      "lessonId": "lesson-9",
+      "vi": "ba mươi",
+      "ru": "30 — тридцать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-15"
+      }
+    },
+    {
+      "id": "l9-16",
+      "lessonId": "lesson-9",
+      "vi": "chín mươi chín",
+      "ru": "99 — девяносто девять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-16"
+      }
+    },
+    {
+      "id": "l9-17",
+      "lessonId": "lesson-9",
+      "vi": "mười lăm",
+      "ru": "15 — пятнадцать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-17"
+      }
+    },
+    {
+      "id": "l9-18",
+      "lessonId": "lesson-9",
+      "vi": "hai mươi lăm",
+      "ru": "25 — двадцать пять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-18"
+      }
+    },
+    {
+      "id": "l9-19",
+      "lessonId": "lesson-9",
+      "vi": "ba mươi lăm",
+      "ru": "35 — тридцать пять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-19"
+      }
+    },
+    {
+      "id": "l9-20",
+      "lessonId": "lesson-9",
+      "vi": "chín mươi lăm",
+      "ru": "95 — девяносто пять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-20"
+      }
+    },
+    {
+      "id": "l9-21",
+      "lessonId": "lesson-9",
+      "vi": "hai mươi mốt",
+      "ru": "21 — двадцать один",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-21"
+      }
+    },
+    {
+      "id": "l9-22",
+      "lessonId": "lesson-9",
+      "vi": "ba mươi mốt",
+      "ru": "31 — тридцать один",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-22"
+      }
+    },
+    {
+      "id": "l9-23",
+      "lessonId": "lesson-9",
+      "vi": "bốn mươi mốt",
+      "ru": "41 — сорок один",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-23"
+      }
+    },
+    {
+      "id": "l9-24",
+      "lessonId": "lesson-9",
+      "vi": "chín mươi mốt",
+      "ru": "91 — девяносто один",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-24"
+      }
+    },
+    {
+      "id": "l9-25",
+      "lessonId": "lesson-9",
+      "vi": "trăm",
+      "ru": "сотня — 100",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-25"
+      }
+    },
+    {
+      "id": "l9-26",
+      "lessonId": "lesson-9",
+      "vi": "nghìn / ngàn",
+      "ru": "тысяча — 1 000",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-26"
+      }
+    },
+    {
+      "id": "l9-27",
+      "lessonId": "lesson-9",
+      "vi": "triệu",
+      "ru": "миллион — 1 000 000",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-27"
+      }
+    },
+    {
+      "id": "l9-28",
+      "lessonId": "lesson-9",
+      "vi": "tỷ",
+      "ru": "миллиард — 1 000 000 000",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-28"
+      }
+    },
+    {
+      "id": "l9-29",
+      "lessonId": "lesson-9",
+      "vi": "tỏi",
+      "ru": "чеснок",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-29"
+      }
+    },
+    {
+      "id": "l9-30",
+      "lessonId": "lesson-9",
+      "vi": "hai trăm lẻ chín",
+      "ru": "209 — двести девять",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-30"
+      }
+    },
+    {
+      "id": "l9-31",
+      "lessonId": "lesson-9",
+      "vi": "hai trăm linh chín",
+      "ru": "209 — двести девять; вариант с linh",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-31"
+      }
+    },
+    {
+      "id": "l9-32",
+      "lessonId": "lesson-9",
+      "vi": "ba nghìn lẻ một",
+      "ru": "3 001 — три тысячи один",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-32"
+      }
+    },
+    {
+      "id": "l9-33",
+      "lessonId": "lesson-9",
+      "vi": "bốn triệu lẻ hai",
+      "ru": "4 000 002 — четыре миллиона два; сокращённая форма из конспекта",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-33"
+      }
+    },
+    {
+      "id": "l9-34",
+      "lessonId": "lesson-9",
+      "vi": "một trăm năm mươi mốt nghìn ba trăm ba mươi ba",
+      "ru": "151 333 — сто пятьдесят одна тысяча триста тридцать три",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-34"
+      }
+    },
+    {
+      "id": "l9-35",
+      "lessonId": "lesson-9",
+      "vi": "hai trăm lẻ chín nghìn ba trăm lẻ bốn",
+      "ru": "209 304 — двести девять тысяч триста четыре",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-35"
+      }
+    },
+    {
+      "id": "l9-44",
+      "lessonId": "lesson-9",
+      "vi": "tuổi",
+      "ru": "возраст в годах; лет",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-44"
+      }
+    },
+    {
+      "id": "l9-43",
+      "lessonId": "lesson-9",
+      "vi": "năm",
+      "ru": "год",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-43"
+      }
+    },
+    {
+      "id": "l9-42",
+      "lessonId": "lesson-9",
+      "vi": "năm nay",
+      "ru": "в этом году",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-42"
+      }
+    },
+    {
+      "id": "l9-45",
+      "lessonId": "lesson-9",
+      "vi": "sinh",
+      "ru": "родиться; рождать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-45"
+      }
+    },
+    {
+      "id": "l9-46",
+      "lessonId": "lesson-9",
+      "vi": "sinh năm",
+      "ru": "родиться в … году",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-46"
+      }
+    },
+    {
+      "id": "l9-47",
+      "lessonId": "lesson-9",
+      "vi": "gốc",
+      "ru": "происхождение; корни",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-47"
+      }
+    },
+    {
+      "id": "l9-48",
+      "lessonId": "lesson-9",
+      "vi": "gốc Việt",
+      "ru": "вьетнамское происхождение; вьетнамские корни",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-48"
+      }
+    },
+    {
+      "id": "l9-49",
+      "lessonId": "lesson-9",
+      "vi": "gốc Nga",
+      "ru": "русское происхождение; русские корни",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-49"
+      }
+    },
+    {
+      "id": "l9-50",
+      "lessonId": "lesson-9",
+      "vi": "Việt kiều",
+      "ru": "вьетнамец, живущий за границей",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-50"
+      }
+    },
+    {
+      "id": "l9-51",
+      "lessonId": "lesson-9",
+      "vi": "Nga kiều",
+      "ru": "русский, живущий за границей",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-51"
+      }
+    },
+    {
+      "id": "l9-36",
+      "lessonId": "lesson-9",
+      "vi": "mấy",
+      "ru": "сколько? — когда ожидается небольшое количество",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-36"
+      }
+    },
+    {
+      "id": "l9-37",
+      "lessonId": "lesson-9",
+      "vi": "bao nhiêu",
+      "ru": "сколько? — когда количество неизвестно или может быть большим",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-37"
+      }
+    },
+    {
+      "id": "l9-66",
+      "lessonId": "lesson-9",
+      "vi": "sang",
+      "ru": "перейти; поехать или переехать в другую страну — по контексту",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-66"
+      }
+    },
+    {
+      "id": "l9-67",
+      "lessonId": "lesson-9",
+      "vi": "bây giờ",
+      "ru": "сейчас; теперь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-67"
+      }
+    },
+    {
+      "id": "l9-68",
+      "lessonId": "lesson-9",
+      "vi": "quốc gia",
+      "ru": "страна; государство; национальный, государственный — в названиях",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-68"
+      }
+    },
+    {
+      "id": "l9-38",
+      "lessonId": "lesson-9",
+      "vi": "Anh sinh năm bao nhiêu?",
+      "ru": "В каком году ты родился?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-38"
+      }
+    },
+    {
+      "id": "l9-39",
+      "lessonId": "lesson-9",
+      "vi": "Anh sinh năm 91.",
+      "ru": "Я родился в 1991 году.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-39"
+      }
+    },
+    {
+      "id": "l9-40",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет в этом году?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-40"
+      }
+    },
+    {
+      "id": "l9-41",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay anh 39 tuổi.",
+      "ru": "В этом году мне 39 лет.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-41"
+      }
+    },
+    {
+      "id": "l9-52",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay cô ấy bao nhiêu tuổi?",
+      "ru": "Сколько ей лет в этом году?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-52"
+      }
+    },
+    {
+      "id": "l9-53",
+      "lessonId": "lesson-9",
+      "vi": "Năm nay cô ấy mười chín tuổi.",
+      "ru": "В этом году ей девятнадцать лет.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-53"
+      }
+    },
+    {
+      "id": "l9-54",
+      "lessonId": "lesson-9",
+      "vi": "Anh sang Việt Nam năm anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе было лет, когда ты переехал во Вьетнам?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-54"
+      }
+    },
+    {
+      "id": "l9-55",
+      "lessonId": "lesson-9",
+      "vi": "Tôi sang Việt Nam năm tôi hai mươi lăm tuổi.",
+      "ru": "Я переехал во Вьетнам, когда мне было двадцать пять лет.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-55"
+      }
+    },
+    {
+      "id": "l9-56",
+      "lessonId": "lesson-9",
+      "vi": "Anh là người nước nào?",
+      "ru": "Из какой ты страны?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-56"
+      }
+    },
+    {
+      "id": "l9-57",
+      "lessonId": "lesson-9",
+      "vi": "Tôi là người Nga.",
+      "ru": "Я из России.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-57"
+      }
+    },
+    {
+      "id": "l9-58",
+      "lessonId": "lesson-9",
+      "vi": "Anh có phải là người Nga gốc Việt không?",
+      "ru": "Ты русский вьетнамского происхождения?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-58"
+      }
+    },
+    {
+      "id": "l9-59",
+      "lessonId": "lesson-9",
+      "vi": "Vâng, tôi là người Nga gốc Việt.",
+      "ru": "Да, я русский вьетнамского происхождения.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-59"
+      }
+    },
+    {
+      "id": "l9-60",
+      "lessonId": "lesson-9",
+      "vi": "Chị có phải là Việt kiều không?",
+      "ru": "Вы вьетнамка, живущая за границей?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-60"
+      }
+    },
+    {
+      "id": "l9-61",
+      "lessonId": "lesson-9",
+      "vi": "Vâng, tôi là người Canada gốc Việt.",
+      "ru": "Да, я канадка вьетнамского происхождения.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-61"
+      }
+    },
+    {
+      "id": "l9-62",
+      "lessonId": "lesson-9",
+      "vi": "Anh có phải là sinh viên không?",
+      "ru": "Ты студент?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-62"
+      }
+    },
+    {
+      "id": "l9-63",
+      "lessonId": "lesson-9",
+      "vi": "Vâng, tôi là sinh viên.",
+      "ru": "Да, я студент.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-63"
+      }
+    },
+    {
+      "id": "l9-64",
+      "lessonId": "lesson-9",
+      "vi": "Bây giờ chị đang học tiếng Việt ở đâu?",
+      "ru": "Где вы сейчас изучаете вьетнамский язык?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-64"
+      }
+    },
+    {
+      "id": "l9-65",
+      "lessonId": "lesson-9",
+      "vi": "Tôi đang học tiếng Việt ở Đại học Quốc gia Hà Nội.",
+      "ru": "Я изучаю вьетнамский язык в Ханойском национальном университете.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-65"
+      }
+    },
+    {
+      "vi": "một",
+      "ru": "1 — один",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/0"
+      }
+    },
+    {
+      "vi": "hai",
+      "ru": "2 — два",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/1"
+      }
+    },
+    {
+      "vi": "ba",
+      "ru": "3 — три",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/2"
+      }
+    },
+    {
+      "vi": "bốn",
+      "ru": "4 — четыре",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/3"
+      }
+    },
+    {
+      "vi": "năm",
+      "ru": "5 — пять",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/4"
+      }
+    },
+    {
+      "vi": "sáu",
+      "ru": "6 — шесть",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/5"
+      }
+    },
+    {
+      "vi": "bảy",
+      "ru": "7 — семь",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/6"
+      }
+    },
+    {
+      "vi": "tám",
+      "ru": "8 — восемь",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/7"
+      }
+    },
+    {
+      "vi": "chín",
+      "ru": "9 — девять",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/8"
+      }
+    },
+    {
+      "vi": "mười",
+      "ru": "10 — десять",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/0/items/9"
+      }
+    },
+    {
+      "vi": "trăm",
+      "ru": "сотня — 100",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "nghìn / ngàn",
+      "ru": "тысяча — 1 000",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "triệu",
+      "ru": "миллион — 1 000 000",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/6/items/2"
+      }
+    },
+    {
+      "vi": "tỷ",
+      "ru": "миллиард — 1 000 000 000",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/6/items/3"
+      }
+    },
+    {
+      "vi": "tỏi",
+      "ru": "чеснок",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/6/items/4"
+      }
+    },
+    {
+      "vi": "hai trăm lẻ chín",
+      "ru": "209 — двести девять",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/8/items/0"
+      }
+    },
+    {
+      "vi": "hai trăm linh chín",
+      "ru": "209 — двести девять; вариант с linh",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/8/items/1"
+      }
+    },
+    {
+      "vi": "ba nghìn lẻ một",
+      "ru": "3 001 — три тысячи один",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/8/items/2"
+      }
+    },
+    {
+      "vi": "bốn triệu lẻ hai",
+      "ru": "4 000 002 — четыре миллиона два; сокращённая форма из конспекта",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/8/items/3"
+      }
+    },
+    {
+      "vi": "một trăm năm mươi mốt nghìn ba trăm ba mươi ba",
+      "ru": "151 333 — сто пятьдесят одна тысяча триста тридцать три",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/8/items/4"
+      }
+    },
+    {
+      "vi": "hai trăm lẻ chín nghìn ba trăm lẻ bốn",
+      "ru": "209 304 — двести девять тысяч триста четыре",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/8/items/5"
+      }
+    },
+    {
+      "vi": "mấy",
+      "ru": "сколько? — когда ожидается небольшое количество",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/9/items/0"
+      }
+    },
+    {
+      "vi": "bao nhiêu",
+      "ru": "сколько? — когда количество неизвестно или может быть большим",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/9/items/1"
+      }
+    },
+    {
+      "vi": "Anh sinh năm bao nhiêu?",
+      "ru": "В каком году ты родился?",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/0"
+      }
+    },
+    {
+      "vi": "Anh sinh năm 91.",
+      "ru": "Я родился в 1991 году.",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/1"
+      }
+    },
+    {
+      "vi": "Năm nay anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет в этом году?",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/2"
+      }
+    },
+    {
+      "vi": "Năm nay anh 39 tuổi.",
+      "ru": "В этом году мне 39 лет.",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/3"
+      }
+    },
+    {
+      "vi": "năm nay",
+      "ru": "в этом году",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/11/items/0"
+      }
+    },
+    {
+      "vi": "năm",
+      "ru": "год",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/11/items/1"
+      }
+    },
+    {
+      "vi": "tuổi",
+      "ru": "возраст в годах; лет",
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/11/items/2"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "kind": "pattern",
+      "heading": "2. Числа от 11 до 19",
+      "formula": "mười + единицы",
+      "formulaNote": "Все числа от 11 до 19 начинаются с mười (10). В mười используется нисходящий тон: знак huyền.",
+      "examples": [
+        {
+          "vi": "mười một",
+          "ru": "11 — одиннадцать"
+        },
+        {
+          "vi": "mười hai",
+          "ru": "12 — двенадцать"
+        },
+        {
+          "vi": "mười chín",
+          "ru": "19 — девятнадцать"
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/1"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "3. Числа от 20 до 99",
+      "formula": "десятки + mươi + единицы",
+      "formulaNote": "Для десятков используется mươi — без знака тона. Не путайте mười (10) и mươi (десятки). Если единиц нет, число заканчивается на mươi.",
+      "examples": [
+        {
+          "vi": "hai mươi",
+          "ru": "20 — двадцать"
+        },
+        {
+          "vi": "ba mươi",
+          "ru": "30 — тридцать"
+        },
+        {
+          "vi": "chín mươi chín",
+          "ru": "99 — девяносто девять"
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/2"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "4. Числа, оканчивающиеся на 5",
+      "formula": "десятки + lăm",
+      "formulaNote": "После десятков вместо năm используется lăm: 15, 25, 35 и так далее до 95.",
+      "examples": [
+        {
+          "vi": "mười lăm",
+          "ru": "15 — пятнадцать"
+        },
+        {
+          "vi": "hai mươi lăm",
+          "ru": "25 — двадцать пять"
+        },
+        {
+          "vi": "ba mươi lăm",
+          "ru": "35 — тридцать пять"
+        },
+        {
+          "vi": "chín mươi lăm",
+          "ru": "95 — девяносто пять"
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/3"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "5. Числа, оканчивающиеся на 1",
+      "formula": "десятки + mươi + mốt",
+      "formulaNote": "Начиная с 21, единицу после десятков обозначают mốt. В числе 11 остаётся một.",
+      "examples": [
+        {
+          "vi": "hai mươi mốt",
+          "ru": "21 — двадцать один"
+        },
+        {
+          "vi": "ba mươi mốt",
+          "ru": "31 — тридцать один"
+        },
+        {
+          "vi": "bốn mươi mốt",
+          "ru": "41 — сорок один"
+        },
+        {
+          "vi": "chín mươi mốt",
+          "ru": "91 — девяносто один"
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/4"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "vi": "Anh sinh năm bao nhiêu?",
+      "ru": "В каком году ты родился?",
+      "tokens": [
+        "Anh",
+        "sinh",
+        "năm",
+        "bao",
+        "nhiêu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-38"
+      }
+    },
+    {
+      "vi": "Anh sinh năm 91.",
+      "ru": "Я родился в 1991 году.",
+      "tokens": [
+        "Anh",
+        "sinh",
+        "năm",
+        "91"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-39"
+      }
+    },
+    {
+      "vi": "Năm nay anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет в этом году?",
+      "tokens": [
+        "Năm",
+        "nay",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-40"
+      }
+    },
+    {
+      "vi": "Năm nay anh 39 tuổi.",
+      "ru": "В этом году мне 39 лет.",
+      "tokens": [
+        "Năm",
+        "nay",
+        "anh",
+        "39",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-41"
+      }
+    },
+    {
+      "vi": "Năm nay cô ấy bao nhiêu tuổi?",
+      "ru": "Сколько ей лет в этом году?",
+      "tokens": [
+        "Năm",
+        "nay",
+        "cô",
+        "ấy",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-52"
+      }
+    },
+    {
+      "vi": "Năm nay cô ấy mười chín tuổi.",
+      "ru": "В этом году ей девятнадцать лет.",
+      "tokens": [
+        "Năm",
+        "nay",
+        "cô",
+        "ấy",
+        "mười",
+        "chín",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-53"
+      }
+    },
+    {
+      "vi": "Anh sang Việt Nam năm anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе было лет, когда ты переехал во Вьетнам?",
+      "tokens": [
+        "Anh",
+        "sang",
+        "Việt",
+        "Nam",
+        "năm",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-54"
+      }
+    },
+    {
+      "vi": "Tôi sang Việt Nam năm tôi hai mươi lăm tuổi.",
+      "ru": "Я переехал во Вьетнам, когда мне было двадцать пять лет.",
+      "tokens": [
+        "Tôi",
+        "sang",
+        "Việt",
+        "Nam",
+        "năm",
+        "tôi",
+        "hai",
+        "mươi",
+        "lăm",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-55"
+      }
+    },
+    {
+      "vi": "Anh là người nước nào?",
+      "ru": "Из какой ты страны?",
+      "tokens": [
+        "Anh",
+        "là",
+        "người",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-56"
+      }
+    },
+    {
+      "vi": "Tôi là người Nga.",
+      "ru": "Я из России.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "người",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-57"
+      }
+    },
+    {
+      "vi": "Anh có phải là người Nga gốc Việt không?",
+      "ru": "Ты русский вьетнамского происхождения?",
+      "tokens": [
+        "Anh",
+        "có",
+        "phải",
+        "là",
+        "người",
+        "Nga",
+        "gốc",
+        "Việt",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-58"
+      }
+    },
+    {
+      "vi": "Vâng, tôi là người Nga gốc Việt.",
+      "ru": "Да, я русский вьетнамского происхождения.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "là",
+        "người",
+        "Nga",
+        "gốc",
+        "Việt"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-59"
+      }
+    },
+    {
+      "vi": "Chị có phải là Việt kiều không?",
+      "ru": "Вы вьетнамка, живущая за границей?",
+      "tokens": [
+        "Chị",
+        "có",
+        "phải",
+        "là",
+        "Việt",
+        "kiều",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-60"
+      }
+    },
+    {
+      "vi": "Vâng, tôi là người Canada gốc Việt.",
+      "ru": "Да, я канадка вьетнамского происхождения.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "là",
+        "người",
+        "Canada",
+        "gốc",
+        "Việt"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-61"
+      }
+    },
+    {
+      "vi": "Anh có phải là sinh viên không?",
+      "ru": "Ты студент?",
+      "tokens": [
+        "Anh",
+        "có",
+        "phải",
+        "là",
+        "sinh",
+        "viên",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-62"
+      }
+    },
+    {
+      "vi": "Vâng, tôi là sinh viên.",
+      "ru": "Да, я студент.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "là",
+        "sinh",
+        "viên"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-63"
+      }
+    },
+    {
+      "vi": "Bây giờ chị đang học tiếng Việt ở đâu?",
+      "ru": "Где вы сейчас изучаете вьетнамский язык?",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "chị",
+        "đang",
+        "học",
+        "tiếng",
+        "Việt",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-64"
+      }
+    },
+    {
+      "vi": "Tôi đang học tiếng Việt ở Đại học Quốc gia Hà Nội.",
+      "ru": "Я изучаю вьетнамский язык в Ханойском национальном университете.",
+      "tokens": [
+        "Tôi",
+        "đang",
+        "học",
+        "tiếng",
+        "Việt",
+        "ở",
+        "Đại",
+        "học",
+        "Quốc",
+        "gia",
+        "Hà",
+        "Nội"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l9-65"
+      }
+    },
+    {
+      "vi": "mười một",
+      "ru": "11 — одиннадцать",
+      "tokens": [
+        "mười",
+        "một"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/1/examples/0"
+      }
+    },
+    {
+      "vi": "mười hai",
+      "ru": "12 — двенадцать",
+      "tokens": [
+        "mười",
+        "hai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/1/examples/1"
+      }
+    },
+    {
+      "vi": "mười chín",
+      "ru": "19 — девятнадцать",
+      "tokens": [
+        "mười",
+        "chín"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/1/examples/2"
+      }
+    },
+    {
+      "vi": "hai mươi",
+      "ru": "20 — двадцать",
+      "tokens": [
+        "hai",
+        "mươi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/2/examples/0"
+      }
+    },
+    {
+      "vi": "ba mươi",
+      "ru": "30 — тридцать",
+      "tokens": [
+        "ba",
+        "mươi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/2/examples/1"
+      }
+    },
+    {
+      "vi": "chín mươi chín",
+      "ru": "99 — девяносто девять",
+      "tokens": [
+        "chín",
+        "mươi",
+        "chín"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/2/examples/2"
+      }
+    },
+    {
+      "vi": "mười lăm",
+      "ru": "15 — пятнадцать",
+      "tokens": [
+        "mười",
+        "lăm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/3/examples/0"
+      }
+    },
+    {
+      "vi": "hai mươi lăm",
+      "ru": "25 — двадцать пять",
+      "tokens": [
+        "hai",
+        "mươi",
+        "lăm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/3/examples/1"
+      }
+    },
+    {
+      "vi": "ba mươi lăm",
+      "ru": "35 — тридцать пять",
+      "tokens": [
+        "ba",
+        "mươi",
+        "lăm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/3/examples/2"
+      }
+    },
+    {
+      "vi": "chín mươi lăm",
+      "ru": "95 — девяносто пять",
+      "tokens": [
+        "chín",
+        "mươi",
+        "lăm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/3/examples/3"
+      }
+    },
+    {
+      "vi": "hai mươi mốt",
+      "ru": "21 — двадцать один",
+      "tokens": [
+        "hai",
+        "mươi",
+        "mốt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/4/examples/0"
+      }
+    },
+    {
+      "vi": "ba mươi mốt",
+      "ru": "31 — тридцать один",
+      "tokens": [
+        "ba",
+        "mươi",
+        "mốt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/4/examples/1"
+      }
+    },
+    {
+      "vi": "bốn mươi mốt",
+      "ru": "41 — сорок один",
+      "tokens": [
+        "bốn",
+        "mươi",
+        "mốt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/4/examples/2"
+      }
+    },
+    {
+      "vi": "chín mươi mốt",
+      "ru": "91 — девяносто один",
+      "tokens": [
+        "chín",
+        "mươi",
+        "mốt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/4/examples/3"
+      }
+    },
+    {
+      "vi": "Anh sinh năm bao nhiêu?",
+      "ru": "В каком году ты родился?",
+      "tokens": [
+        "Anh",
+        "sinh",
+        "năm",
+        "bao",
+        "nhiêu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/0"
+      }
+    },
+    {
+      "vi": "Anh sinh năm 91.",
+      "ru": "Я родился в 1991 году.",
+      "tokens": [
+        "Anh",
+        "sinh",
+        "năm",
+        "91"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/1"
+      }
+    },
+    {
+      "vi": "Năm nay anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет в этом году?",
+      "tokens": [
+        "Năm",
+        "nay",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/2"
+      }
+    },
+    {
+      "vi": "Năm nay anh 39 tuổi.",
+      "ru": "В этом году мне 39 лет.",
+      "tokens": [
+        "Năm",
+        "nay",
+        "anh",
+        "39",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson9.ts",
+        "pointer": "/sections/10/items/3"
+      }
+    },
+    {
+      "vi": "Bao nhiêu tiền?",
+      "ru": "Сколько стоит?",
+      "tokens": [
+        "Bao",
+        "nhiêu",
+        "tiền"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/0"
+      }
+    },
+    {
+      "vi": "Bốn trăm ba mươi nghìn đồng.",
+      "ru": "Четыреста тридцать тысяч донгов.",
+      "tokens": [
+        "Bốn",
+        "trăm",
+        "ba",
+        "mươi",
+        "nghìn",
+        "đồng"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/1"
+      }
+    },
+    {
+      "vi": "Anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет?",
+      "tokens": [
+        "Anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/2"
+      }
+    },
+    {
+      "vi": "Tôi năm mươi tuổi.",
+      "ru": "Мне пятьдесят лет.",
+      "tokens": [
+        "Tôi",
+        "năm",
+        "mươi",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/3"
+      }
+    },
+    {
+      "vi": "Năm nay anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе лет в этом году?",
+      "tokens": [
+        "Năm",
+        "nay",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/4"
+      }
+    },
+    {
+      "vi": "Năm nay tôi năm mươi mốt tuổi.",
+      "ru": "В этом году мне пятьдесят один год.",
+      "tokens": [
+        "Năm",
+        "nay",
+        "tôi",
+        "năm",
+        "mươi",
+        "mốt",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/5"
+      }
+    },
+    {
+      "vi": "Anh sinh năm bao nhiêu?",
+      "ru": "В каком году ты родился?",
+      "tokens": [
+        "Anh",
+        "sinh",
+        "năm",
+        "bao",
+        "nhiêu"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/6"
+      }
+    },
+    {
+      "vi": "Tôi sinh năm bảy mươi lăm.",
+      "ru": "Я родился в семьдесят пятом году.",
+      "tokens": [
+        "Tôi",
+        "sinh",
+        "năm",
+        "bảy",
+        "mươi",
+        "lăm"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/7"
+      }
+    },
+    {
+      "vi": "Anh sang Việt Nam năm anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе было лет, когда ты переехал во Вьетнам?",
+      "tokens": [
+        "Anh",
+        "sang",
+        "Việt",
+        "Nam",
+        "năm",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/8"
+      }
+    },
+    {
+      "vi": "Tôi sang Việt Nam năm tôi bốn mươi bảy tuổi.",
+      "ru": "Я переехал во Вьетнам, когда мне было сорок семь лет.",
+      "tokens": [
+        "Tôi",
+        "sang",
+        "Việt",
+        "Nam",
+        "năm",
+        "tôi",
+        "bốn",
+        "mươi",
+        "bảy",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/9"
+      }
+    },
+    {
+      "vi": "Tôi có gốc Nga.",
+      "ru": "У меня российские корни.",
+      "tokens": [
+        "Tôi",
+        "có",
+        "gốc",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/10"
+      }
+    },
+    {
+      "vi": "Tôi là Nga kiều.",
+      "ru": "Я российский экспат.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "Nga",
+        "kiều"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/11"
+      }
+    },
+    {
+      "vi": "Bây giờ tôi đang học tiếng Việt ở Đại học Quốc gia.",
+      "ru": "Сейчас я изучаю вьетнамский язык в Национальном университете.",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "tôi",
+        "đang",
+        "học",
+        "tiếng",
+        "Việt",
+        "ở",
+        "Đại",
+        "học",
+        "Quốc",
+        "gia"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/12"
+      }
+    },
+    {
+      "vi": "Bây giờ anh sống ở thành phố nào?",
+      "ru": "В каком городе ты сейчас живёшь?",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "anh",
+        "sống",
+        "ở",
+        "thành",
+        "phố",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/13"
+      }
+    },
+    {
+      "vi": "Bây giờ tôi sống ở Nha Trang.",
+      "ru": "Сейчас я живу в Нячанге.",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "tôi",
+        "sống",
+        "ở",
+        "Nha",
+        "Trang"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/14"
+      }
+    },
+    {
+      "vi": "Anh sang Nha Trang năm anh bao nhiêu tuổi?",
+      "ru": "Сколько тебе было лет, когда ты переехал в Нячанг?",
+      "tokens": [
+        "Anh",
+        "sang",
+        "Nha",
+        "Trang",
+        "năm",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/15"
+      }
+    },
+    {
+      "vi": "Tôi sang Nha Trang năm tôi bốn mươi chín tuổi.",
+      "ru": "Я переехал в Нячанг, когда мне было сорок девять лет.",
+      "tokens": [
+        "Tôi",
+        "sang",
+        "Nha",
+        "Trang",
+        "năm",
+        "tôi",
+        "bốn",
+        "mươi",
+        "chín",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences/16"
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "kind": "sentence-bank",
+      "heading": "Диалоги · Урок 9",
+      "lines": [
+        {
+          "vi": "Bao nhiêu tiền?",
+          "ru": "Сколько стоит?",
+          "tokens": [
+            "Bao",
+            "nhiêu",
+            "tiền"
+          ]
+        },
+        {
+          "vi": "Bốn trăm ba mươi nghìn đồng.",
+          "ru": "Четыреста тридцать тысяч донгов.",
+          "tokens": [
+            "Bốn",
+            "trăm",
+            "ba",
+            "mươi",
+            "nghìn",
+            "đồng"
+          ]
+        },
+        {
+          "vi": "Anh bao nhiêu tuổi?",
+          "ru": "Сколько тебе лет?",
+          "tokens": [
+            "Anh",
+            "bao",
+            "nhiêu",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Tôi năm mươi tuổi.",
+          "ru": "Мне пятьдесят лет.",
+          "tokens": [
+            "Tôi",
+            "năm",
+            "mươi",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Năm nay anh bao nhiêu tuổi?",
+          "ru": "Сколько тебе лет в этом году?",
+          "tokens": [
+            "Năm",
+            "nay",
+            "anh",
+            "bao",
+            "nhiêu",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Năm nay tôi năm mươi mốt tuổi.",
+          "ru": "В этом году мне пятьдесят один год.",
+          "tokens": [
+            "Năm",
+            "nay",
+            "tôi",
+            "năm",
+            "mươi",
+            "mốt",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Anh sinh năm bao nhiêu?",
+          "ru": "В каком году ты родился?",
+          "tokens": [
+            "Anh",
+            "sinh",
+            "năm",
+            "bao",
+            "nhiêu"
+          ]
+        },
+        {
+          "vi": "Tôi sinh năm bảy mươi lăm.",
+          "ru": "Я родился в семьдесят пятом году.",
+          "tokens": [
+            "Tôi",
+            "sinh",
+            "năm",
+            "bảy",
+            "mươi",
+            "lăm"
+          ]
+        },
+        {
+          "vi": "Anh sang Việt Nam năm anh bao nhiêu tuổi?",
+          "ru": "Сколько тебе было лет, когда ты переехал во Вьетнам?",
+          "tokens": [
+            "Anh",
+            "sang",
+            "Việt",
+            "Nam",
+            "năm",
+            "anh",
+            "bao",
+            "nhiêu",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Tôi sang Việt Nam năm tôi bốn mươi bảy tuổi.",
+          "ru": "Я переехал во Вьетнам, когда мне было сорок семь лет.",
+          "tokens": [
+            "Tôi",
+            "sang",
+            "Việt",
+            "Nam",
+            "năm",
+            "tôi",
+            "bốn",
+            "mươi",
+            "bảy",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Tôi có gốc Nga.",
+          "ru": "У меня российские корни.",
+          "tokens": [
+            "Tôi",
+            "có",
+            "gốc",
+            "Nga"
+          ]
+        },
+        {
+          "vi": "Tôi là Nga kiều.",
+          "ru": "Я российский экспат.",
+          "tokens": [
+            "Tôi",
+            "là",
+            "Nga",
+            "kiều"
+          ]
+        },
+        {
+          "vi": "Bây giờ tôi đang học tiếng Việt ở Đại học Quốc gia.",
+          "ru": "Сейчас я изучаю вьетнамский язык в Национальном университете.",
+          "tokens": [
+            "Bây",
+            "giờ",
+            "tôi",
+            "đang",
+            "học",
+            "tiếng",
+            "Việt",
+            "ở",
+            "Đại",
+            "học",
+            "Quốc",
+            "gia"
+          ]
+        },
+        {
+          "vi": "Bây giờ anh sống ở thành phố nào?",
+          "ru": "В каком городе ты сейчас живёшь?",
+          "tokens": [
+            "Bây",
+            "giờ",
+            "anh",
+            "sống",
+            "ở",
+            "thành",
+            "phố",
+            "nào"
+          ]
+        },
+        {
+          "vi": "Bây giờ tôi sống ở Nha Trang.",
+          "ru": "Сейчас я живу в Нячанге.",
+          "tokens": [
+            "Bây",
+            "giờ",
+            "tôi",
+            "sống",
+            "ở",
+            "Nha",
+            "Trang"
+          ]
+        },
+        {
+          "vi": "Anh sang Nha Trang năm anh bao nhiêu tuổi?",
+          "ru": "Сколько тебе было лет, когда ты переехал в Нячанг?",
+          "tokens": [
+            "Anh",
+            "sang",
+            "Nha",
+            "Trang",
+            "năm",
+            "anh",
+            "bao",
+            "nhiêu",
+            "tuổi"
+          ]
+        },
+        {
+          "vi": "Tôi sang Nha Trang năm tôi bốn mươi chín tuổi.",
+          "ru": "Я переехал в Нячанг, когда мне было сорок девять лет.",
+          "tokens": [
+            "Tôi",
+            "sang",
+            "Nha",
+            "Trang",
+            "năm",
+            "tôi",
+            "bốn",
+            "mươi",
+            "chín",
+            "tuổi"
+          ]
+        }
+      ],
+      "source": {
+        "file": "src/content/games/dialogues.ts",
+        "pointer": "/dialogueSentences"
+      }
+    }
+  ],
+  "theory": [
+    {
+      "kind": "vocab",
+      "heading": "1. Числа от 1 до 10",
+      "items": [
+        {
+          "vi": "một",
+          "ru": "1 — один"
+        },
+        {
+          "vi": "hai",
+          "ru": "2 — два"
+        },
+        {
+          "vi": "ba",
+          "ru": "3 — три"
+        },
+        {
+          "vi": "bốn",
+          "ru": "4 — четыре"
+        },
+        {
+          "vi": "năm",
+          "ru": "5 — пять"
+        },
+        {
+          "vi": "sáu",
+          "ru": "6 — шесть"
+        },
+        {
+          "vi": "bảy",
+          "ru": "7 — семь"
+        },
+        {
+          "vi": "tám",
+          "ru": "8 — восемь"
+        },
+        {
+          "vi": "chín",
+          "ru": "9 — девять"
+        },
+        {
+          "vi": "mười",
+          "ru": "10 — десять"
+        }
+      ],
+      "note": "Năm также означает «год». Подсказки русскими буквами в исходном конспекте приблизительные; ориентируйтесь на вьетнамское написание и озвучку."
+    },
+    {
+      "kind": "pattern",
+      "heading": "2. Числа от 11 до 19",
+      "formula": "mười + единицы",
+      "formulaNote": "Все числа от 11 до 19 начинаются с mười (10). В mười используется нисходящий тон: знак huyền.",
+      "examples": [
+        {
+          "vi": "mười một",
+          "ru": "11 — одиннадцать"
+        },
+        {
+          "vi": "mười hai",
+          "ru": "12 — двенадцать"
+        },
+        {
+          "vi": "mười chín",
+          "ru": "19 — девятнадцать"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "3. Числа от 20 до 99",
+      "formula": "десятки + mươi + единицы",
+      "formulaNote": "Для десятков используется mươi — без знака тона. Не путайте mười (10) и mươi (десятки). Если единиц нет, число заканчивается на mươi.",
+      "examples": [
+        {
+          "vi": "hai mươi",
+          "ru": "20 — двадцать"
+        },
+        {
+          "vi": "ba mươi",
+          "ru": "30 — тридцать"
+        },
+        {
+          "vi": "chín mươi chín",
+          "ru": "99 — девяносто девять"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "4. Числа, оканчивающиеся на 5",
+      "formula": "десятки + lăm",
+      "formulaNote": "После десятков вместо năm используется lăm: 15, 25, 35 и так далее до 95.",
+      "examples": [
+        {
+          "vi": "mười lăm",
+          "ru": "15 — пятнадцать"
+        },
+        {
+          "vi": "hai mươi lăm",
+          "ru": "25 — двадцать пять"
+        },
+        {
+          "vi": "ba mươi lăm",
+          "ru": "35 — тридцать пять"
+        },
+        {
+          "vi": "chín mươi lăm",
+          "ru": "95 — девяносто пять"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "5. Числа, оканчивающиеся на 1",
+      "formula": "десятки + mươi + mốt",
+      "formulaNote": "Начиная с 21, единицу после десятков обозначают mốt. В числе 11 остаётся một.",
+      "examples": [
+        {
+          "vi": "hai mươi mốt",
+          "ru": "21 — двадцать один"
+        },
+        {
+          "vi": "ba mươi mốt",
+          "ru": "31 — тридцать один"
+        },
+        {
+          "vi": "bốn mươi mốt",
+          "ru": "41 — сорок один"
+        },
+        {
+          "vi": "chín mươi mốt",
+          "ru": "91 — девяносто один"
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "Разговорное сокращение",
+      "paragraphs": [
+        "В быстрой разговорной речи mươi иногда опускают: hai mươi mốt → hai mốt. Для обучения и письма используйте полную форму."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "6. Крупные разряды",
+      "items": [
+        {
+          "vi": "trăm",
+          "ru": "сотня — 100"
+        },
+        {
+          "vi": "nghìn / ngàn",
+          "ru": "тысяча — 1 000"
+        },
+        {
+          "vi": "triệu",
+          "ru": "миллион — 1 000 000"
+        },
+        {
+          "vi": "tỷ",
+          "ru": "миллиард — 1 000 000 000"
+        },
+        {
+          "vi": "tỏi",
+          "ru": "чеснок"
+        }
+      ],
+      "note": "Tỏi («чеснок») в конспекте дано как шутливое созвучие с tỷ. Это не нормативное название миллиарда."
+    },
+    {
+      "kind": "text",
+      "heading": "7. Нули в середине: lẻ / linh",
+      "paragraphs": [
+        "Если внутри трёхзначной группы нет десятков, но есть единицы, между сотнями и единицами используется lẻ или linh. В этом употреблении они означают одно и то же. В конспекте чаще используется lẻ."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Примеры больших чисел",
+      "items": [
+        {
+          "vi": "hai trăm lẻ chín",
+          "ru": "209 — двести девять"
+        },
+        {
+          "vi": "hai trăm linh chín",
+          "ru": "209 — двести девять; вариант с linh"
+        },
+        {
+          "vi": "ba nghìn lẻ một",
+          "ru": "3 001 — три тысячи один"
+        },
+        {
+          "vi": "bốn triệu lẻ hai",
+          "ru": "4 000 002 — четыре миллиона два; сокращённая форма из конспекта"
+        },
+        {
+          "vi": "một trăm năm mươi mốt nghìn ba trăm ba mươi ba",
+          "ru": "151 333 — сто пятьдесят одна тысяча триста тридцать три"
+        },
+        {
+          "vi": "hai trăm lẻ chín nghìn ba trăm lẻ bốn",
+          "ru": "209 304 — двести девять тысяч триста четыре"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "8. Вопрос «Сколько?»",
+      "items": [
+        {
+          "vi": "mấy",
+          "ru": "сколько? — когда ожидается небольшое количество"
+        },
+        {
+          "vi": "bao nhiêu",
+          "ru": "сколько? — когда количество неизвестно или может быть большим"
+        }
+      ],
+      "note": "В конспекте ориентир для mấy — 1–12, для bao nhiêu — 13 и больше. Это учебная подсказка, а не строгая числовая граница употребления."
+    },
+    {
+      "kind": "vocab",
+      "heading": "Год рождения и возраст",
+      "items": [
+        {
+          "vi": "Anh sinh năm bao nhiêu?",
+          "ru": "В каком году ты родился?"
+        },
+        {
+          "vi": "Anh sinh năm 91.",
+          "ru": "Я родился в 1991 году."
+        },
+        {
+          "vi": "Năm nay anh bao nhiêu tuổi?",
+          "ru": "Сколько тебе лет в этом году?"
+        },
+        {
+          "vi": "Năm nay anh 39 tuổi.",
+          "ru": "В этом году мне 39 лет."
+        }
+      ],
+      "note": "В примерах говорящий может называть себя anh. «91» — сокращённое обозначение 1991 года в данном контексте."
+    },
+    {
+      "kind": "vocab",
+      "heading": "Полезные слова",
+      "items": [
+        {
+          "vi": "năm nay",
+          "ru": "в этом году"
+        },
+        {
+          "vi": "năm",
+          "ru": "год"
+        },
+        {
+          "vi": "tuổi",
+          "ru": "возраст в годах; лет"
+        }
+      ],
+      "note": "Tuổi используется для возраста человека, животных и деревьев."
+    }
+  ]
+}

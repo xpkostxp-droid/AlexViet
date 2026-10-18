@@ -1,0 +1,2129 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-5",
+  "number": 5,
+  "title": "Профессия, место работы и семья",
+  "cards": [
+    {
+      "id": "l5-01",
+      "lessonId": "lesson-5",
+      "vi": "bạn",
+      "ru": "друг; ты (обращение)"
+    },
+    {
+      "id": "l5-02",
+      "lessonId": "lesson-5",
+      "vi": "bạn thân",
+      "ru": "близкий друг"
+    },
+    {
+      "id": "l5-03",
+      "lessonId": "lesson-5",
+      "vi": "các bạn",
+      "ru": "друзья; вы (обращение к группе)"
+    },
+    {
+      "id": "l5-04",
+      "lessonId": "lesson-5",
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья."
+    },
+    {
+      "id": "l5-05",
+      "lessonId": "lesson-5",
+      "vi": "vợ",
+      "ru": "жена"
+    },
+    {
+      "id": "l5-06",
+      "lessonId": "lesson-5",
+      "vi": "vợ anh",
+      "ru": "моя жена (если говорящий называет себя anh)"
+    },
+    {
+      "id": "l5-07",
+      "lessonId": "lesson-5",
+      "vi": "đây",
+      "ru": "здесь; это (при указании)"
+    },
+    {
+      "id": "l5-08",
+      "lessonId": "lesson-5",
+      "vi": "Đây là vợ anh.",
+      "ru": "Это моя жена."
+    },
+    {
+      "id": "l5-09",
+      "lessonId": "lesson-5",
+      "vi": "Còn đây là…",
+      "ru": "А это…"
+    },
+    {
+      "id": "l5-10",
+      "lessonId": "lesson-5",
+      "vi": "anh ấy",
+      "ru": "он"
+    },
+    {
+      "id": "l5-11",
+      "lessonId": "lesson-5",
+      "vi": "Anh ấy tên là gì?",
+      "ru": "Как его зовут?"
+    },
+    {
+      "id": "l5-12",
+      "lessonId": "lesson-5",
+      "vi": "cô ấy",
+      "ru": "она"
+    },
+    {
+      "id": "l5-13",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy tên là gì?",
+      "ru": "Как её зовут?"
+    },
+    {
+      "id": "l5-14",
+      "lessonId": "lesson-5",
+      "vi": "và",
+      "ru": "и"
+    },
+    {
+      "id": "l5-15",
+      "lessonId": "lesson-5",
+      "vi": "Tôi và cô ấy là bạn thân.",
+      "ru": "Мы с ней близкие друзья."
+    },
+    {
+      "id": "l5-16",
+      "lessonId": "lesson-5",
+      "vi": "nghề",
+      "ru": "профессия",
+      "imageUrl": "./images/cards/nghe.png"
+    },
+    {
+      "id": "l5-17",
+      "lessonId": "lesson-5",
+      "vi": "làm",
+      "ru": "делать; работать",
+      "imageUrl": "./images/cards/lam.jpg"
+    },
+    {
+      "id": "l5-17a",
+      "lessonId": "lesson-5",
+      "vi": "việc",
+      "ru": "дело",
+      "imageUrl": "./images/cards/viec.jpg"
+    },
+    {
+      "id": "l5-18",
+      "lessonId": "lesson-5",
+      "vi": "làm nghề gì?",
+      "ru": "кем работать? / какая профессия?"
+    },
+    {
+      "id": "l5-19",
+      "lessonId": "lesson-5",
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает?"
+    },
+    {
+      "id": "l5-20",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy làm nghề gì?",
+      "ru": "Кем она работает?"
+    },
+    {
+      "id": "l5-21",
+      "lessonId": "lesson-5",
+      "vi": "kĩ sư / kỹ sư",
+      "ru": "инженер"
+    },
+    {
+      "id": "l5-22",
+      "lessonId": "lesson-5",
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер."
+    },
+    {
+      "id": "l5-23",
+      "lessonId": "lesson-5",
+      "vi": "giáo viên",
+      "ru": "учитель",
+      "imageUrl": "./images/cards/giao-vien.jpg"
+    },
+    {
+      "id": "l5-24",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy là giáo viên.",
+      "ru": "Она учитель."
+    },
+    {
+      "id": "l5-25",
+      "lessonId": "lesson-5",
+      "vi": "sinh viên",
+      "ru": "студент"
+    },
+    {
+      "id": "l5-26",
+      "lessonId": "lesson-5",
+      "vi": "thư ký",
+      "ru": "секретарь"
+    },
+    {
+      "id": "l5-27",
+      "lessonId": "lesson-5",
+      "vi": "bác sĩ",
+      "ru": "врач"
+    },
+    {
+      "id": "l5-28",
+      "lessonId": "lesson-5",
+      "vi": "tài xế",
+      "ru": "водитель"
+    },
+    {
+      "id": "l5-29",
+      "lessonId": "lesson-5",
+      "vi": "lái xe",
+      "ru": "водить машину"
+    },
+    {
+      "id": "l5-30",
+      "lessonId": "lesson-5",
+      "vi": "làm việc",
+      "ru": "работать",
+      "imageUrl": "./images/cards/lam-viec.jpg"
+    },
+    {
+      "id": "l5-30a",
+      "lessonId": "lesson-5",
+      "vi": "công việc",
+      "ru": "работа",
+      "imageUrl": "./images/cards/cong-viec.png"
+    },
+    {
+      "id": "l5-31",
+      "lessonId": "lesson-5",
+      "vi": "công ty",
+      "ru": "компания"
+    },
+    {
+      "id": "l5-32",
+      "lessonId": "lesson-5",
+      "vi": "Tôi làm việc ở công ty.",
+      "ru": "Я работаю в компании."
+    },
+    {
+      "id": "l5-33",
+      "lessonId": "lesson-5",
+      "vi": "xây dựng",
+      "ru": "строительство; строить",
+      "imageUrl": "./images/cards/xay-dung.jpg"
+    },
+    {
+      "id": "l5-34",
+      "lessonId": "lesson-5",
+      "vi": "công ty xây dựng",
+      "ru": "строительная компания"
+    },
+    {
+      "id": "l5-35",
+      "lessonId": "lesson-5",
+      "vi": "đâu",
+      "ru": "где (в вопросах)"
+    },
+    {
+      "id": "l5-36",
+      "lessonId": "lesson-5",
+      "vi": "ở đâu?",
+      "ru": "где?"
+    },
+    {
+      "id": "l5-37",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?"
+    },
+    {
+      "id": "l5-38",
+      "lessonId": "lesson-5",
+      "vi": "học",
+      "ru": "учиться"
+    },
+    {
+      "id": "l5-39",
+      "lessonId": "lesson-5",
+      "vi": "trường",
+      "ru": "школа; учебное заведение",
+      "imageUrl": "./images/cards/truong.jpg"
+    },
+    {
+      "id": "l5-40",
+      "lessonId": "lesson-5",
+      "vi": "trường đại học",
+      "ru": "университет"
+    },
+    {
+      "id": "l5-41",
+      "lessonId": "lesson-5",
+      "vi": "Anh ấy học ở đâu?",
+      "ru": "Где он учится?"
+    }
+  ],
+  "words": [
+    {
+      "id": "l5-01",
+      "lessonId": "lesson-5",
+      "vi": "bạn",
+      "ru": "друг; ты (обращение)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-01"
+      }
+    },
+    {
+      "id": "l5-02",
+      "lessonId": "lesson-5",
+      "vi": "bạn thân",
+      "ru": "близкий друг",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-02"
+      }
+    },
+    {
+      "id": "l5-03",
+      "lessonId": "lesson-5",
+      "vi": "các bạn",
+      "ru": "друзья; вы (обращение к группе)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-03"
+      }
+    },
+    {
+      "id": "l5-04",
+      "lessonId": "lesson-5",
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-04"
+      }
+    },
+    {
+      "id": "l5-05",
+      "lessonId": "lesson-5",
+      "vi": "vợ",
+      "ru": "жена",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-05"
+      }
+    },
+    {
+      "id": "l5-06",
+      "lessonId": "lesson-5",
+      "vi": "vợ anh",
+      "ru": "моя жена (если говорящий называет себя anh)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-06"
+      }
+    },
+    {
+      "id": "l5-07",
+      "lessonId": "lesson-5",
+      "vi": "đây",
+      "ru": "здесь; это (при указании)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-07"
+      }
+    },
+    {
+      "id": "l5-08",
+      "lessonId": "lesson-5",
+      "vi": "Đây là vợ anh.",
+      "ru": "Это моя жена.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-08"
+      }
+    },
+    {
+      "id": "l5-09",
+      "lessonId": "lesson-5",
+      "vi": "Còn đây là…",
+      "ru": "А это…",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-09"
+      }
+    },
+    {
+      "id": "l5-10",
+      "lessonId": "lesson-5",
+      "vi": "anh ấy",
+      "ru": "он",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-10"
+      }
+    },
+    {
+      "id": "l5-11",
+      "lessonId": "lesson-5",
+      "vi": "Anh ấy tên là gì?",
+      "ru": "Как его зовут?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-11"
+      }
+    },
+    {
+      "id": "l5-12",
+      "lessonId": "lesson-5",
+      "vi": "cô ấy",
+      "ru": "она",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-12"
+      }
+    },
+    {
+      "id": "l5-13",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy tên là gì?",
+      "ru": "Как её зовут?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-13"
+      }
+    },
+    {
+      "id": "l5-14",
+      "lessonId": "lesson-5",
+      "vi": "và",
+      "ru": "и",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-14"
+      }
+    },
+    {
+      "id": "l5-15",
+      "lessonId": "lesson-5",
+      "vi": "Tôi và cô ấy là bạn thân.",
+      "ru": "Мы с ней близкие друзья.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-15"
+      }
+    },
+    {
+      "id": "l5-16",
+      "lessonId": "lesson-5",
+      "vi": "nghề",
+      "ru": "профессия",
+      "imageUrl": "./images/cards/nghe.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-16"
+      }
+    },
+    {
+      "id": "l5-17",
+      "lessonId": "lesson-5",
+      "vi": "làm",
+      "ru": "делать; работать",
+      "imageUrl": "./images/cards/lam.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-17"
+      }
+    },
+    {
+      "id": "l5-17a",
+      "lessonId": "lesson-5",
+      "vi": "việc",
+      "ru": "дело",
+      "imageUrl": "./images/cards/viec.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-17a"
+      }
+    },
+    {
+      "id": "l5-18",
+      "lessonId": "lesson-5",
+      "vi": "làm nghề gì?",
+      "ru": "кем работать? / какая профессия?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-18"
+      }
+    },
+    {
+      "id": "l5-19",
+      "lessonId": "lesson-5",
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-19"
+      }
+    },
+    {
+      "id": "l5-20",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy làm nghề gì?",
+      "ru": "Кем она работает?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-20"
+      }
+    },
+    {
+      "id": "l5-21",
+      "lessonId": "lesson-5",
+      "vi": "kĩ sư / kỹ sư",
+      "ru": "инженер",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-21"
+      }
+    },
+    {
+      "id": "l5-22",
+      "lessonId": "lesson-5",
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-22"
+      }
+    },
+    {
+      "id": "l5-23",
+      "lessonId": "lesson-5",
+      "vi": "giáo viên",
+      "ru": "учитель",
+      "imageUrl": "./images/cards/giao-vien.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-23"
+      }
+    },
+    {
+      "id": "l5-24",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy là giáo viên.",
+      "ru": "Она учитель.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-24"
+      }
+    },
+    {
+      "id": "l5-25",
+      "lessonId": "lesson-5",
+      "vi": "sinh viên",
+      "ru": "студент",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-25"
+      }
+    },
+    {
+      "id": "l5-26",
+      "lessonId": "lesson-5",
+      "vi": "thư ký",
+      "ru": "секретарь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-26"
+      }
+    },
+    {
+      "id": "l5-27",
+      "lessonId": "lesson-5",
+      "vi": "bác sĩ",
+      "ru": "врач",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-27"
+      }
+    },
+    {
+      "id": "l5-28",
+      "lessonId": "lesson-5",
+      "vi": "tài xế",
+      "ru": "водитель",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-28"
+      }
+    },
+    {
+      "id": "l5-29",
+      "lessonId": "lesson-5",
+      "vi": "lái xe",
+      "ru": "водить машину",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-29"
+      }
+    },
+    {
+      "id": "l5-30",
+      "lessonId": "lesson-5",
+      "vi": "làm việc",
+      "ru": "работать",
+      "imageUrl": "./images/cards/lam-viec.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-30"
+      }
+    },
+    {
+      "id": "l5-30a",
+      "lessonId": "lesson-5",
+      "vi": "công việc",
+      "ru": "работа",
+      "imageUrl": "./images/cards/cong-viec.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-30a"
+      }
+    },
+    {
+      "id": "l5-31",
+      "lessonId": "lesson-5",
+      "vi": "công ty",
+      "ru": "компания",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-31"
+      }
+    },
+    {
+      "id": "l5-32",
+      "lessonId": "lesson-5",
+      "vi": "Tôi làm việc ở công ty.",
+      "ru": "Я работаю в компании.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-32"
+      }
+    },
+    {
+      "id": "l5-33",
+      "lessonId": "lesson-5",
+      "vi": "xây dựng",
+      "ru": "строительство; строить",
+      "imageUrl": "./images/cards/xay-dung.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-33"
+      }
+    },
+    {
+      "id": "l5-34",
+      "lessonId": "lesson-5",
+      "vi": "công ty xây dựng",
+      "ru": "строительная компания",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-34"
+      }
+    },
+    {
+      "id": "l5-35",
+      "lessonId": "lesson-5",
+      "vi": "đâu",
+      "ru": "где (в вопросах)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-35"
+      }
+    },
+    {
+      "id": "l5-36",
+      "lessonId": "lesson-5",
+      "vi": "ở đâu?",
+      "ru": "где?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-36"
+      }
+    },
+    {
+      "id": "l5-37",
+      "lessonId": "lesson-5",
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-37"
+      }
+    },
+    {
+      "id": "l5-38",
+      "lessonId": "lesson-5",
+      "vi": "học",
+      "ru": "учиться",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-38"
+      }
+    },
+    {
+      "id": "l5-39",
+      "lessonId": "lesson-5",
+      "vi": "trường",
+      "ru": "школа; учебное заведение",
+      "imageUrl": "./images/cards/truong.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-39"
+      }
+    },
+    {
+      "id": "l5-40",
+      "lessonId": "lesson-5",
+      "vi": "trường đại học",
+      "ru": "университет",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-40"
+      }
+    },
+    {
+      "id": "l5-41",
+      "lessonId": "lesson-5",
+      "vi": "Anh ấy học ở đâu?",
+      "ru": "Где он учится?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-41"
+      }
+    },
+    {
+      "vi": "tên là gì?",
+      "ru": "как зовут?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/0/0"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "кем работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/0/1"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/0/2"
+      }
+    },
+    {
+      "vi": "Chào anh.",
+      "ru": "Здравствуйте / привет мужчине.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "Chào chị,",
+      "ru": "Здравствуйте / привет женщине.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/2/items/1"
+      }
+    },
+    {
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья / всем привет.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "các",
+      "ru": "показатель множественного числа",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/0"
+      }
+    },
+    {
+      "vi": "bạn",
+      "ru": "друг / ты",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/1"
+      }
+    },
+    {
+      "vi": "bạn thân",
+      "ru": "близкий друг",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/2"
+      }
+    },
+    {
+      "vi": "vợ",
+      "ru": "жена",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/3"
+      }
+    },
+    {
+      "vi": "vợ anh",
+      "ru": "моя жена — когда говорящий называет себя anh",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/4"
+      }
+    },
+    {
+      "vi": "kỹ sư / kĩ sư",
+      "ru": "инженер",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/5"
+      }
+    },
+    {
+      "vi": "tài xế",
+      "ru": "водитель (профессия)",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/6"
+      }
+    },
+    {
+      "vi": "lái xe",
+      "ru": "водить машину; также о работе водителем",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/7"
+      }
+    },
+    {
+      "vi": "công ty",
+      "ru": "компания",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/8"
+      }
+    },
+    {
+      "vi": "xây dựng",
+      "ru": "строительство / строительный",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/9"
+      }
+    },
+    {
+      "vi": "công ty xây dựng",
+      "ru": "строительная компания",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/10"
+      }
+    },
+    {
+      "vi": "trường đại học",
+      "ru": "университет",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/11"
+      }
+    },
+    {
+      "vi": "làm",
+      "ru": "делать / работать",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/12"
+      }
+    },
+    {
+      "vi": "làm việc",
+      "ru": "работать",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/13"
+      }
+    },
+    {
+      "vi": "anh ấy",
+      "ru": "он",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/14"
+      }
+    },
+    {
+      "vi": "cô ấy",
+      "ru": "она",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/15"
+      }
+    },
+    {
+      "vi": "còn đây là...",
+      "ru": "а это... / а вот это...",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/4/items/16"
+      }
+    },
+    {
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/0"
+      }
+    },
+    {
+      "vi": "Tôi tên là Minh.",
+      "ru": "Меня зовут Минь.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/1"
+      }
+    },
+    {
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/2"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở Công ty Xây dựng Hà Nội.",
+      "ru": "Я работаю в строительной компании Ханоя.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/3"
+      }
+    },
+    {
+      "vi": "Còn đây là Hà.",
+      "ru": "А это Ха.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/4"
+      }
+    },
+    {
+      "vi": "Cô ấy là giáo viên.",
+      "ru": "Она преподаватель.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/5"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở Trường Đại học Bách khoa.",
+      "ru": "Она работает в Политехническом университете.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/6"
+      }
+    },
+    {
+      "vi": "Tôi và cô ấy là bạn thân.",
+      "ru": "Мы с ней близкие друзья.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/7"
+      }
+    },
+    {
+      "vi": "Anh ấy tên là gì?",
+      "ru": "Как его зовут?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает? / Какая у него профессия?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "Anh ấy học ở đâu?",
+      "ru": "Где он учится?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/2"
+      }
+    },
+    {
+      "vi": "Cô ấy tên là gì?",
+      "ru": "Как её зовут?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/3"
+      }
+    },
+    {
+      "vi": "Cô ấy làm nghề gì?",
+      "ru": "Кем она работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/4"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/5"
+      }
+    },
+    {
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/0/2"
+      }
+    },
+    {
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/1/2"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/2/2"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở công ty.",
+      "ru": "Я работаю в компании.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/3/2"
+      }
+    },
+    {
+      "vi": "là",
+      "ru": "быть / являться",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/0"
+      }
+    },
+    {
+      "vi": "làm",
+      "ru": "делать / работать",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/1"
+      }
+    },
+    {
+      "vi": "làm việc",
+      "ru": "работать",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/2"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "кем работает? / какая профессия?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/3"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работает?",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/4"
+      }
+    },
+    {
+      "vi": "vợ",
+      "ru": "жена",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/9/items/0"
+      }
+    },
+    {
+      "vi": "vợ anh",
+      "ru": "«моя жена» — когда мужчина в разговоре обозначает себя как anh; здесь anh не отдельное слово «мой», значение определяется контекстом",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/9/items/1"
+      }
+    },
+    {
+      "vi": "Đây là vợ anh.",
+      "ru": "Это моя жена.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/9/items/2"
+      }
+    },
+    {
+      "vi": "Hòa là sinh viên.",
+      "ru": "Хоа — студент.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/0"
+      }
+    },
+    {
+      "vi": "Hà là thư ký.",
+      "ru": "Ха — секретарь.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/1"
+      }
+    },
+    {
+      "vi": "Hùng là kĩ sư.",
+      "ru": "Хунг — инженер.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/2"
+      }
+    },
+    {
+      "vi": "Tùng là bác sĩ.",
+      "ru": "Тунг — врач.",
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/3"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "kind": "table",
+      "heading": "Основные конструкции",
+      "columns": [
+        "Схема",
+        "Значение",
+        "Пример"
+      ],
+      "rows": [
+        [
+          "Tôi là + профессия",
+          "Я — ...",
+          "Tôi là kĩ sư. — Я инженер."
+        ],
+        [
+          "... làm nghề gì?",
+          "Кем работает?",
+          "Anh ấy làm nghề gì? — Кем он работает?"
+        ],
+        [
+          "... làm việc ở đâu?",
+          "Где работает?",
+          "Cô ấy làm việc ở đâu? — Где она работает?"
+        ],
+        [
+          "Tôi làm việc ở + место",
+          "Я работаю в ...",
+          "Tôi làm việc ở công ty. — Я работаю в компании."
+        ]
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья.",
+      "tokens": [
+        "Xin",
+        "chào",
+        "các",
+        "bạn"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-04"
+      }
+    },
+    {
+      "vi": "Đây là vợ anh.",
+      "ru": "Это моя жена.",
+      "tokens": [
+        "Đây",
+        "là",
+        "vợ",
+        "anh"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-08"
+      }
+    },
+    {
+      "vi": "Anh ấy tên là gì?",
+      "ru": "Как его зовут?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-11"
+      }
+    },
+    {
+      "vi": "Cô ấy tên là gì?",
+      "ru": "Как её зовут?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-13"
+      }
+    },
+    {
+      "vi": "Tôi và cô ấy là bạn thân.",
+      "ru": "Мы с ней близкие друзья.",
+      "tokens": [
+        "Tôi",
+        "và",
+        "cô",
+        "ấy",
+        "là",
+        "bạn",
+        "thân"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-15"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "кем работать? / какая профессия?",
+      "tokens": [
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-18"
+      }
+    },
+    {
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-19"
+      }
+    },
+    {
+      "vi": "Cô ấy làm nghề gì?",
+      "ru": "Кем она работает?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-20"
+      }
+    },
+    {
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "kĩ",
+        "sư"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-22"
+      }
+    },
+    {
+      "vi": "Cô ấy là giáo viên.",
+      "ru": "Она учитель.",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "là",
+        "giáo",
+        "viên"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-24"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở công ty.",
+      "ru": "Я работаю в компании.",
+      "tokens": [
+        "Tôi",
+        "làm",
+        "việc",
+        "ở",
+        "công",
+        "ty"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-32"
+      }
+    },
+    {
+      "vi": "ở đâu?",
+      "ru": "где?",
+      "tokens": [
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-36"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-37"
+      }
+    },
+    {
+      "vi": "Anh ấy học ở đâu?",
+      "ru": "Где он учится?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "học",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l5-41"
+      }
+    },
+    {
+      "vi": "tên là gì?",
+      "ru": "как зовут?",
+      "tokens": [
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/0/0"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "кем работает?",
+      "tokens": [
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/0/1"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работает?",
+      "tokens": [
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/0/2"
+      }
+    },
+    {
+      "vi": "Chào anh.",
+      "ru": "Здравствуйте / привет мужчине.",
+      "tokens": [
+        "Chào",
+        "anh"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья / всем привет.",
+      "tokens": [
+        "Xin",
+        "chào",
+        "các",
+        "bạn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "Xin chào các bạn.",
+      "ru": "Здравствуйте, друзья.",
+      "tokens": [
+        "Xin",
+        "chào",
+        "các",
+        "bạn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/0"
+      }
+    },
+    {
+      "vi": "Tôi tên là Minh.",
+      "ru": "Меня зовут Минь.",
+      "tokens": [
+        "Tôi",
+        "tên",
+        "là",
+        "Minh"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/1"
+      }
+    },
+    {
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "kĩ",
+        "sư"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/2"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở Công ty Xây dựng Hà Nội.",
+      "ru": "Я работаю в строительной компании Ханоя.",
+      "tokens": [
+        "Tôi",
+        "làm",
+        "việc",
+        "ở",
+        "Công",
+        "ty",
+        "Xây",
+        "dựng",
+        "Hà",
+        "Nội"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/3"
+      }
+    },
+    {
+      "vi": "Còn đây là Hà.",
+      "ru": "А это Ха.",
+      "tokens": [
+        "Còn",
+        "đây",
+        "là",
+        "Hà"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/4"
+      }
+    },
+    {
+      "vi": "Cô ấy là giáo viên.",
+      "ru": "Она преподаватель.",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "là",
+        "giáo",
+        "viên"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/5"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở Trường Đại học Bách khoa.",
+      "ru": "Она работает в Политехническом университете.",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "làm",
+        "việc",
+        "ở",
+        "Trường",
+        "Đại",
+        "học",
+        "Bách",
+        "khoa"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/6"
+      }
+    },
+    {
+      "vi": "Tôi và cô ấy là bạn thân.",
+      "ru": "Мы с ней близкие друзья.",
+      "tokens": [
+        "Tôi",
+        "và",
+        "cô",
+        "ấy",
+        "là",
+        "bạn",
+        "thân"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/5/7"
+      }
+    },
+    {
+      "vi": "Anh ấy tên là gì?",
+      "ru": "Как его зовут?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает? / Какая у него профессия?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "Anh ấy học ở đâu?",
+      "ru": "Где он учится?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "học",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/2"
+      }
+    },
+    {
+      "vi": "Cô ấy tên là gì?",
+      "ru": "Как её зовут?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/3"
+      }
+    },
+    {
+      "vi": "Cô ấy làm nghề gì?",
+      "ru": "Кем она работает?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/4"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/6/items/5"
+      }
+    },
+    {
+      "vi": "Tôi là kĩ sư.",
+      "ru": "Я инженер.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "kĩ",
+        "sư"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/0/2"
+      }
+    },
+    {
+      "vi": "Anh ấy làm nghề gì?",
+      "ru": "Кем он работает?",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/1/2"
+      }
+    },
+    {
+      "vi": "Cô ấy làm việc ở đâu?",
+      "ru": "Где она работает?",
+      "tokens": [
+        "Cô",
+        "ấy",
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/2/2"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở công ty.",
+      "ru": "Я работаю в компании.",
+      "tokens": [
+        "Tôi",
+        "làm",
+        "việc",
+        "ở",
+        "công",
+        "ty"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/7/rows/3/2"
+      }
+    },
+    {
+      "vi": "là",
+      "ru": "быть / являться",
+      "tokens": [
+        "là"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/0"
+      }
+    },
+    {
+      "vi": "làm",
+      "ru": "делать / работать",
+      "tokens": [
+        "làm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/1"
+      }
+    },
+    {
+      "vi": "làm việc",
+      "ru": "работать",
+      "tokens": [
+        "làm",
+        "việc"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/2"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "кем работает? / какая профессия?",
+      "tokens": [
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/3"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работает?",
+      "tokens": [
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/8/4"
+      }
+    },
+    {
+      "vi": "Đây là vợ anh.",
+      "ru": "Это моя жена.",
+      "tokens": [
+        "Đây",
+        "là",
+        "vợ",
+        "anh"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/9/items/2"
+      }
+    },
+    {
+      "vi": "Hòa là sinh viên.",
+      "ru": "Хоа — студент.",
+      "tokens": [
+        "Hòa",
+        "là",
+        "sinh",
+        "viên"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/0"
+      }
+    },
+    {
+      "vi": "Hà là thư ký.",
+      "ru": "Ха — секретарь.",
+      "tokens": [
+        "Hà",
+        "là",
+        "thư",
+        "ký"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/1"
+      }
+    },
+    {
+      "vi": "Hùng là kĩ sư.",
+      "ru": "Хунг — инженер.",
+      "tokens": [
+        "Hùng",
+        "là",
+        "kĩ",
+        "sư"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/2"
+      }
+    },
+    {
+      "vi": "Tùng là bác sĩ.",
+      "ru": "Тунг — врач.",
+      "tokens": [
+        "Tùng",
+        "là",
+        "bác",
+        "sĩ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson5.ts",
+        "pointer": "/sections/10/items/3"
+      }
+    }
+  ],
+  "dialogues": [],
+  "theory": [
+    {
+      "kind": "tip",
+      "heading": "Главная схема урока",
+      "items": [
+        "tên là gì? — как зовут?",
+        "làm nghề gì? — кем работает?",
+        "làm việc ở đâu? — где работает?"
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "Приветствие: chào и xin chào",
+      "paragraphs": [
+        "С конкретным человеком обычно используем chào + обращение. При обращении к группе — Xin chào các bạn. В живой речи xin chào возможно и одному человеку, но звучит более нейтрально/формально."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "items": [
+        {
+          "vi": "Chào anh.",
+          "ru": "Здравствуйте / привет мужчине."
+        },
+        {
+          "vi": "Chào chị,",
+          "ru": "Здравствуйте / привет женщине."
+        },
+        {
+          "vi": "Xin chào các bạn.",
+          "ru": "Здравствуйте, друзья / всем привет."
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Các — множественное число",
+      "note": "Các ставится перед обращением или словом, обозначающим группу людей: các + обращение = множественное число. Не добавляем các к обычным словам (не «các xe máy», не «các công ty»).",
+      "columns": [
+        "Единственное",
+        "Множественное",
+        "Перевод"
+      ],
+      "rows": [
+        [
+          "bạn",
+          "các bạn",
+          "друг / друзья; ты / вы"
+        ],
+        [
+          "anh",
+          "các anh",
+          "мужчина / группа мужчин"
+        ],
+        [
+          "chị",
+          "các chị",
+          "женщина / группа женщин"
+        ],
+        [
+          "em",
+          "các em",
+          "младший / группа младших"
+        ]
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Новые слова",
+      "items": [
+        {
+          "vi": "các",
+          "ru": "показатель множественного числа"
+        },
+        {
+          "vi": "bạn",
+          "ru": "друг / ты"
+        },
+        {
+          "vi": "bạn thân",
+          "ru": "близкий друг"
+        },
+        {
+          "vi": "vợ",
+          "ru": "жена"
+        },
+        {
+          "vi": "vợ anh",
+          "ru": "моя жена — когда говорящий называет себя anh"
+        },
+        {
+          "vi": "kỹ sư / kĩ sư",
+          "ru": "инженер"
+        },
+        {
+          "vi": "tài xế",
+          "ru": "водитель (профессия)"
+        },
+        {
+          "vi": "lái xe",
+          "ru": "водить машину; также о работе водителем"
+        },
+        {
+          "vi": "công ty",
+          "ru": "компания"
+        },
+        {
+          "vi": "xây dựng",
+          "ru": "строительство / строительный"
+        },
+        {
+          "vi": "công ty xây dựng",
+          "ru": "строительная компания"
+        },
+        {
+          "vi": "trường đại học",
+          "ru": "университет"
+        },
+        {
+          "vi": "làm",
+          "ru": "делать / работать"
+        },
+        {
+          "vi": "làm việc",
+          "ru": "работать"
+        },
+        {
+          "vi": "anh ấy",
+          "ru": "он"
+        },
+        {
+          "vi": "cô ấy",
+          "ru": "она"
+        },
+        {
+          "vi": "còn đây là...",
+          "ru": "а это... / а вот это..."
+        }
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "Текст для практики",
+      "paragraphs": [
+        "Xin chào các bạn. — Здравствуйте, друзья.",
+        "Tôi tên là Minh. — Меня зовут Минь.",
+        "Tôi là kĩ sư. — Я инженер.",
+        "Tôi làm việc ở Công ty Xây dựng Hà Nội. — Я работаю в строительной компании Ханоя.",
+        "Còn đây là Hà. — А это Ха.",
+        "Cô ấy là giáo viên. — Она преподаватель.",
+        "Cô ấy làm việc ở Trường Đại học Bách khoa. — Она работает в Политехническом университете.",
+        "Tôi và cô ấy là bạn thân. — Мы с ней близкие друзья."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Вопросы по тексту",
+      "items": [
+        {
+          "vi": "Anh ấy tên là gì?",
+          "ru": "Как его зовут?"
+        },
+        {
+          "vi": "Anh ấy làm nghề gì?",
+          "ru": "Кем он работает? / Какая у него профессия?"
+        },
+        {
+          "vi": "Anh ấy học ở đâu?",
+          "ru": "Где он учится?"
+        },
+        {
+          "vi": "Cô ấy tên là gì?",
+          "ru": "Как её зовут?"
+        },
+        {
+          "vi": "Cô ấy làm nghề gì?",
+          "ru": "Кем она работает?"
+        },
+        {
+          "vi": "Cô ấy làm việc ở đâu?",
+          "ru": "Где она работает?"
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Основные конструкции",
+      "columns": [
+        "Схема",
+        "Значение",
+        "Пример"
+      ],
+      "rows": [
+        [
+          "Tôi là + профессия",
+          "Я — ...",
+          "Tôi là kĩ sư. — Я инженер."
+        ],
+        [
+          "... làm nghề gì?",
+          "Кем работает?",
+          "Anh ấy làm nghề gì? — Кем он работает?"
+        ],
+        [
+          "... làm việc ở đâu?",
+          "Где работает?",
+          "Cô ấy làm việc ở đâu? — Где она работает?"
+        ],
+        [
+          "Tôi làm việc ở + место",
+          "Я работаю в ...",
+          "Tôi làm việc ở công ty. — Я работаю в компании."
+        ]
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Быстро запомнить",
+      "items": [
+        "là = быть / являться",
+        "làm = делать / работать",
+        "làm việc = работать",
+        "làm nghề gì? = кем работает? / какая профессия?",
+        "làm việc ở đâu? = где работает?",
+        "các + обращение = множественное число"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Семья: vợ / vợ anh",
+      "items": [
+        {
+          "vi": "vợ",
+          "ru": "жена"
+        },
+        {
+          "vi": "vợ anh",
+          "ru": "«моя жена» — когда мужчина в разговоре обозначает себя как anh; здесь anh не отдельное слово «мой», значение определяется контекстом"
+        },
+        {
+          "vi": "Đây là vợ anh.",
+          "ru": "Это моя жена."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Практика: имя + профессия",
+      "items": [
+        {
+          "vi": "Hòa là sinh viên.",
+          "ru": "Хоа — студент."
+        },
+        {
+          "vi": "Hà là thư ký.",
+          "ru": "Ха — секретарь."
+        },
+        {
+          "vi": "Hùng là kĩ sư.",
+          "ru": "Хунг — инженер."
+        },
+        {
+          "vi": "Tùng là bác sĩ.",
+          "ru": "Тунг — врач."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3388 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-4",
+  "number": 4,
+  "title": "Время глаголов, профессии и места",
+  "cards": [
+    {
+      "id": "l4-01",
+      "lessonId": "lesson-4",
+      "vi": "đã",
+      "ru": "показатель прошедшего действия"
+    },
+    {
+      "id": "l4-02",
+      "lessonId": "lesson-4",
+      "vi": "đang",
+      "ru": "показатель действия, происходящего сейчас"
+    },
+    {
+      "id": "l4-03",
+      "lessonId": "lesson-4",
+      "vi": "sẽ",
+      "ru": "показатель будущего действия"
+    },
+    {
+      "id": "l4-04",
+      "lessonId": "lesson-4",
+      "vi": "rồi",
+      "ru": "уже; обозначает завершение или изменение ситуации"
+    },
+    {
+      "id": "l4-05",
+      "lessonId": "lesson-4",
+      "vi": "ngày mai",
+      "ru": "завтра",
+      "imageUrl": "./images/cards/ngay-mai.png"
+    },
+    {
+      "id": "l4-06",
+      "lessonId": "lesson-4",
+      "vi": "giờ",
+      "ru": "час; время"
+    },
+    {
+      "id": "l4-07",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã uống cà phê.",
+      "ru": "Я пил кофе."
+    },
+    {
+      "id": "l4-08",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang uống cà phê.",
+      "ru": "Я сейчас пью кофе."
+    },
+    {
+      "id": "l4-09",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ uống cà phê.",
+      "ru": "Завтра я буду пить кофе."
+    },
+    {
+      "id": "l4-10",
+      "lessonId": "lesson-4",
+      "vi": "đi Cam Ranh",
+      "ru": "ехать в Камрань"
+    },
+    {
+      "id": "l4-11",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã đi Cam Ranh.",
+      "ru": "Я ездил в Камрань."
+    },
+    {
+      "id": "l4-12",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã đi Mũi Né rồi.",
+      "ru": "Я уже ездил в Муйне."
+    },
+    {
+      "id": "l4-13",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ đi Cam Ranh.",
+      "ru": "Завтра я поеду в Камрань."
+    },
+    {
+      "id": "l4-14",
+      "lessonId": "lesson-4",
+      "vi": "Chị sẽ đi An Viên vào ngày mai.",
+      "ru": "Вы поедете в Ан Вьен завтра (обращение к женщине)."
+    },
+    {
+      "id": "l4-15",
+      "lessonId": "lesson-4",
+      "vi": "đi chợ",
+      "ru": "идти на рынок"
+    },
+    {
+      "id": "l4-16",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang đi chợ.",
+      "ru": "Я сейчас иду на рынок."
+    },
+    {
+      "id": "l4-17",
+      "lessonId": "lesson-4",
+      "vi": "ăn",
+      "ru": "есть; кушать"
+    },
+    {
+      "id": "l4-18",
+      "lessonId": "lesson-4",
+      "vi": "ăn phở bò",
+      "ru": "есть фо бо"
+    },
+    {
+      "id": "l4-19",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã ăn phở bò.",
+      "ru": "Я ел фо бо."
+    },
+    {
+      "id": "l4-20",
+      "lessonId": "lesson-4",
+      "vi": "ăn cơm",
+      "ru": "есть рис; есть, принимать пищу"
+    },
+    {
+      "id": "l4-21",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang ăn cơm.",
+      "ru": "Я сейчас ем."
+    },
+    {
+      "id": "l4-22",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ ăn phở bò.",
+      "ru": "Завтра я буду есть фо бо."
+    },
+    {
+      "id": "l4-23",
+      "lessonId": "lesson-4",
+      "vi": "thích",
+      "ru": "любить; нравиться"
+    },
+    {
+      "id": "l4-24",
+      "lessonId": "lesson-4",
+      "vi": "xe máy",
+      "ru": "мотобайк; мотоцикл"
+    },
+    {
+      "id": "l4-25",
+      "lessonId": "lesson-4",
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравятся мотобайки."
+    },
+    {
+      "id": "l4-26",
+      "lessonId": "lesson-4",
+      "vi": "học tiếng Việt",
+      "ru": "учить вьетнамский язык"
+    },
+    {
+      "id": "l4-27",
+      "lessonId": "lesson-4",
+      "vi": "Anh muốn học tiếng Việt.",
+      "ru": "Я хочу учить вьетнамский."
+    },
+    {
+      "id": "l4-28",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang học tiếng Việt.",
+      "ru": "Я сейчас учу вьетнамский."
+    },
+    {
+      "id": "l4-29",
+      "lessonId": "lesson-4",
+      "vi": "mua",
+      "ru": "покупать"
+    },
+    {
+      "id": "l4-30",
+      "lessonId": "lesson-4",
+      "vi": "mua xe máy",
+      "ru": "покупать мотобайк"
+    },
+    {
+      "id": "l4-31",
+      "lessonId": "lesson-4",
+      "vi": "Anh muốn mua xe máy.",
+      "ru": "Я хочу купить мотобайк."
+    },
+    {
+      "id": "l4-32",
+      "lessonId": "lesson-4",
+      "vi": "quà",
+      "ru": "подарок"
+    },
+    {
+      "id": "l4-33",
+      "lessonId": "lesson-4",
+      "vi": "mua quà",
+      "ru": "покупать подарок"
+    },
+    {
+      "id": "l4-34",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang mua quà.",
+      "ru": "Я сейчас покупаю подарок."
+    },
+    {
+      "id": "l4-35",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ mua quà.",
+      "ru": "Завтра я куплю подарок."
+    },
+    {
+      "id": "l4-36",
+      "lessonId": "lesson-4",
+      "vi": "nghề nghiệp",
+      "ru": "профессия"
+    },
+    {
+      "id": "l4-37",
+      "lessonId": "lesson-4",
+      "vi": "bác sĩ",
+      "ru": "врач"
+    },
+    {
+      "id": "l4-38",
+      "lessonId": "lesson-4",
+      "vi": "y tá",
+      "ru": "медсестра; медбрат"
+    },
+    {
+      "id": "l4-39",
+      "lessonId": "lesson-4",
+      "vi": "giám đốc",
+      "ru": "директор"
+    },
+    {
+      "id": "l4-40",
+      "lessonId": "lesson-4",
+      "vi": "thư ký",
+      "ru": "секретарь"
+    },
+    {
+      "id": "l4-41",
+      "lessonId": "lesson-4",
+      "vi": "sếp",
+      "ru": "начальник; босс"
+    },
+    {
+      "id": "l4-42",
+      "lessonId": "lesson-4",
+      "vi": "nhân viên",
+      "ru": "сотрудник",
+      "imageUrl": "./images/cards/nhan-vien.png"
+    },
+    {
+      "id": "l4-43",
+      "lessonId": "lesson-4",
+      "vi": "quản lý",
+      "ru": "менеджер; управляющий"
+    },
+    {
+      "id": "l4-44",
+      "lessonId": "lesson-4",
+      "vi": "công an",
+      "ru": "полиция; сотрудник полиции"
+    },
+    {
+      "id": "l4-45",
+      "lessonId": "lesson-4",
+      "vi": "cảnh sát",
+      "ru": "полиция; полицейский"
+    },
+    {
+      "id": "l4-46",
+      "lessonId": "lesson-4",
+      "vi": "cảnh sát giao thông",
+      "ru": "дорожная полиция; сотрудник дорожной полиции"
+    },
+    {
+      "id": "l4-47",
+      "lessonId": "lesson-4",
+      "vi": "giáo viên",
+      "ru": "учитель",
+      "imageUrl": "./images/cards/giao-vien.jpg"
+    },
+    {
+      "id": "l4-48",
+      "lessonId": "lesson-4",
+      "vi": "sinh viên",
+      "ru": "студент"
+    },
+    {
+      "id": "l4-49",
+      "lessonId": "lesson-4",
+      "vi": "cô giáo",
+      "ru": "учительница",
+      "imageUrl": "./images/cards/co-giao.png"
+    },
+    {
+      "id": "l4-50",
+      "lessonId": "lesson-4",
+      "vi": "thầy giáo",
+      "ru": "учитель-мужчина",
+      "imageUrl": "./images/cards/thay-giao.jpg"
+    },
+    {
+      "id": "l4-51",
+      "lessonId": "lesson-4",
+      "vi": "kỹ sư",
+      "ru": "инженер"
+    },
+    {
+      "id": "l4-52",
+      "lessonId": "lesson-4",
+      "vi": "làm nghề gì?",
+      "ru": "кем работать? / какая профессия?"
+    },
+    {
+      "id": "l4-53",
+      "lessonId": "lesson-4",
+      "vi": "Anh làm nghề gì?",
+      "ru": "Кем ты работаешь?"
+    },
+    {
+      "id": "l4-54",
+      "lessonId": "lesson-4",
+      "vi": "Anh Mikhail là kỹ sư.",
+      "ru": "Михаил — инженер."
+    },
+    {
+      "id": "l4-55",
+      "lessonId": "lesson-4",
+      "vi": "Chị là y tá.",
+      "ru": "Вы медсестра (обращение к женщине)."
+    },
+    {
+      "id": "l4-56",
+      "lessonId": "lesson-4",
+      "vi": "làm việc",
+      "ru": "работать"
+    },
+    {
+      "id": "l4-57",
+      "lessonId": "lesson-4",
+      "vi": "làm việc ở đâu?",
+      "ru": "где работать?"
+    },
+    {
+      "id": "l4-58",
+      "lessonId": "lesson-4",
+      "vi": "Anh làm việc ở đâu?",
+      "ru": "Где ты работаешь?"
+    },
+    {
+      "id": "l4-59",
+      "lessonId": "lesson-4",
+      "vi": "ở đâu?",
+      "ru": "где?"
+    },
+    {
+      "id": "l4-60",
+      "lessonId": "lesson-4",
+      "vi": "công ty",
+      "ru": "компания"
+    },
+    {
+      "id": "l4-61",
+      "lessonId": "lesson-4",
+      "vi": "Công ty ở đâu?",
+      "ru": "Где находится компания?"
+    },
+    {
+      "id": "l4-62",
+      "lessonId": "lesson-4",
+      "vi": "Tôi là nhân viên công ty.",
+      "ru": "Я сотрудник компании."
+    },
+    {
+      "id": "l4-63",
+      "lessonId": "lesson-4",
+      "vi": "bệnh viện",
+      "ru": "больница"
+    },
+    {
+      "id": "l4-64",
+      "lessonId": "lesson-4",
+      "vi": "Bệnh viện ở đâu?",
+      "ru": "Где находится больница?"
+    },
+    {
+      "id": "l4-65",
+      "lessonId": "lesson-4",
+      "vi": "Chị làm việc ở bệnh viện.",
+      "ru": "Вы работаете в больнице (обращение к женщине)."
+    },
+    {
+      "id": "l4-66",
+      "lessonId": "lesson-4",
+      "vi": "nhà hàng",
+      "ru": "ресторан"
+    },
+    {
+      "id": "l4-67",
+      "lessonId": "lesson-4",
+      "vi": "Nhà hàng ở đâu?",
+      "ru": "Где находится ресторан?"
+    },
+    {
+      "id": "l4-68",
+      "lessonId": "lesson-4",
+      "vi": "trường",
+      "ru": "школа; учебное заведение",
+      "imageUrl": "./images/cards/truong.jpg"
+    },
+    {
+      "id": "l4-69",
+      "lessonId": "lesson-4",
+      "vi": "trường đại học",
+      "ru": "университет"
+    },
+    {
+      "id": "l4-70",
+      "lessonId": "lesson-4",
+      "vi": "Trường đại học ở đâu?",
+      "ru": "Где находится университет?"
+    },
+    {
+      "id": "l4-71",
+      "lessonId": "lesson-4",
+      "vi": "Còn em?",
+      "ru": "А ты?"
+    },
+    {
+      "id": "l4-72",
+      "lessonId": "lesson-4",
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как?"
+    },
+    {
+      "id": "l4-73",
+      "lessonId": "lesson-4",
+      "vi": "cũng",
+      "ru": "тоже; также"
+    },
+    {
+      "id": "l4-74",
+      "lessonId": "lesson-4",
+      "vi": "khỏe",
+      "ru": "здоровый; хорошо себя чувствующий"
+    },
+    {
+      "id": "l4-75",
+      "lessonId": "lesson-4",
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров."
+    },
+    {
+      "id": "l4-76",
+      "lessonId": "lesson-4",
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже; у меня так же (говорящий называет себя em)."
+    },
+    {
+      "id": "l4-77",
+      "lessonId": "lesson-4",
+      "vi": "Chị sẽ đi Đà Lạt.",
+      "ru": "Вы поедете в Далат (обращение к женщине)."
+    }
+  ],
+  "words": [
+    {
+      "id": "l4-01",
+      "lessonId": "lesson-4",
+      "vi": "đã",
+      "ru": "показатель прошедшего действия",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-01"
+      }
+    },
+    {
+      "id": "l4-02",
+      "lessonId": "lesson-4",
+      "vi": "đang",
+      "ru": "показатель действия, происходящего сейчас",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-02"
+      }
+    },
+    {
+      "id": "l4-03",
+      "lessonId": "lesson-4",
+      "vi": "sẽ",
+      "ru": "показатель будущего действия",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-03"
+      }
+    },
+    {
+      "id": "l4-04",
+      "lessonId": "lesson-4",
+      "vi": "rồi",
+      "ru": "уже; обозначает завершение или изменение ситуации",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-04"
+      }
+    },
+    {
+      "id": "l4-05",
+      "lessonId": "lesson-4",
+      "vi": "ngày mai",
+      "ru": "завтра",
+      "imageUrl": "./images/cards/ngay-mai.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-05"
+      }
+    },
+    {
+      "id": "l4-06",
+      "lessonId": "lesson-4",
+      "vi": "giờ",
+      "ru": "час; время",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-06"
+      }
+    },
+    {
+      "id": "l4-07",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã uống cà phê.",
+      "ru": "Я пил кофе.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-07"
+      }
+    },
+    {
+      "id": "l4-08",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang uống cà phê.",
+      "ru": "Я сейчас пью кофе.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-08"
+      }
+    },
+    {
+      "id": "l4-09",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ uống cà phê.",
+      "ru": "Завтра я буду пить кофе.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-09"
+      }
+    },
+    {
+      "id": "l4-10",
+      "lessonId": "lesson-4",
+      "vi": "đi Cam Ranh",
+      "ru": "ехать в Камрань",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-10"
+      }
+    },
+    {
+      "id": "l4-11",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã đi Cam Ranh.",
+      "ru": "Я ездил в Камрань.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-11"
+      }
+    },
+    {
+      "id": "l4-12",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã đi Mũi Né rồi.",
+      "ru": "Я уже ездил в Муйне.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-12"
+      }
+    },
+    {
+      "id": "l4-13",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ đi Cam Ranh.",
+      "ru": "Завтра я поеду в Камрань.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-13"
+      }
+    },
+    {
+      "id": "l4-14",
+      "lessonId": "lesson-4",
+      "vi": "Chị sẽ đi An Viên vào ngày mai.",
+      "ru": "Вы поедете в Ан Вьен завтра (обращение к женщине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-14"
+      }
+    },
+    {
+      "id": "l4-15",
+      "lessonId": "lesson-4",
+      "vi": "đi chợ",
+      "ru": "идти на рынок",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-15"
+      }
+    },
+    {
+      "id": "l4-16",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang đi chợ.",
+      "ru": "Я сейчас иду на рынок.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-16"
+      }
+    },
+    {
+      "id": "l4-17",
+      "lessonId": "lesson-4",
+      "vi": "ăn",
+      "ru": "есть; кушать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-17"
+      }
+    },
+    {
+      "id": "l4-18",
+      "lessonId": "lesson-4",
+      "vi": "ăn phở bò",
+      "ru": "есть фо бо",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-18"
+      }
+    },
+    {
+      "id": "l4-19",
+      "lessonId": "lesson-4",
+      "vi": "Anh đã ăn phở bò.",
+      "ru": "Я ел фо бо.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-19"
+      }
+    },
+    {
+      "id": "l4-20",
+      "lessonId": "lesson-4",
+      "vi": "ăn cơm",
+      "ru": "есть рис; есть, принимать пищу",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-20"
+      }
+    },
+    {
+      "id": "l4-21",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang ăn cơm.",
+      "ru": "Я сейчас ем.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-21"
+      }
+    },
+    {
+      "id": "l4-22",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ ăn phở bò.",
+      "ru": "Завтра я буду есть фо бо.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-22"
+      }
+    },
+    {
+      "id": "l4-23",
+      "lessonId": "lesson-4",
+      "vi": "thích",
+      "ru": "любить; нравиться",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-23"
+      }
+    },
+    {
+      "id": "l4-24",
+      "lessonId": "lesson-4",
+      "vi": "xe máy",
+      "ru": "мотобайк; мотоцикл",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-24"
+      }
+    },
+    {
+      "id": "l4-25",
+      "lessonId": "lesson-4",
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравятся мотобайки.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-25"
+      }
+    },
+    {
+      "id": "l4-26",
+      "lessonId": "lesson-4",
+      "vi": "học tiếng Việt",
+      "ru": "учить вьетнамский язык",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-26"
+      }
+    },
+    {
+      "id": "l4-27",
+      "lessonId": "lesson-4",
+      "vi": "Anh muốn học tiếng Việt.",
+      "ru": "Я хочу учить вьетнамский.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-27"
+      }
+    },
+    {
+      "id": "l4-28",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang học tiếng Việt.",
+      "ru": "Я сейчас учу вьетнамский.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-28"
+      }
+    },
+    {
+      "id": "l4-29",
+      "lessonId": "lesson-4",
+      "vi": "mua",
+      "ru": "покупать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-29"
+      }
+    },
+    {
+      "id": "l4-30",
+      "lessonId": "lesson-4",
+      "vi": "mua xe máy",
+      "ru": "покупать мотобайк",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-30"
+      }
+    },
+    {
+      "id": "l4-31",
+      "lessonId": "lesson-4",
+      "vi": "Anh muốn mua xe máy.",
+      "ru": "Я хочу купить мотобайк.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-31"
+      }
+    },
+    {
+      "id": "l4-32",
+      "lessonId": "lesson-4",
+      "vi": "quà",
+      "ru": "подарок",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-32"
+      }
+    },
+    {
+      "id": "l4-33",
+      "lessonId": "lesson-4",
+      "vi": "mua quà",
+      "ru": "покупать подарок",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-33"
+      }
+    },
+    {
+      "id": "l4-34",
+      "lessonId": "lesson-4",
+      "vi": "Anh đang mua quà.",
+      "ru": "Я сейчас покупаю подарок.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-34"
+      }
+    },
+    {
+      "id": "l4-35",
+      "lessonId": "lesson-4",
+      "vi": "Ngày mai anh sẽ mua quà.",
+      "ru": "Завтра я куплю подарок.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-35"
+      }
+    },
+    {
+      "id": "l4-36",
+      "lessonId": "lesson-4",
+      "vi": "nghề nghiệp",
+      "ru": "профессия",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-36"
+      }
+    },
+    {
+      "id": "l4-37",
+      "lessonId": "lesson-4",
+      "vi": "bác sĩ",
+      "ru": "врач",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-37"
+      }
+    },
+    {
+      "id": "l4-38",
+      "lessonId": "lesson-4",
+      "vi": "y tá",
+      "ru": "медсестра; медбрат",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-38"
+      }
+    },
+    {
+      "id": "l4-39",
+      "lessonId": "lesson-4",
+      "vi": "giám đốc",
+      "ru": "директор",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-39"
+      }
+    },
+    {
+      "id": "l4-40",
+      "lessonId": "lesson-4",
+      "vi": "thư ký",
+      "ru": "секретарь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-40"
+      }
+    },
+    {
+      "id": "l4-41",
+      "lessonId": "lesson-4",
+      "vi": "sếp",
+      "ru": "начальник; босс",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-41"
+      }
+    },
+    {
+      "id": "l4-42",
+      "lessonId": "lesson-4",
+      "vi": "nhân viên",
+      "ru": "сотрудник",
+      "imageUrl": "./images/cards/nhan-vien.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-42"
+      }
+    },
+    {
+      "id": "l4-43",
+      "lessonId": "lesson-4",
+      "vi": "quản lý",
+      "ru": "менеджер; управляющий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-43"
+      }
+    },
+    {
+      "id": "l4-44",
+      "lessonId": "lesson-4",
+      "vi": "công an",
+      "ru": "полиция; сотрудник полиции",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-44"
+      }
+    },
+    {
+      "id": "l4-45",
+      "lessonId": "lesson-4",
+      "vi": "cảnh sát",
+      "ru": "полиция; полицейский",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-45"
+      }
+    },
+    {
+      "id": "l4-46",
+      "lessonId": "lesson-4",
+      "vi": "cảnh sát giao thông",
+      "ru": "дорожная полиция; сотрудник дорожной полиции",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-46"
+      }
+    },
+    {
+      "id": "l4-47",
+      "lessonId": "lesson-4",
+      "vi": "giáo viên",
+      "ru": "учитель",
+      "imageUrl": "./images/cards/giao-vien.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-47"
+      }
+    },
+    {
+      "id": "l4-48",
+      "lessonId": "lesson-4",
+      "vi": "sinh viên",
+      "ru": "студент",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-48"
+      }
+    },
+    {
+      "id": "l4-49",
+      "lessonId": "lesson-4",
+      "vi": "cô giáo",
+      "ru": "учительница",
+      "imageUrl": "./images/cards/co-giao.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-49"
+      }
+    },
+    {
+      "id": "l4-50",
+      "lessonId": "lesson-4",
+      "vi": "thầy giáo",
+      "ru": "учитель-мужчина",
+      "imageUrl": "./images/cards/thay-giao.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-50"
+      }
+    },
+    {
+      "id": "l4-51",
+      "lessonId": "lesson-4",
+      "vi": "kỹ sư",
+      "ru": "инженер",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-51"
+      }
+    },
+    {
+      "id": "l4-52",
+      "lessonId": "lesson-4",
+      "vi": "làm nghề gì?",
+      "ru": "кем работать? / какая профессия?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-52"
+      }
+    },
+    {
+      "id": "l4-53",
+      "lessonId": "lesson-4",
+      "vi": "Anh làm nghề gì?",
+      "ru": "Кем ты работаешь?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-53"
+      }
+    },
+    {
+      "id": "l4-54",
+      "lessonId": "lesson-4",
+      "vi": "Anh Mikhail là kỹ sư.",
+      "ru": "Михаил — инженер.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-54"
+      }
+    },
+    {
+      "id": "l4-55",
+      "lessonId": "lesson-4",
+      "vi": "Chị là y tá.",
+      "ru": "Вы медсестра (обращение к женщине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-55"
+      }
+    },
+    {
+      "id": "l4-56",
+      "lessonId": "lesson-4",
+      "vi": "làm việc",
+      "ru": "работать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-56"
+      }
+    },
+    {
+      "id": "l4-57",
+      "lessonId": "lesson-4",
+      "vi": "làm việc ở đâu?",
+      "ru": "где работать?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-57"
+      }
+    },
+    {
+      "id": "l4-58",
+      "lessonId": "lesson-4",
+      "vi": "Anh làm việc ở đâu?",
+      "ru": "Где ты работаешь?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-58"
+      }
+    },
+    {
+      "id": "l4-59",
+      "lessonId": "lesson-4",
+      "vi": "ở đâu?",
+      "ru": "где?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-59"
+      }
+    },
+    {
+      "id": "l4-60",
+      "lessonId": "lesson-4",
+      "vi": "công ty",
+      "ru": "компания",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-60"
+      }
+    },
+    {
+      "id": "l4-61",
+      "lessonId": "lesson-4",
+      "vi": "Công ty ở đâu?",
+      "ru": "Где находится компания?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-61"
+      }
+    },
+    {
+      "id": "l4-62",
+      "lessonId": "lesson-4",
+      "vi": "Tôi là nhân viên công ty.",
+      "ru": "Я сотрудник компании.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-62"
+      }
+    },
+    {
+      "id": "l4-63",
+      "lessonId": "lesson-4",
+      "vi": "bệnh viện",
+      "ru": "больница",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-63"
+      }
+    },
+    {
+      "id": "l4-64",
+      "lessonId": "lesson-4",
+      "vi": "Bệnh viện ở đâu?",
+      "ru": "Где находится больница?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-64"
+      }
+    },
+    {
+      "id": "l4-65",
+      "lessonId": "lesson-4",
+      "vi": "Chị làm việc ở bệnh viện.",
+      "ru": "Вы работаете в больнице (обращение к женщине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-65"
+      }
+    },
+    {
+      "id": "l4-66",
+      "lessonId": "lesson-4",
+      "vi": "nhà hàng",
+      "ru": "ресторан",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-66"
+      }
+    },
+    {
+      "id": "l4-67",
+      "lessonId": "lesson-4",
+      "vi": "Nhà hàng ở đâu?",
+      "ru": "Где находится ресторан?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-67"
+      }
+    },
+    {
+      "id": "l4-68",
+      "lessonId": "lesson-4",
+      "vi": "trường",
+      "ru": "школа; учебное заведение",
+      "imageUrl": "./images/cards/truong.jpg",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-68"
+      }
+    },
+    {
+      "id": "l4-69",
+      "lessonId": "lesson-4",
+      "vi": "trường đại học",
+      "ru": "университет",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-69"
+      }
+    },
+    {
+      "id": "l4-70",
+      "lessonId": "lesson-4",
+      "vi": "Trường đại học ở đâu?",
+      "ru": "Где находится университет?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-70"
+      }
+    },
+    {
+      "id": "l4-71",
+      "lessonId": "lesson-4",
+      "vi": "Còn em?",
+      "ru": "А ты?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-71"
+      }
+    },
+    {
+      "id": "l4-72",
+      "lessonId": "lesson-4",
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-72"
+      }
+    },
+    {
+      "id": "l4-73",
+      "lessonId": "lesson-4",
+      "vi": "cũng",
+      "ru": "тоже; также",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-73"
+      }
+    },
+    {
+      "id": "l4-74",
+      "lessonId": "lesson-4",
+      "vi": "khỏe",
+      "ru": "здоровый; хорошо себя чувствующий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-74"
+      }
+    },
+    {
+      "id": "l4-75",
+      "lessonId": "lesson-4",
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-75"
+      }
+    },
+    {
+      "id": "l4-76",
+      "lessonId": "lesson-4",
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже; у меня так же (говорящий называет себя em).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-76"
+      }
+    },
+    {
+      "id": "l4-77",
+      "lessonId": "lesson-4",
+      "vi": "Chị sẽ đi Đà Lạt.",
+      "ru": "Вы поедете в Далат (обращение к женщине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-77"
+      }
+    },
+    {
+      "vi": "Anh đã đi Mũi Né rồi.",
+      "ru": "Ты уже ездил в Муйне.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0/rows/0/3"
+      }
+    },
+    {
+      "vi": "Anh đang học tiếng Việt.",
+      "ru": "Ты сейчас учишь вьетнамский.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0/rows/1/3"
+      }
+    },
+    {
+      "vi": "Chị sẽ đi An Viên vào ngày mai.",
+      "ru": "Вы поедете в Ан Вьен завтра.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0/rows/2/3"
+      }
+    },
+    {
+      "vi": "uống",
+      "ru": "пить",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/0"
+      }
+    },
+    {
+      "vi": "Anh đã uống cà phê.",
+      "ru": "Я уже пил кофе.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/1"
+      }
+    },
+    {
+      "vi": "Anh đang uống cà phê.",
+      "ru": "Я сейчас пью кофе.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ uống cà phê vào ngày mai.",
+      "ru": "Я буду пить кофе завтра.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/3"
+      }
+    },
+    {
+      "vi": "đi",
+      "ru": "ехать",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/0"
+      }
+    },
+    {
+      "vi": "Anh đã đi Cam Ranh.",
+      "ru": "Я уже ездил в Камрань.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/1"
+      }
+    },
+    {
+      "vi": "Anh đang đi chợ.",
+      "ru": "Я сейчас иду на рынок.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ đi Cam Ranh vào ngày mai.",
+      "ru": "Я поеду в Камрань завтра.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/3"
+      }
+    },
+    {
+      "vi": "ăn",
+      "ru": "есть",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/0"
+      }
+    },
+    {
+      "vi": "Anh đã ăn phở bò.",
+      "ru": "Я уже ел фо бо.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/1"
+      }
+    },
+    {
+      "vi": "Anh đang ăn cơm.",
+      "ru": "Я сейчас ем рис.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ ăn phở bò vào ngày mai.",
+      "ru": "Я буду есть фо бо завтра.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/3"
+      }
+    },
+    {
+      "vi": "thích",
+      "ru": "нравиться",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/0"
+      }
+    },
+    {
+      "vi": "Anh đã thích xe máy.",
+      "ru": "Раньше мне нравились мотоциклы.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/1"
+      }
+    },
+    {
+      "vi": "Anh đang thích bóng đá.",
+      "ru": "Сейчас мне нравится футбол.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ thích đi biển vào ngày mai.",
+      "ru": "Завтра мне понравится поехать на море.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/3"
+      }
+    },
+    {
+      "vi": "muốn",
+      "ru": "хотеть",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/0"
+      }
+    },
+    {
+      "vi": "Anh đã muốn mua xe.",
+      "ru": "Я уже хотел купить мотоцикл.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/1"
+      }
+    },
+    {
+      "vi": "Anh đang muốn học tiếng Việt.",
+      "ru": "Сейчас я хочу учить вьетнамский.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ muốn mua xe máy vào ngày mai.",
+      "ru": "Завтра я захочу купить мотоцикл.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/3"
+      }
+    },
+    {
+      "vi": "mua",
+      "ru": "покупать",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/0"
+      }
+    },
+    {
+      "vi": "Anh đã mua điện thoại.",
+      "ru": "Я уже купил телефон.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/1"
+      }
+    },
+    {
+      "vi": "Anh đang mua quà.",
+      "ru": "Я сейчас покупаю подарок.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ mua quà vào ngày mai.",
+      "ru": "Я куплю подарок завтра.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/3"
+      }
+    },
+    {
+      "vi": "bác sĩ",
+      "pronunciation": "бак си",
+      "ru": "врач",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "y tá",
+      "pronunciation": "и та",
+      "ru": "медсестра",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/1"
+      }
+    },
+    {
+      "vi": "giám đốc",
+      "pronunciation": "зям док",
+      "ru": "директор",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "thư ký",
+      "pronunciation": "ты ки",
+      "ru": "секретарь",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/3"
+      }
+    },
+    {
+      "vi": "sếp",
+      "pronunciation": "сэп",
+      "ru": "начальник, босс",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/4"
+      }
+    },
+    {
+      "vi": "nhân viên",
+      "pronunciation": "нян виен",
+      "ru": "сотрудник",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/5"
+      }
+    },
+    {
+      "vi": "quản lý",
+      "pronunciation": "куан ли",
+      "ru": "менеджер, управляющий",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/6"
+      }
+    },
+    {
+      "vi": "công an",
+      "pronunciation": "кон ан",
+      "ru": "полиция, полицейский",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/7"
+      }
+    },
+    {
+      "vi": "cảnh sát",
+      "pronunciation": "кань сат",
+      "ru": "полицейский",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/8"
+      }
+    },
+    {
+      "vi": "cảnh sát giao thông",
+      "pronunciation": "кань сат зяо тхонг",
+      "ru": "дорожная полиция (ДПС)",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/9"
+      }
+    },
+    {
+      "vi": "sinh viên",
+      "pronunciation": "син виен",
+      "ru": "студент",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/10"
+      }
+    },
+    {
+      "vi": "giáo viên",
+      "pronunciation": "зяо виен",
+      "ru": "учитель, преподаватель",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/11"
+      }
+    },
+    {
+      "vi": "cô giáo",
+      "pronunciation": "ко зяо",
+      "ru": "учительница",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/12"
+      }
+    },
+    {
+      "vi": "thầy giáo",
+      "pronunciation": "тхай зяо",
+      "ru": "учитель",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/2/items/13"
+      }
+    },
+    {
+      "vi": "Anh làm nghề gì?",
+      "ru": "Кем вы работаете? / Какая у вас профессия?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "Anh làm việc ở đâu?",
+      "ru": "Где вы работаете?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "Anh Mikhail là kỹ sư.",
+      "ru": "Михаил — инженер.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/2"
+      }
+    },
+    {
+      "vi": "Chị là y tá.",
+      "ru": "Она медсестра.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "Chị làm việc ở bệnh viện.",
+      "ru": "Она работает в больнице.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "Tôi là nhân viên công ty.",
+      "ru": "Я сотрудник компании.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/5"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở ngân hàng.",
+      "ru": "Я работаю в банке.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/6"
+      }
+    },
+    {
+      "vi": "bệnh viện",
+      "ru": "больница",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/4/items/0"
+      }
+    },
+    {
+      "vi": "công ty",
+      "ru": "компания, офис",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/4/items/1"
+      }
+    },
+    {
+      "vi": "nhà hàng",
+      "ru": "ресторан",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/4/items/2"
+      }
+    },
+    {
+      "vi": "trường",
+      "ru": "школа / учебное заведение",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/4/items/3"
+      }
+    },
+    {
+      "vi": "trường đại học",
+      "ru": "университет",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/4/items/4"
+      }
+    },
+    {
+      "vi": "ngân hàng",
+      "ru": "банк",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/4/items/5"
+      }
+    },
+    {
+      "vi": "Còn em?",
+      "ru": "А ты? / Как насчёт тебя?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как? / Как у тебя дела?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "cũng",
+      "ru": "также / тоже",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/2"
+      }
+    },
+    {
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/3"
+      }
+    },
+    {
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравится мотобайк.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/4"
+      }
+    },
+    {
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже / у меня также.",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/5"
+      }
+    },
+    {
+      "vi": "đã",
+      "ru": "уже / прошлое",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/0"
+      }
+    },
+    {
+      "vi": "đang",
+      "ru": "сейчас",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/1"
+      }
+    },
+    {
+      "vi": "sẽ",
+      "ru": "будущее",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/2"
+      }
+    },
+    {
+      "vi": "ngày mai",
+      "ru": "завтра",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/3"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "какая профессия?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/4"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работаете?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/5"
+      }
+    },
+    {
+      "vi": "ở đâu?",
+      "ru": "где?",
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/6"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "kind": "table",
+      "heading": "Время глаголов",
+      "note": "Во вьетнамском глагол не изменяется по временам — время показывает маркер перед глаголом.",
+      "columns": [
+        "Время",
+        "Маркер",
+        "Значение",
+        "Пример"
+      ],
+      "rows": [
+        [
+          "Прошедшее",
+          "đã",
+          "уже; действие завершено",
+          "Anh đã đi Mũi Né rồi. — Ты уже ездил в Муйне."
+        ],
+        [
+          "Настоящее",
+          "đang",
+          "сейчас; действие продолжается",
+          "Anh đang học tiếng Việt. — Ты сейчас учишь вьетнамский."
+        ],
+        [
+          "Будущее",
+          "sẽ",
+          "буду; план, намерение",
+          "Chị sẽ đi An Viên vào ngày mai. — Вы поедете в Ан Вьен завтра."
+        ]
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "Вопрос «где?» — ở đâu?",
+      "formula": "[место] + ở đâu?",
+      "examples": [
+        {
+          "vi": "Bệnh viện ở đâu?",
+          "ru": "Где больница?"
+        },
+        {
+          "vi": "Công ty ở đâu?",
+          "ru": "Где компания?"
+        },
+        {
+          "vi": "Nhà hàng ở đâu?",
+          "ru": "Где ресторан?"
+        },
+        {
+          "vi": "Trường đại học ở đâu?",
+          "ru": "Где университет?"
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/5"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "vi": "Anh đã uống cà phê.",
+      "ru": "Я пил кофе.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "uống",
+        "cà",
+        "phê"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-07"
+      }
+    },
+    {
+      "vi": "Anh đang uống cà phê.",
+      "ru": "Я сейчас пью кофе.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "uống",
+        "cà",
+        "phê"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-08"
+      }
+    },
+    {
+      "vi": "Ngày mai anh sẽ uống cà phê.",
+      "ru": "Завтра я буду пить кофе.",
+      "tokens": [
+        "Ngày",
+        "mai",
+        "anh",
+        "sẽ",
+        "uống",
+        "cà",
+        "phê"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-09"
+      }
+    },
+    {
+      "vi": "Anh đã đi Cam Ranh.",
+      "ru": "Я ездил в Камрань.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "đi",
+        "Cam",
+        "Ranh"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-11"
+      }
+    },
+    {
+      "vi": "Anh đã đi Mũi Né rồi.",
+      "ru": "Я уже ездил в Муйне.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "đi",
+        "Mũi",
+        "Né",
+        "rồi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-12"
+      }
+    },
+    {
+      "vi": "Ngày mai anh sẽ đi Cam Ranh.",
+      "ru": "Завтра я поеду в Камрань.",
+      "tokens": [
+        "Ngày",
+        "mai",
+        "anh",
+        "sẽ",
+        "đi",
+        "Cam",
+        "Ranh"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-13"
+      }
+    },
+    {
+      "vi": "Chị sẽ đi An Viên vào ngày mai.",
+      "ru": "Вы поедете в Ан Вьен завтра (обращение к женщине).",
+      "tokens": [
+        "Chị",
+        "sẽ",
+        "đi",
+        "An",
+        "Viên",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-14"
+      }
+    },
+    {
+      "vi": "Anh đang đi chợ.",
+      "ru": "Я сейчас иду на рынок.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "đi",
+        "chợ"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-16"
+      }
+    },
+    {
+      "vi": "Anh đã ăn phở bò.",
+      "ru": "Я ел фо бо.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "ăn",
+        "phở",
+        "bò"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-19"
+      }
+    },
+    {
+      "vi": "Anh đang ăn cơm.",
+      "ru": "Я сейчас ем.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "ăn",
+        "cơm"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-21"
+      }
+    },
+    {
+      "vi": "Ngày mai anh sẽ ăn phở bò.",
+      "ru": "Завтра я буду есть фо бо.",
+      "tokens": [
+        "Ngày",
+        "mai",
+        "anh",
+        "sẽ",
+        "ăn",
+        "phở",
+        "bò"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-22"
+      }
+    },
+    {
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравятся мотобайки.",
+      "tokens": [
+        "Anh",
+        "thích",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-25"
+      }
+    },
+    {
+      "vi": "Anh muốn học tiếng Việt.",
+      "ru": "Я хочу учить вьетнамский.",
+      "tokens": [
+        "Anh",
+        "muốn",
+        "học",
+        "tiếng",
+        "Việt"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-27"
+      }
+    },
+    {
+      "vi": "Anh đang học tiếng Việt.",
+      "ru": "Я сейчас учу вьетнамский.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "học",
+        "tiếng",
+        "Việt"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-28"
+      }
+    },
+    {
+      "vi": "Anh muốn mua xe máy.",
+      "ru": "Я хочу купить мотобайк.",
+      "tokens": [
+        "Anh",
+        "muốn",
+        "mua",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-31"
+      }
+    },
+    {
+      "vi": "Anh đang mua quà.",
+      "ru": "Я сейчас покупаю подарок.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "mua",
+        "quà"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-34"
+      }
+    },
+    {
+      "vi": "Ngày mai anh sẽ mua quà.",
+      "ru": "Завтра я куплю подарок.",
+      "tokens": [
+        "Ngày",
+        "mai",
+        "anh",
+        "sẽ",
+        "mua",
+        "quà"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-35"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "кем работать? / какая профессия?",
+      "tokens": [
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-52"
+      }
+    },
+    {
+      "vi": "Anh làm nghề gì?",
+      "ru": "Кем ты работаешь?",
+      "tokens": [
+        "Anh",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-53"
+      }
+    },
+    {
+      "vi": "Anh Mikhail là kỹ sư.",
+      "ru": "Михаил — инженер.",
+      "tokens": [
+        "Anh",
+        "Mikhail",
+        "là",
+        "kỹ",
+        "sư"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-54"
+      }
+    },
+    {
+      "vi": "Chị là y tá.",
+      "ru": "Вы медсестра (обращение к женщине).",
+      "tokens": [
+        "Chị",
+        "là",
+        "y",
+        "tá"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-55"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работать?",
+      "tokens": [
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-57"
+      }
+    },
+    {
+      "vi": "Anh làm việc ở đâu?",
+      "ru": "Где ты работаешь?",
+      "tokens": [
+        "Anh",
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-58"
+      }
+    },
+    {
+      "vi": "ở đâu?",
+      "ru": "где?",
+      "tokens": [
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-59"
+      }
+    },
+    {
+      "vi": "Công ty ở đâu?",
+      "ru": "Где находится компания?",
+      "tokens": [
+        "Công",
+        "ty",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-61"
+      }
+    },
+    {
+      "vi": "Tôi là nhân viên công ty.",
+      "ru": "Я сотрудник компании.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "nhân",
+        "viên",
+        "công",
+        "ty"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-62"
+      }
+    },
+    {
+      "vi": "Bệnh viện ở đâu?",
+      "ru": "Где находится больница?",
+      "tokens": [
+        "Bệnh",
+        "viện",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-64"
+      }
+    },
+    {
+      "vi": "Chị làm việc ở bệnh viện.",
+      "ru": "Вы работаете в больнице (обращение к женщине).",
+      "tokens": [
+        "Chị",
+        "làm",
+        "việc",
+        "ở",
+        "bệnh",
+        "viện"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-65"
+      }
+    },
+    {
+      "vi": "Nhà hàng ở đâu?",
+      "ru": "Где находится ресторан?",
+      "tokens": [
+        "Nhà",
+        "hàng",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-67"
+      }
+    },
+    {
+      "vi": "Trường đại học ở đâu?",
+      "ru": "Где находится университет?",
+      "tokens": [
+        "Trường",
+        "đại",
+        "học",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-70"
+      }
+    },
+    {
+      "vi": "Còn em?",
+      "ru": "А ты?",
+      "tokens": [
+        "Còn",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-71"
+      }
+    },
+    {
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как?",
+      "tokens": [
+        "Còn",
+        "em",
+        "thế",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-72"
+      }
+    },
+    {
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "tokens": [
+        "Anh",
+        "cũng",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-75"
+      }
+    },
+    {
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже; у меня так же (говорящий называет себя em).",
+      "tokens": [
+        "Em",
+        "cũng",
+        "vậy"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-76"
+      }
+    },
+    {
+      "vi": "Chị sẽ đi Đà Lạt.",
+      "ru": "Вы поедете в Далат (обращение к женщине).",
+      "tokens": [
+        "Chị",
+        "sẽ",
+        "đi",
+        "Đà",
+        "Lạt"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l4-77"
+      }
+    },
+    {
+      "vi": "Anh đã đi Mũi Né rồi.",
+      "ru": "Ты уже ездил в Муйне.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "đi",
+        "Mũi",
+        "Né",
+        "rồi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0/rows/0/3"
+      }
+    },
+    {
+      "vi": "Anh đang học tiếng Việt.",
+      "ru": "Ты сейчас учишь вьетнамский.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "học",
+        "tiếng",
+        "Việt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0/rows/1/3"
+      }
+    },
+    {
+      "vi": "Chị sẽ đi An Viên vào ngày mai.",
+      "ru": "Вы поедете в Ан Вьен завтра.",
+      "tokens": [
+        "Chị",
+        "sẽ",
+        "đi",
+        "An",
+        "Viên",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/0/rows/2/3"
+      }
+    },
+    {
+      "vi": "uống",
+      "ru": "пить",
+      "tokens": [
+        "uống"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/0"
+      }
+    },
+    {
+      "vi": "Anh đã uống cà phê.",
+      "ru": "Я уже пил кофе.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "uống",
+        "cà",
+        "phê"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/1"
+      }
+    },
+    {
+      "vi": "Anh đang uống cà phê.",
+      "ru": "Я сейчас пью кофе.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "uống",
+        "cà",
+        "phê"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ uống cà phê vào ngày mai.",
+      "ru": "Я буду пить кофе завтра.",
+      "tokens": [
+        "Anh",
+        "sẽ",
+        "uống",
+        "cà",
+        "phê",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/0/3"
+      }
+    },
+    {
+      "vi": "đi",
+      "ru": "ехать",
+      "tokens": [
+        "đi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/0"
+      }
+    },
+    {
+      "vi": "Anh đã đi Cam Ranh.",
+      "ru": "Я уже ездил в Камрань.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "đi",
+        "Cam",
+        "Ranh"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/1"
+      }
+    },
+    {
+      "vi": "Anh đang đi chợ.",
+      "ru": "Я сейчас иду на рынок.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "đi",
+        "chợ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ đi Cam Ranh vào ngày mai.",
+      "ru": "Я поеду в Камрань завтра.",
+      "tokens": [
+        "Anh",
+        "sẽ",
+        "đi",
+        "Cam",
+        "Ranh",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/1/3"
+      }
+    },
+    {
+      "vi": "ăn",
+      "ru": "есть",
+      "tokens": [
+        "ăn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/0"
+      }
+    },
+    {
+      "vi": "Anh đã ăn phở bò.",
+      "ru": "Я уже ел фо бо.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "ăn",
+        "phở",
+        "bò"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/1"
+      }
+    },
+    {
+      "vi": "Anh đang ăn cơm.",
+      "ru": "Я сейчас ем рис.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "ăn",
+        "cơm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ ăn phở bò vào ngày mai.",
+      "ru": "Я буду есть фо бо завтра.",
+      "tokens": [
+        "Anh",
+        "sẽ",
+        "ăn",
+        "phở",
+        "bò",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/2/3"
+      }
+    },
+    {
+      "vi": "thích",
+      "ru": "нравиться",
+      "tokens": [
+        "thích"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/0"
+      }
+    },
+    {
+      "vi": "Anh đã thích xe máy.",
+      "ru": "Раньше мне нравились мотоциклы.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "thích",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/1"
+      }
+    },
+    {
+      "vi": "Anh đang thích bóng đá.",
+      "ru": "Сейчас мне нравится футбол.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "thích",
+        "bóng",
+        "đá"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ thích đi biển vào ngày mai.",
+      "ru": "Завтра мне понравится поехать на море.",
+      "tokens": [
+        "Anh",
+        "sẽ",
+        "thích",
+        "đi",
+        "biển",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/3/3"
+      }
+    },
+    {
+      "vi": "muốn",
+      "ru": "хотеть",
+      "tokens": [
+        "muốn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/0"
+      }
+    },
+    {
+      "vi": "Anh đã muốn mua xe.",
+      "ru": "Я уже хотел купить мотоцикл.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "muốn",
+        "mua",
+        "xe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/1"
+      }
+    },
+    {
+      "vi": "Anh đang muốn học tiếng Việt.",
+      "ru": "Сейчас я хочу учить вьетнамский.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "muốn",
+        "học",
+        "tiếng",
+        "Việt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ muốn mua xe máy vào ngày mai.",
+      "ru": "Завтра я захочу купить мотоцикл.",
+      "tokens": [
+        "Anh",
+        "sẽ",
+        "muốn",
+        "mua",
+        "xe",
+        "máy",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/4/3"
+      }
+    },
+    {
+      "vi": "mua",
+      "ru": "покупать",
+      "tokens": [
+        "mua"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/0"
+      }
+    },
+    {
+      "vi": "Anh đã mua điện thoại.",
+      "ru": "Я уже купил телефон.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "mua",
+        "điện",
+        "thoại"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/1"
+      }
+    },
+    {
+      "vi": "Anh đang mua quà.",
+      "ru": "Я сейчас покупаю подарок.",
+      "tokens": [
+        "Anh",
+        "đang",
+        "mua",
+        "quà"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/2"
+      }
+    },
+    {
+      "vi": "Anh sẽ mua quà vào ngày mai.",
+      "ru": "Я куплю подарок завтра.",
+      "tokens": [
+        "Anh",
+        "sẽ",
+        "mua",
+        "quà",
+        "vào",
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/1/rows/5/3"
+      }
+    },
+    {
+      "vi": "Anh làm nghề gì?",
+      "ru": "Кем вы работаете? / Какая у вас профессия?",
+      "tokens": [
+        "Anh",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "Anh làm việc ở đâu?",
+      "ru": "Где вы работаете?",
+      "tokens": [
+        "Anh",
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "Anh Mikhail là kỹ sư.",
+      "ru": "Михаил — инженер.",
+      "tokens": [
+        "Anh",
+        "Mikhail",
+        "là",
+        "kỹ",
+        "sư"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/2"
+      }
+    },
+    {
+      "vi": "Chị là y tá.",
+      "ru": "Она медсестра.",
+      "tokens": [
+        "Chị",
+        "là",
+        "y",
+        "tá"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "Chị làm việc ở bệnh viện.",
+      "ru": "Она работает в больнице.",
+      "tokens": [
+        "Chị",
+        "làm",
+        "việc",
+        "ở",
+        "bệnh",
+        "viện"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "Tôi là nhân viên công ty.",
+      "ru": "Я сотрудник компании.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "nhân",
+        "viên",
+        "công",
+        "ty"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/5"
+      }
+    },
+    {
+      "vi": "Tôi làm việc ở ngân hàng.",
+      "ru": "Я работаю в банке.",
+      "tokens": [
+        "Tôi",
+        "làm",
+        "việc",
+        "ở",
+        "ngân",
+        "hàng"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/3/items/6"
+      }
+    },
+    {
+      "vi": "Bệnh viện ở đâu?",
+      "ru": "Где больница?",
+      "tokens": [
+        "Bệnh",
+        "viện",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/5/examples/0"
+      }
+    },
+    {
+      "vi": "Công ty ở đâu?",
+      "ru": "Где компания?",
+      "tokens": [
+        "Công",
+        "ty",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/5/examples/1"
+      }
+    },
+    {
+      "vi": "Nhà hàng ở đâu?",
+      "ru": "Где ресторан?",
+      "tokens": [
+        "Nhà",
+        "hàng",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/5/examples/2"
+      }
+    },
+    {
+      "vi": "Trường đại học ở đâu?",
+      "ru": "Где университет?",
+      "tokens": [
+        "Trường",
+        "đại",
+        "học",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/5/examples/3"
+      }
+    },
+    {
+      "vi": "Còn em?",
+      "ru": "А ты? / Как насчёт тебя?",
+      "tokens": [
+        "Còn",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "Còn em thế nào?",
+      "ru": "А ты как? / Как у тебя дела?",
+      "tokens": [
+        "Còn",
+        "em",
+        "thế",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "Anh cũng khỏe.",
+      "ru": "Я тоже здоров.",
+      "tokens": [
+        "Anh",
+        "cũng",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/3"
+      }
+    },
+    {
+      "vi": "Anh thích xe máy.",
+      "ru": "Мне нравится мотобайк.",
+      "tokens": [
+        "Anh",
+        "thích",
+        "xe",
+        "máy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/4"
+      }
+    },
+    {
+      "vi": "Em cũng vậy.",
+      "ru": "Я тоже / у меня также.",
+      "tokens": [
+        "Em",
+        "cũng",
+        "vậy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/6/items/5"
+      }
+    },
+    {
+      "vi": "đã",
+      "ru": "уже / прошлое",
+      "tokens": [
+        "đã"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/0"
+      }
+    },
+    {
+      "vi": "đang",
+      "ru": "сейчас",
+      "tokens": [
+        "đang"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/1"
+      }
+    },
+    {
+      "vi": "sẽ",
+      "ru": "будущее",
+      "tokens": [
+        "sẽ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/2"
+      }
+    },
+    {
+      "vi": "ngày mai",
+      "ru": "завтра",
+      "tokens": [
+        "ngày",
+        "mai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/3"
+      }
+    },
+    {
+      "vi": "làm nghề gì?",
+      "ru": "какая профессия?",
+      "tokens": [
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/4"
+      }
+    },
+    {
+      "vi": "làm việc ở đâu?",
+      "ru": "где работаете?",
+      "tokens": [
+        "làm",
+        "việc",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/5"
+      }
+    },
+    {
+      "vi": "ở đâu?",
+      "ru": "где?",
+      "tokens": [
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson4.ts",
+        "pointer": "/sections/7/6"
+      }
+    }
+  ],
+  "dialogues": [],
+  "theory": [
+    {
+      "kind": "table",
+      "heading": "Время глаголов",
+      "note": "Во вьетнамском глагол не изменяется по временам — время показывает маркер перед глаголом.",
+      "columns": [
+        "Время",
+        "Маркер",
+        "Значение",
+        "Пример"
+      ],
+      "rows": [
+        [
+          "Прошедшее",
+          "đã",
+          "уже; действие завершено",
+          "Anh đã đi Mũi Né rồi. — Ты уже ездил в Муйне."
+        ],
+        [
+          "Настоящее",
+          "đang",
+          "сейчас; действие продолжается",
+          "Anh đang học tiếng Việt. — Ты сейчас учишь вьетнамский."
+        ],
+        [
+          "Будущее",
+          "sẽ",
+          "буду; план, намерение",
+          "Chị sẽ đi An Viên vào ngày mai. — Вы поедете в Ан Вьен завтра."
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Полезные примеры с глаголами",
+      "note": "В примерах будущего времени — слово «ngày mai» (завтра).",
+      "columns": [
+        "Глагол",
+        "Прошедшее",
+        "Настоящее",
+        "Будущее (завтра)"
+      ],
+      "rows": [
+        [
+          "uống (пить)",
+          "Anh đã uống cà phê. — Я уже пил кофе.",
+          "Anh đang uống cà phê. — Я сейчас пью кофе.",
+          "Anh sẽ uống cà phê vào ngày mai. — Я буду пить кофе завтра."
+        ],
+        [
+          "đi (ехать)",
+          "Anh đã đi Cam Ranh. — Я уже ездил в Камрань.",
+          "Anh đang đi chợ. — Я сейчас иду на рынок.",
+          "Anh sẽ đi Cam Ranh vào ngày mai. — Я поеду в Камрань завтра."
+        ],
+        [
+          "ăn (есть)",
+          "Anh đã ăn phở bò. — Я уже ел фо бо.",
+          "Anh đang ăn cơm. — Я сейчас ем рис.",
+          "Anh sẽ ăn phở bò vào ngày mai. — Я буду есть фо бо завтра."
+        ],
+        [
+          "thích (нравиться)",
+          "Anh đã thích xe máy. — Раньше мне нравились мотоциклы.",
+          "Anh đang thích bóng đá. — Сейчас мне нравится футбол.",
+          "Anh sẽ thích đi biển vào ngày mai. — Завтра мне понравится поехать на море."
+        ],
+        [
+          "muốn (хотеть)",
+          "Anh đã muốn mua xe. — Я уже хотел купить мотоцикл.",
+          "Anh đang muốn học tiếng Việt. — Сейчас я хочу учить вьетнамский.",
+          "Anh sẽ muốn mua xe máy vào ngày mai. — Завтра я захочу купить мотоцикл."
+        ],
+        [
+          "mua (покупать)",
+          "Anh đã mua điện thoại. — Я уже купил телефон.",
+          "Anh đang mua quà. — Я сейчас покупаю подарок.",
+          "Anh sẽ mua quà vào ngày mai. — Я куплю подарок завтра."
+        ]
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Профессии (nghề nghiệp)",
+      "items": [
+        {
+          "vi": "bác sĩ",
+          "pronunciation": "бак си",
+          "ru": "врач"
+        },
+        {
+          "vi": "y tá",
+          "pronunciation": "и та",
+          "ru": "медсестра"
+        },
+        {
+          "vi": "giám đốc",
+          "pronunciation": "зям док",
+          "ru": "директор"
+        },
+        {
+          "vi": "thư ký",
+          "pronunciation": "ты ки",
+          "ru": "секретарь"
+        },
+        {
+          "vi": "sếp",
+          "pronunciation": "сэп",
+          "ru": "начальник, босс"
+        },
+        {
+          "vi": "nhân viên",
+          "pronunciation": "нян виен",
+          "ru": "сотрудник"
+        },
+        {
+          "vi": "quản lý",
+          "pronunciation": "куан ли",
+          "ru": "менеджер, управляющий"
+        },
+        {
+          "vi": "công an",
+          "pronunciation": "кон ан",
+          "ru": "полиция, полицейский"
+        },
+        {
+          "vi": "cảnh sát",
+          "pronunciation": "кань сат",
+          "ru": "полицейский"
+        },
+        {
+          "vi": "cảnh sát giao thông",
+          "pronunciation": "кань сат зяо тхонг",
+          "ru": "дорожная полиция (ДПС)"
+        },
+        {
+          "vi": "sinh viên",
+          "pronunciation": "син виен",
+          "ru": "студент"
+        },
+        {
+          "vi": "giáo viên",
+          "pronunciation": "зяо виен",
+          "ru": "учитель, преподаватель"
+        },
+        {
+          "vi": "cô giáo",
+          "pronunciation": "ко зяо",
+          "ru": "учительница"
+        },
+        {
+          "vi": "thầy giáo",
+          "pronunciation": "тхай зяо",
+          "ru": "учитель"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Вопросы о профессии и работе",
+      "items": [
+        {
+          "vi": "Anh làm nghề gì?",
+          "ru": "Кем вы работаете? / Какая у вас профессия?"
+        },
+        {
+          "vi": "Anh làm việc ở đâu?",
+          "ru": "Где вы работаете?"
+        },
+        {
+          "vi": "Anh Mikhail là kỹ sư.",
+          "ru": "Михаил — инженер."
+        },
+        {
+          "vi": "Chị là y tá.",
+          "ru": "Она медсестра."
+        },
+        {
+          "vi": "Chị làm việc ở bệnh viện.",
+          "ru": "Она работает в больнице."
+        },
+        {
+          "vi": "Tôi là nhân viên công ty.",
+          "ru": "Я сотрудник компании."
+        },
+        {
+          "vi": "Tôi làm việc ở ngân hàng.",
+          "ru": "Я работаю в банке."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Места (địa điểm)",
+      "items": [
+        {
+          "vi": "bệnh viện",
+          "ru": "больница"
+        },
+        {
+          "vi": "công ty",
+          "ru": "компания, офис"
+        },
+        {
+          "vi": "nhà hàng",
+          "ru": "ресторан"
+        },
+        {
+          "vi": "trường",
+          "ru": "школа / учебное заведение"
+        },
+        {
+          "vi": "trường đại học",
+          "ru": "университет"
+        },
+        {
+          "vi": "ngân hàng",
+          "ru": "банк"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "Вопрос «где?» — ở đâu?",
+      "formula": "[место] + ở đâu?",
+      "examples": [
+        {
+          "vi": "Bệnh viện ở đâu?",
+          "ru": "Где больница?"
+        },
+        {
+          "vi": "Công ty ở đâu?",
+          "ru": "Где компания?"
+        },
+        {
+          "vi": "Nhà hàng ở đâu?",
+          "ru": "Где ресторан?"
+        },
+        {
+          "vi": "Trường đại học ở đâu?",
+          "ru": "Где университет?"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Полезные выражения",
+      "items": [
+        {
+          "vi": "Còn em?",
+          "ru": "А ты? / Как насчёт тебя?"
+        },
+        {
+          "vi": "Còn em thế nào?",
+          "ru": "А ты как? / Как у тебя дела?"
+        },
+        {
+          "vi": "cũng",
+          "ru": "также / тоже"
+        },
+        {
+          "vi": "Anh cũng khỏe.",
+          "ru": "Я тоже здоров."
+        },
+        {
+          "vi": "Anh thích xe máy.",
+          "ru": "Мне нравится мотобайк."
+        },
+        {
+          "vi": "Em cũng vậy.",
+          "ru": "Я тоже / у меня также."
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Коротко запомнить",
+      "items": [
+        "đã = уже / прошлое",
+        "đang = сейчас",
+        "sẽ = будущее",
+        "ngày mai = завтра",
+        "làm nghề gì? = какая профессия?",
+        "làm việc ở đâu? = где работаете?",
+        "ở đâu? = где?"
+      ]
+    }
+  ]
+}

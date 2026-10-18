@@ -1,0 +1,2076 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-7",
+  "number": 7,
+  "title": "Страны, города и путешествия",
+  "cards": [
+    {
+      "id": "l7-01",
+      "lessonId": "lesson-7",
+      "vi": "nước",
+      "ru": "страна"
+    },
+    {
+      "id": "l7-02",
+      "lessonId": "lesson-7",
+      "vi": "nào",
+      "ru": "какой; какая"
+    },
+    {
+      "id": "l7-03",
+      "lessonId": "lesson-7",
+      "vi": "nước nào?",
+      "ru": "какая страна?"
+    },
+    {
+      "id": "l7-04",
+      "lessonId": "lesson-7",
+      "vi": "từ",
+      "ru": "из; от"
+    },
+    {
+      "id": "l7-05",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ nước nào?",
+      "ru": "Ты из какой страны?"
+    },
+    {
+      "id": "l7-06",
+      "lessonId": "lesson-7",
+      "vi": "người",
+      "ru": "человек"
+    },
+    {
+      "id": "l7-07",
+      "lessonId": "lesson-7",
+      "vi": "Anh là người nước nào?",
+      "ru": "Ты из какой страны?"
+    },
+    {
+      "id": "l7-08",
+      "lessonId": "lesson-7",
+      "vi": "Pháp",
+      "ru": "Франция",
+      "flag": "🇫🇷"
+    },
+    {
+      "id": "l7-09",
+      "lessonId": "lesson-7",
+      "vi": "đi du lịch",
+      "ru": "путешествовать",
+      "imageUrl": "./images/cards/di-du-lich.png"
+    },
+    {
+      "id": "l7-10",
+      "lessonId": "lesson-7",
+      "vi": "Anh đã đi du lịch ở Pháp.",
+      "ru": "Я путешествовал во Франции."
+    },
+    {
+      "id": "l7-11",
+      "lessonId": "lesson-7",
+      "vi": "Nga",
+      "ru": "Россия",
+      "flag": "🇷🇺"
+    },
+    {
+      "id": "l7-12",
+      "lessonId": "lesson-7",
+      "vi": "Anh là người nước Nga.",
+      "ru": "Я из России; я русский."
+    },
+    {
+      "id": "l7-13",
+      "lessonId": "lesson-7",
+      "vi": "sống",
+      "ru": "жить"
+    },
+    {
+      "id": "l7-14",
+      "lessonId": "lesson-7",
+      "vi": "tất cả",
+      "ru": "все"
+    },
+    {
+      "id": "l7-15",
+      "lessonId": "lesson-7",
+      "vi": "Tất cả sống ở An Viên.",
+      "ru": "Все живут в Ан Вьене."
+    },
+    {
+      "id": "l7-16",
+      "lessonId": "lesson-7",
+      "vi": "thành phố",
+      "ru": "город",
+      "imageUrl": "./images/cards/thanh-pho.png"
+    },
+    {
+      "id": "l7-17",
+      "lessonId": "lesson-7",
+      "vi": "đến",
+      "ru": "приезжать; прибывать"
+    },
+    {
+      "id": "l7-18",
+      "lessonId": "lesson-7",
+      "vi": "đến từ",
+      "ru": "приехать из; быть родом из"
+    },
+    {
+      "id": "l7-19",
+      "lessonId": "lesson-7",
+      "vi": "thành phố nào?",
+      "ru": "какой город?"
+    },
+    {
+      "id": "l7-20",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ thành phố nào?",
+      "ru": "Из какого города ты приехал?"
+    },
+    {
+      "id": "l7-21",
+      "lessonId": "lesson-7",
+      "vi": "Thái Lan",
+      "ru": "Таиланд",
+      "flag": "🇹🇭"
+    },
+    {
+      "id": "l7-22",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ Thái Lan.",
+      "ru": "Я из Таиланда."
+    },
+    {
+      "id": "l7-23",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ thành phố Elektrostal.",
+      "ru": "Я приехал из Электростали."
+    },
+    {
+      "id": "l7-24",
+      "lessonId": "lesson-7",
+      "vi": "thủ đô",
+      "ru": "столица",
+      "imageUrl": "./images/cards/thu-do.png"
+    },
+    {
+      "id": "l7-25",
+      "lessonId": "lesson-7",
+      "vi": "Việt Nam",
+      "ru": "Вьетнам",
+      "flag": "🇻🇳"
+    },
+    {
+      "id": "l7-26",
+      "lessonId": "lesson-7",
+      "vi": "Thủ đô Việt Nam là thành phố nào?",
+      "ru": "Какой город является столицей Вьетнама?"
+    },
+    {
+      "id": "l7-27",
+      "lessonId": "lesson-7",
+      "vi": "Thủ đô Việt Nam là Hà Nội.",
+      "ru": "Столица Вьетнама — Ханой."
+    },
+    {
+      "id": "l7-28",
+      "lessonId": "lesson-7",
+      "vi": "Châu Á",
+      "ru": "Азия"
+    },
+    {
+      "id": "l7-29",
+      "lessonId": "lesson-7",
+      "vi": "Trung Quốc",
+      "ru": "Китай",
+      "flag": "🇨🇳"
+    },
+    {
+      "id": "l7-30",
+      "lessonId": "lesson-7",
+      "vi": "Hàn Quốc",
+      "ru": "Южная Корея",
+      "flag": "🇰🇷"
+    },
+    {
+      "id": "l7-31",
+      "lessonId": "lesson-7",
+      "vi": "Lào",
+      "ru": "Лаос",
+      "flag": "🇱🇦"
+    },
+    {
+      "id": "l7-32",
+      "lessonId": "lesson-7",
+      "vi": "Campuchia",
+      "ru": "Камбоджа",
+      "flag": "🇰🇭"
+    },
+    {
+      "id": "l7-33",
+      "lessonId": "lesson-7",
+      "vi": "Nhật Bản",
+      "ru": "Япония",
+      "flag": "🇯🇵"
+    },
+    {
+      "id": "l7-34",
+      "lessonId": "lesson-7",
+      "vi": "Châu Âu",
+      "ru": "Европа"
+    },
+    {
+      "id": "l7-35",
+      "lessonId": "lesson-7",
+      "vi": "Ý",
+      "ru": "Италия",
+      "flag": "🇮🇹"
+    },
+    {
+      "id": "l7-36",
+      "lessonId": "lesson-7",
+      "vi": "Đức",
+      "ru": "Германия",
+      "flag": "🇩🇪"
+    },
+    {
+      "id": "l7-37",
+      "lessonId": "lesson-7",
+      "vi": "Anh",
+      "ru": "Англия",
+      "flag": "🇬🇧"
+    },
+    {
+      "id": "l7-38",
+      "lessonId": "lesson-7",
+      "vi": "Tây Ban Nha",
+      "ru": "Испания",
+      "flag": "🇪🇸"
+    },
+    {
+      "id": "l7-39",
+      "lessonId": "lesson-7",
+      "vi": "Mỹ",
+      "ru": "США",
+      "flag": "🇺🇸"
+    },
+    {
+      "id": "l7-40",
+      "lessonId": "lesson-7",
+      "vi": "Úc",
+      "ru": "Австралия",
+      "flag": "🇦🇺"
+    }
+  ],
+  "words": [
+    {
+      "id": "l7-01",
+      "lessonId": "lesson-7",
+      "vi": "nước",
+      "ru": "страна",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-01"
+      }
+    },
+    {
+      "id": "l7-02",
+      "lessonId": "lesson-7",
+      "vi": "nào",
+      "ru": "какой; какая",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-02"
+      }
+    },
+    {
+      "id": "l7-03",
+      "lessonId": "lesson-7",
+      "vi": "nước nào?",
+      "ru": "какая страна?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-03"
+      }
+    },
+    {
+      "id": "l7-04",
+      "lessonId": "lesson-7",
+      "vi": "từ",
+      "ru": "из; от",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-04"
+      }
+    },
+    {
+      "id": "l7-05",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ nước nào?",
+      "ru": "Ты из какой страны?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-05"
+      }
+    },
+    {
+      "id": "l7-06",
+      "lessonId": "lesson-7",
+      "vi": "người",
+      "ru": "человек",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-06"
+      }
+    },
+    {
+      "id": "l7-07",
+      "lessonId": "lesson-7",
+      "vi": "Anh là người nước nào?",
+      "ru": "Ты из какой страны?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-07"
+      }
+    },
+    {
+      "id": "l7-08",
+      "lessonId": "lesson-7",
+      "vi": "Pháp",
+      "ru": "Франция",
+      "flag": "🇫🇷",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-08"
+      }
+    },
+    {
+      "id": "l7-09",
+      "lessonId": "lesson-7",
+      "vi": "đi du lịch",
+      "ru": "путешествовать",
+      "imageUrl": "./images/cards/di-du-lich.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-09"
+      }
+    },
+    {
+      "id": "l7-10",
+      "lessonId": "lesson-7",
+      "vi": "Anh đã đi du lịch ở Pháp.",
+      "ru": "Я путешествовал во Франции.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-10"
+      }
+    },
+    {
+      "id": "l7-11",
+      "lessonId": "lesson-7",
+      "vi": "Nga",
+      "ru": "Россия",
+      "flag": "🇷🇺",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-11"
+      }
+    },
+    {
+      "id": "l7-12",
+      "lessonId": "lesson-7",
+      "vi": "Anh là người nước Nga.",
+      "ru": "Я из России; я русский.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-12"
+      }
+    },
+    {
+      "id": "l7-13",
+      "lessonId": "lesson-7",
+      "vi": "sống",
+      "ru": "жить",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-13"
+      }
+    },
+    {
+      "id": "l7-14",
+      "lessonId": "lesson-7",
+      "vi": "tất cả",
+      "ru": "все",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-14"
+      }
+    },
+    {
+      "id": "l7-15",
+      "lessonId": "lesson-7",
+      "vi": "Tất cả sống ở An Viên.",
+      "ru": "Все живут в Ан Вьене.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-15"
+      }
+    },
+    {
+      "id": "l7-16",
+      "lessonId": "lesson-7",
+      "vi": "thành phố",
+      "ru": "город",
+      "imageUrl": "./images/cards/thanh-pho.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-16"
+      }
+    },
+    {
+      "id": "l7-17",
+      "lessonId": "lesson-7",
+      "vi": "đến",
+      "ru": "приезжать; прибывать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-17"
+      }
+    },
+    {
+      "id": "l7-18",
+      "lessonId": "lesson-7",
+      "vi": "đến từ",
+      "ru": "приехать из; быть родом из",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-18"
+      }
+    },
+    {
+      "id": "l7-19",
+      "lessonId": "lesson-7",
+      "vi": "thành phố nào?",
+      "ru": "какой город?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-19"
+      }
+    },
+    {
+      "id": "l7-20",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ thành phố nào?",
+      "ru": "Из какого города ты приехал?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-20"
+      }
+    },
+    {
+      "id": "l7-21",
+      "lessonId": "lesson-7",
+      "vi": "Thái Lan",
+      "ru": "Таиланд",
+      "flag": "🇹🇭",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-21"
+      }
+    },
+    {
+      "id": "l7-22",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ Thái Lan.",
+      "ru": "Я из Таиланда.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-22"
+      }
+    },
+    {
+      "id": "l7-23",
+      "lessonId": "lesson-7",
+      "vi": "Anh đến từ thành phố Elektrostal.",
+      "ru": "Я приехал из Электростали.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-23"
+      }
+    },
+    {
+      "id": "l7-24",
+      "lessonId": "lesson-7",
+      "vi": "thủ đô",
+      "ru": "столица",
+      "imageUrl": "./images/cards/thu-do.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-24"
+      }
+    },
+    {
+      "id": "l7-25",
+      "lessonId": "lesson-7",
+      "vi": "Việt Nam",
+      "ru": "Вьетнам",
+      "flag": "🇻🇳",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-25"
+      }
+    },
+    {
+      "id": "l7-26",
+      "lessonId": "lesson-7",
+      "vi": "Thủ đô Việt Nam là thành phố nào?",
+      "ru": "Какой город является столицей Вьетнама?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-26"
+      }
+    },
+    {
+      "id": "l7-27",
+      "lessonId": "lesson-7",
+      "vi": "Thủ đô Việt Nam là Hà Nội.",
+      "ru": "Столица Вьетнама — Ханой.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-27"
+      }
+    },
+    {
+      "id": "l7-28",
+      "lessonId": "lesson-7",
+      "vi": "Châu Á",
+      "ru": "Азия",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-28"
+      }
+    },
+    {
+      "id": "l7-29",
+      "lessonId": "lesson-7",
+      "vi": "Trung Quốc",
+      "ru": "Китай",
+      "flag": "🇨🇳",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-29"
+      }
+    },
+    {
+      "id": "l7-30",
+      "lessonId": "lesson-7",
+      "vi": "Hàn Quốc",
+      "ru": "Южная Корея",
+      "flag": "🇰🇷",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-30"
+      }
+    },
+    {
+      "id": "l7-31",
+      "lessonId": "lesson-7",
+      "vi": "Lào",
+      "ru": "Лаос",
+      "flag": "🇱🇦",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-31"
+      }
+    },
+    {
+      "id": "l7-32",
+      "lessonId": "lesson-7",
+      "vi": "Campuchia",
+      "ru": "Камбоджа",
+      "flag": "🇰🇭",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-32"
+      }
+    },
+    {
+      "id": "l7-33",
+      "lessonId": "lesson-7",
+      "vi": "Nhật Bản",
+      "ru": "Япония",
+      "flag": "🇯🇵",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-33"
+      }
+    },
+    {
+      "id": "l7-34",
+      "lessonId": "lesson-7",
+      "vi": "Châu Âu",
+      "ru": "Европа",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-34"
+      }
+    },
+    {
+      "id": "l7-35",
+      "lessonId": "lesson-7",
+      "vi": "Ý",
+      "ru": "Италия",
+      "flag": "🇮🇹",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-35"
+      }
+    },
+    {
+      "id": "l7-36",
+      "lessonId": "lesson-7",
+      "vi": "Đức",
+      "ru": "Германия",
+      "flag": "🇩🇪",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-36"
+      }
+    },
+    {
+      "id": "l7-37",
+      "lessonId": "lesson-7",
+      "vi": "Anh",
+      "ru": "Англия",
+      "flag": "🇬🇧",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-37"
+      }
+    },
+    {
+      "id": "l7-38",
+      "lessonId": "lesson-7",
+      "vi": "Tây Ban Nha",
+      "ru": "Испания",
+      "flag": "🇪🇸",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-38"
+      }
+    },
+    {
+      "id": "l7-39",
+      "lessonId": "lesson-7",
+      "vi": "Mỹ",
+      "ru": "США",
+      "flag": "🇺🇸",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-39"
+      }
+    },
+    {
+      "id": "l7-40",
+      "lessonId": "lesson-7",
+      "vi": "Úc",
+      "ru": "Австралия",
+      "flag": "🇦🇺",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-40"
+      }
+    },
+    {
+      "vi": "sống",
+      "pronunciation": "шонг",
+      "ru": "жить",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/0"
+      }
+    },
+    {
+      "vi": "đi du lịch",
+      "pronunciation": "ди зу лик",
+      "ru": "путешествовать",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/1"
+      }
+    },
+    {
+      "vi": "thủ đô",
+      "pronunciation": "тху до",
+      "ru": "столица",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/2"
+      }
+    },
+    {
+      "vi": "tất cả",
+      "pronunciation": "тат ка",
+      "ru": "все",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/3"
+      }
+    },
+    {
+      "vi": "thành phố",
+      "pronunciation": "тхань фо",
+      "ru": "город",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/4"
+      }
+    },
+    {
+      "vi": "từ",
+      "pronunciation": "ты",
+      "ru": "из / от",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/5"
+      }
+    },
+    {
+      "vi": "đến từ",
+      "pronunciation": "дэн ты",
+      "ru": "приехать из / быть родом из",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/0/items/6"
+      }
+    },
+    {
+      "vi": "Trung Quốc",
+      "pronunciation": "чунг куок",
+      "ru": "Китай",
+      "flag": "🇨🇳",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/1/items/0"
+      }
+    },
+    {
+      "vi": "Hàn Quốc",
+      "pronunciation": "хан куок",
+      "ru": "Южная Корея",
+      "flag": "🇰🇷",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/1/items/1"
+      }
+    },
+    {
+      "vi": "Lào",
+      "pronunciation": "лао",
+      "ru": "Лаос",
+      "flag": "🇱🇦",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/1/items/2"
+      }
+    },
+    {
+      "vi": "Campuchia",
+      "pronunciation": "кам-пу-чиа",
+      "ru": "Камбоджа",
+      "flag": "🇰🇭",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/1/items/3"
+      }
+    },
+    {
+      "vi": "Nhật Bản",
+      "pronunciation": "нят бан",
+      "ru": "Япония",
+      "flag": "🇯🇵",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/1/items/4"
+      }
+    },
+    {
+      "vi": "Việt Nam",
+      "pronunciation": "вьет нам",
+      "ru": "Вьетнам",
+      "flag": "🇻🇳",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/1/items/5"
+      }
+    },
+    {
+      "vi": "Ý",
+      "pronunciation": "и",
+      "ru": "Италия",
+      "flag": "🇮🇹",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "Pháp",
+      "pronunciation": "фап",
+      "ru": "Франция",
+      "flag": "🇫🇷",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/2/items/1"
+      }
+    },
+    {
+      "vi": "Đức",
+      "pronunciation": "дык",
+      "ru": "Германия",
+      "flag": "🇩🇪",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "Anh",
+      "pronunciation": "ань",
+      "ru": "Англия",
+      "flag": "🇬🇧",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/2/items/3"
+      }
+    },
+    {
+      "vi": "Tây Ban Nha",
+      "pronunciation": "тэй бан ня",
+      "ru": "Испания",
+      "flag": "🇪🇸",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/2/items/4"
+      }
+    },
+    {
+      "vi": "Mỹ",
+      "pronunciation": "ми",
+      "ru": "США",
+      "flag": "🇺🇸",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "Úc",
+      "pronunciation": "ук",
+      "ru": "Австралия",
+      "flag": "🇦🇺",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "Thái Lan",
+      "pronunciation": "тхай лан",
+      "ru": "Таиланд",
+      "flag": "🇹🇭",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/4/items/0"
+      }
+    },
+    {
+      "vi": "Nga",
+      "pronunciation": "нга",
+      "ru": "Россия",
+      "flag": "🇷🇺",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/4/items/1"
+      }
+    },
+    {
+      "vi": "Anh đến từ nước nào?",
+      "pronunciation": "ань дэн ты ныок нао?",
+      "ru": "Из какой страны ты приехал? / Ты из какой страны?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "Anh đến từ Thái Lan.",
+      "pronunciation": "ань дэн ты тхай лан",
+      "ru": "Я приехал из Таиланда. / Я из Таиланда.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "anh",
+      "pronunciation": "ань",
+      "ru": "ты / вы при обращении к мужчине; в ответе мужчина может называть так себя",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/7/items/0"
+      }
+    },
+    {
+      "vi": "đến",
+      "pronunciation": "дэн",
+      "ru": "приезжать / прибывать",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/7/items/1"
+      }
+    },
+    {
+      "vi": "từ",
+      "pronunciation": "ты",
+      "ru": "из / от",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/7/items/2"
+      }
+    },
+    {
+      "vi": "nước",
+      "pronunciation": "ныок",
+      "ru": "страна",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/7/items/3"
+      }
+    },
+    {
+      "vi": "nào",
+      "pronunciation": "нао",
+      "ru": "какой / какая",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/7/items/4"
+      }
+    },
+    {
+      "vi": "Anh là người nước nào?",
+      "pronunciation": "ань ла ныой ныок нао?",
+      "ru": "Ты из какой страны?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/9/items/0"
+      }
+    },
+    {
+      "vi": "Anh là người nước Nga.",
+      "pronunciation": "ань ла ныой ныок нга",
+      "ru": "Я из России. / Я русский.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/9/items/1"
+      }
+    },
+    {
+      "vi": "là",
+      "ru": "быть / являться.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/10/0"
+      }
+    },
+    {
+      "vi": "người",
+      "ru": "человек.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/10/1"
+      }
+    },
+    {
+      "vi": "người nước Nga",
+      "ru": "человек из России.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/10/2"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố nào?",
+      "pronunciation": "ань дэн ты тхань фо нао?",
+      "ru": "Из какого города ты приехал?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/12/items/0"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố Elektrostal.",
+      "pronunciation": "ань дэн ты тхань фо Электросталь",
+      "ru": "Я приехал из Электростали.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/12/items/1"
+      }
+    },
+    {
+      "vi": "Tất cả sống ở An Viên.",
+      "pronunciation": "тат ка шонг о ан вьен",
+      "ru": "Все живут в Ан Вьене.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/13/items/0"
+      }
+    },
+    {
+      "vi": "Anh đã đi du lịch ở Pháp.",
+      "pronunciation": "ань да ди зу лик о фап",
+      "ru": "Я путешествовал во Франции.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/13/items/1"
+      }
+    },
+    {
+      "vi": "tất cả",
+      "ru": "все.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/0"
+      }
+    },
+    {
+      "vi": "sống",
+      "ru": "жить.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/1"
+      }
+    },
+    {
+      "vi": "ở",
+      "ru": "здесь указывает место: в / по адресу.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/2"
+      }
+    },
+    {
+      "vi": "đã",
+      "ru": "указывает, что действие произошло в прошлом. В зависимости от контекста может передаваться словом «уже», но добавлять его в русский перевод нужно не всегда.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/3"
+      }
+    },
+    {
+      "vi": "đi du lịch",
+      "ru": "путешествовать.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/4"
+      }
+    },
+    {
+      "vi": "ở Pháp",
+      "ru": "во Франции.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/5"
+      }
+    },
+    {
+      "vi": "Em có thích Đà Lạt không?",
+      "pronunciation": "эм ко тхить да лат хонг?",
+      "ru": "Тебе нравится Далат?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/16/items/0"
+      }
+    },
+    {
+      "vi": "em",
+      "ru": "ты, при обращении к младшему или близкому собеседнику.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/17/0"
+      }
+    },
+    {
+      "vi": "thích",
+      "ru": "любить / нравиться.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/17/1"
+      }
+    },
+    {
+      "vi": "Đà Lạt",
+      "ru": "Далат.",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/17/2"
+      }
+    },
+    {
+      "vi": "Anh đến từ nước nào?",
+      "ru": "Из какой страны ты приехал?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/19/rows/0"
+      }
+    },
+    {
+      "vi": "Anh là người nước nào?",
+      "ru": "Ты из какой страны?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/19/rows/1"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố nào?",
+      "ru": "Из какого города ты приехал?",
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/19/rows/2"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "kind": "pattern",
+      "heading": "3. Из какой страны ты приехал?",
+      "formula": "Кто + đến từ + страна",
+      "formulaNote": "Связка đến từ может обозначать происхождение человека, а не только конкретную поездку.",
+      "examples": [],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/5"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "4. Ты из какой страны?",
+      "formula": "Кто + là người nước + страна",
+      "formulaNote": "Обе конструкции — đến từ… и là người nước… — позволяют сказать, откуда человек. В первой используется связка «прибывать из / происходить из», во второй — «быть человеком из такой-то страны».",
+      "examples": [],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/8"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "5. Из какого города ты приехал?",
+      "formula": "Кто + đến từ thành phố + город",
+      "formulaNote": "nước nào? — какая страна? thành phố nào? — какой город?",
+      "examples": [],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/11"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "7. Повторение вопросов",
+      "formula": "Кто + có + действие / состояние + không?",
+      "formulaNote": "Вопрос с ответом «да» или «нет».",
+      "examples": [],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/15"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "Просим подтвердить предположение",
+      "formula": "Утверждение + phải không?",
+      "formulaNote": "«Верно? / Не так ли?»",
+      "examples": [],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/18"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "vi": "nước nào?",
+      "ru": "какая страна?",
+      "tokens": [
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-03"
+      }
+    },
+    {
+      "vi": "Anh đến từ nước nào?",
+      "ru": "Ты из какой страны?",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-05"
+      }
+    },
+    {
+      "vi": "Anh là người nước nào?",
+      "ru": "Ты из какой страны?",
+      "tokens": [
+        "Anh",
+        "là",
+        "người",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-07"
+      }
+    },
+    {
+      "vi": "Anh đã đi du lịch ở Pháp.",
+      "ru": "Я путешествовал во Франции.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "đi",
+        "du",
+        "lịch",
+        "ở",
+        "Pháp"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-10"
+      }
+    },
+    {
+      "vi": "Anh là người nước Nga.",
+      "ru": "Я из России; я русский.",
+      "tokens": [
+        "Anh",
+        "là",
+        "người",
+        "nước",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-12"
+      }
+    },
+    {
+      "vi": "Tất cả sống ở An Viên.",
+      "ru": "Все живут в Ан Вьене.",
+      "tokens": [
+        "Tất",
+        "cả",
+        "sống",
+        "ở",
+        "An",
+        "Viên"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-15"
+      }
+    },
+    {
+      "vi": "thành phố nào?",
+      "ru": "какой город?",
+      "tokens": [
+        "thành",
+        "phố",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-19"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố nào?",
+      "ru": "Из какого города ты приехал?",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "thành",
+        "phố",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-20"
+      }
+    },
+    {
+      "vi": "Anh đến từ Thái Lan.",
+      "ru": "Я из Таиланда.",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "Thái",
+        "Lan"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-22"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố Elektrostal.",
+      "ru": "Я приехал из Электростали.",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "thành",
+        "phố",
+        "Elektrostal"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-23"
+      }
+    },
+    {
+      "vi": "Thủ đô Việt Nam là thành phố nào?",
+      "ru": "Какой город является столицей Вьетнама?",
+      "tokens": [
+        "Thủ",
+        "đô",
+        "Việt",
+        "Nam",
+        "là",
+        "thành",
+        "phố",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-26"
+      }
+    },
+    {
+      "vi": "Thủ đô Việt Nam là Hà Nội.",
+      "ru": "Столица Вьетнама — Ханой.",
+      "tokens": [
+        "Thủ",
+        "đô",
+        "Việt",
+        "Nam",
+        "là",
+        "Hà",
+        "Nội"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l7-27"
+      }
+    },
+    {
+      "vi": "Anh đến từ nước nào?",
+      "ru": "Из какой страны ты приехал? / Ты из какой страны?",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "Anh đến từ Thái Lan.",
+      "ru": "Я приехал из Таиланда. / Я из Таиланда.",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "Thái",
+        "Lan"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "Anh là người nước nào?",
+      "ru": "Ты из какой страны?",
+      "tokens": [
+        "Anh",
+        "là",
+        "người",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/9/items/0"
+      }
+    },
+    {
+      "vi": "Anh là người nước Nga.",
+      "ru": "Я из России. / Я русский.",
+      "tokens": [
+        "Anh",
+        "là",
+        "người",
+        "nước",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/9/items/1"
+      }
+    },
+    {
+      "vi": "là",
+      "ru": "быть / являться.",
+      "tokens": [
+        "là"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/10/0"
+      }
+    },
+    {
+      "vi": "người",
+      "ru": "человек.",
+      "tokens": [
+        "người"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/10/1"
+      }
+    },
+    {
+      "vi": "người nước Nga",
+      "ru": "человек из России.",
+      "tokens": [
+        "người",
+        "nước",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/10/2"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố nào?",
+      "ru": "Из какого города ты приехал?",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "thành",
+        "phố",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/12/items/0"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố Elektrostal.",
+      "ru": "Я приехал из Электростали.",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "thành",
+        "phố",
+        "Elektrostal"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/12/items/1"
+      }
+    },
+    {
+      "vi": "Tất cả sống ở An Viên.",
+      "ru": "Все живут в Ан Вьене.",
+      "tokens": [
+        "Tất",
+        "cả",
+        "sống",
+        "ở",
+        "An",
+        "Viên"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/13/items/0"
+      }
+    },
+    {
+      "vi": "Anh đã đi du lịch ở Pháp.",
+      "ru": "Я путешествовал во Франции.",
+      "tokens": [
+        "Anh",
+        "đã",
+        "đi",
+        "du",
+        "lịch",
+        "ở",
+        "Pháp"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/13/items/1"
+      }
+    },
+    {
+      "vi": "tất cả",
+      "ru": "все.",
+      "tokens": [
+        "tất",
+        "cả"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/0"
+      }
+    },
+    {
+      "vi": "sống",
+      "ru": "жить.",
+      "tokens": [
+        "sống"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/1"
+      }
+    },
+    {
+      "vi": "ở",
+      "ru": "здесь указывает место: в / по адресу.",
+      "tokens": [
+        "ở"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/2"
+      }
+    },
+    {
+      "vi": "đã",
+      "ru": "указывает, что действие произошло в прошлом. В зависимости от контекста может передаваться словом «уже», но добавлять его в русский перевод нужно не всегда.",
+      "tokens": [
+        "đã"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/3"
+      }
+    },
+    {
+      "vi": "đi du lịch",
+      "ru": "путешествовать.",
+      "tokens": [
+        "đi",
+        "du",
+        "lịch"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/4"
+      }
+    },
+    {
+      "vi": "ở Pháp",
+      "ru": "во Франции.",
+      "tokens": [
+        "ở",
+        "Pháp"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/14/5"
+      }
+    },
+    {
+      "vi": "Em có thích Đà Lạt không?",
+      "ru": "Тебе нравится Далат?",
+      "tokens": [
+        "Em",
+        "có",
+        "thích",
+        "Đà",
+        "Lạt",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/16/items/0"
+      }
+    },
+    {
+      "vi": "em",
+      "ru": "ты, при обращении к младшему или близкому собеседнику.",
+      "tokens": [
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/17/0"
+      }
+    },
+    {
+      "vi": "thích",
+      "ru": "любить / нравиться.",
+      "tokens": [
+        "thích"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/17/1"
+      }
+    },
+    {
+      "vi": "Đà Lạt",
+      "ru": "Далат.",
+      "tokens": [
+        "Đà",
+        "Lạt"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/17/2"
+      }
+    },
+    {
+      "vi": "Anh đến từ nước nào?",
+      "ru": "Из какой страны ты приехал?",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/19/rows/0"
+      }
+    },
+    {
+      "vi": "Anh là người nước nào?",
+      "ru": "Ты из какой страны?",
+      "tokens": [
+        "Anh",
+        "là",
+        "người",
+        "nước",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/19/rows/1"
+      }
+    },
+    {
+      "vi": "Anh đến từ thành phố nào?",
+      "ru": "Из какого города ты приехал?",
+      "tokens": [
+        "Anh",
+        "đến",
+        "từ",
+        "thành",
+        "phố",
+        "nào"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson7.ts",
+        "pointer": "/sections/19/rows/2"
+      }
+    }
+  ],
+  "dialogues": [],
+  "theory": [
+    {
+      "kind": "vocab",
+      "heading": "1. Новые слова",
+      "items": [
+        {
+          "vi": "sống",
+          "pronunciation": "шонг",
+          "ru": "жить"
+        },
+        {
+          "vi": "đi du lịch",
+          "pronunciation": "ди зу лик",
+          "ru": "путешествовать"
+        },
+        {
+          "vi": "thủ đô",
+          "pronunciation": "тху до",
+          "ru": "столица"
+        },
+        {
+          "vi": "tất cả",
+          "pronunciation": "тат ка",
+          "ru": "все"
+        },
+        {
+          "vi": "thành phố",
+          "pronunciation": "тхань фо",
+          "ru": "город"
+        },
+        {
+          "vi": "từ",
+          "pronunciation": "ты",
+          "ru": "из / от"
+        },
+        {
+          "vi": "đến từ",
+          "pronunciation": "дэн ты",
+          "ru": "приехать из / быть родом из"
+        }
+      ],
+      "note": "Русские подсказки произношения перенесены из конспекта и передают звучание приблизительно."
+    },
+    {
+      "kind": "vocab",
+      "heading": "2. Страны: Азия — Châu Á [чау а]",
+      "items": [
+        {
+          "vi": "Trung Quốc",
+          "pronunciation": "чунг куок",
+          "ru": "Китай",
+          "flag": "🇨🇳"
+        },
+        {
+          "vi": "Hàn Quốc",
+          "pronunciation": "хан куок",
+          "ru": "Южная Корея",
+          "flag": "🇰🇷"
+        },
+        {
+          "vi": "Lào",
+          "pronunciation": "лао",
+          "ru": "Лаос",
+          "flag": "🇱🇦"
+        },
+        {
+          "vi": "Campuchia",
+          "pronunciation": "кам-пу-чиа",
+          "ru": "Камбоджа",
+          "flag": "🇰🇭"
+        },
+        {
+          "vi": "Nhật Bản",
+          "pronunciation": "нят бан",
+          "ru": "Япония",
+          "flag": "🇯🇵"
+        },
+        {
+          "vi": "Việt Nam",
+          "pronunciation": "вьет нам",
+          "ru": "Вьетнам",
+          "flag": "🇻🇳"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Европа — Châu Âu [чау ау]",
+      "items": [
+        {
+          "vi": "Ý",
+          "pronunciation": "и",
+          "ru": "Италия",
+          "flag": "🇮🇹"
+        },
+        {
+          "vi": "Pháp",
+          "pronunciation": "фап",
+          "ru": "Франция",
+          "flag": "🇫🇷"
+        },
+        {
+          "vi": "Đức",
+          "pronunciation": "дык",
+          "ru": "Германия",
+          "flag": "🇩🇪"
+        },
+        {
+          "vi": "Anh",
+          "pronunciation": "ань",
+          "ru": "Англия",
+          "flag": "🇬🇧"
+        },
+        {
+          "vi": "Tây Ban Nha",
+          "pronunciation": "тэй бан ня",
+          "ru": "Испания",
+          "flag": "🇪🇸"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Другие страны",
+      "items": [
+        {
+          "vi": "Mỹ",
+          "pronunciation": "ми",
+          "ru": "США",
+          "flag": "🇺🇸"
+        },
+        {
+          "vi": "Úc",
+          "pronunciation": "ук",
+          "ru": "Австралия",
+          "flag": "🇦🇺"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Страны из примеров урока",
+      "items": [
+        {
+          "vi": "Thái Lan",
+          "pronunciation": "тхай лан",
+          "ru": "Таиланд",
+          "flag": "🇹🇭"
+        },
+        {
+          "vi": "Nga",
+          "pronunciation": "нга",
+          "ru": "Россия",
+          "flag": "🇷🇺"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "3. Из какой страны ты приехал?",
+      "formula": "Кто + đến từ + страна",
+      "formulaNote": "Связка đến từ может обозначать происхождение человека, а не только конкретную поездку.",
+      "examples": []
+    },
+    {
+      "kind": "vocab",
+      "heading": "Вопрос и ответ",
+      "items": [
+        {
+          "vi": "Anh đến từ nước nào?",
+          "pronunciation": "ань дэн ты ныок нао?",
+          "ru": "Из какой страны ты приехал? / Ты из какой страны?"
+        },
+        {
+          "vi": "Anh đến từ Thái Lan.",
+          "pronunciation": "ань дэн ты тхай лан",
+          "ru": "Я приехал из Таиланда. / Я из Таиланда."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Разбор вопроса",
+      "items": [
+        {
+          "vi": "anh",
+          "pronunciation": "ань",
+          "ru": "ты / вы при обращении к мужчине; в ответе мужчина может называть так себя"
+        },
+        {
+          "vi": "đến",
+          "pronunciation": "дэн",
+          "ru": "приезжать / прибывать"
+        },
+        {
+          "vi": "từ",
+          "pronunciation": "ты",
+          "ru": "из / от"
+        },
+        {
+          "vi": "nước",
+          "pronunciation": "ныок",
+          "ru": "страна"
+        },
+        {
+          "vi": "nào",
+          "pronunciation": "нао",
+          "ru": "какой / какая"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "4. Ты из какой страны?",
+      "formula": "Кто + là người nước + страна",
+      "formulaNote": "Обе конструкции — đến từ… и là người nước… — позволяют сказать, откуда человек. В первой используется связка «прибывать из / происходить из», во второй — «быть человеком из такой-то страны».",
+      "examples": []
+    },
+    {
+      "kind": "vocab",
+      "heading": "Вопрос и ответ",
+      "items": [
+        {
+          "vi": "Anh là người nước nào?",
+          "pronunciation": "ань ла ныой ныок нао?",
+          "ru": "Ты из какой страны?"
+        },
+        {
+          "vi": "Anh là người nước Nga.",
+          "pronunciation": "ань ла ныой ныок нга",
+          "ru": "Я из России. / Я русский."
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Разбор ответа",
+      "items": [
+        "là — быть / являться.",
+        "người — человек.",
+        "người nước Nga — человек из России."
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "5. Из какого города ты приехал?",
+      "formula": "Кто + đến từ thành phố + город",
+      "formulaNote": "nước nào? — какая страна? thành phố nào? — какой город?",
+      "examples": []
+    },
+    {
+      "kind": "vocab",
+      "heading": "Вопрос и ответ",
+      "items": [
+        {
+          "vi": "Anh đến từ thành phố nào?",
+          "pronunciation": "ань дэн ты тхань фо нао?",
+          "ru": "Из какого города ты приехал?"
+        },
+        {
+          "vi": "Anh đến từ thành phố Elektrostal.",
+          "pronunciation": "ань дэн ты тхань фо Электросталь",
+          "ru": "Я приехал из Электростали."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "6. Примеры с новыми словами",
+      "items": [
+        {
+          "vi": "Tất cả sống ở An Viên.",
+          "pronunciation": "тат ка шонг о ан вьен",
+          "ru": "Все живут в Ан Вьене."
+        },
+        {
+          "vi": "Anh đã đi du lịch ở Pháp.",
+          "pronunciation": "ань да ди зу лик о фап",
+          "ru": "Я путешествовал во Франции."
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Разбор примеров",
+      "items": [
+        "tất cả — все.",
+        "sống — жить.",
+        "ở — здесь указывает место: в / по адресу.",
+        "đã — указывает, что действие произошло в прошлом. В зависимости от контекста может передаваться словом «уже», но добавлять его в русский перевод нужно не всегда.",
+        "đi du lịch — путешествовать.",
+        "ở Pháp — во Франции."
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "7. Повторение вопросов",
+      "formula": "Кто + có + действие / состояние + không?",
+      "formulaNote": "Вопрос с ответом «да» или «нет».",
+      "examples": []
+    },
+    {
+      "kind": "vocab",
+      "heading": "Тебе нравится Далат?",
+      "items": [
+        {
+          "vi": "Em có thích Đà Lạt không?",
+          "pronunciation": "эм ко тхить да лат хонг?",
+          "ru": "Тебе нравится Далат?"
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Слова в вопросе",
+      "items": [
+        "em — ты, при обращении к младшему или близкому собеседнику.",
+        "thích — любить / нравиться.",
+        "Đà Lạt — Далат."
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "Просим подтвердить предположение",
+      "formula": "Утверждение + phải không?",
+      "formulaNote": "«Верно? / Не так ли?»",
+      "examples": []
+    },
+    {
+      "kind": "table",
+      "heading": "8. Главное для запоминания",
+      "columns": [
+        "Что спрашиваем",
+        "Вопрос"
+      ],
+      "rows": [
+        [
+          "Из какой страны ты приехал?",
+          "Anh đến từ nước nào?"
+        ],
+        [
+          "Ты из какой страны?",
+          "Anh là người nước nào?"
+        ],
+        [
+          "Из какого города ты приехал?",
+          "Anh đến từ thành phố nào?"
+        ]
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Три схемы ответа",
+      "items": [
+        "Anh đến từ + страна.",
+        "Anh là người nước + страна.",
+        "Anh đến từ thành phố + город."
+      ]
+    }
+  ]
+}

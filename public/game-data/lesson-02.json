@@ -1,0 +1,3020 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-2",
+  "number": 2,
+  "title": "Согласные, тона, обращения и местоимения",
+  "cards": [
+    {
+      "id": "l2-01",
+      "lessonId": "lesson-2",
+      "vi": "tôi",
+      "ru": "я (нейтрально)"
+    },
+    {
+      "id": "l2-02",
+      "lessonId": "lesson-2",
+      "vi": "anh",
+      "ru": "старший брат; обращение к мужчине немного старше или примерно своего возраста"
+    },
+    {
+      "id": "l2-03",
+      "lessonId": "lesson-2",
+      "vi": "chị",
+      "ru": "старшая сестра; обращение к женщине немного старше или примерно своего возраста"
+    },
+    {
+      "id": "l2-04",
+      "lessonId": "lesson-2",
+      "vi": "em",
+      "ru": "младший брат или сестра; обращение к младшему собеседнику любого пола"
+    },
+    {
+      "id": "l2-05",
+      "lessonId": "lesson-2",
+      "vi": "bạn",
+      "ru": "друг; ты (нейтральное обращение, часто к ровеснику)"
+    },
+    {
+      "id": "l2-06",
+      "lessonId": "lesson-2",
+      "vi": "ông",
+      "ru": "дедушка; уважительное обращение к пожилому мужчине"
+    },
+    {
+      "id": "l2-07",
+      "lessonId": "lesson-2",
+      "vi": "bà",
+      "ru": "бабушка; уважительное обращение к пожилой женщине"
+    },
+    {
+      "id": "l2-08",
+      "lessonId": "lesson-2",
+      "vi": "bác",
+      "ru": "дядя или тётя; уважительное обращение к человеку поколения родителей, обычно старше них"
+    },
+    {
+      "id": "l2-09",
+      "lessonId": "lesson-2",
+      "vi": "chú",
+      "ru": "дядя; обращение к мужчине поколения родителей, обычно младше отца"
+    },
+    {
+      "id": "l2-10",
+      "lessonId": "lesson-2",
+      "vi": "cô",
+      "ru": "тётя; учительница; обращение к женщине поколения родителей"
+    },
+    {
+      "id": "l2-11",
+      "lessonId": "lesson-2",
+      "vi": "cụ",
+      "ru": "прадедушка или прабабушка; уважительное обращение к очень пожилому человеку"
+    },
+    {
+      "id": "l2-12",
+      "lessonId": "lesson-2",
+      "vi": "cháu",
+      "ru": "внук, внучка, племянник или племянница; обращение к человеку значительно младше"
+    },
+    {
+      "id": "l2-13",
+      "lessonId": "lesson-2",
+      "vi": "con",
+      "ru": "ребёнок; сын или дочь"
+    },
+    {
+      "id": "l2-14",
+      "lessonId": "lesson-2",
+      "vi": "bé",
+      "ru": "малыш; малышка"
+    },
+    {
+      "id": "l2-15",
+      "lessonId": "lesson-2",
+      "vi": "cậu",
+      "ru": "дядя по матери; дружеское «ты» среди ровесников"
+    },
+    {
+      "id": "l2-16",
+      "lessonId": "lesson-2",
+      "vi": "mợ",
+      "ru": "жена дяди по матери; семейное обращение"
+    },
+    {
+      "id": "l2-17",
+      "lessonId": "lesson-2",
+      "vi": "ông ấy",
+      "ru": "он (о пожилом мужчине)"
+    },
+    {
+      "id": "l2-18",
+      "lessonId": "lesson-2",
+      "vi": "bà ấy",
+      "ru": "она (о пожилой женщине)"
+    },
+    {
+      "id": "l2-19",
+      "lessonId": "lesson-2",
+      "vi": "anh ấy",
+      "ru": "он (о мужчине)"
+    },
+    {
+      "id": "l2-20",
+      "lessonId": "lesson-2",
+      "vi": "chị ấy",
+      "ru": "она (о женщине)"
+    },
+    {
+      "id": "l2-21",
+      "lessonId": "lesson-2",
+      "vi": "em ấy",
+      "ru": "он или она (о младшем человеке)"
+    },
+    {
+      "id": "l2-22",
+      "lessonId": "lesson-2",
+      "vi": "ơi",
+      "ru": "частица для привлечения внимания при обращении"
+    },
+    {
+      "id": "l2-23",
+      "lessonId": "lesson-2",
+      "vi": "ạ",
+      "ru": "частица вежливости, обычно в конце фразы"
+    },
+    {
+      "id": "l2-24",
+      "lessonId": "lesson-2",
+      "vi": "này",
+      "ru": "этот; эй, послушай (в обращении)"
+    },
+    {
+      "id": "l2-25",
+      "lessonId": "lesson-2",
+      "vi": "và",
+      "ru": "и"
+    },
+    {
+      "id": "l2-26",
+      "lessonId": "lesson-2",
+      "vi": "với",
+      "ru": "с"
+    },
+    {
+      "id": "l2-27",
+      "lessonId": "lesson-2",
+      "vi": "cũng",
+      "ru": "тоже; также"
+    },
+    {
+      "id": "l2-28",
+      "lessonId": "lesson-2",
+      "vi": "Anh ơi!",
+      "ru": "Извините! / Можно вас? (к мужчине)."
+    },
+    {
+      "id": "l2-29",
+      "lessonId": "lesson-2",
+      "vi": "Chị ơi!",
+      "ru": "Извините! / Можно вас? (к женщине)."
+    },
+    {
+      "id": "l2-30",
+      "lessonId": "lesson-2",
+      "vi": "Em ơi!",
+      "ru": "Можно тебя? (к младшему)."
+    },
+    {
+      "id": "l2-31",
+      "lessonId": "lesson-2",
+      "vi": "Bác ơi!",
+      "ru": "Извините! / Можно вас? (к старшему)."
+    },
+    {
+      "id": "l2-32",
+      "lessonId": "lesson-2",
+      "vi": "Mẹ ơi!",
+      "ru": "Мама! (позвать маму)."
+    },
+    {
+      "id": "l2-33",
+      "lessonId": "lesson-2",
+      "vi": "Tôi là Kosta.",
+      "ru": "Я Костя."
+    }
+  ],
+  "words": [
+    {
+      "id": "l2-01",
+      "lessonId": "lesson-2",
+      "vi": "tôi",
+      "ru": "я (нейтрально)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-01"
+      }
+    },
+    {
+      "id": "l2-02",
+      "lessonId": "lesson-2",
+      "vi": "anh",
+      "ru": "старший брат; обращение к мужчине немного старше или примерно своего возраста",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-02"
+      }
+    },
+    {
+      "id": "l2-03",
+      "lessonId": "lesson-2",
+      "vi": "chị",
+      "ru": "старшая сестра; обращение к женщине немного старше или примерно своего возраста",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-03"
+      }
+    },
+    {
+      "id": "l2-04",
+      "lessonId": "lesson-2",
+      "vi": "em",
+      "ru": "младший брат или сестра; обращение к младшему собеседнику любого пола",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-04"
+      }
+    },
+    {
+      "id": "l2-05",
+      "lessonId": "lesson-2",
+      "vi": "bạn",
+      "ru": "друг; ты (нейтральное обращение, часто к ровеснику)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-05"
+      }
+    },
+    {
+      "id": "l2-06",
+      "lessonId": "lesson-2",
+      "vi": "ông",
+      "ru": "дедушка; уважительное обращение к пожилому мужчине",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-06"
+      }
+    },
+    {
+      "id": "l2-07",
+      "lessonId": "lesson-2",
+      "vi": "bà",
+      "ru": "бабушка; уважительное обращение к пожилой женщине",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-07"
+      }
+    },
+    {
+      "id": "l2-08",
+      "lessonId": "lesson-2",
+      "vi": "bác",
+      "ru": "дядя или тётя; уважительное обращение к человеку поколения родителей, обычно старше них",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-08"
+      }
+    },
+    {
+      "id": "l2-09",
+      "lessonId": "lesson-2",
+      "vi": "chú",
+      "ru": "дядя; обращение к мужчине поколения родителей, обычно младше отца",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-09"
+      }
+    },
+    {
+      "id": "l2-10",
+      "lessonId": "lesson-2",
+      "vi": "cô",
+      "ru": "тётя; учительница; обращение к женщине поколения родителей",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-10"
+      }
+    },
+    {
+      "id": "l2-11",
+      "lessonId": "lesson-2",
+      "vi": "cụ",
+      "ru": "прадедушка или прабабушка; уважительное обращение к очень пожилому человеку",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-11"
+      }
+    },
+    {
+      "id": "l2-12",
+      "lessonId": "lesson-2",
+      "vi": "cháu",
+      "ru": "внук, внучка, племянник или племянница; обращение к человеку значительно младше",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-12"
+      }
+    },
+    {
+      "id": "l2-13",
+      "lessonId": "lesson-2",
+      "vi": "con",
+      "ru": "ребёнок; сын или дочь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-13"
+      }
+    },
+    {
+      "id": "l2-14",
+      "lessonId": "lesson-2",
+      "vi": "bé",
+      "ru": "малыш; малышка",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-14"
+      }
+    },
+    {
+      "id": "l2-15",
+      "lessonId": "lesson-2",
+      "vi": "cậu",
+      "ru": "дядя по матери; дружеское «ты» среди ровесников",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-15"
+      }
+    },
+    {
+      "id": "l2-16",
+      "lessonId": "lesson-2",
+      "vi": "mợ",
+      "ru": "жена дяди по матери; семейное обращение",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-16"
+      }
+    },
+    {
+      "id": "l2-17",
+      "lessonId": "lesson-2",
+      "vi": "ông ấy",
+      "ru": "он (о пожилом мужчине)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-17"
+      }
+    },
+    {
+      "id": "l2-18",
+      "lessonId": "lesson-2",
+      "vi": "bà ấy",
+      "ru": "она (о пожилой женщине)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-18"
+      }
+    },
+    {
+      "id": "l2-19",
+      "lessonId": "lesson-2",
+      "vi": "anh ấy",
+      "ru": "он (о мужчине)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-19"
+      }
+    },
+    {
+      "id": "l2-20",
+      "lessonId": "lesson-2",
+      "vi": "chị ấy",
+      "ru": "она (о женщине)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-20"
+      }
+    },
+    {
+      "id": "l2-21",
+      "lessonId": "lesson-2",
+      "vi": "em ấy",
+      "ru": "он или она (о младшем человеке)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-21"
+      }
+    },
+    {
+      "id": "l2-22",
+      "lessonId": "lesson-2",
+      "vi": "ơi",
+      "ru": "частица для привлечения внимания при обращении",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-22"
+      }
+    },
+    {
+      "id": "l2-23",
+      "lessonId": "lesson-2",
+      "vi": "ạ",
+      "ru": "частица вежливости, обычно в конце фразы",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-23"
+      }
+    },
+    {
+      "id": "l2-24",
+      "lessonId": "lesson-2",
+      "vi": "này",
+      "ru": "этот; эй, послушай (в обращении)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-24"
+      }
+    },
+    {
+      "id": "l2-25",
+      "lessonId": "lesson-2",
+      "vi": "và",
+      "ru": "и",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-25"
+      }
+    },
+    {
+      "id": "l2-26",
+      "lessonId": "lesson-2",
+      "vi": "với",
+      "ru": "с",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-26"
+      }
+    },
+    {
+      "id": "l2-27",
+      "lessonId": "lesson-2",
+      "vi": "cũng",
+      "ru": "тоже; также",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-27"
+      }
+    },
+    {
+      "id": "l2-28",
+      "lessonId": "lesson-2",
+      "vi": "Anh ơi!",
+      "ru": "Извините! / Можно вас? (к мужчине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-28"
+      }
+    },
+    {
+      "id": "l2-29",
+      "lessonId": "lesson-2",
+      "vi": "Chị ơi!",
+      "ru": "Извините! / Можно вас? (к женщине).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-29"
+      }
+    },
+    {
+      "id": "l2-30",
+      "lessonId": "lesson-2",
+      "vi": "Em ơi!",
+      "ru": "Можно тебя? (к младшему).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-30"
+      }
+    },
+    {
+      "id": "l2-31",
+      "lessonId": "lesson-2",
+      "vi": "Bác ơi!",
+      "ru": "Извините! / Можно вас? (к старшему).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-31"
+      }
+    },
+    {
+      "id": "l2-32",
+      "lessonId": "lesson-2",
+      "vi": "Mẹ ơi!",
+      "ru": "Мама! (позвать маму).",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-32"
+      }
+    },
+    {
+      "id": "l2-33",
+      "lessonId": "lesson-2",
+      "vi": "Tôi là Kosta.",
+      "ru": "Я Костя.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-33"
+      }
+    },
+    {
+      "vi": "nhà",
+      "ru": "дом",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/0/2/0"
+      }
+    },
+    {
+      "vi": "nhỏ",
+      "ru": "маленький",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/0/2/1"
+      }
+    },
+    {
+      "vi": "nhanh",
+      "ru": "быстрый",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/0/2/2"
+      }
+    },
+    {
+      "vi": "nhìn",
+      "ru": "смотреть",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/0/2/3"
+      }
+    },
+    {
+      "vi": "trà",
+      "ru": "чай",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/1/2/0"
+      }
+    },
+    {
+      "vi": "trẻ",
+      "ru": "молодой",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/1/2/1"
+      }
+    },
+    {
+      "vi": "trung",
+      "ru": "средний",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/1/2/2"
+      }
+    },
+    {
+      "vi": "trong",
+      "ru": "внутри",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/1/2/3"
+      }
+    },
+    {
+      "vi": "cha",
+      "ru": "папа",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/2/2/0"
+      }
+    },
+    {
+      "vi": "chị",
+      "ru": "старшая сестра",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/2/2/1"
+      }
+    },
+    {
+      "vi": "chỗ",
+      "ru": "место",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/2/2/2"
+      }
+    },
+    {
+      "vi": "chơi",
+      "ru": "играть",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/2/2/3"
+      }
+    },
+    {
+      "vi": "khỏe",
+      "ru": "здоров",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/3/2/0"
+      }
+    },
+    {
+      "vi": "không",
+      "ru": "нет",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/3/2/1"
+      }
+    },
+    {
+      "vi": "khó",
+      "ru": "трудно",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/3/2/2"
+      }
+    },
+    {
+      "vi": "khám",
+      "ru": "осматривать (врач)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/3/2/3"
+      }
+    },
+    {
+      "vi": "ngà",
+      "ru": "слоновая кость",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/4/2/0"
+      }
+    },
+    {
+      "vi": "ngon",
+      "ru": "вкусный",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/4/2/1"
+      }
+    },
+    {
+      "vi": "người",
+      "ru": "человек",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/4/2/2"
+      }
+    },
+    {
+      "vi": "nghe",
+      "ru": "слушать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/4/2/3"
+      }
+    },
+    {
+      "vi": "thà",
+      "ru": "лучше",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/5/2/0"
+      }
+    },
+    {
+      "vi": "thì",
+      "ru": "то/когда",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/5/2/1"
+      }
+    },
+    {
+      "vi": "thêm",
+      "ru": "добавить",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/5/2/2"
+      }
+    },
+    {
+      "vi": "thấy",
+      "ru": "видеть",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/5/2/3"
+      }
+    },
+    {
+      "vi": "ghế",
+      "ru": "стул",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/6/2/0"
+      }
+    },
+    {
+      "vi": "ghép",
+      "ru": "соединять",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/6/2/1"
+      }
+    },
+    {
+      "vi": "ghi",
+      "ru": "записывать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/6/2/2"
+      }
+    },
+    {
+      "vi": "ghé",
+      "ru": "заехать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/6/2/3"
+      }
+    },
+    {
+      "vi": "nghĩ",
+      "ru": "отдыхать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/7/2/0"
+      }
+    },
+    {
+      "vi": "nghỉ",
+      "ru": "думать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/7/2/1"
+      }
+    },
+    {
+      "vi": "nghề",
+      "ru": "профессия",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/7/2/2"
+      }
+    },
+    {
+      "vi": "nghe",
+      "ru": "слушать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/0/rows/7/2/3"
+      }
+    },
+    {
+      "vi": "ba",
+      "ru": "папа",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/0/3/0"
+      }
+    },
+    {
+      "vi": "nha",
+      "ru": "дом",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/0/3/1"
+      }
+    },
+    {
+      "vi": "ca",
+      "ru": "рыба",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/0/3/2"
+      }
+    },
+    {
+      "vi": "cá",
+      "ru": "рыба",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/1/3/0"
+      }
+    },
+    {
+      "vi": "lá",
+      "ru": "лист",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/1/3/1"
+      }
+    },
+    {
+      "vi": "má",
+      "ru": "мама",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/1/3/2"
+      }
+    },
+    {
+      "vi": "mà",
+      "ru": "но",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/2/3/0"
+      }
+    },
+    {
+      "vi": "bà",
+      "ru": "бабушка",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/2/3/1"
+      }
+    },
+    {
+      "vi": "là",
+      "ru": "быть (есть)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/2/3/2"
+      }
+    },
+    {
+      "vi": "cần",
+      "ru": "нужен",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/3/3/0"
+      }
+    },
+    {
+      "vi": "ở",
+      "ru": "быть/находиться",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/3/3/1"
+      }
+    },
+    {
+      "vi": "hỏi",
+      "ru": "спрашивать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/3/3/2"
+      }
+    },
+    {
+      "vi": "lần",
+      "ru": "раз",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/4/3/0"
+      }
+    },
+    {
+      "vi": "ngã",
+      "ru": "падать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/4/3/1"
+      }
+    },
+    {
+      "vi": "cỗ",
+      "ru": "предмет/стол",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/4/3/2"
+      }
+    },
+    {
+      "vi": "ạ",
+      "ru": "(уважит.)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/5/3/0"
+      }
+    },
+    {
+      "vi": "nặng",
+      "ru": "тяжёлый",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/5/3/1"
+      }
+    },
+    {
+      "vi": "vợ",
+      "ru": "жена",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/1/rows/5/3/2"
+      }
+    },
+    {
+      "vi": "a",
+      "ru": "ba (папа)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/1"
+      }
+    },
+    {
+      "vi": "i",
+      "ru": "mi (лапша)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/2"
+      }
+    },
+    {
+      "vi": "o",
+      "ru": "con (ребёнок)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/3"
+      }
+    },
+    {
+      "vi": "u",
+      "ru": "u (приоритет)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/4"
+      }
+    },
+    {
+      "vi": "e",
+      "ru": "em (ты, младший)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/5"
+      }
+    },
+    {
+      "vi": "á",
+      "ru": "cá (рыба)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/1"
+      }
+    },
+    {
+      "vi": "í",
+      "ru": "í (идти)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/2"
+      }
+    },
+    {
+      "vi": "ó",
+      "ru": "có (есть)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/3"
+      }
+    },
+    {
+      "vi": "ú",
+      "ru": "ú (удивление)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/4"
+      }
+    },
+    {
+      "vi": "é",
+      "ru": "é (красивый)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/5"
+      }
+    },
+    {
+      "vi": "à",
+      "ru": "mà (но)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/1"
+      }
+    },
+    {
+      "vi": "ì",
+      "ru": "vì (потому что)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/2"
+      }
+    },
+    {
+      "vi": "ò",
+      "ru": "cò (аист)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/3"
+      }
+    },
+    {
+      "vi": "ù",
+      "ru": "từ (четыре)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/4"
+      }
+    },
+    {
+      "vi": "è",
+      "ru": "hẹn (назначать)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/5"
+      }
+    },
+    {
+      "vi": "ả",
+      "ru": "cần (нужен)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/1"
+      }
+    },
+    {
+      "vi": "ỉ",
+      "ru": "hỏi (спрашивать)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/2"
+      }
+    },
+    {
+      "vi": "ỏ",
+      "ru": "ở (быть/находиться)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/3"
+      }
+    },
+    {
+      "vi": "ủ",
+      "ru": "đủ (достаточно)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/4"
+      }
+    },
+    {
+      "vi": "ẻ",
+      "ru": "kể (рассказывать)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/5"
+      }
+    },
+    {
+      "vi": "ã",
+      "ru": "lần (раз)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/1"
+      }
+    },
+    {
+      "vi": "ĩ",
+      "ru": "nghĩ (думать)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/2"
+      }
+    },
+    {
+      "vi": "õ",
+      "ru": "cỗ (предмет)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/3"
+      }
+    },
+    {
+      "vi": "ũ",
+      "ru": "vũ (танец)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/4"
+      }
+    },
+    {
+      "vi": "ẽ",
+      "ru": "lễ (церемония)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/5"
+      }
+    },
+    {
+      "vi": "ạ",
+      "ru": "bà (бабушка)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/1"
+      }
+    },
+    {
+      "vi": "ị",
+      "ru": "bị (быть/получить)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/2"
+      }
+    },
+    {
+      "vi": "ọ",
+      "ru": "họ (они/семья)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/3"
+      }
+    },
+    {
+      "vi": "ụ",
+      "ru": "mụ (женщина)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/4"
+      }
+    },
+    {
+      "vi": "ẹ",
+      "ru": "mẹ (мама)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/5"
+      }
+    },
+    {
+      "vi": "trà",
+      "pronunciation": "ча",
+      "ru": "чай",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "trẻ",
+      "pronunciation": "че",
+      "ru": "молодой",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "trung",
+      "pronunciation": "чунг",
+      "ru": "средний",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/2"
+      }
+    },
+    {
+      "vi": "trong",
+      "pronunciation": "чонг",
+      "ru": "внутри",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "cha",
+      "pronunciation": "ча",
+      "ru": "папа",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "chị",
+      "pronunciation": "чи",
+      "ru": "старшая сестра",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/5"
+      }
+    },
+    {
+      "vi": "chỗ",
+      "pronunciation": "чо",
+      "ru": "место",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/6"
+      }
+    },
+    {
+      "vi": "chơi",
+      "pronunciation": "чой",
+      "ru": "играть",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/7"
+      }
+    },
+    {
+      "vi": "khỏe",
+      "pronunciation": "кхое",
+      "ru": "здоров",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/8"
+      }
+    },
+    {
+      "vi": "không",
+      "pronunciation": "кхонг",
+      "ru": "нет",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/9"
+      }
+    },
+    {
+      "vi": "khó",
+      "pronunciation": "кхо",
+      "ru": "трудно",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/10"
+      }
+    },
+    {
+      "vi": "khám",
+      "pronunciation": "кхам",
+      "ru": "осматривать (врач)",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/11"
+      }
+    },
+    {
+      "vi": "ngà",
+      "pronunciation": "нга",
+      "ru": "слоновая кость",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/12"
+      }
+    },
+    {
+      "vi": "ngon",
+      "pronunciation": "нгон",
+      "ru": "вкусный",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/13"
+      }
+    },
+    {
+      "vi": "người",
+      "pronunciation": "нгыой",
+      "ru": "человек",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/14"
+      }
+    },
+    {
+      "vi": "nghe",
+      "pronunciation": "нгэ",
+      "ru": "слушать",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/15"
+      }
+    },
+    {
+      "vi": "thà",
+      "pronunciation": "тха",
+      "ru": "лучше",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/16"
+      }
+    },
+    {
+      "vi": "thì",
+      "pronunciation": "тхи",
+      "ru": "то/когда",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/17"
+      }
+    },
+    {
+      "vi": "thêm",
+      "pronunciation": "тхэм",
+      "ru": "добавить",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/18"
+      }
+    },
+    {
+      "vi": "thấy",
+      "pronunciation": "тхай",
+      "ru": "видеть",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/3/items/19"
+      }
+    },
+    {
+      "vi": "Cụ ơi!",
+      "ru": "Дедушка/Бабушка!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/0/4"
+      }
+    },
+    {
+      "vi": "Ông ơi!",
+      "ru": "Дедушка!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/1/4"
+      }
+    },
+    {
+      "vi": "Bà ơi!",
+      "ru": "Бабушка!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/2/4"
+      }
+    },
+    {
+      "vi": "Bác ơi!",
+      "ru": "Дядя/Тётя!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/3/4"
+      }
+    },
+    {
+      "vi": "Chú ơi!",
+      "ru": "Дядя!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/4/4"
+      }
+    },
+    {
+      "vi": "Cô ơi!",
+      "ru": "Тётя!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/5/4"
+      }
+    },
+    {
+      "vi": "Anh ơi! / Chị ơi!",
+      "ru": "Брат/Сестра!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/6/4"
+      }
+    },
+    {
+      "vi": "Anh ơi!",
+      "ru": "Брат (к мужчине)!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/7/4"
+      }
+    },
+    {
+      "vi": "Chị ơi!",
+      "ru": "Сестра (к женщине)!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/8/4"
+      }
+    },
+    {
+      "vi": "Bạn ơi!",
+      "ru": "Друг/Подруга!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/9/4"
+      }
+    },
+    {
+      "vi": "Em ơi!",
+      "ru": "Младший/Младшая!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/10/4"
+      }
+    },
+    {
+      "vi": "Cậu ơi!",
+      "ru": "Парень!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/11/4"
+      }
+    },
+    {
+      "vi": "Mợ ơi!",
+      "ru": "Молодая женщина!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/12/4"
+      }
+    },
+    {
+      "vi": "Cháu ơi!",
+      "ru": "Племянник/Племянница!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/13/4"
+      }
+    },
+    {
+      "vi": "Con ơi!",
+      "ru": "Ребёнок!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/14/4"
+      }
+    },
+    {
+      "vi": "Bé ơi!",
+      "ru": "Малыш/Малышка!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/15/4"
+      }
+    },
+    {
+      "vi": "tôi",
+      "pronunciation": "той",
+      "ru": "я (нейтрально, вежливо)",
+      "example": "Tôi là Kosta.",
+      "exampleRu": "Я Костя.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/0"
+      }
+    },
+    {
+      "vi": "anh",
+      "pronunciation": "ань",
+      "ru": "я (мужчина, в разговоре)",
+      "example": "Anh đi.",
+      "exampleRu": "Я иду.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/1"
+      }
+    },
+    {
+      "vi": "chị",
+      "pronunciation": "чи",
+      "ru": "я (женщина, в разговоре)",
+      "example": "Chị muốn.",
+      "exampleRu": "Я хочу.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/2"
+      }
+    },
+    {
+      "vi": "em",
+      "pronunciation": "ем",
+      "ru": "я (молодой, дружески)",
+      "example": "Em có.",
+      "exampleRu": "Я есть / у меня есть.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/3"
+      }
+    },
+    {
+      "vi": "ông ấy",
+      "pronunciation": "онг ай",
+      "ru": "он (уважительно)",
+      "example": "Ông ấy khỏe.",
+      "exampleRu": "Он здоров.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/0"
+      }
+    },
+    {
+      "vi": "bà ấy",
+      "pronunciation": "ба ай",
+      "ru": "она (уважительно)",
+      "example": "Bà ấy ở nhà.",
+      "exampleRu": "Она дома.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/1"
+      }
+    },
+    {
+      "vi": "anh ấy",
+      "pronunciation": "ань ай",
+      "ru": "он (мужчина)",
+      "example": "Anh ấy đi làm.",
+      "exampleRu": "Он на работе.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/2"
+      }
+    },
+    {
+      "vi": "chị ấy",
+      "pronunciation": "чи ай",
+      "ru": "она (женщина)",
+      "example": "Chị ấy đẹp.",
+      "exampleRu": "Она красивая.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/3"
+      }
+    },
+    {
+      "vi": "em ấy",
+      "pronunciation": "ем ай",
+      "ru": "он/она (молодой)",
+      "example": "Em ấy học.",
+      "exampleRu": "Он/она учится.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/4"
+      }
+    },
+    {
+      "vi": "này",
+      "pronunciation": "най",
+      "ru": "эй, обращение (дружески)",
+      "example": "Này!",
+      "exampleRu": "Эй! / Слушай!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/0"
+      }
+    },
+    {
+      "vi": "ơi",
+      "pronunciation": "ой",
+      "ru": "обращение, выражает эмоцию",
+      "example": "Mẹ ơi!",
+      "exampleRu": "Мама!",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/1"
+      }
+    },
+    {
+      "vi": "ạ",
+      "pronunciation": "а",
+      "ru": "вежливая частица (мягкое обращение)",
+      "example": "Dạ, anh ạ.",
+      "exampleRu": "Да, старший брат.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/2"
+      }
+    },
+    {
+      "vi": "và",
+      "pronunciation": "ва",
+      "ru": "и",
+      "example": "Bố và mẹ.",
+      "exampleRu": "Папа и мама.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/3"
+      }
+    },
+    {
+      "vi": "với",
+      "pronunciation": "мой",
+      "ru": "с (с кем)",
+      "example": "Đi với em.",
+      "exampleRu": "Идти со мной.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/4"
+      }
+    },
+    {
+      "vi": "cũng",
+      "pronunciation": "кунг",
+      "ru": "также, тоже",
+      "example": "Tôi cũng muốn.",
+      "exampleRu": "Я тоже хочу.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/5"
+      }
+    },
+    {
+      "vi": "như",
+      "pronunciation": "ны",
+      "ru": "как, например",
+      "example": "Như thế này.",
+      "exampleRu": "Как вот так.",
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/6"
+      }
+    }
+  ],
+  "grammar": [],
+  "examples": [
+    {
+      "vi": "Anh ơi!",
+      "ru": "Извините! / Можно вас? (к мужчине).",
+      "tokens": [
+        "Anh",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-28"
+      }
+    },
+    {
+      "vi": "Chị ơi!",
+      "ru": "Извините! / Можно вас? (к женщине).",
+      "tokens": [
+        "Chị",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-29"
+      }
+    },
+    {
+      "vi": "Em ơi!",
+      "ru": "Можно тебя? (к младшему).",
+      "tokens": [
+        "Em",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-30"
+      }
+    },
+    {
+      "vi": "Bác ơi!",
+      "ru": "Извините! / Можно вас? (к старшему).",
+      "tokens": [
+        "Bác",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-31"
+      }
+    },
+    {
+      "vi": "Mẹ ơi!",
+      "ru": "Мама! (позвать маму).",
+      "tokens": [
+        "Mẹ",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-32"
+      }
+    },
+    {
+      "vi": "Tôi là Kosta.",
+      "ru": "Я Костя.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "Kosta"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l2-33"
+      }
+    },
+    {
+      "vi": "a",
+      "ru": "ba (папа)",
+      "tokens": [
+        "a"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/1"
+      }
+    },
+    {
+      "vi": "i",
+      "ru": "mi (лапша)",
+      "tokens": [
+        "i"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/2"
+      }
+    },
+    {
+      "vi": "o",
+      "ru": "con (ребёнок)",
+      "tokens": [
+        "o"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/3"
+      }
+    },
+    {
+      "vi": "u",
+      "ru": "u (приоритет)",
+      "tokens": [
+        "u"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/4"
+      }
+    },
+    {
+      "vi": "e",
+      "ru": "em (ты, младший)",
+      "tokens": [
+        "e"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/0/5"
+      }
+    },
+    {
+      "vi": "á",
+      "ru": "cá (рыба)",
+      "tokens": [
+        "á"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/1"
+      }
+    },
+    {
+      "vi": "í",
+      "ru": "í (идти)",
+      "tokens": [
+        "í"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/2"
+      }
+    },
+    {
+      "vi": "ó",
+      "ru": "có (есть)",
+      "tokens": [
+        "ó"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/3"
+      }
+    },
+    {
+      "vi": "ú",
+      "ru": "ú (удивление)",
+      "tokens": [
+        "ú"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/4"
+      }
+    },
+    {
+      "vi": "é",
+      "ru": "é (красивый)",
+      "tokens": [
+        "é"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/1/5"
+      }
+    },
+    {
+      "vi": "à",
+      "ru": "mà (но)",
+      "tokens": [
+        "à"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/1"
+      }
+    },
+    {
+      "vi": "ì",
+      "ru": "vì (потому что)",
+      "tokens": [
+        "ì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/2"
+      }
+    },
+    {
+      "vi": "ò",
+      "ru": "cò (аист)",
+      "tokens": [
+        "ò"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/3"
+      }
+    },
+    {
+      "vi": "ù",
+      "ru": "từ (четыре)",
+      "tokens": [
+        "ù"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/4"
+      }
+    },
+    {
+      "vi": "è",
+      "ru": "hẹn (назначать)",
+      "tokens": [
+        "è"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/2/5"
+      }
+    },
+    {
+      "vi": "ả",
+      "ru": "cần (нужен)",
+      "tokens": [
+        "ả"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/1"
+      }
+    },
+    {
+      "vi": "ỉ",
+      "ru": "hỏi (спрашивать)",
+      "tokens": [
+        "ỉ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/2"
+      }
+    },
+    {
+      "vi": "ỏ",
+      "ru": "ở (быть/находиться)",
+      "tokens": [
+        "ỏ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/3"
+      }
+    },
+    {
+      "vi": "ủ",
+      "ru": "đủ (достаточно)",
+      "tokens": [
+        "ủ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/4"
+      }
+    },
+    {
+      "vi": "ẻ",
+      "ru": "kể (рассказывать)",
+      "tokens": [
+        "ẻ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/3/5"
+      }
+    },
+    {
+      "vi": "ã",
+      "ru": "lần (раз)",
+      "tokens": [
+        "ã"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/1"
+      }
+    },
+    {
+      "vi": "ĩ",
+      "ru": "nghĩ (думать)",
+      "tokens": [
+        "ĩ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/2"
+      }
+    },
+    {
+      "vi": "õ",
+      "ru": "cỗ (предмет)",
+      "tokens": [
+        "õ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/3"
+      }
+    },
+    {
+      "vi": "ũ",
+      "ru": "vũ (танец)",
+      "tokens": [
+        "ũ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/4"
+      }
+    },
+    {
+      "vi": "ẽ",
+      "ru": "lễ (церемония)",
+      "tokens": [
+        "ẽ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/4/5"
+      }
+    },
+    {
+      "vi": "ạ",
+      "ru": "bà (бабушка)",
+      "tokens": [
+        "ạ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/1"
+      }
+    },
+    {
+      "vi": "ị",
+      "ru": "bị (быть/получить)",
+      "tokens": [
+        "ị"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/2"
+      }
+    },
+    {
+      "vi": "ọ",
+      "ru": "họ (они/семья)",
+      "tokens": [
+        "ọ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/3"
+      }
+    },
+    {
+      "vi": "ụ",
+      "ru": "mụ (женщина)",
+      "tokens": [
+        "ụ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/4"
+      }
+    },
+    {
+      "vi": "ẹ",
+      "ru": "mẹ (мама)",
+      "tokens": [
+        "ẹ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/2/rows/5/5"
+      }
+    },
+    {
+      "vi": "Cụ ơi!",
+      "ru": "Дедушка/Бабушка!",
+      "tokens": [
+        "Cụ",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/0/4"
+      }
+    },
+    {
+      "vi": "Ông ơi!",
+      "ru": "Дедушка!",
+      "tokens": [
+        "Ông",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/1/4"
+      }
+    },
+    {
+      "vi": "Bà ơi!",
+      "ru": "Бабушка!",
+      "tokens": [
+        "Bà",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/2/4"
+      }
+    },
+    {
+      "vi": "Bác ơi!",
+      "ru": "Дядя/Тётя!",
+      "tokens": [
+        "Bác",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/3/4"
+      }
+    },
+    {
+      "vi": "Chú ơi!",
+      "ru": "Дядя!",
+      "tokens": [
+        "Chú",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/4/4"
+      }
+    },
+    {
+      "vi": "Cô ơi!",
+      "ru": "Тётя!",
+      "tokens": [
+        "Cô",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/5/4"
+      }
+    },
+    {
+      "vi": "Anh ơi! / Chị ơi!",
+      "ru": "Брат/Сестра!",
+      "tokens": [
+        "Anh",
+        "ơi",
+        "Chị",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/6/4"
+      }
+    },
+    {
+      "vi": "Anh ơi!",
+      "ru": "Брат (к мужчине)!",
+      "tokens": [
+        "Anh",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/7/4"
+      }
+    },
+    {
+      "vi": "Chị ơi!",
+      "ru": "Сестра (к женщине)!",
+      "tokens": [
+        "Chị",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/8/4"
+      }
+    },
+    {
+      "vi": "Bạn ơi!",
+      "ru": "Друг/Подруга!",
+      "tokens": [
+        "Bạn",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/9/4"
+      }
+    },
+    {
+      "vi": "Em ơi!",
+      "ru": "Младший/Младшая!",
+      "tokens": [
+        "Em",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/10/4"
+      }
+    },
+    {
+      "vi": "Cậu ơi!",
+      "ru": "Парень!",
+      "tokens": [
+        "Cậu",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/11/4"
+      }
+    },
+    {
+      "vi": "Mợ ơi!",
+      "ru": "Молодая женщина!",
+      "tokens": [
+        "Mợ",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/12/4"
+      }
+    },
+    {
+      "vi": "Cháu ơi!",
+      "ru": "Племянник/Племянница!",
+      "tokens": [
+        "Cháu",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/13/4"
+      }
+    },
+    {
+      "vi": "Con ơi!",
+      "ru": "Ребёнок!",
+      "tokens": [
+        "Con",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/14/4"
+      }
+    },
+    {
+      "vi": "Bé ơi!",
+      "ru": "Малыш/Малышка!",
+      "tokens": [
+        "Bé",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/4/rows/15/4"
+      }
+    },
+    {
+      "vi": "Tôi là Kosta.",
+      "ru": "Я Костя.",
+      "tokens": [
+        "Tôi",
+        "là",
+        "Kosta"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/0/example"
+      }
+    },
+    {
+      "vi": "Anh đi.",
+      "ru": "Я иду.",
+      "tokens": [
+        "Anh",
+        "đi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/1/example"
+      }
+    },
+    {
+      "vi": "Chị muốn.",
+      "ru": "Я хочу.",
+      "tokens": [
+        "Chị",
+        "muốn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/2/example"
+      }
+    },
+    {
+      "vi": "Em có.",
+      "ru": "Я есть / у меня есть.",
+      "tokens": [
+        "Em",
+        "có"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/5/items/3/example"
+      }
+    },
+    {
+      "vi": "Ông ấy khỏe.",
+      "ru": "Он здоров.",
+      "tokens": [
+        "Ông",
+        "ấy",
+        "khỏe"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/0/example"
+      }
+    },
+    {
+      "vi": "Bà ấy ở nhà.",
+      "ru": "Она дома.",
+      "tokens": [
+        "Bà",
+        "ấy",
+        "ở",
+        "nhà"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/1/example"
+      }
+    },
+    {
+      "vi": "Anh ấy đi làm.",
+      "ru": "Он на работе.",
+      "tokens": [
+        "Anh",
+        "ấy",
+        "đi",
+        "làm"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/2/example"
+      }
+    },
+    {
+      "vi": "Chị ấy đẹp.",
+      "ru": "Она красивая.",
+      "tokens": [
+        "Chị",
+        "ấy",
+        "đẹp"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/3/example"
+      }
+    },
+    {
+      "vi": "Em ấy học.",
+      "ru": "Он/она учится.",
+      "tokens": [
+        "Em",
+        "ấy",
+        "học"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/6/items/4/example"
+      }
+    },
+    {
+      "vi": "Này!",
+      "ru": "Эй! / Слушай!",
+      "tokens": [
+        "Này"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/0/example"
+      }
+    },
+    {
+      "vi": "Mẹ ơi!",
+      "ru": "Мама!",
+      "tokens": [
+        "Mẹ",
+        "ơi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/1/example"
+      }
+    },
+    {
+      "vi": "Dạ, anh ạ.",
+      "ru": "Да, старший брат.",
+      "tokens": [
+        "Dạ",
+        "anh",
+        "ạ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/2/example"
+      }
+    },
+    {
+      "vi": "Bố và mẹ.",
+      "ru": "Папа и мама.",
+      "tokens": [
+        "Bố",
+        "và",
+        "mẹ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/3/example"
+      }
+    },
+    {
+      "vi": "Đi với em.",
+      "ru": "Идти со мной.",
+      "tokens": [
+        "Đi",
+        "với",
+        "em"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/4/example"
+      }
+    },
+    {
+      "vi": "Tôi cũng muốn.",
+      "ru": "Я тоже хочу.",
+      "tokens": [
+        "Tôi",
+        "cũng",
+        "muốn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/5/example"
+      }
+    },
+    {
+      "vi": "Như thế này.",
+      "ru": "Как вот так.",
+      "tokens": [
+        "Như",
+        "thế",
+        "này"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson2.ts",
+        "pointer": "/sections/7/items/6/example"
+      }
+    }
+  ],
+  "dialogues": [],
+  "theory": [
+    {
+      "kind": "table",
+      "heading": "Микс согласных (Nh, Tr, Ch, Kh, Ng, Th, Gh, Ngh)",
+      "columns": [
+        "Сочетание",
+        "Как читается (примерно)",
+        "Примеры слов",
+        "Значение"
+      ],
+      "rows": [
+        [
+          "Nh",
+          "нь",
+          "nhà, nhỏ, nhanh, nhìn",
+          "дом, маленький, быстрый, смотреть"
+        ],
+        [
+          "Tr",
+          "ч (как русский «ч»)",
+          "trà, trẻ, trung, trong",
+          "чай, молодой, средний, внутри"
+        ],
+        [
+          "Ch",
+          "ч (как «ч»)",
+          "cha, chị, chỗ, chơi",
+          "папа, старшая сестра, место, играть"
+        ],
+        [
+          "Kh",
+          "кх (глубокое «к»)",
+          "khỏe, không, khó, khám",
+          "здоров, нет, трудно, осматривать (врач)"
+        ],
+        [
+          "Ng",
+          "нг (как в «инг»)",
+          "ngà, ngon, người, nghe",
+          "слоновая кость, вкусный, человек, слушать"
+        ],
+        [
+          "Th",
+          "тх (выдыхание)",
+          "thà, thì, thêm, thấy",
+          "лучше, то/когда, добавить, видеть"
+        ],
+        [
+          "Gh",
+          "г (как «г»)",
+          "ghế, ghép, ghi, ghé",
+          "стул, соединять, записывать, заехать"
+        ],
+        [
+          "Ngh",
+          "нг (как «инг»)",
+          "nghĩ, nghỉ, nghề, nghe",
+          "отдыхать, думать, профессия, слушать"
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Тоны (6 основных тонов)",
+      "columns": [
+        "Название тона",
+        "Знак",
+        "Пример (a)",
+        "Примеры слов",
+        "Значение"
+      ],
+      "rows": [
+        [
+          "Ровный (ngang)",
+          "—",
+          "a",
+          "ba, nha, ca",
+          "папа, дом, рыба"
+        ],
+        [
+          "Восходящий (sắc)",
+          "´",
+          "á",
+          "cá, lá, má",
+          "рыба, лист, мама"
+        ],
+        [
+          "Нисходящий (huyền)",
+          "`",
+          "à",
+          "mà, bà, là",
+          "но, бабушка, быть (есть)"
+        ],
+        [
+          "Вопросительный (hỏi)",
+          "?",
+          "ả",
+          "cần, ở, hỏi",
+          "нужен, быть/находиться, спрашивать"
+        ],
+        [
+          "Прерывающий (ngã)",
+          "~",
+          "ã",
+          "lần, ngã, cỗ",
+          "раз, падать, предмет/стол"
+        ],
+        [
+          "Тяжёлый (nặng)",
+          ".",
+          "ạ",
+          "ạ, nặng, vợ",
+          "(уважит.), тяжёлый, жена"
+        ]
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Примеры слов с разными тонами",
+      "note": "В каждом столбце — один и тот же гласный со всеми 6 тонами.",
+      "columns": [
+        "Тон",
+        "a",
+        "i",
+        "o",
+        "u",
+        "e"
+      ],
+      "rows": [
+        [
+          "—",
+          "a — ba (папа)",
+          "i — mi (лапша)",
+          "o — con (ребёнок)",
+          "u — u (приоритет)",
+          "e — em (ты, младший)"
+        ],
+        [
+          "´",
+          "á — cá (рыба)",
+          "í — í (идти)",
+          "ó — có (есть)",
+          "ú — ú (удивление)",
+          "é — é (красивый)"
+        ],
+        [
+          "`",
+          "à — mà (но)",
+          "ì — vì (потому что)",
+          "ò — cò (аист)",
+          "ù — từ (четыре)",
+          "è — hẹn (назначать)"
+        ],
+        [
+          "?",
+          "ả — cần (нужен)",
+          "ỉ — hỏi (спрашивать)",
+          "ỏ — ở (быть/находиться)",
+          "ủ — đủ (достаточно)",
+          "ẻ — kể (рассказывать)"
+        ],
+        [
+          "~",
+          "ã — lần (раз)",
+          "ĩ — nghĩ (думать)",
+          "õ — cỗ (предмет)",
+          "ũ — vũ (танец)",
+          "ẽ — lễ (церемония)"
+        ],
+        [
+          ".",
+          "ạ — bà (бабушка)",
+          "ị — bị (быть/получить)",
+          "ọ — họ (они/семья)",
+          "ụ — mụ (женщина)",
+          "ẹ — mẹ (мама)"
+        ]
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Дополнительные примеры из конспектов",
+      "items": [
+        {
+          "vi": "trà",
+          "pronunciation": "ча",
+          "ru": "чай"
+        },
+        {
+          "vi": "trẻ",
+          "pronunciation": "че",
+          "ru": "молодой"
+        },
+        {
+          "vi": "trung",
+          "pronunciation": "чунг",
+          "ru": "средний"
+        },
+        {
+          "vi": "trong",
+          "pronunciation": "чонг",
+          "ru": "внутри"
+        },
+        {
+          "vi": "cha",
+          "pronunciation": "ча",
+          "ru": "папа"
+        },
+        {
+          "vi": "chị",
+          "pronunciation": "чи",
+          "ru": "старшая сестра"
+        },
+        {
+          "vi": "chỗ",
+          "pronunciation": "чо",
+          "ru": "место"
+        },
+        {
+          "vi": "chơi",
+          "pronunciation": "чой",
+          "ru": "играть"
+        },
+        {
+          "vi": "khỏe",
+          "pronunciation": "кхое",
+          "ru": "здоров"
+        },
+        {
+          "vi": "không",
+          "pronunciation": "кхонг",
+          "ru": "нет"
+        },
+        {
+          "vi": "khó",
+          "pronunciation": "кхо",
+          "ru": "трудно"
+        },
+        {
+          "vi": "khám",
+          "pronunciation": "кхам",
+          "ru": "осматривать (врач)"
+        },
+        {
+          "vi": "ngà",
+          "pronunciation": "нга",
+          "ru": "слоновая кость"
+        },
+        {
+          "vi": "ngon",
+          "pronunciation": "нгон",
+          "ru": "вкусный"
+        },
+        {
+          "vi": "người",
+          "pronunciation": "нгыой",
+          "ru": "человек"
+        },
+        {
+          "vi": "nghe",
+          "pronunciation": "нгэ",
+          "ru": "слушать"
+        },
+        {
+          "vi": "thà",
+          "pronunciation": "тха",
+          "ru": "лучше"
+        },
+        {
+          "vi": "thì",
+          "pronunciation": "тхи",
+          "ru": "то/когда"
+        },
+        {
+          "vi": "thêm",
+          "pronunciation": "тхэм",
+          "ru": "добавить"
+        },
+        {
+          "vi": "thấy",
+          "pronunciation": "тхай",
+          "ru": "видеть"
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Обращения по возрасту",
+      "note": "К кому обращаться и когда — от самых старших к самым младшим собеседникам.",
+      "columns": [
+        "Слово",
+        "Произношение",
+        "К кому",
+        "Когда",
+        "Пример"
+      ],
+      "rows": [
+        [
+          "cụ",
+          "ку",
+          "к очень пожилому человеку (70+)",
+          "очень уважительно",
+          "Cụ ơi! — Дедушка/Бабушка!"
+        ],
+        [
+          "ông",
+          "онг",
+          "к мужчине старше (60+)",
+          "уважительно",
+          "Ông ơi! — Дедушка!"
+        ],
+        [
+          "bà",
+          "ба",
+          "к женщине старше (60+)",
+          "уважительно",
+          "Bà ơi! — Бабушка!"
+        ],
+        [
+          "bác",
+          "бак",
+          "к мужчине/женщине старше (50–70)",
+          "уважительно, универсально",
+          "Bác ơi! — Дядя/Тётя!"
+        ],
+        [
+          "chú",
+          "чу",
+          "к мужчине старше",
+          "уважительно, немного формально",
+          "Chú ơi! — Дядя!"
+        ],
+        [
+          "cô",
+          "ко",
+          "к женщине старше",
+          "уважительно, немного формально",
+          "Cô ơi! — Тётя!"
+        ],
+        [
+          "anh/chị",
+          "ань/чи",
+          "к мужчине/женщине старше вас",
+          "нейтрально-уважительно",
+          "Anh ơi! / Chị ơi! — Брат/Сестра!"
+        ],
+        [
+          "anh",
+          "ань",
+          "к мужчине примерно вашего возраста",
+          "дружелюбно и уважительно",
+          "Anh ơi! — Брат (к мужчине)!"
+        ],
+        [
+          "chị",
+          "чи",
+          "к женщине примерно вашего возраста",
+          "дружелюбно и уважительно",
+          "Chị ơi! — Сестра (к женщине)!"
+        ],
+        [
+          "bạn",
+          "бан",
+          "к ровесникам, друзьям, коллегам",
+          "нейтрально, неформально",
+          "Bạn ơi! — Друг/Подруга!"
+        ],
+        [
+          "em",
+          "ем",
+          "к мужчине/женщине моложе вас",
+          "доброжелательно",
+          "Em ơi! — Младший/Младшая!"
+        ],
+        [
+          "cậu",
+          "кау",
+          "к молодому мужчине (разговорное)",
+          "неформально, дружески",
+          "Cậu ơi! — Парень!"
+        ],
+        [
+          "mợ",
+          "мё",
+          "к женщине моложе вас (замужней)",
+          "доброжелательно",
+          "Mợ ơi! — Молодая женщина!"
+        ],
+        [
+          "cháu",
+          "чау",
+          "к молодому человеку (универсально)",
+          "доброжелательно",
+          "Cháu ơi! — Племянник/Племянница!"
+        ],
+        [
+          "con",
+          "кон",
+          "к маленькому ребёнку",
+          "ласково",
+          "Con ơi! — Ребёнок!"
+        ],
+        [
+          "bé",
+          "бе",
+          "к мальчику/девочке",
+          "ласково, неформально",
+          "Bé ơi! — Малыш/Малышка!"
+        ]
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Личные местоимения (я, ты, он, она…)",
+      "items": [
+        {
+          "vi": "tôi",
+          "pronunciation": "той",
+          "ru": "я (нейтрально, вежливо)",
+          "example": "Tôi là Kosta.",
+          "exampleRu": "Я Костя."
+        },
+        {
+          "vi": "anh",
+          "pronunciation": "ань",
+          "ru": "я (мужчина, в разговоре)",
+          "example": "Anh đi.",
+          "exampleRu": "Я иду."
+        },
+        {
+          "vi": "chị",
+          "pronunciation": "чи",
+          "ru": "я (женщина, в разговоре)",
+          "example": "Chị muốn.",
+          "exampleRu": "Я хочу."
+        },
+        {
+          "vi": "em",
+          "pronunciation": "ем",
+          "ru": "я (молодой, дружески)",
+          "example": "Em có.",
+          "exampleRu": "Я есть / у меня есть."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Указание на людей (3-е лицо)",
+      "items": [
+        {
+          "vi": "ông ấy",
+          "pronunciation": "онг ай",
+          "ru": "он (уважительно)",
+          "example": "Ông ấy khỏe.",
+          "exampleRu": "Он здоров."
+        },
+        {
+          "vi": "bà ấy",
+          "pronunciation": "ба ай",
+          "ru": "она (уважительно)",
+          "example": "Bà ấy ở nhà.",
+          "exampleRu": "Она дома."
+        },
+        {
+          "vi": "anh ấy",
+          "pronunciation": "ань ай",
+          "ru": "он (мужчина)",
+          "example": "Anh ấy đi làm.",
+          "exampleRu": "Он на работе."
+        },
+        {
+          "vi": "chị ấy",
+          "pronunciation": "чи ай",
+          "ru": "она (женщина)",
+          "example": "Chị ấy đẹp.",
+          "exampleRu": "Она красивая."
+        },
+        {
+          "vi": "em ấy",
+          "pronunciation": "ем ай",
+          "ru": "он/она (молодой)",
+          "example": "Em ấy học.",
+          "exampleRu": "Он/она учится."
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "Другие полезные слова и выражения",
+      "items": [
+        {
+          "vi": "này",
+          "pronunciation": "най",
+          "ru": "эй, обращение (дружески)",
+          "example": "Này!",
+          "exampleRu": "Эй! / Слушай!"
+        },
+        {
+          "vi": "ơi",
+          "pronunciation": "ой",
+          "ru": "обращение, выражает эмоцию",
+          "example": "Mẹ ơi!",
+          "exampleRu": "Мама!"
+        },
+        {
+          "vi": "ạ",
+          "pronunciation": "а",
+          "ru": "вежливая частица (мягкое обращение)",
+          "example": "Dạ, anh ạ.",
+          "exampleRu": "Да, старший брат."
+        },
+        {
+          "vi": "và",
+          "pronunciation": "ва",
+          "ru": "и",
+          "example": "Bố và mẹ.",
+          "exampleRu": "Папа и мама."
+        },
+        {
+          "vi": "với",
+          "pronunciation": "мой",
+          "ru": "с (с кем)",
+          "example": "Đi với em.",
+          "exampleRu": "Идти со мной."
+        },
+        {
+          "vi": "cũng",
+          "pronunciation": "кунг",
+          "ru": "также, тоже",
+          "example": "Tôi cũng muốn.",
+          "exampleRu": "Я тоже хочу."
+        },
+        {
+          "vi": "như",
+          "pronunciation": "ны",
+          "ru": "как, например",
+          "example": "Như thế này.",
+          "exampleRu": "Как вот так."
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Особые ситуации: как обратиться",
+      "items": [
+        "К полицейскому (мужчина) — Thưa anh công an! (уважительно)",
+        "К полицейской (женщина) — Thưa chị công an!",
+        "К официанту — Anh ơi! Cho tôi ... với ạ. (Можно мне ..., пожалуйста.)",
+        "К официантке — Chị ơi! Cho tôi ... với ạ.",
+        "К сотрудникам магазина/банка/отеля — Anh/Chị ơi! Cho tôi hỏi ... (Можно спросить ...)"
+      ]
+    }
+  ]
+}
