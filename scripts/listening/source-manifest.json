@@ -1,0 +1,3056 @@
+[
+  {
+    "id": "listening-01",
+    "number": 1,
+    "sourceLesson": 1,
+    "title": "Приветствия",
+    "phrases": [
+      {
+        "vi": "Chào bạn!",
+        "ru": "Здравствуйте! / Привет!",
+        "page": 5,
+        "sourceStart": 5.419,
+        "sourceEnd": 6.286
+      },
+      {
+        "vi": "Chào bạn!",
+        "ru": "Здравствуйте! / Привет!",
+        "page": 5,
+        "sourceStart": 11.539,
+        "sourceEnd": 12.258
+      },
+      {
+        "vi": "Chào bạn!",
+        "ru": "Здравствуйте! / Привет!",
+        "page": 5,
+        "sourceStart": 18.794,
+        "sourceEnd": 19.511
+      },
+      {
+        "vi": "Chào bạn!",
+        "ru": "Здравствуйте! / Привет!",
+        "page": 5,
+        "sourceStart": 24.537,
+        "sourceEnd": 25.24
+      },
+      {
+        "vi": "Bạn có khỏe không?",
+        "ru": "Как дела?",
+        "page": 5,
+        "sourceStart": 31.28,
+        "sourceEnd": 32.455
+      },
+      {
+        "vi": "Khỏe.",
+        "ru": "Отлично; здоров.",
+        "page": 5,
+        "sourceStart": 37.274,
+        "sourceEnd": 37.873
+      },
+      {
+        "vi": "Tốt lắm.",
+        "ru": "Очень хорошо.",
+        "page": 5,
+        "sourceStart": 42.512,
+        "sourceEnd": 43.265
+      },
+      {
+        "vi": "Bình thường.",
+        "ru": "Так себе; нормально.",
+        "page": 5,
+        "sourceStart": 48.968,
+        "sourceEnd": 49.791
+      },
+      {
+        "vi": "Tên của bạn là gì?",
+        "ru": "Как вас зовут?",
+        "page": 5,
+        "sourceStart": 57.914,
+        "sourceEnd": 59.225
+      },
+      {
+        "vi": "Tôi tên là Lan.",
+        "ru": "Меня зовут Лан.",
+        "page": 5,
+        "sourceStart": 67.041,
+        "sourceEnd": 68.254
+      },
+      {
+        "vi": "Tôi tên là Thanh.",
+        "ru": "Меня зовут Тхань.",
+        "page": 5,
+        "sourceStart": 76.139,
+        "sourceEnd": 77.287
+      },
+      {
+        "vi": "Hân hạnh được biết bạn.",
+        "ru": "Приятно познакомиться с вами.",
+        "page": 5,
+        "sourceStart": 85.151,
+        "sourceEnd": 86.673
+      },
+      {
+        "vi": "Ông Thanh",
+        "ru": "Господин Тхань",
+        "page": 5,
+        "sourceStart": 93.107,
+        "sourceEnd": 93.94
+      },
+      {
+        "vi": "Bà Nga",
+        "ru": "Госпожа Нга",
+        "page": 5,
+        "sourceStart": 99.954,
+        "sourceEnd": 100.799
+      },
+      {
+        "vi": "Cô Nga",
+        "ru": "Мисс Нга",
+        "page": 5,
+        "sourceStart": 106.687,
+        "sourceEnd": 107.488
+      },
+      {
+        "vi": "Ông",
+        "ru": "Господин",
+        "page": 5,
+        "sourceStart": 113.252,
+        "sourceEnd": 113.789
+      },
+      {
+        "vi": "Bà",
+        "ru": "Госпожа",
+        "page": 5,
+        "sourceStart": 119.456,
+        "sourceEnd": 120.102
+      },
+      {
+        "vi": "Chào tạm biệt!",
+        "ru": "До свидания!",
+        "page": 5,
+        "sourceStart": 125.928,
+        "sourceEnd": 126.966
+      },
+      {
+        "vi": "Hẹn gặp lại!",
+        "ru": "Увидимся позже!",
+        "page": 5,
+        "sourceStart": 133.638,
+        "sourceEnd": 134.647
+      },
+      {
+        "vi": "Mong sớm gặp lại!",
+        "ru": "До скорой встречи!",
+        "page": 5,
+        "sourceStart": 140.967,
+        "sourceEnd": 142.351
+      },
+      {
+        "vi": "Tạm biệt nhé!",
+        "ru": "Пока! / До свидания!",
+        "page": 5,
+        "sourceStart": 148.659,
+        "sourceEnd": 149.832
+      }
+    ],
+    "sourceTrack": "Track 02.mp3",
+    "sourceDuration": 154.362107
+  },
+  {
+    "id": "listening-02",
+    "number": 2,
+    "sourceLesson": 2,
+    "title": "Основные выражения",
+    "phrases": [
+      {
+        "ru": "Спасибо.",
+        "vi": "Cảm ơn bạn.",
+        "page": 6,
+        "sourceStart": 8.531,
+        "sourceEnd": 9.545
+      },
+      {
+        "ru": "Большое спасибо.",
+        "vi": "Cảm ơn bạn nhiều lắm.",
+        "page": 6,
+        "sourceStart": 15.709,
+        "sourceEnd": 17.031
+      },
+      {
+        "ru": "Не за что.",
+        "vi": "Không có chi.",
+        "page": 6,
+        "sourceStart": 23.387,
+        "sourceEnd": 24.352
+      },
+      {
+        "ru": "пожалуйста",
+        "vi": "Làm ơn.",
+        "page": 6,
+        "sourceStart": 30.534,
+        "sourceEnd": 31.381
+      },
+      {
+        "ru": "да",
+        "vi": "vâng",
+        "page": 6,
+        "sourceStart": 36.569,
+        "sourceEnd": 37.235
+      },
+      {
+        "ru": "нет",
+        "vi": "không",
+        "page": 6,
+        "sourceStart": 41.193,
+        "sourceEnd": 41.795
+      },
+      {
+        "ru": "Извините. / Простите.",
+        "vi": "Xin lỗi.",
+        "page": 6,
+        "sourceStart": 46.853,
+        "sourceEnd": 47.745
+      },
+      {
+        "ru": "Извините. / Простите.",
+        "vi": "Xin lỗi.",
+        "page": 6,
+        "sourceStart": 52.891,
+        "sourceEnd": 53.702
+      },
+      {
+        "ru": "Мне очень жаль.",
+        "vi": "Tôi rất tiếc.",
+        "page": 6,
+        "sourceStart": 59.363,
+        "sourceEnd": 60.27
+      },
+      {
+        "ru": "Я не понимаю.",
+        "vi": "Tôi không hiểu.",
+        "page": 6,
+        "sourceStart": 66.865,
+        "sourceEnd": 67.651
+      },
+      {
+        "ru": "Я не очень хорошо говорю по-вьетнамски.",
+        "vi": "Tôi nói tiếng Việt không giỏi lắm.",
+        "page": 6,
+        "sourceStart": 73.422,
+        "sourceEnd": 75.338
+      },
+      {
+        "ru": "Вы говорите по-английски?",
+        "vi": "Bạn có nói tiếng Anh được không?",
+        "page": 6,
+        "sourceStart": 82.15,
+        "sourceEnd": 83.803
+      },
+      {
+        "ru": "Я не очень хорошо говорю по-вьетнамски.",
+        "vi": "Tôi không nói được tiếng Việt giỏi.",
+        "page": 6,
+        "sourceStart": 91.856,
+        "sourceEnd": 93.872
+      },
+      {
+        "ru": "Говорите медленнее, пожалуйста.",
+        "vi": "Làm ơn nói chậm chậm.",
+        "page": 6,
+        "sourceStart": 101.999,
+        "sourceEnd": 103.439
+      },
+      {
+        "ru": "Повторите, пожалуйста.",
+        "vi": "Làm ơn lặp lại dùm.",
+        "page": 6,
+        "sourceStart": 110.029,
+        "sourceEnd": 111.435
+      }
+    ],
+    "sourceTrack": "Track 03.mp3",
+    "sourceDuration": 118.522107
+  },
+  {
+    "id": "listening-03",
+    "number": 3,
+    "sourceLesson": 3,
+    "title": "Числа",
+    "phrases": [
+      {
+        "vi": "zê rô",
+        "ru": "0",
+        "page": 6,
+        "sourceStart": 6.517,
+        "sourceEnd": 7.284
+      },
+      {
+        "vi": "một",
+        "ru": "1",
+        "page": 6,
+        "sourceStart": 11.938,
+        "sourceEnd": 12.459
+      },
+      {
+        "vi": "hai",
+        "ru": "2",
+        "page": 6,
+        "sourceStart": 16.903,
+        "sourceEnd": 17.522
+      },
+      {
+        "vi": "ba",
+        "ru": "3",
+        "page": 6,
+        "sourceStart": 21.93,
+        "sourceEnd": 22.444
+      },
+      {
+        "vi": "bốn",
+        "ru": "4",
+        "page": 6,
+        "sourceStart": 27.183,
+        "sourceEnd": 27.809
+      },
+      {
+        "vi": "năm",
+        "ru": "5",
+        "page": 6,
+        "sourceStart": 32.285,
+        "sourceEnd": 32.915
+      },
+      {
+        "vi": "sáu",
+        "ru": "6",
+        "page": 6,
+        "sourceStart": 37.7,
+        "sourceEnd": 38.4
+      },
+      {
+        "vi": "bảy",
+        "ru": "7",
+        "page": 6,
+        "sourceStart": 42.962,
+        "sourceEnd": 43.524
+      },
+      {
+        "vi": "tám",
+        "ru": "8",
+        "page": 6,
+        "sourceStart": 48.188,
+        "sourceEnd": 48.734
+      },
+      {
+        "vi": "chín",
+        "ru": "9",
+        "page": 6,
+        "sourceStart": 53.37,
+        "sourceEnd": 53.864
+      },
+      {
+        "vi": "mười",
+        "ru": "10",
+        "page": 6,
+        "sourceStart": 58.464,
+        "sourceEnd": 58.989
+      },
+      {
+        "vi": "mười một",
+        "ru": "11",
+        "page": 6,
+        "sourceStart": 64.087,
+        "sourceEnd": 64.826
+      },
+      {
+        "vi": "mười hai",
+        "ru": "12",
+        "page": 6,
+        "sourceStart": 69.865,
+        "sourceEnd": 70.728
+      },
+      {
+        "vi": "mười ba",
+        "ru": "13",
+        "page": 6,
+        "sourceStart": 75.532,
+        "sourceEnd": 76.267
+      },
+      {
+        "vi": "mười bốn",
+        "ru": "14",
+        "page": 6,
+        "sourceStart": 81.434,
+        "sourceEnd": 82.202
+      },
+      {
+        "vi": "mười lăm",
+        "ru": "15",
+        "page": 6,
+        "sourceStart": 87.102,
+        "sourceEnd": 87.863
+      },
+      {
+        "vi": "mười sáu",
+        "ru": "16",
+        "page": 6,
+        "sourceStart": 93.04,
+        "sourceEnd": 93.922
+      },
+      {
+        "vi": "mười bảy",
+        "ru": "17",
+        "page": 7,
+        "sourceStart": 99.12,
+        "sourceEnd": 99.944
+      },
+      {
+        "vi": "mười tám",
+        "ru": "18",
+        "page": 7,
+        "sourceStart": 105.047,
+        "sourceEnd": 105.905
+      },
+      {
+        "vi": "mười chín",
+        "ru": "19",
+        "page": 7,
+        "sourceStart": 111.043,
+        "sourceEnd": 111.793
+      },
+      {
+        "vi": "hai mươi",
+        "ru": "20",
+        "page": 7,
+        "sourceStart": 116.532,
+        "sourceEnd": 117.235
+      },
+      {
+        "vi": "hai mươi mốt",
+        "ru": "21",
+        "page": 7,
+        "sourceStart": 122.362,
+        "sourceEnd": 123.156
+      },
+      {
+        "vi": "hai mươi hai",
+        "ru": "22",
+        "page": 7,
+        "sourceStart": 128.163,
+        "sourceEnd": 129.091
+      },
+      {
+        "vi": "hai mươi ba",
+        "ru": "23",
+        "page": 7,
+        "sourceStart": 134.213,
+        "sourceEnd": 135.088
+      },
+      {
+        "vi": "hai mươi bốn",
+        "ru": "24",
+        "page": 7,
+        "sourceStart": 140.232,
+        "sourceEnd": 141.035
+      },
+      {
+        "vi": "hai mươi lăm",
+        "ru": "25",
+        "page": 7,
+        "sourceStart": 146.119,
+        "sourceEnd": 147.108
+      },
+      {
+        "vi": "hai mươi sáu",
+        "ru": "26",
+        "page": 7,
+        "sourceStart": 152.524,
+        "sourceEnd": 153.53
+      },
+      {
+        "vi": "hai mươi bảy",
+        "ru": "27",
+        "page": 7,
+        "sourceStart": 158.64,
+        "sourceEnd": 159.57
+      },
+      {
+        "vi": "hai mươi tám",
+        "ru": "28",
+        "page": 7,
+        "sourceStart": 164.878,
+        "sourceEnd": 165.889
+      },
+      {
+        "vi": "hai mươi chín",
+        "ru": "29",
+        "page": 7,
+        "sourceStart": 171.044,
+        "sourceEnd": 171.982
+      },
+      {
+        "vi": "ba mươi",
+        "ru": "30",
+        "page": 7,
+        "sourceStart": 176.673,
+        "sourceEnd": 177.468
+      },
+      {
+        "vi": "bốn mươi",
+        "ru": "40",
+        "page": 7,
+        "sourceStart": 182.336,
+        "sourceEnd": 183.127
+      },
+      {
+        "vi": "năm mươi",
+        "ru": "50",
+        "page": 7,
+        "sourceStart": 188.083,
+        "sourceEnd": 188.89
+      },
+      {
+        "vi": "sáu mươi",
+        "ru": "60",
+        "page": 7,
+        "sourceStart": 193.975,
+        "sourceEnd": 194.768
+      },
+      {
+        "vi": "bảy mươi",
+        "ru": "70",
+        "page": 7,
+        "sourceStart": 199.721,
+        "sourceEnd": 200.596
+      },
+      {
+        "vi": "tám mươi",
+        "ru": "80",
+        "page": 7,
+        "sourceStart": 205.636,
+        "sourceEnd": 206.425
+      },
+      {
+        "vi": "chín mươi",
+        "ru": "90",
+        "page": 7,
+        "sourceStart": 211.315,
+        "sourceEnd": 212.181
+      },
+      {
+        "vi": "một trăm",
+        "ru": "100",
+        "page": 7,
+        "sourceStart": 216.573,
+        "sourceEnd": 217.299
+      },
+      {
+        "vi": "một trăm lẻ một",
+        "ru": "101",
+        "page": 7,
+        "sourceStart": 222.438,
+        "sourceEnd": 223.559
+      },
+      {
+        "vi": "một trăm lẻ hai",
+        "ru": "102",
+        "page": 7,
+        "sourceStart": 228.475,
+        "sourceEnd": 229.588
+      },
+      {
+        "vi": "một trăm lẻ ba",
+        "ru": "103",
+        "page": 7,
+        "sourceStart": 234.35,
+        "sourceEnd": 235.504
+      },
+      {
+        "vi": "hai trăm",
+        "ru": "200",
+        "page": 7,
+        "sourceStart": 240.257,
+        "sourceEnd": 241.071
+      },
+      {
+        "vi": "ba trăm",
+        "ru": "300",
+        "page": 7,
+        "sourceStart": 245.629,
+        "sourceEnd": 246.4
+      },
+      {
+        "vi": "bốn trăm",
+        "ru": "400",
+        "page": 7,
+        "sourceStart": 251.208,
+        "sourceEnd": 252.042
+      },
+      {
+        "vi": "năm trăm",
+        "ru": "500",
+        "page": 7,
+        "sourceStart": 256.733,
+        "sourceEnd": 257.494
+      },
+      {
+        "vi": "một ngàn",
+        "ru": "1 000",
+        "page": 7,
+        "sourceStart": 262.201,
+        "sourceEnd": 263.051
+      },
+      {
+        "vi": "một triệu",
+        "ru": "1 000 000",
+        "page": 7,
+        "sourceStart": 268.089,
+        "sourceEnd": 268.93
+      }
+    ],
+    "sourceTrack": "Track 04.mp3",
+    "sourceDuration": 272.827429
+  },
+  {
+    "id": "listening-04",
+    "number": 4,
+    "sourceLesson": 5,
+    "title": "Перемещения по городу",
+    "phrases": [
+      {
+        "ru": "Где выход?",
+        "vi": "Cửa ra ở đâu?",
+        "page": 8,
+        "sourceStart": 7.838,
+        "sourceEnd": 9.15
+      },
+      {
+        "ru": "Где я могу взять такси?",
+        "vi": "Đón xe tắc-xi ở đâu?",
+        "page": 8,
+        "sourceStart": 17.04,
+        "sourceEnd": 18.358
+      },
+      {
+        "ru": "Где здесь остановка автобусов?",
+        "vi": "Đón xe buýt ở đâu?",
+        "page": 8,
+        "sourceStart": 27.433,
+        "sourceEnd": 28.764
+      },
+      {
+        "ru": "Отвезите меня по этому адресу, пожалуйста.",
+        "vi": "Làm ơn đưa tôi đến địa chỉ này.",
+        "page": 8,
+        "sourceStart": 37.765,
+        "sourceEnd": 39.808
+      },
+      {
+        "ru": "Сколько стоит проезд?",
+        "vi": "Bao nhiêu tiền?",
+        "page": 8,
+        "sourceStart": 47.811,
+        "sourceEnd": 48.715
+      },
+      {
+        "ru": "Остановите здесь, пожалуйста.",
+        "vi": "Làm ơn dừng lại ở đây.",
+        "page": 8,
+        "sourceStart": 57.142,
+        "sourceEnd": 58.928
+      },
+      {
+        "ru": "Этот автобус идёт до улицы Ле Лой?",
+        "vi": "Xe buýt này có đi đến đường Lê Lợi không?",
+        "page": 9,
+        "sourceStart": 68.55,
+        "sourceEnd": 70.891
+      },
+      {
+        "ru": "Карту этого города, пожалуйста.",
+        "vi": "Làm ơn cho tôi một bản đồ của thành phố.",
+        "page": 9,
+        "sourceStart": 81.982,
+        "sourceEnd": 84.678
+      },
+      {
+        "ru": "Карту автобусных маршрутов, пожалуйста.",
+        "vi": "Làm ơn cho tôi một bản đồ của các tuyến xe buýt.",
+        "page": 9,
+        "sourceStart": 95.739,
+        "sourceEnd": 98.661
+      }
+    ],
+    "sourceTrack": "Track 05.mp3",
+    "sourceDuration": 106.949857
+  },
+  {
+    "id": "listening-05",
+    "number": 5,
+    "sourceLesson": 6,
+    "title": "Как спросить направление",
+    "phrases": [
+      {
+        "ru": "Извините, это ...?",
+        "vi": "Xin lỗi, có phải đây là...?",
+        "page": 9,
+        "sourceStart": 9.082,
+        "sourceEnd": 11.426
+      },
+      {
+        "ru": "Идите...",
+        "vi": "Đi...",
+        "page": 9,
+        "sourceStart": 18.411,
+        "sourceEnd": 19.083
+      },
+      {
+        "ru": "Идите прямо.",
+        "vi": "Đi thẳng phía trước.",
+        "page": 9,
+        "sourceStart": 26.459,
+        "sourceEnd": 27.741
+      },
+      {
+        "ru": "Идите туда.",
+        "vi": "Đi đường đó.",
+        "page": 9,
+        "sourceStart": 35.393,
+        "sourceEnd": 36.582
+      },
+      {
+        "ru": "Идите назад.",
+        "vi": "Đi trở lại.",
+        "page": 9,
+        "sourceStart": 43.848,
+        "sourceEnd": 44.732
+      },
+      {
+        "ru": "Поверните...",
+        "vi": "Quẹo...",
+        "page": 9,
+        "sourceStart": 52.087,
+        "sourceEnd": 52.831
+      },
+      {
+        "ru": "Поверните направо.",
+        "vi": "Quẹo phải.",
+        "page": 9,
+        "sourceStart": 60.609,
+        "sourceEnd": 61.491
+      },
+      {
+        "ru": "Поверните налево.",
+        "vi": "Quẹo trái.",
+        "page": 9,
+        "sourceStart": 69.027,
+        "sourceEnd": 69.843
+      },
+      {
+        "ru": "Развернитесь.",
+        "vi": "Quay trở lại.",
+        "page": 9,
+        "sourceStart": 76.874,
+        "sourceEnd": 77.746
+      },
+      {
+        "ru": "В конце улицы.",
+        "vi": "ở cuối đường,",
+        "page": 9,
+        "sourceStart": 85.715,
+        "sourceEnd": 86.654
+      },
+      {
+        "ru": "На углу...",
+        "vi": "ở góc đường.",
+        "page": 9,
+        "sourceStart": 93.813,
+        "sourceEnd": 94.71
+      },
+      {
+        "ru": "Первый поворот налево.",
+        "vi": "ở ngã quẹo trái thứ nhất,",
+        "page": 9,
+        "sourceStart": 102.763,
+        "sourceEnd": 104.329
+      },
+      {
+        "ru": "Второй поворот направо.",
+        "vi": "ở ngã quẹo phải thứ hai",
+        "page": 9,
+        "sourceStart": 113.021,
+        "sourceEnd": 115.414
+      },
+      {
+        "ru": "Это рядом?",
+        "vi": "Có gần không?",
+        "page": 9,
+        "sourceStart": 122.744,
+        "sourceEnd": 123.574
+      },
+      {
+        "ru": "Это далеко?",
+        "vi": "Có xa không?",
+        "page": 9,
+        "sourceStart": 130.599,
+        "sourceEnd": 131.535
+      },
+      {
+        "ru": "Рядом с...",
+        "vi": "Ngay bên cạnh...",
+        "page": 9,
+        "sourceStart": 138.808,
+        "sourceEnd": 139.82
+      },
+      {
+        "ru": "светофор",
+        "vi": "đèn giao thông",
+        "page": 9,
+        "sourceStart": 146.919,
+        "sourceEnd": 148.121
+      },
+      {
+        "ru": "улица",
+        "vi": "đường",
+        "page": 9,
+        "sourceStart": 154.988,
+        "sourceEnd": 155.585
+      },
+      {
+        "ru": "перекресток",
+        "vi": "ngã tư",
+        "page": 9,
+        "sourceStart": 162.867,
+        "sourceEnd": 163.78
+      },
+      {
+        "ru": "парк",
+        "vi": "công viên",
+        "page": 9,
+        "sourceStart": 170.62,
+        "sourceEnd": 171.406
+      },
+      {
+        "ru": "автобусная остановка",
+        "vi": "trạm xe buýt",
+        "page": 10,
+        "sourceStart": 179.804,
+        "sourceEnd": 180.811
+      },
+      {
+        "ru": "Железнодорожный вокзал",
+        "vi": "trạm xe lửa",
+        "page": 10,
+        "sourceStart": 188.639,
+        "sourceEnd": 189.597
+      },
+      {
+        "ru": "гостиница",
+        "vi": "khách sạn",
+        "page": 10,
+        "sourceStart": 196.938,
+        "sourceEnd": 197.78
+      }
+    ],
+    "sourceTrack": "Track 06.mp3",
+    "sourceDuration": 204.778429
+  },
+  {
+    "id": "listening-06",
+    "number": 6,
+    "sourceLesson": 7,
+    "title": "В гостинице",
+    "phrases": [
+      {
+        "ru": "Я хотел бы снять номер.",
+        "vi": "Tôi muốn thuê phòng.",
+        "page": 10,
+        "sourceStart": 8.99,
+        "sourceEnd": 10.087
+      },
+      {
+        "ru": "Я бы хотел номер.",
+        "vi": "Tôi cần một phòng.",
+        "page": 10,
+        "sourceStart": 17.685,
+        "sourceEnd": 19.117
+      },
+      {
+        "ru": "Для одного человека.",
+        "vi": "Cho một người.",
+        "page": 10,
+        "sourceStart": 27.241,
+        "sourceEnd": 28.204
+      },
+      {
+        "ru": "На двоих.",
+        "vi": "Cho hai người.",
+        "page": 10,
+        "sourceStart": 35.224,
+        "sourceEnd": 36.396
+      },
+      {
+        "ru": "Я резервировал ранее.",
+        "vi": "Tôi đã đặt phòng trước.",
+        "page": 10,
+        "sourceStart": 44.595,
+        "sourceEnd": 45.835
+      },
+      {
+        "ru": "На сколько суток (ночей)?",
+        "vi": "Cần bao nhiêu đêm?",
+        "page": 10,
+        "sourceStart": 54.633,
+        "sourceEnd": 55.791
+      },
+      {
+        "ru": "На одну ночь.",
+        "vi": "Một đêm.",
+        "page": 10,
+        "sourceStart": 63.377,
+        "sourceEnd": 64.172
+      },
+      {
+        "ru": "На две ночи.",
+        "vi": "Hai đêm.",
+        "page": 10,
+        "sourceStart": 71.527,
+        "sourceEnd": 72.342
+      },
+      {
+        "ru": "На неделю.",
+        "vi": "Một tuần.",
+        "page": 10,
+        "sourceStart": 79.569,
+        "sourceEnd": 80.376
+      },
+      {
+        "ru": "Вот ваш ключ.",
+        "vi": "Chìa khoá của bạn đây.",
+        "page": 10,
+        "sourceStart": 87.533,
+        "sourceEnd": 89.125
+      },
+      {
+        "ru": "Вот ваша карточка-ключ.",
+        "vi": "Đây là thẻ chìa khoá mở cửa.",
+        "page": 10,
+        "sourceStart": 97.609,
+        "sourceEnd": 99.933
+      },
+      {
+        "ru": "У вас есть другой номер?",
+        "vi": "Có phòng nào khác không?",
+        "page": 10,
+        "sourceStart": 108.679,
+        "sourceEnd": 110.243
+      },
+      {
+        "ru": "Есть отдельная ванная комната?",
+        "vi": "Có phòng tắm riêng không?",
+        "page": 10,
+        "sourceStart": 117.905,
+        "sourceEnd": 119.239
+      },
+      {
+        "ru": "Здесь есть более тихий номер?",
+        "vi": "Có phòng nào im lặng hơn không?",
+        "page": 10,
+        "sourceStart": 128.452,
+        "sourceEnd": 130.025
+      },
+      {
+        "ru": "Здесь есть более просторный номер?",
+        "vi": "Có phòng nào rộng hơn không?",
+        "page": 10,
+        "sourceStart": 139.88,
+        "sourceEnd": 141.73
+      },
+      {
+        "ru": "Здесь есть спортивный зал?",
+        "vi": "Có phòng tập thể dục không?",
+        "page": 10,
+        "sourceStart": 151.437,
+        "sourceEnd": 152.845
+      },
+      {
+        "ru": "Здесь есть бассейн?",
+        "vi": "Có hồ bơi không?",
+        "page": 10,
+        "sourceStart": 161.193,
+        "sourceEnd": 162.564
+      },
+      {
+        "ru": "Где конференц-зал?",
+        "vi": "Phòng họp ở đâu?",
+        "page": 10,
+        "sourceStart": 171.475,
+        "sourceEnd": 172.477
+      },
+      {
+        "ru": "Как я могу отправить факс?",
+        "vi": "Làm sao để gởi fax?",
+        "page": 11,
+        "sourceStart": 180.78,
+        "sourceEnd": 182.665
+      },
+      {
+        "ru": "Где находится консьерж?",
+        "vi": "Người gác cửa ở đâu?",
+        "page": 11,
+        "sourceStart": 191.863,
+        "sourceEnd": 193.133
+      },
+      {
+        "ru": "Я уезжаю и хотел бы оплатить счета.",
+        "vi": "Tôi muốn trả phòng.",
+        "page": 11,
+        "sourceStart": 202.536,
+        "sourceEnd": 203.869
+      }
+    ],
+    "sourceTrack": "Track 07.mp3",
+    "sourceDuration": 210.864964
+  },
+  {
+    "id": "listening-07",
+    "number": 7,
+    "sourceLesson": 8,
+    "title": "Знакомства и общение",
+    "phrases": [
+      {
+        "ru": "Здравствуйте, как Вас зовут?",
+        "vi": "Chào bạn! Tên bạn là gì?",
+        "page": 11,
+        "sourceStart": 9.467,
+        "sourceEnd": 11.633
+      },
+      {
+        "ru": "Откуда вы?",
+        "vi": "Bạn từ đâu đến?",
+        "page": 11,
+        "sourceStart": 20.151,
+        "sourceEnd": 21.31
+      },
+      {
+        "ru": "Я из Нью-Йорка.",
+        "vi": "Tôi từ New York đến.",
+        "page": 11,
+        "sourceStart": 28.95,
+        "sourceEnd": 30.209
+      },
+      {
+        "ru": "Можно здесь сесть?",
+        "vi": "Tôi ngồi đây được không?",
+        "page": 11,
+        "sourceStart": 38.87,
+        "sourceEnd": 40.321
+      },
+      {
+        "ru": "Где вы живете?",
+        "vi": "Anh sống ở đâu?",
+        "page": 11,
+        "sourceStart": 48.297,
+        "sourceEnd": 49.247
+      },
+      {
+        "ru": "Я живу в Хойан.",
+        "vi": "Tôi ở Hội An.",
+        "page": 11,
+        "sourceStart": 56.94,
+        "sourceEnd": 58.192
+      },
+      {
+        "ru": "Это мой друг.",
+        "vi": "Đây là bạn tôi.",
+        "page": 11,
+        "sourceStart": 66.683,
+        "sourceEnd": 67.765
+      },
+      {
+        "ru": "Это мой парень.",
+        "vi": "Đây là bạn trai của tôi.",
+        "page": 11,
+        "sourceStart": 75.024,
+        "sourceEnd": 76.715
+      },
+      {
+        "ru": "Это моя девушка.",
+        "vi": "Đây là bạn gái của tôi.",
+        "page": 11,
+        "sourceStart": 85.022,
+        "sourceEnd": 86.353
+      },
+      {
+        "ru": "Это моя жена.",
+        "vi": "Đây là vợ của tôi.",
+        "page": 11,
+        "sourceStart": 94.755,
+        "sourceEnd": 95.986
+      },
+      {
+        "ru": "Это мой муж.",
+        "vi": "Đây là chồng của tôi.",
+        "page": 11,
+        "sourceStart": 104.098,
+        "sourceEnd": 105.715
+      },
+      {
+        "ru": "Я здесь в деловой поездке.",
+        "vi": "Tôi đang đi công tác.",
+        "page": 11,
+        "sourceStart": 114.981,
+        "sourceEnd": 116.129
+      },
+      {
+        "ru": "Я путешествую с семьей.",
+        "vi": "Tôi đi du lịch với gia đình.",
+        "page": 11,
+        "sourceStart": 124.041,
+        "sourceEnd": 125.779
+      },
+      {
+        "ru": "Я здесь на летних каникулах; в отпуске.",
+        "vi": "Tôi đang đi nghỉ hè ở đây.",
+        "page": 11,
+        "sourceStart": 133.971,
+        "sourceEnd": 135.499
+      },
+      {
+        "vi": "Bạn có đi Mỹ chưa?",
+        "ru": "Вы уже бывали в США?",
+        "page": null,
+        "sourceStart": 145.306,
+        "sourceEnd": 146.759
+      },
+      {
+        "ru": "Ваша страна очень красивая.",
+        "vi": "Nước bạn đẹp lắm.",
+        "page": 11,
+        "sourceStart": 157.661,
+        "sourceEnd": 158.904
+      },
+      {
+        "ru": "Мне здесь очень нравится еда.",
+        "vi": "Tôi rất thích đồ ăn ở đây.",
+        "page": 11,
+        "sourceStart": 168.365,
+        "sourceEnd": 170.131
+      },
+      {
+        "ru": "Тебе нравится ходить в кино?",
+        "vi": "Bạn có thích đi xem phim không?",
+        "page": 11,
+        "sourceStart": 179.083,
+        "sourceEnd": 180.619
+      },
+      {
+        "ru": "Ты любишь танцевать?",
+        "vi": "Bạn có thích nhảy đầm không?",
+        "page": 11,
+        "sourceStart": 189.515,
+        "sourceEnd": 191.095
+      },
+      {
+        "ru": "Давайте пойдем!",
+        "vi": "Cùng đi nào!",
+        "page": 11,
+        "sourceStart": 199.078,
+        "sourceEnd": 200.004
+      },
+      {
+        "ru": "Я бы хотел, чтобы вы встретились с моими друзьями.",
+        "vi": "Tôi muốn giới thiệu bạn với các bạn của tôi.",
+        "page": 11,
+        "sourceStart": 209.104,
+        "sourceEnd": 211.702
+      },
+      {
+        "ru": "Вот мой номер телефона.",
+        "vi": "Đây là số điện thoại của tôi.",
+        "page": 12,
+        "sourceStart": 221.383,
+        "sourceEnd": 222.924
+      },
+      {
+        "ru": "Какой у тебя номер телефона?",
+        "vi": "Số điện thoại của bạn là gì?",
+        "page": 12,
+        "sourceStart": 231.801,
+        "sourceEnd": 233.462
+      },
+      {
+        "ru": "Я остановился в отеле «Бонг Сен».",
+        "vi": "Tôi đang ở khách sạn Bông Sen.",
+        "page": 12,
+        "sourceStart": 243.449,
+        "sourceEnd": 245.078
+      },
+      {
+        "ru": "Давайте вечером встретимся!",
+        "vi": "Tối nay mình gặp nhau nhé!",
+        "page": 12,
+        "sourceStart": 253.831,
+        "sourceEnd": 255.403
+      },
+      {
+        "ru": "Заходите ко мне (домой).",
+        "vi": "Xin ghé thăm tôi!",
+        "page": 12,
+        "sourceStart": 264.012,
+        "sourceEnd": 265.099
+      },
+      {
+        "ru": "я прекрасно провел время.",
+        "vi": "Tôi đã được hưởng một thời gian vui vẻ.",
+        "page": 12,
+        "sourceStart": 273.13,
+        "sourceEnd": 275.827
+      }
+    ],
+    "sourceTrack": "Track 08.mp3",
+    "sourceDuration": 284.817607
+  },
+  {
+    "id": "listening-08",
+    "number": 8,
+    "sourceLesson": 9,
+    "title": "В ресторане",
+    "phrases": [
+      {
+        "ru": "Где здесь есть хороший ресторан?",
+        "vi": "Nhà hàng ngon ở đâu?",
+        "page": 12,
+        "sourceStart": 7.865,
+        "sourceEnd": 9.162
+      },
+      {
+        "ru": "Столик на двоих, пожалуйста.",
+        "vi": "Cho tôi một bàn hai người.",
+        "page": 12,
+        "sourceStart": 18.019,
+        "sourceEnd": 19.732
+      },
+      {
+        "vi": "Chỗ hút thuốc hay không hút thuốc?",
+        "ru": "В курящей или некурящей зоне?",
+        "page": null,
+        "sourceStart": 30.415,
+        "sourceEnd": 32.402
+      },
+      {
+        "ru": "Меню, пожалуйста.",
+        "vi": "Làm ơn cho xem thực đơn.",
+        "page": 12,
+        "sourceStart": 41.024,
+        "sourceEnd": 42.543
+      },
+      {
+        "ru": "Карту вин, пожалуйста.",
+        "vi": "Làm ơn cho tôi xem các loại rượu,",
+        "page": 12,
+        "sourceStart": 50.437,
+        "sourceEnd": 52.553
+      },
+      {
+        "ru": "закуски",
+        "vi": "các món khai vị",
+        "page": 12,
+        "sourceStart": 60.616,
+        "sourceEnd": 61.785
+      },
+      {
+        "ru": "основное блюдо",
+        "vi": "món ăn chính",
+        "page": 12,
+        "sourceStart": 68.585,
+        "sourceEnd": 69.622
+      },
+      {
+        "ru": "десерт",
+        "vi": "tráng miệng",
+        "page": 12,
+        "sourceStart": 75.542,
+        "sourceEnd": 76.341
+      },
+      {
+        "ru": "салат",
+        "vi": "rau trộn",
+        "page": 12,
+        "sourceStart": 82.227,
+        "sourceEnd": 83.204
+      },
+      {
+        "ru": "фрукт",
+        "vi": "trái cây",
+        "page": 12,
+        "sourceStart": 88.73,
+        "sourceEnd": 89.481
+      },
+      {
+        "ru": "Я бы хотел что-нибудь выпить.",
+        "vi": "Tôi muốn có gì để uống.",
+        "page": 12,
+        "sourceStart": 96.869,
+        "sourceEnd": 98.776
+      },
+      {
+        "ru": "Стакан воды, пожалуйста.",
+        "vi": "Làm ơn cho tôi một ly nước.",
+        "page": 12,
+        "sourceStart": 106.519,
+        "sourceEnd": 108.051
+      },
+      {
+        "ru": "Чашку чая, пожалуйста.",
+        "vi": "Làm ơn cho tôi một tách trà.",
+        "page": 12,
+        "sourceStart": 117.944,
+        "sourceEnd": 119.912
+      },
+      {
+        "ru": "Кофе с молоком",
+        "vi": "Làm ơn cho tôi cà phê sữa.",
+        "page": 12,
+        "sourceStart": 130.444,
+        "sourceEnd": 132.188
+      },
+      {
+        "ru": "пиво",
+        "vi": "Làm ơn cho tôi bia.",
+        "page": 12,
+        "sourceStart": 141.955,
+        "sourceEnd": 143.373
+      },
+      {
+        "ru": "У вас есть вегетарианские блюда?",
+        "vi": "Có đồ ăn chay không?",
+        "page": 12,
+        "sourceStart": 151.984,
+        "sourceEnd": 153.161
+      },
+      {
+        "ru": "Это все.",
+        "vi": "Có vậy thôi.",
+        "page": 12,
+        "sourceStart": 160.077,
+        "sourceEnd": 161.038
+      },
+      {
+        "ru": "Счет, пожалуйста.",
+        "vi": "Làm ơn tính tiền.",
+        "page": 13,
+        "sourceStart": 167.607,
+        "sourceEnd": 168.676
+      },
+      {
+        "ru": "Обслуживание включено в счет?",
+        "vi": "Có tính chung tiền buột boa không?",
+        "page": 13,
+        "sourceStart": 177.979,
+        "sourceEnd": 180.059
+      },
+      {
+        "ru": "Завтрак",
+        "vi": "điểm tâm",
+        "page": 13,
+        "sourceStart": 189.333,
+        "sourceEnd": 190.11
+      },
+      {
+        "ru": "обед",
+        "vi": "bữa ăn trưa",
+        "page": 13,
+        "sourceStart": 197.251,
+        "sourceEnd": 198.353
+      },
+      {
+        "ru": "ужин",
+        "vi": "bữa ăn tối",
+        "page": 13,
+        "sourceStart": 205.421,
+        "sourceEnd": 206.384
+      },
+      {
+        "ru": "Приятного аппетита!",
+        "vi": "Chúc ăn ngon!",
+        "page": 13,
+        "sourceStart": 214.012,
+        "sourceEnd": 214.964
+      },
+      {
+        "ru": "Ваше здоровье!",
+        "vi": "Mừng sức khoẻ của bạn!",
+        "page": 13,
+        "sourceStart": 222.473,
+        "sourceEnd": 223.686
+      },
+      {
+        "ru": "Это очень вкусно!",
+        "vi": "Ngon quá!",
+        "page": 13,
+        "sourceStart": 232.407,
+        "sourceEnd": 233.201
+      },
+      {
+        "ru": "Тарелка",
+        "vi": "dĩa",
+        "page": 13,
+        "sourceStart": 240.151,
+        "sourceEnd": 240.777
+      },
+      {
+        "ru": "вилка",
+        "vi": "nĩa",
+        "page": 13,
+        "sourceStart": 247.548,
+        "sourceEnd": 248.228
+      },
+      {
+        "ru": "нож",
+        "vi": "dao",
+        "page": 13,
+        "sourceStart": 255.172,
+        "sourceEnd": 255.826
+      },
+      {
+        "ru": "ложка",
+        "vi": "muỗng",
+        "page": 13,
+        "sourceStart": 262.638,
+        "sourceEnd": 263.354
+      },
+      {
+        "ru": "палочки",
+        "vi": "đũa",
+        "page": 13,
+        "sourceStart": 270.419,
+        "sourceEnd": 271.106
+      },
+      {
+        "ru": "салфетка",
+        "vi": "giấy lau miệng",
+        "page": 13,
+        "sourceStart": 278.232,
+        "sourceEnd": 279.321
+      },
+      {
+        "ru": "чашка",
+        "vi": "tách",
+        "page": 13,
+        "sourceStart": 286.243,
+        "sourceEnd": 286.587
+      },
+      {
+        "ru": "стакан",
+        "vi": "ly",
+        "page": 13,
+        "sourceStart": 293.641,
+        "sourceEnd": 294.222
+      },
+      {
+        "ru": "бутылка вина",
+        "vi": "một chai rượu",
+        "page": 13,
+        "sourceStart": 301.539,
+        "sourceEnd": 302.531
+      },
+      {
+        "ru": "лед в кубиках",
+        "vi": "đá cục",
+        "page": 13,
+        "sourceStart": 310.197,
+        "sourceEnd": 310.865
+      },
+      {
+        "ru": "соль",
+        "vi": "muối",
+        "page": 13,
+        "sourceStart": 317.645,
+        "sourceEnd": 318.188
+      },
+      {
+        "ru": "перец",
+        "vi": "tiêu",
+        "page": 13,
+        "sourceStart": 325.351,
+        "sourceEnd": 325.86
+      },
+      {
+        "ru": "сахар",
+        "vi": "đường",
+        "page": 13,
+        "sourceStart": 333.266,
+        "sourceEnd": 333.978
+      },
+      {
+        "ru": "суп",
+        "vi": "canh",
+        "page": 13,
+        "sourceStart": 340.927,
+        "sourceEnd": 341.447
+      },
+      {
+        "ru": "салат",
+        "vi": "rau trộn",
+        "page": 13,
+        "sourceStart": 348.513,
+        "sourceEnd": 349.394
+      },
+      {
+        "ru": "хлеб",
+        "vi": "bánh mì",
+        "page": 13,
+        "sourceStart": 356.3,
+        "sourceEnd": 356.984
+      },
+      {
+        "ru": "масло",
+        "vi": "bơ",
+        "page": 13,
+        "sourceStart": 363.905,
+        "sourceEnd": 364.486
+      },
+      {
+        "ru": "лапша",
+        "vi": "phở",
+        "page": 13,
+        "sourceStart": 371.333,
+        "sourceEnd": 372.073
+      },
+      {
+        "ru": "Суп фо",
+        "vi": "cơm",
+        "page": 13,
+        "sourceStart": 379.237,
+        "sourceEnd": 379.796
+      },
+      {
+        "ru": "сыр",
+        "vi": "phô mai",
+        "page": 14,
+        "sourceStart": 386.614,
+        "sourceEnd": 387.474
+      },
+      {
+        "ru": "овощи",
+        "vi": "rau",
+        "page": 14,
+        "sourceStart": 394.869,
+        "sourceEnd": 395.538
+      },
+      {
+        "ru": "цыпленок",
+        "vi": "thịt gà",
+        "page": 14,
+        "sourceStart": 402.955,
+        "sourceEnd": 403.748
+      },
+      {
+        "ru": "свинина",
+        "vi": "thịt heo",
+        "page": 14,
+        "sourceStart": 410.767,
+        "sourceEnd": 411.519
+      },
+      {
+        "ru": "говядина",
+        "vi": "thịt bò",
+        "page": 14,
+        "sourceStart": 418.709,
+        "sourceEnd": 419.497
+      },
+      {
+        "ru": "Я бы хотел стейк с кровью,",
+        "vi": "Tôi muốn ăn thịt bò tái.",
+        "page": 14,
+        "sourceStart": 428.349,
+        "sourceEnd": 429.871
+      },
+      {
+        "ru": "я бы хотел стейк средней прожарки.",
+        "vi": "Tôi muốn ăn thịt bò tái chín.",
+        "page": 14,
+        "sourceStart": 441.157,
+        "sourceEnd": 443.156
+      },
+      {
+        "ru": "Я бы хотел хорошо прожаренный.",
+        "vi": "Tôi muốn ăn thịt bò chín.",
+        "page": 14,
+        "sourceStart": 454.276,
+        "sourceEnd": 455.738
+      },
+      {
+        "ru": "Сок (фруктовый)",
+        "vi": "nước trái cây",
+        "page": 14,
+        "sourceStart": 464.717,
+        "sourceEnd": 465.81
+      },
+      {
+        "ru": "пирожное",
+        "vi": "bánh",
+        "page": 14,
+        "sourceStart": 473.954,
+        "sourceEnd": 474.546
+      },
+      {
+        "ru": "мороженое",
+        "vi": "kem",
+        "page": 14,
+        "sourceStart": 482.9,
+        "sourceEnd": 483.416
+      },
+      {
+        "ru": "Другой, пожалуйста.",
+        "vi": "Làm ơn cho thêm cái nữa.",
+        "page": 14,
+        "sourceStart": 490.847,
+        "sourceEnd": 492.391
+      },
+      {
+        "ru": "Еще, пожалуйста.",
+        "vi": "Làm ơn cho thêm.",
+        "page": 14,
+        "sourceStart": 501.92,
+        "sourceEnd": 503.183
+      },
+      {
+        "ru": "Пожалуйста, передайте...",
+        "vi": "Làm ơn đưa cho tôi...",
+        "page": 14,
+        "sourceStart": 512.11,
+        "sourceEnd": 513.437
+      },
+      {
+        "ru": "острый (о еде)",
+        "vi": "cay",
+        "page": 14,
+        "sourceStart": 522.451,
+        "sourceEnd": 523.04
+      },
+      {
+        "ru": "сладкий",
+        "vi": "ngọt",
+        "page": 14,
+        "sourceStart": 530.314,
+        "sourceEnd": 530.867
+      },
+      {
+        "ru": "кислый",
+        "vi": "chua",
+        "page": 14,
+        "sourceStart": 538.029,
+        "sourceEnd": 538.633
+      }
+    ],
+    "sourceTrack": "Track 09.mp3",
+    "sourceDuration": 546.616786
+  },
+  {
+    "id": "listening-09",
+    "number": 9,
+    "sourceLesson": 10,
+    "title": "Указания времени",
+    "phrases": [
+      {
+        "ru": "Который час?",
+        "vi": "Bây giờ là mấy giờ?",
+        "page": 15,
+        "sourceStart": 8.342,
+        "sourceEnd": 9.738
+      },
+      {
+        "ru": "полдень",
+        "vi": "trưa",
+        "page": 15,
+        "sourceStart": 17.54,
+        "sourceEnd": 18.173
+      },
+      {
+        "ru": "полночь",
+        "vi": "nửa đêm",
+        "page": 15,
+        "sourceStart": 23.915,
+        "sourceEnd": 24.745
+      },
+      {
+        "ru": "Один час.",
+        "vi": "Một giờ.",
+        "page": 15,
+        "sourceStart": 31.714,
+        "sourceEnd": 32.596
+      },
+      {
+        "ru": "Два часа.",
+        "vi": "Hai giờ.",
+        "page": 15,
+        "sourceStart": 40.035,
+        "sourceEnd": 40.825
+      },
+      {
+        "ru": "Сейчас 3 часа 30 минут.",
+        "vi": "Ba giờ ba mươi phút.",
+        "page": 15,
+        "sourceStart": 48.812,
+        "sourceEnd": 50.849
+      },
+      {
+        "ru": "Четыре часа.",
+        "vi": "Bốn giờ.",
+        "page": 15,
+        "sourceStart": 60.237,
+        "sourceEnd": 61.067
+      },
+      {
+        "ru": "Сейчас 5 часов 45 минут.",
+        "vi": "Năm giờ bốn lăm phút.",
+        "page": 15,
+        "sourceStart": 69.903,
+        "sourceEnd": 71.93
+      },
+      {
+        "ru": "Сейчас 7 часов 3 минуты.",
+        "vi": "Bảy giờ ba phút.",
+        "page": 15,
+        "sourceStart": 82.685,
+        "sourceEnd": 83.744
+      },
+      {
+        "ru": "Фильм начинается в 9 часов 30 минут.",
+        "vi": "Phim bắt đầu lúc chín giờ ba mươi phút.",
+        "page": 15,
+        "sourceStart": 92.893,
+        "sourceEnd": 95.126
+      },
+      {
+        "ru": "Поезд отходит в 11 часов 17 минут.",
+        "vi": "Xe lửa khởi hành lúc mười một giờ mười bảy phút.",
+        "page": 15,
+        "sourceStart": 108.589,
+        "sourceEnd": 112.302
+      },
+      {
+        "ru": "утро",
+        "vi": "sáng",
+        "page": 15,
+        "sourceStart": 124.246,
+        "sourceEnd": 125.015
+      },
+      {
+        "ru": "День (после полудня)",
+        "vi": "chiều",
+        "page": 15,
+        "sourceStart": 134.109,
+        "sourceEnd": 134.761
+      },
+      {
+        "ru": "вечер",
+        "vi": "chạng vạng",
+        "page": 15,
+        "sourceStart": 141.986,
+        "sourceEnd": 142.865
+      },
+      {
+        "ru": "ночь",
+        "vi": "tối",
+        "page": 15,
+        "sourceStart": 149.674,
+        "sourceEnd": 150.259
+      },
+      {
+        "ru": "сегодня",
+        "vi": "hôm nay",
+        "page": 15,
+        "sourceStart": 157.123,
+        "sourceEnd": 157.866
+      },
+      {
+        "ru": "завтра",
+        "vi": "ngày mai",
+        "page": 15,
+        "sourceStart": 164.532,
+        "sourceEnd": 165.342
+      },
+      {
+        "ru": "вчера",
+        "vi": "hôm qua",
+        "page": 15,
+        "sourceStart": 171.828,
+        "sourceEnd": 172.683
+      },
+      {
+        "ru": "сейчас",
+        "vi": "bây giờ",
+        "page": 15,
+        "sourceStart": 179.446,
+        "sourceEnd": 180.33
+      },
+      {
+        "ru": "позже",
+        "vi": "lát nữa",
+        "page": 15,
+        "sourceStart": 186.942,
+        "sourceEnd": 187.758
+      },
+      {
+        "ru": "прямо сейчас",
+        "vi": "ngay bây giờ",
+        "page": 15,
+        "sourceStart": 194.891,
+        "sourceEnd": 195.894
+      }
+    ],
+    "sourceTrack": "Track 10.mp3",
+    "sourceDuration": 203.864143
+  },
+  {
+    "id": "listening-10",
+    "number": 10,
+    "sourceLesson": 11,
+    "title": "Деньги",
+    "phrases": [
+      {
+        "ru": "деньги",
+        "vi": "tiền",
+        "page": 16,
+        "sourceStart": 7.255,
+        "sourceEnd": 7.855
+      },
+      {
+        "ru": "донг (местная валюта)",
+        "vi": "đồng",
+        "page": 16,
+        "sourceStart": 15.063,
+        "sourceEnd": 15.764
+      },
+      {
+        "ru": "банк",
+        "vi": "ngân hàng",
+        "page": 16,
+        "sourceStart": 21.487,
+        "sourceEnd": 22.366
+      },
+      {
+        "ru": "Где находится банк?",
+        "vi": "Ngân hàng ở đâu?",
+        "page": 16,
+        "sourceStart": 28.898,
+        "sourceEnd": 29.988
+      },
+      {
+        "ru": "Я хочу обменять сто долларов.",
+        "vi": "Tôi muốn đổi một trăm đô la.",
+        "page": 16,
+        "sourceStart": 39.451,
+        "sourceEnd": 40.955
+      },
+      {
+        "ru": "Какой курс обмена?",
+        "vi": "Hối suất là bao nhiêu?",
+        "page": 16,
+        "sourceStart": 49.809,
+        "sourceEnd": 51.154
+      },
+      {
+        "ru": "Я бы хотел мелкими купюрами.",
+        "vi": "Tôi muốn bạc lẻ.",
+        "page": 16,
+        "sourceStart": 60.746,
+        "sourceEnd": 61.861
+      },
+      {
+        "ru": "Какая комиссия?",
+        "vi": "Lệ phí là bao nhiêu?",
+        "page": 16,
+        "sourceStart": 70.401,
+        "sourceEnd": 71.908
+      }
+    ],
+    "sourceTrack": "Track 11.mp3",
+    "sourceDuration": 80.096
+  },
+  {
+    "id": "listening-11",
+    "number": 11,
+    "sourceLesson": 12,
+    "title": "Покупки",
+    "phrases": [
+      {
+        "ru": "Сколько это стоит?",
+        "vi": "Cái đó bao nhiêu tiền?",
+        "page": 16,
+        "sourceStart": 7.575,
+        "sourceEnd": 8.891
+      },
+      {
+        "ru": "Напишите мне это пожалуйста.",
+        "vi": "Làm ơn ghi xuống.",
+        "page": 16,
+        "sourceStart": 17.891,
+        "sourceEnd": 19.213
+      },
+      {
+        "ru": "Когда открывается магазин?",
+        "vi": "Mấy giờ cửa hàng mở cửa?",
+        "page": 16,
+        "sourceStart": 28.18,
+        "sourceEnd": 29.829
+      },
+      {
+        "ru": "Когда закрывается магазин?",
+        "vi": "Mấy giờ cửa hàng đóng cửa?",
+        "page": 16,
+        "sourceStart": 40.214,
+        "sourceEnd": 42.105
+      },
+      {
+        "vi": "Ông cần gì ạ?",
+        "ru": "Что вам нужно? (к мужчине)",
+        "page": 14,
+        "sourceStart": 53.198,
+        "sourceEnd": 54.508
+      },
+      {
+        "vi": "Bà cần gì ạ?",
+        "ru": "Что вам нужно? (к женщине)",
+        "page": 14,
+        "sourceStart": 62.874,
+        "sourceEnd": 63.923
+      },
+      {
+        "vi": "Ông có cần giúp đỡ gì không?",
+        "ru": "Вам нужна помощь? (к мужчине)",
+        "page": 14,
+        "sourceStart": 74.515,
+        "sourceEnd": 76.465
+      },
+      {
+        "vi": "Bà có cần giúp đỡ gì không?",
+        "ru": "Вам нужна помощь? (к женщине)",
+        "page": 14,
+        "sourceStart": 84.184,
+        "sourceEnd": 86.033
+      },
+      {
+        "ru": "Я бы хотел это.",
+        "vi": "Tôi muốn cái này.",
+        "page": 16,
+        "sourceStart": 92.576,
+        "sourceEnd": 93.519
+      },
+      {
+        "ru": "Мне это нужно.",
+        "vi": "Tôi cần cái này.",
+        "page": 16,
+        "sourceStart": 101.852,
+        "sourceEnd": 102.916
+      },
+      {
+        "ru": "Я бы хотел купить батарейки.",
+        "vi": "Tôi cần mua pin.",
+        "page": 16,
+        "sourceStart": 112.726,
+        "sourceEnd": 113.852
+      },
+      {
+        "ru": "Мне нужна карта города.",
+        "vi": "Tôi cần một bản đồ thành phố.",
+        "page": 16,
+        "sourceStart": 124.07,
+        "sourceEnd": 125.774
+      },
+      {
+        "ru": "Мне нужны открытки.",
+        "vi": "Tôi cần xem bưu thiếp.",
+        "page": 16,
+        "sourceStart": 135.486,
+        "sourceEnd": 136.918
+      },
+      {
+        "ru": "Вот оно.",
+        "vi": "Đây ạ.",
+        "page": 16,
+        "sourceStart": 145.863,
+        "sourceEnd": 146.585
+      },
+      {
+        "ru": "Это все?",
+        "vi": "Cần gì nữa không ạ?",
+        "page": 16,
+        "sourceStart": 153.653,
+        "sourceEnd": 155.056
+      },
+      {
+        "ru": "Я бы хотел заплатить наличными.",
+        "vi": "Tôi muốn trả bằng tiền mặt.",
+        "page": 16,
+        "sourceStart": 165.609,
+        "sourceEnd": 166.926
+      },
+      {
+        "ru": "Я бы хотел заплатить кредитной картой.",
+        "vi": "Tôi muốn trả bằng thẻ tín dụng.",
+        "page": 17,
+        "sourceStart": 177.599,
+        "sourceEnd": 179.666
+      },
+      {
+        "ru": "я могу это заказать в интернете?",
+        "vi": "Tôi có thể đặt hàng trực tuyến không?",
+        "page": 17,
+        "sourceStart": 190.139,
+        "sourceEnd": 192.523
+      },
+      {
+        "ru": "универсальный магазин",
+        "vi": "cửa hàng",
+        "page": 17,
+        "sourceStart": 204.122,
+        "sourceEnd": 204.956
+      },
+      {
+        "ru": "женская одежда",
+        "vi": "quần áo phụ nữ",
+        "page": 17,
+        "sourceStart": 212.841,
+        "sourceEnd": 213.927
+      },
+      {
+        "ru": "Накидка, юбка, платье",
+        "vi": "áo choàng, váy, áo đầm",
+        "page": 17,
+        "sourceStart": 224.008,
+        "sourceEnd": 227.061
+      },
+      {
+        "ru": "мужская одежда",
+        "vi": "quần áo đàn ông",
+        "page": 17,
+        "sourceStart": 236.744,
+        "sourceEnd": 237.93
+      },
+      {
+        "ru": "брюки, рубашки, галстук",
+        "vi": "quần dài, áo sơ mi, cà-vạt",
+        "page": 17,
+        "sourceStart": 247.841,
+        "sourceEnd": 251.468
+      },
+      {
+        "ru": "ботинки и носки",
+        "vi": "giày, vớ",
+        "page": 17,
+        "sourceStart": 263.809,
+        "sourceEnd": 265.886
+      },
+      {
+        "ru": "джинсы",
+        "vi": "quần jean",
+        "page": 17,
+        "sourceStart": 273.9,
+        "sourceEnd": 274.67
+      },
+      {
+        "ru": "футболка",
+        "vi": "áo pull",
+        "page": 17,
+        "sourceStart": 281.681,
+        "sourceEnd": 282.423
+      },
+      {
+        "ru": "книжный магазин",
+        "vi": "nhà sách",
+        "page": 17,
+        "sourceStart": 290.144,
+        "sourceEnd": 290.74
+      },
+      {
+        "ru": "булочная",
+        "vi": "tiệm nướng bánh",
+        "page": 17,
+        "sourceStart": 298.567,
+        "sourceEnd": 299.523
+      },
+      {
+        "ru": "супермаркет",
+        "vi": "siêu thị",
+        "page": 17,
+        "sourceStart": 308.13,
+        "sourceEnd": 308.979
+      },
+      {
+        "ru": "мясной магазин",
+        "vi": "tiệm thịt",
+        "page": 17,
+        "sourceStart": 316.537,
+        "sourceEnd": 317.126
+      },
+      {
+        "ru": "рынок",
+        "vi": "chợ",
+        "page": 17,
+        "sourceStart": 324.111,
+        "sourceEnd": 324.699
+      }
+    ],
+    "sourceTrack": "Track 12.mp3",
+    "sourceDuration": 331.707429
+  },
+  {
+    "id": "listening-12",
+    "number": 12,
+    "sourceLesson": 13,
+    "title": "Оставаясь на связи",
+    "phrases": [
+      {
+        "ru": "телефон",
+        "vi": "điện thoại",
+        "page": 17,
+        "sourceStart": 8.403,
+        "sourceEnd": 9.255
+      },
+      {
+        "ru": "Я хотел бы сделать телефонный звонок.",
+        "vi": "Tôi cần phải gọi điện thoại.",
+        "page": 17,
+        "sourceStart": 17.497,
+        "sourceEnd": 19.166
+      },
+      {
+        "ru": "Здесь есть таксофон?",
+        "vi": "Có điện thoại công cộng nào ở đây không?",
+        "page": 17,
+        "sourceStart": 28.928,
+        "sourceEnd": 31.251
+      },
+      {
+        "ru": "Можно я воспользуюсь вашим мобильным телефоном?",
+        "vi": "Tôi dùng điện thoại cầm tay của bạn được không?",
+        "page": 17,
+        "sourceStart": 41.728,
+        "sourceEnd": 44.337
+      },
+      {
+        "ru": "Какой номер, пожалуйста?",
+        "vi": "Làm ơn cho tôi biết số?",
+        "page": 17,
+        "sourceStart": 55.143,
+        "sourceEnd": 56.547
+      },
+      {
+        "ru": "Линия занята.",
+        "vi": "Đường dây bị bận.",
+        "page": 17,
+        "sourceStart": 65.172,
+        "sourceEnd": 66.397
+      },
+      {
+        "ru": "факс",
+        "vi": "fax",
+        "page": 17,
+        "sourceStart": 74.592,
+        "sourceEnd": 75.234
+      },
+      {
+        "ru": "Мне нужно послать факс.",
+        "vi": "Tôi cần phải gởi fax.",
+        "page": 18,
+        "sourceStart": 81.992,
+        "sourceEnd": 83.661
+      },
+      {
+        "ru": "Для меня есть факс?",
+        "vi": "Có fax nào gởi cho tôi không?",
+        "page": 18,
+        "sourceStart": 94.572,
+        "sourceEnd": 96.639
+      },
+      {
+        "ru": "е-мэйл (электронная почта)",
+        "vi": "điện thư",
+        "page": 18,
+        "sourceStart": 108.706,
+        "sourceEnd": 109.571
+      },
+      {
+        "ru": "Где здесь есть компьютер?",
+        "vi": "Máy tính ở đâu?",
+        "page": 18,
+        "sourceStart": 116.664,
+        "sourceEnd": 117.656
+      },
+      {
+        "ru": "Мне нужно послать е-мэйл.",
+        "vi": "Tôi muốn gởi một điện thư.",
+        "page": 18,
+        "sourceStart": 125.832,
+        "sourceEnd": 127.602
+      },
+      {
+        "ru": "Могу я воспользоваться интернетом?",
+        "vi": "Tôi lên in-tơ-nét được không?",
+        "page": 18,
+        "sourceStart": 137.816,
+        "sourceEnd": 139.264
+      },
+      {
+        "ru": "У вас есть сайт в интернете?",
+        "vi": "Bạn có trang mạng lưới web không?",
+        "page": 18,
+        "sourceStart": 148.468,
+        "sourceEnd": 150.775
+      },
+      {
+        "ru": "Где находится почта?",
+        "vi": "Bưu điện ở đâu?",
+        "page": 18,
+        "sourceStart": 161.649,
+        "sourceEnd": 162.612
+      },
+      {
+        "ru": "Мне нужны почтовые марки.",
+        "vi": "Làm ơn cho tôi tem.",
+        "page": 18,
+        "sourceStart": 170.562,
+        "sourceEnd": 171.989
+      },
+      {
+        "ru": "для письма",
+        "vi": "Cho một lá thư.",
+        "page": 18,
+        "sourceStart": 180.192,
+        "sourceEnd": 181.222
+      },
+      {
+        "ru": "для открытки",
+        "vi": "Cho một bưu thiếp.",
+        "page": 18,
+        "sourceStart": 188.488,
+        "sourceEnd": 189.709
+      },
+      {
+        "ru": "Сколько стоит это отправить?",
+        "vi": "Bưu phí bao nhiêu?",
+        "page": 18,
+        "sourceStart": 197.708,
+        "sourceEnd": 198.889
+      },
+      {
+        "ru": "авиа почта",
+        "vi": "bằng máy bay",
+        "page": 18,
+        "sourceStart": 206.378,
+        "sourceEnd": 207.33
+      },
+      {
+        "ru": "доставка на следующий день",
+        "vi": "gởi cấp tốc qua đêm",
+        "page": 18,
+        "sourceStart": 217.237,
+        "sourceEnd": 218.671
+      }
+    ],
+    "sourceTrack": "Track 13.mp3",
+    "sourceDuration": 228.680464
+  },
+  {
+    "id": "listening-13",
+    "number": 13,
+    "sourceLesson": 14,
+    "title": "На ж/д станции",
+    "phrases": [
+      {
+        "ru": "Мне нужен билет,",
+        "vi": "Làm ơn bán cho tôi một vé.",
+        "page": 18,
+        "sourceStart": 8.732,
+        "sourceEnd": 10.498
+      },
+      {
+        "ru": "До Дананга.",
+        "vi": "Đến Đà Nẵng.",
+        "page": 18,
+        "sourceStart": 19.344,
+        "sourceEnd": 20.498
+      },
+      {
+        "ru": "в один конец",
+        "vi": "Một chiều.",
+        "page": 18,
+        "sourceStart": 26.915,
+        "sourceEnd": 27.821
+      },
+      {
+        "ru": "туда и обратно",
+        "vi": "Đi và về.",
+        "page": 18,
+        "sourceStart": 34.189,
+        "sourceEnd": 35.489
+      },
+      {
+        "ru": "Первым или вторым классом?",
+        "vi": "Hạng nhất hay hạng nhì?",
+        "page": 18,
+        "sourceStart": 43.494,
+        "sourceEnd": 45.496
+      },
+      {
+        "ru": "Можно мне посмотреть расписание?",
+        "vi": "Cho tôi xem thời khoá biểu được không?",
+        "page": 18,
+        "sourceStart": 53.705,
+        "sourceEnd": 56.047
+      },
+      {
+        "ru": "На какой станции?",
+        "vi": "ở trạm nào?",
+        "page": 18,
+        "sourceStart": 66.602,
+        "sourceEnd": 67.678
+      },
+      {
+        "ru": "Когда поезд отходит?",
+        "vi": "Khi nào thì xe lửa đi?",
+        "page": 18,
+        "sourceStart": 75.471,
+        "sourceEnd": 77.037
+      },
+      {
+        "ru": "Когда поезд прибывает?",
+        "vi": "Khi nào thì xe lửa đến?",
+        "page": 19,
+        "sourceStart": 86.114,
+        "sourceEnd": 87.643
+      },
+      {
+        "ru": "Поезд не опаздывает?",
+        "vi": "Xe lửa có đúng giờ không?",
+        "page": 19,
+        "sourceStart": 96.381,
+        "sourceEnd": 98.215
+      },
+      {
+        "ru": "Там есть вагон-ресторан?",
+        "vi": "Xe lửa có toa ăn cơm không?",
+        "page": 19,
+        "sourceStart": 106.365,
+        "sourceEnd": 108.124
+      },
+      {
+        "ru": "Там есть спальный вагон?",
+        "vi": "Xe lửa có toa giường ngủ không?",
+        "page": 19,
+        "sourceStart": 117.085,
+        "sourceEnd": 119.292
+      }
+    ],
+    "sourceTrack": "Track 14.mp3",
+    "sourceDuration": 127.220893
+  },
+  {
+    "id": "listening-14",
+    "number": 14,
+    "sourceLesson": 15,
+    "title": "Помощь в экстренных ситуациях",
+    "phrases": [
+      {
+        "ru": "Вы можете мне помочь?",
+        "vi": "Bạn có thể giúp tôi không?",
+        "page": 19,
+        "sourceStart": 10.012,
+        "sourceEnd": 11.723
+      },
+      {
+        "ru": "я потерял свой багаж.",
+        "vi": "Tôi bị mất hành lý.",
+        "page": 19,
+        "sourceStart": 19.956,
+        "sourceEnd": 21.135
+      },
+      {
+        "ru": "Я потерял свой бумажник.",
+        "vi": "Tôi bị mất ví.",
+        "page": 19,
+        "sourceStart": 29.353,
+        "sourceEnd": 30.493
+      },
+      {
+        "ru": "Я потерял свой паспорт.",
+        "vi": "Tôi bị mất giấy thông hành.",
+        "page": 19,
+        "sourceStart": 37.697,
+        "sourceEnd": 39.205
+      },
+      {
+        "ru": "Я пропустил свой поезд.",
+        "vi": "Tôi bị trễ xe lửa.",
+        "page": 19,
+        "sourceStart": 47.818,
+        "sourceEnd": 49.387
+      },
+      {
+        "ru": "Я заблудился.",
+        "vi": "Tôi bị lạc.",
+        "page": 19,
+        "sourceStart": 57.005,
+        "sourceEnd": 57.746
+      },
+      {
+        "ru": "Помогите!",
+        "vi": "Cứu tôi!",
+        "page": 19,
+        "sourceStart": 64.085,
+        "sourceEnd": 64.82
+      },
+      {
+        "ru": "Полиция!",
+        "vi": "Cảnh sát!",
+        "page": 19,
+        "sourceStart": 71.123,
+        "sourceEnd": 71.785
+      },
+      {
+        "ru": "Меня ограбили.",
+        "vi": "Tôi bị cướp.",
+        "page": 19,
+        "sourceStart": 78.6,
+        "sourceEnd": 79.386
+      },
+      {
+        "ru": "Я не знаю где моя жена.",
+        "vi": "Tôi không biết vợ tôi ở đâu.",
+        "page": 19,
+        "sourceStart": 86.293,
+        "sourceEnd": 87.978
+      },
+      {
+        "ru": "Я не знаю где мой муж.",
+        "vi": "Tôi không biết chồng tôi ở đâu.",
+        "page": 19,
+        "sourceStart": 98.015,
+        "sourceEnd": 99.746
+      },
+      {
+        "ru": "Я не знаю где мой ребенок.",
+        "vi": "Tôi không biết con tôi ở đâu.",
+        "page": 19,
+        "sourceStart": 111.057,
+        "sourceEnd": 112.589
+      },
+      {
+        "ru": "Мне больно.",
+        "vi": "Tôi bị đau.",
+        "page": 19,
+        "sourceStart": 122.791,
+        "sourceEnd": 123.691
+      },
+      {
+        "ru": "Мне нужен врач.",
+        "vi": "Tôi cần một bác sĩ.",
+        "page": 19,
+        "sourceStart": 130.236,
+        "sourceEnd": 131.526
+      },
+      {
+        "ru": "Вызовите скорую помощь.",
+        "vi": "Gọi xe cứu thương.",
+        "page": 19,
+        "sourceStart": 139.521,
+        "sourceEnd": 140.91
+      },
+      {
+        "ru": "У меня аллергия к пенициллину.",
+        "vi": "Tôi bị dị ứng với pê-ni-xi-lin.",
+        "page": 19,
+        "sourceStart": 149.725,
+        "sourceEnd": 151.847
+      },
+      {
+        "ru": "У меня кружится голова.",
+        "vi": "Tôi bị chóng mặt.",
+        "page": 19,
+        "sourceStart": 160.82,
+        "sourceEnd": 161.909
+      },
+      {
+        "ru": "Меня тошнит.",
+        "vi": "Tôi buồn nôn.",
+        "page": 19,
+        "sourceStart": 168.48,
+        "sourceEnd": 169.439
+      },
+      {
+        "ru": "У меня болит рука.",
+        "vi": "Tay tôi đau.",
+        "page": 19,
+        "sourceStart": 177.219,
+        "sourceEnd": 178.144
+      },
+      {
+        "ru": "У меня болит нога.",
+        "vi": "Chân tôi đau.",
+        "page": 19,
+        "sourceStart": 185.133,
+        "sourceEnd": 186.057
+      },
+      {
+        "ru": "у меня болит голова.",
+        "vi": "Đầu tôi đau.",
+        "page": 20,
+        "sourceStart": 192.593,
+        "sourceEnd": 193.764
+      }
+    ],
+    "sourceTrack": "Track 15.mp3",
+    "sourceDuration": 200.781714
+  },
+  {
+    "id": "listening-15",
+    "number": 15,
+    "sourceLesson": 16,
+    "title": "Дни недели и месяцы",
+    "phrases": [
+      {
+        "ru": "понедельник",
+        "vi": "Thứ hai",
+        "page": 20,
+        "sourceStart": 9.254,
+        "sourceEnd": 9.998
+      },
+      {
+        "ru": "вторник",
+        "vi": "Thứ ba",
+        "page": 20,
+        "sourceStart": 16.263,
+        "sourceEnd": 16.955
+      },
+      {
+        "ru": "среда",
+        "vi": "Thứ tư",
+        "page": 20,
+        "sourceStart": 22.92,
+        "sourceEnd": 23.647
+      },
+      {
+        "ru": "четверг",
+        "vi": "Thứ năm",
+        "page": 20,
+        "sourceStart": 29.823,
+        "sourceEnd": 30.521
+      },
+      {
+        "ru": "пятница",
+        "vi": "Thứ sáu",
+        "page": 20,
+        "sourceStart": 36.454,
+        "sourceEnd": 37.283
+      },
+      {
+        "ru": "суббота",
+        "vi": "Thứ bảy",
+        "page": 20,
+        "sourceStart": 43.769,
+        "sourceEnd": 44.494
+      },
+      {
+        "ru": "воскресенье",
+        "vi": "Chúa nhật",
+        "page": 20,
+        "sourceStart": 51.244,
+        "sourceEnd": 51.746
+      },
+      {
+        "ru": "январь",
+        "vi": "tháng một",
+        "page": 20,
+        "sourceStart": 59.103,
+        "sourceEnd": 59.81
+      },
+      {
+        "ru": "февраль",
+        "vi": "tháng hai",
+        "page": 20,
+        "sourceStart": 66.335,
+        "sourceEnd": 67.181
+      },
+      {
+        "ru": "март",
+        "vi": "tháng ba",
+        "page": 20,
+        "sourceStart": 73.429,
+        "sourceEnd": 74.212
+      },
+      {
+        "ru": "апрель",
+        "vi": "tháng tư",
+        "page": 20,
+        "sourceStart": 80.651,
+        "sourceEnd": 81.458
+      },
+      {
+        "ru": "май",
+        "vi": "tháng năm",
+        "page": 20,
+        "sourceStart": 87.739,
+        "sourceEnd": 88.518
+      },
+      {
+        "ru": "июнь",
+        "vi": "tháng sáu",
+        "page": 20,
+        "sourceStart": 95.004,
+        "sourceEnd": 95.84
+      },
+      {
+        "ru": "июль",
+        "vi": "tháng bảy",
+        "page": 20,
+        "sourceStart": 101.939,
+        "sourceEnd": 102.742
+      },
+      {
+        "ru": "август",
+        "vi": "tháng tám",
+        "page": 20,
+        "sourceStart": 108.848,
+        "sourceEnd": 109.64
+      },
+      {
+        "ru": "сентябрь",
+        "vi": "tháng chín",
+        "page": 20,
+        "sourceStart": 115.899,
+        "sourceEnd": 116.785
+      },
+      {
+        "ru": "октябрь",
+        "vi": "tháng mười",
+        "page": 20,
+        "sourceStart": 122.954,
+        "sourceEnd": 123.813
+      },
+      {
+        "ru": "ноябрь",
+        "vi": "tháng mười một",
+        "page": 20,
+        "sourceStart": 130.184,
+        "sourceEnd": 131.167
+      },
+      {
+        "ru": "декабрь",
+        "vi": "tháng mười hai",
+        "page": 20,
+        "sourceStart": 137.962,
+        "sourceEnd": 138.927
+      },
+      {
+        "ru": "В этот понедельник.",
+        "vi": "Thứ hai này",
+        "page": 20,
+        "sourceStart": 147.041,
+        "sourceEnd": 148.134
+      },
+      {
+        "ru": "На прошлой неделе.",
+        "vi": "tuần trước",
+        "page": 20,
+        "sourceStart": 155.272,
+        "sourceEnd": 155.987
+      },
+      {
+        "ru": "В следующем месяце.",
+        "vi": "tháng tới/tháng sau",
+        "page": 20,
+        "sourceStart": 163.455,
+        "sourceEnd": 165.741
+      },
+      {
+        "ru": "20-го марта.",
+        "vi": "Vào ngày hai mươi tháng ba.",
+        "page": 21,
+        "sourceStart": 173.603,
+        "sourceEnd": 175.967
+      },
+      {
+        "ru": "Какое сегодня число?",
+        "vi": "Hôm nay là ngày mấy?",
+        "page": 21,
+        "sourceStart": 184.717,
+        "sourceEnd": 186.201
+      },
+      {
+        "ru": "Сегодня, 25-е апреля.",
+        "vi": "Ngày hai mươi lăm tháng tư.",
+        "page": 21,
+        "sourceStart": 194.979,
+        "sourceEnd": 196.836
+      }
+    ],
+    "sourceTrack": "Track 16.mp3",
+    "sourceDuration": 203.002107
+  },
+  {
+    "id": "listening-16",
+    "number": 16,
+    "sourceLesson": 17,
+    "title": "Развлечения",
+    "phrases": [
+      {
+        "ru": "Вы можете посоветовать ресторан?",
+        "vi": "Cho tôi biết đi nhà hàng nào ngon?",
+        "page": 21,
+        "sourceStart": 8.852,
+        "sourceEnd": 11.4
+      },
+      {
+        "ru": "Вы можете посоветовать кафе?",
+        "vi": "Cho tôi biết đi quán cà-phê nào ngon?",
+        "page": 21,
+        "sourceStart": 20.552,
+        "sourceEnd": 23.46
+      },
+      {
+        "ru": "Здесь рядом есть кинотеатр?",
+        "vi": "Có rạp chiếu bóng nào gần đây không?",
+        "page": 21,
+        "sourceStart": 32.781,
+        "sourceEnd": 34.995
+      },
+      {
+        "ru": "Здесь рядом есть музей?",
+        "vi": "Có viện bảo tàng nào gần đây không?",
+        "page": 21,
+        "sourceStart": 46.016,
+        "sourceEnd": 48.116
+      },
+      {
+        "ru": "Здесь рядом есть хороший бар?",
+        "vi": "Có quán nào tốt gần đây không?",
+        "page": 21,
+        "sourceStart": 58.733,
+        "sourceEnd": 60.928
+      },
+      {
+        "ru": "Какие здесь есть достопримечательности?",
+        "vi": "ở đây có những gì đáng xem?",
+        "page": 21,
+        "sourceStart": 72.52,
+        "sourceEnd": 74.184
+      },
+      {
+        "ru": "Где здесь можно поплавать?",
+        "vi": "Đi bơi ở đâu?",
+        "page": 21,
+        "sourceStart": 83.586,
+        "sourceEnd": 84.8
+      },
+      {
+        "ru": "Где здесь можно покататься на велосипеде?",
+        "vi": "Đi xe đạp ở đâu?",
+        "page": 21,
+        "sourceStart": 93.746,
+        "sourceEnd": 94.811
+      },
+      {
+        "ru": "Где здесь можно заниматься бегом?",
+        "vi": "Chạy bộ ở đâu?",
+        "page": 21,
+        "sourceStart": 102.986,
+        "sourceEnd": 104.195
+      },
+      {
+        "ru": "Где здесь можно пойти потанцевать?",
+        "vi": "Đi nhảy đầm ở đâu?",
+        "page": 21,
+        "sourceStart": 113.313,
+        "sourceEnd": 114.404
+      }
+    ],
+    "sourceTrack": "Track 17.mp3",
+    "sourceDuration": 121.735179
+  },
+  {
+    "id": "listening-17",
+    "number": 17,
+    "sourceLesson": 18,
+    "title": "Вопросы и описания",
+    "phrases": [
+      {
+        "ru": "Где?",
+        "vi": "ở đâu?",
+        "page": 22,
+        "sourceStart": 8.53,
+        "sourceEnd": 9.166
+      },
+      {
+        "ru": "Где туалет?",
+        "vi": "Phòng vệ sinh ở đâu?",
+        "page": 22,
+        "sourceStart": 16.076,
+        "sourceEnd": 17.3
+      },
+      {
+        "ru": "Что?",
+        "vi": "Là gì?",
+        "page": 22,
+        "sourceStart": 23.807,
+        "sourceEnd": 24.59
+      },
+      {
+        "ru": "Какой у вас адрес электронной почты?",
+        "vi": "Địa chỉ điện thư bạn là gì?",
+        "page": 22,
+        "sourceStart": 32.645,
+        "sourceEnd": 34.691
+      },
+      {
+        "ru": "Кто?",
+        "vi": "Ai?",
+        "page": 22,
+        "sourceStart": 41.429,
+        "sourceEnd": 41.969
+      },
+      {
+        "ru": "Кто это?",
+        "vi": "Ai đó?",
+        "page": 22,
+        "sourceStart": 48.175,
+        "sourceEnd": 48.823
+      },
+      {
+        "ru": "Когда?",
+        "vi": "Khi nào?",
+        "page": 22,
+        "sourceStart": 54.37,
+        "sourceEnd": 55.067
+      },
+      {
+        "ru": "Когда прибывает этот рейс?",
+        "vi": "Khi nào máy bay đến?",
+        "page": 22,
+        "sourceStart": 62.36,
+        "sourceEnd": 63.621
+      },
+      {
+        "ru": "Как?",
+        "vi": "Làm sao?",
+        "page": 22,
+        "sourceStart": 70.593,
+        "sourceEnd": 71.457
+      },
+      {
+        "ru": "Сколько?",
+        "vi": "Bao nhiêu?",
+        "page": 22,
+        "sourceStart": 78.01,
+        "sourceEnd": 78.751
+      },
+      {
+        "ru": "Сколько это стоит?",
+        "vi": "Cái này bao nhiêu tiền?",
+        "page": 22,
+        "sourceStart": 86.54,
+        "sourceEnd": 87.658
+      },
+      {
+        "ru": "большой / маленький",
+        "vi": "lớn/nhỏ",
+        "page": 22,
+        "sourceStart": 95.966,
+        "sourceEnd": 97.713
+      },
+      {
+        "ru": "хороший / плохой",
+        "vi": "tốt/xấu",
+        "page": 22,
+        "sourceStart": 106.024,
+        "sourceEnd": 107.891
+      },
+      {
+        "ru": "красивый / уродливый",
+        "vi": "đẹp/xấu",
+        "page": 22,
+        "sourceStart": 116.581,
+        "sourceEnd": 118.37
+      },
+      {
+        "ru": "Горячий / холодный",
+        "vi": "nóng/lạnh",
+        "page": 22,
+        "sourceStart": 126.743,
+        "sourceEnd": 128.599
+      },
+      {
+        "ru": "высокий / низкий",
+        "vi": "cao/thấp",
+        "page": 22,
+        "sourceStart": 137.474,
+        "sourceEnd": 138.99
+      },
+      {
+        "ru": "толстый/худой",
+        "vi": "mập/ốm",
+        "page": 22,
+        "sourceStart": 146.996,
+        "sourceEnd": 148.464
+      },
+      {
+        "ru": "старый / новый",
+        "vi": "cũ/mới",
+        "page": 22,
+        "sourceStart": 156.818,
+        "sourceEnd": 158.414
+      },
+      {
+        "ru": "старый / молодой",
+        "vi": "già/trẻ",
+        "page": 22,
+        "sourceStart": 166.685,
+        "sourceEnd": 168.542
+      },
+      {
+        "ru": "счастливый / печальный",
+        "vi": "vui/buồn",
+        "page": 22,
+        "sourceStart": 177.491,
+        "sourceEnd": 179.331
+      },
+      {
+        "ru": "быстрый / медленный",
+        "vi": "nhanh/chậm",
+        "page": 22,
+        "sourceStart": 187.865,
+        "sourceEnd": 189.672
+      },
+      {
+        "ru": "рядом / далеко",
+        "vi": "gần/xa",
+        "page": 22,
+        "sourceStart": 198.205,
+        "sourceEnd": 200.101
+      },
+      {
+        "ru": "красный",
+        "vi": "đỏ",
+        "page": 22,
+        "sourceStart": 207.68,
+        "sourceEnd": 208.439
+      },
+      {
+        "ru": "голубой",
+        "vi": "xanh dương",
+        "page": 23,
+        "sourceStart": 214.748,
+        "sourceEnd": 215.658
+      },
+      {
+        "ru": "желтый",
+        "vi": "vàng",
+        "page": 23,
+        "sourceStart": 222.095,
+        "sourceEnd": 222.883
+      },
+      {
+        "ru": "зеленый",
+        "vi": "xanh lá cây",
+        "page": 23,
+        "sourceStart": 229.275,
+        "sourceEnd": 230.307
+      },
+      {
+        "ru": "оранжевый",
+        "vi": "cam",
+        "page": 23,
+        "sourceStart": 236.799,
+        "sourceEnd": 237.449
+      },
+      {
+        "ru": "пурпурный",
+        "vi": "tím",
+        "page": 23,
+        "sourceStart": 243.821,
+        "sourceEnd": 244.343
+      },
+      {
+        "ru": "черный",
+        "vi": "đen",
+        "page": 23,
+        "sourceStart": 250.386,
+        "sourceEnd": 251.057
+      },
+      {
+        "ru": "белый",
+        "vi": "trắng",
+        "page": 23,
+        "sourceStart": 257.206,
+        "sourceEnd": 257.805
+      },
+      {
+        "ru": "коричневый",
+        "vi": "nâu",
+        "page": 23,
+        "sourceStart": 264.237,
+        "sourceEnd": 264.848
+      },
+      {
+        "ru": "Это здорово!",
+        "vi": "Tuyệt lắm!",
+        "page": 23,
+        "sourceStart": 271.374,
+        "sourceEnd": 272.059
+      },
+      {
+        "ru": "Это ужасно!",
+        "vi": "Tệ quá!",
+        "page": 23,
+        "sourceStart": 278.713,
+        "sourceEnd": 279.535
+      },
+      {
+        "ru": "Хорошо!",
+        "vi": "Được rồi.",
+        "page": 23,
+        "sourceStart": 285.859,
+        "sourceEnd": 286.671
+      },
+      {
+        "ru": "Я не знаю.",
+        "vi": "Tôi không biết.",
+        "page": 23,
+        "sourceStart": 293.24,
+        "sourceEnd": 293.955
+      },
+      {
+        "ru": "Это важно.",
+        "vi": "Quan trọng đó!",
+        "page": 23,
+        "sourceStart": 300.461,
+        "sourceEnd": 301.533
+      },
+      {
+        "ru": "Будь осторожен!",
+        "vi": "Cẩn thận!",
+        "page": 23,
+        "sourceStart": 307.481,
+        "sourceEnd": 308.248
+      },
+      {
+        "ru": "Развлекайся!",
+        "vi": "Vui vẻ nhé!",
+        "page": 23,
+        "sourceStart": 314.871,
+        "sourceEnd": 315.893
+      },
+      {
+        "ru": "Удачи!",
+        "vi": "Chúc may mắn!",
+        "page": 23,
+        "sourceStart": 322.42,
+        "sourceEnd": 323.161
+      }
+    ],
+    "sourceTrack": "Track 18.mp3",
+    "sourceDuration": 356.863321
+  }
+]

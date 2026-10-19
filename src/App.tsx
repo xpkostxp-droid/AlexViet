@@ -1,7 +1,8 @@
 import { DialogueGameScreen } from './components/DialogueGameScreen';
 import { BackButton } from './components/BackButton';
 import { BigNumbersGameScreen } from './components/BigNumbersGameScreen';
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
+const ListeningScreen = lazy(() => import('./components/ListeningScreen'));
 import { PhoneGameScreen } from './components/PhoneGameScreen';
 import type { NumberGameRange } from './content/games/ranges';
 import { GamesListScreen } from './components/GamesListScreen';
@@ -22,6 +23,7 @@ import type { PhoneticsTestId } from './content/phonetics/tests';
 
 type Screen =
   | { name: 'home' }
+  | { name: 'listening' }
   | { name: 'games-list' }
   | { name: 'dialogue-games-list' }
   | { name: 'dialogue-game-setup' }
@@ -49,6 +51,7 @@ function App() {
       // по-прежнему запоминается через saveLastActivity ниже, на будущее.
       return (
         <HomeScreen
+          onOpenListening={() => setScreen({ name: 'listening' })}
           onOpenGames={() => setScreen({ name: 'games-list' })}
           onOpenTheory={() => setScreen({ name: 'theory-list' })}
           onOpenCards={() => setScreen({ name: 'cards-lesson-list' })}
@@ -56,6 +59,9 @@ function App() {
           onOpenPhoneticaTest={() => setScreen({ name: 'phonetics-test-list' })}
         />
       );
+
+    case 'listening':
+      return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
       return <GamesListScreen onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;

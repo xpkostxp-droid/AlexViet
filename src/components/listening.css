@@ -1,0 +1,30 @@
+.screen-listening { max-width: 760px; }
+.listening-lessons { display: grid; gap: 12px; }
+.listening-heading { font-size: 1.15rem; margin: 8px 0; }
+.listening-vocabulary { margin: 0; border: 1px solid var(--color-border); border-radius: 18px; overflow: hidden; background: var(--color-surface); }
+.listening-vocabulary > div { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 16px; padding: 14px 16px; }
+.listening-vocabulary > div + div { border-top: 1px solid var(--color-border); }
+.listening-vocabulary dt { color: var(--color-primary-dark); font-weight: 700; }
+.listening-vocabulary dd { margin: 0; }
+.listening-vocabulary dt, .listening-vocabulary dd { overflow-wrap: break-word; }
+.listening-start { position: sticky; bottom: 0; padding: 12px 0 calc(12px + env(safe-area-inset-bottom, 0px)); background: var(--color-bg); }
+.listening-start button { width: 100%; }
+.listening-progress { width: 100%; height: 10px; accent-color: var(--color-primary); }
+.listening-player { background: var(--color-primary-soft); border-radius: 24px; padding: 22px 16px; text-align: center; }
+.listening-player p { margin: 8px 0 18px; font-weight: 600; }
+.listening-sound { font-size: 3rem; color: var(--color-primary-dark); }
+.listening-sound.is-playing { animation: listening-pulse 1s ease-in-out infinite alternate; }
+.listening-controls { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
+.listening-controls button { min-height: 48px; }
+.listening-feedback { min-height: 48px; font-size: .95rem; }
+.listening-choices { display: grid; gap: 12px; }
+.listening-choice { min-height: 62px; border: 2px solid var(--color-border); border-radius: 999px; padding: 16px 24px; background: var(--color-surface); color: var(--color-text); font: inherit; font-size: 1rem; line-height: 1.4; }
+.listening-choice:disabled { opacity: .65; }
+.listening-choice.is-wrong { background: #fff0eb; border-color: var(--color-alert-text); opacity: 1; }
+.listening-choice.is-correct { background: var(--color-primary-soft); border-color: var(--color-primary); opacity: 1; }
+.listening-error { color: var(--color-alert-text); margin: 0; }
+.listening-transcript { padding-left: 2rem; background: var(--color-surface); border-radius: 18px; margin: 0; }
+.listening-transcript li { padding: 12px 16px 12px 0; line-height: 1.6; }
+@keyframes listening-pulse { from { opacity: .5; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .listening-sound.is-playing { animation: none; } }
+@media (max-width: 360px) { .listening-vocabulary > div { gap: 10px; padding: 12px; } .listening-choice { padding: 14px 18px; } }
