@@ -3,6 +3,7 @@
 // с тем же lessonId, что и в lessons.ts.
 
 import type { FlashCard } from '../types';
+import { lesson10Cards } from './family';
 
 export const flashCards: FlashCard[] = [
   // Урок 5 — порядок сохранён как в списке константина:
@@ -709,6 +710,7 @@ export const flashCards: FlashCard[] = [
   {"id": "l9-63", "lessonId": "lesson-9", "vi": "Vâng, tôi là sinh viên.", "ru": "Да, я студент."},
   {"id": "l9-64", "lessonId": "lesson-9", "vi": "Bây giờ chị đang học tiếng Việt ở đâu?", "ru": "Где вы сейчас изучаете вьетнамский язык?"},
   {"id": "l9-65", "lessonId": "lesson-9", "vi": "Tôi đang học tiếng Việt ở Đại học Quốc gia Hà Nội.", "ru": "Я изучаю вьетнамский язык в Ханойском национальном университете."},
+  ...lesson10Cards,
 ];
 
 export function getCardsForLesson(lessonId: string): FlashCard[] {

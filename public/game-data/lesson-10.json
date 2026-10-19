@@ -1,0 +1,3449 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-10",
+  "number": 10,
+  "title": "Семья (Gia đình)",
+  "cards": [
+    {
+      "id": "l10-word-family",
+      "lessonId": "lesson-10",
+      "vi": "gia đình",
+      "ru": "семья"
+    },
+    {
+      "id": "l10-word-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "ông",
+      "ru": "дедушка"
+    },
+    {
+      "id": "l10-word-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "bà",
+      "ru": "бабушка"
+    },
+    {
+      "id": "l10-word-maternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "ông ngoại",
+      "ru": "дедушка по маминой линии"
+    },
+    {
+      "id": "l10-word-maternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "bà ngoại",
+      "ru": "бабушка по маминой линии"
+    },
+    {
+      "id": "l10-word-paternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "ông nội",
+      "ru": "дедушка по папиной линии"
+    },
+    {
+      "id": "l10-word-paternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "bà nội",
+      "ru": "бабушка по папиной линии"
+    },
+    {
+      "id": "l10-word-mother",
+      "lessonId": "lesson-10",
+      "vi": "mẹ",
+      "ru": "мама"
+    },
+    {
+      "id": "l10-word-father",
+      "lessonId": "lesson-10",
+      "vi": "bố",
+      "ru": "папа"
+    },
+    {
+      "id": "l10-word-older-brother-part",
+      "lessonId": "lesson-10",
+      "vi": "anh",
+      "ru": "старший брат; обращение к мужчине"
+    },
+    {
+      "id": "l10-word-older-sister-part",
+      "lessonId": "lesson-10",
+      "vi": "chị",
+      "ru": "старшая сестра; обращение к женщине"
+    },
+    {
+      "id": "l10-word-younger-part",
+      "lessonId": "lesson-10",
+      "vi": "em",
+      "ru": "младший брат или младшая сестра"
+    },
+    {
+      "id": "l10-word-male",
+      "lessonId": "lesson-10",
+      "vi": "trai",
+      "ru": "мужской пол (в сочетаниях о родственниках)"
+    },
+    {
+      "id": "l10-word-female",
+      "lessonId": "lesson-10",
+      "vi": "gái",
+      "ru": "женский пол (в сочетаниях о родственниках)"
+    },
+    {
+      "id": "l10-word-older-brother",
+      "lessonId": "lesson-10",
+      "vi": "anh trai",
+      "ru": "старший брат"
+    },
+    {
+      "id": "l10-word-younger-brother",
+      "lessonId": "lesson-10",
+      "vi": "em trai",
+      "ru": "младший брат"
+    },
+    {
+      "id": "l10-word-older-sister",
+      "lessonId": "lesson-10",
+      "vi": "chị gái",
+      "ru": "старшая сестра"
+    },
+    {
+      "id": "l10-word-younger-sister",
+      "lessonId": "lesson-10",
+      "vi": "em gái",
+      "ru": "младшая сестра"
+    },
+    {
+      "id": "l10-word-wife",
+      "lessonId": "lesson-10",
+      "vi": "vợ",
+      "ru": "жена"
+    },
+    {
+      "id": "l10-word-husband",
+      "lessonId": "lesson-10",
+      "vi": "chồng",
+      "ru": "муж"
+    },
+    {
+      "id": "l10-word-child",
+      "lessonId": "lesson-10",
+      "vi": "con",
+      "ru": "ребёнок; дети"
+    },
+    {
+      "id": "l10-word-son",
+      "lessonId": "lesson-10",
+      "vi": "con trai",
+      "ru": "сын"
+    },
+    {
+      "id": "l10-word-daughter",
+      "lessonId": "lesson-10",
+      "vi": "con gái",
+      "ru": "дочь"
+    },
+    {
+      "id": "l10-word-who",
+      "lessonId": "lesson-10",
+      "vi": "ai",
+      "ru": "кто"
+    },
+    {
+      "id": "l10-word-possession",
+      "lessonId": "lesson-10",
+      "vi": "của",
+      "ru": "принадлежность: чей-либо; кого-либо"
+    },
+    {
+      "id": "l10-word-age",
+      "lessonId": "lesson-10",
+      "vi": "tuổi",
+      "ru": "возраст в годах; лет"
+    },
+    {
+      "id": "l10-word-how-many",
+      "lessonId": "lesson-10",
+      "vi": "bao nhiêu",
+      "ru": "сколько"
+    },
+    {
+      "id": "l10-word-now",
+      "lessonId": "lesson-10",
+      "vi": "bây giờ",
+      "ru": "сейчас"
+    },
+    {
+      "id": "l10-word-live",
+      "lessonId": "lesson-10",
+      "vi": "sống",
+      "ru": "жить"
+    },
+    {
+      "id": "l10-word-study",
+      "lessonId": "lesson-10",
+      "vi": "học",
+      "ru": "учиться"
+    },
+    {
+      "id": "l10-word-school",
+      "lessonId": "lesson-10",
+      "vi": "trường",
+      "ru": "школа"
+    },
+    {
+      "id": "l10-word-local",
+      "lessonId": "lesson-10",
+      "vi": "địa phương",
+      "ru": "местный; местность"
+    },
+    {
+      "id": "l10-word-class",
+      "lessonId": "lesson-10",
+      "vi": "lớp",
+      "ru": "класс"
+    },
+    {
+      "id": "l10-word-work",
+      "lessonId": "lesson-10",
+      "vi": "làm việc",
+      "ru": "работать"
+    },
+    {
+      "id": "l10-word-bank",
+      "lessonId": "lesson-10",
+      "vi": "ngân hàng",
+      "ru": "банк"
+    },
+    {
+      "id": "l10-word-marry",
+      "lessonId": "lesson-10",
+      "vi": "kết hôn",
+      "ru": "вступать в брак"
+    },
+    {
+      "id": "l10-use-family-live",
+      "lessonId": "lesson-10",
+      "vi": "Gia đình tôi sống ở Việt Nam.",
+      "ru": "Моя семья живёт во Вьетнаме."
+    },
+    {
+      "id": "l10-use-mother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là mẹ tôi.",
+      "ru": "Это моя мама."
+    },
+    {
+      "id": "l10-use-father",
+      "lessonId": "lesson-10",
+      "vi": "Đây là bố tôi.",
+      "ru": "Это мой папа."
+    },
+    {
+      "id": "l10-use-maternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "Đây là ông ngoại tôi.",
+      "ru": "Это мой дедушка по маминой линии."
+    },
+    {
+      "id": "l10-use-maternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là bà ngoại tôi.",
+      "ru": "Это моя бабушка по маминой линии."
+    },
+    {
+      "id": "l10-use-paternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "Đây là ông nội tôi.",
+      "ru": "Это мой дедушка по папиной линии."
+    },
+    {
+      "id": "l10-use-paternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là bà nội tôi.",
+      "ru": "Это моя бабушка по папиной линии."
+    },
+    {
+      "id": "l10-use-older-brother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là anh trai tôi.",
+      "ru": "Это мой старший брат."
+    },
+    {
+      "id": "l10-use-younger-brother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là em trai tôi.",
+      "ru": "Это мой младший брат."
+    },
+    {
+      "id": "l10-use-older-sister",
+      "lessonId": "lesson-10",
+      "vi": "Đây là chị gái tôi.",
+      "ru": "Это моя старшая сестра."
+    },
+    {
+      "id": "l10-use-younger-sister",
+      "lessonId": "lesson-10",
+      "vi": "Đây là em gái tôi.",
+      "ru": "Это моя младшая сестра."
+    },
+    {
+      "id": "l10-use-wife",
+      "lessonId": "lesson-10",
+      "vi": "Đây là vợ tôi.",
+      "ru": "Это моя жена."
+    },
+    {
+      "id": "l10-use-husband",
+      "lessonId": "lesson-10",
+      "vi": "Đây là chồng tôi.",
+      "ru": "Это мой муж."
+    },
+    {
+      "id": "l10-use-possessive-daughter",
+      "lessonId": "lesson-10",
+      "vi": "Đây là con gái của tôi.",
+      "ru": "Это моя дочь."
+    },
+    {
+      "id": "l10-dialogue-daughter-q1",
+      "lessonId": "lesson-10",
+      "vi": "Đây là ai?",
+      "ru": "Кто это?"
+    },
+    {
+      "id": "l10-dialogue-daughter-a1",
+      "lessonId": "lesson-10",
+      "vi": "Đây là con gái tôi.",
+      "ru": "Это моя дочь."
+    },
+    {
+      "id": "l10-dialogue-daughter-q2",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh tên là gì?",
+      "ru": "Как зовут твою дочь?"
+    },
+    {
+      "id": "l10-dialogue-daughter-a2",
+      "lessonId": "lesson-10",
+      "vi": "Con gái tôi tên là Varvara.",
+      "ru": "Мою дочь зовут Варвара."
+    },
+    {
+      "id": "l10-dialogue-daughter-q3",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоей дочери?"
+    },
+    {
+      "id": "l10-dialogue-daughter-a3",
+      "lessonId": "lesson-10",
+      "vi": "Con gái tôi mười hai tuổi.",
+      "ru": "Моей дочери 12 лет."
+    },
+    {
+      "id": "l10-dialogue-daughter-q4",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh có sống ở Việt Nam không?",
+      "ru": "Твоя дочь живёт во Вьетнаме?"
+    },
+    {
+      "id": "l10-dialogue-daughter-a4",
+      "lessonId": "lesson-10",
+      "vi": "Có, con gái tôi sống ở Việt Nam và học ở một trường địa phương.",
+      "ru": "Да, моя дочь живёт во Вьетнаме и ходит в местную школу."
+    },
+    {
+      "id": "l10-dialogue-daughter-q5",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh học lớp mấy?",
+      "ru": "В каком классе учится твоя дочь?"
+    },
+    {
+      "id": "l10-dialogue-daughter-a5",
+      "lessonId": "lesson-10",
+      "vi": "Con gái tôi học lớp sáu.",
+      "ru": "Моя дочь учится в шестом классе."
+    },
+    {
+      "id": "l10-dialogue-daughter-a6",
+      "lessonId": "lesson-10",
+      "vi": "Bây giờ con gái tôi mười hai tuổi.",
+      "ru": "Сейчас моей дочери 12 лет."
+    },
+    {
+      "id": "l10-dialogue-son-q1",
+      "lessonId": "lesson-10",
+      "vi": "Con trai anh tên là gì?",
+      "ru": "Как зовут твоего сына?"
+    },
+    {
+      "id": "l10-dialogue-son-a1",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi tên là Maxim.",
+      "ru": "Моего сына зовут Максим."
+    },
+    {
+      "id": "l10-dialogue-son-q2",
+      "lessonId": "lesson-10",
+      "vi": "Bây giờ con trai anh ở đâu?",
+      "ru": "Где сейчас твой сын?"
+    },
+    {
+      "id": "l10-dialogue-son-a2",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi sống ở Nga.",
+      "ru": "Мой сын живёт в России."
+    },
+    {
+      "id": "l10-dialogue-son-q3",
+      "lessonId": "lesson-10",
+      "vi": "Con trai anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоему сыну?"
+    },
+    {
+      "id": "l10-dialogue-son-a3",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi hai mươi bảy tuổi.",
+      "ru": "Моему сыну 27 лет."
+    },
+    {
+      "id": "l10-dialogue-son-q4",
+      "lessonId": "lesson-10",
+      "vi": "Con trai anh làm nghề gì?",
+      "ru": "Кем работает твой сын?"
+    },
+    {
+      "id": "l10-dialogue-son-a4",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi làm việc ở ngân hàng.",
+      "ru": "Мой сын работает в банке."
+    },
+    {
+      "id": "l10-dialogue-marriage-woman-q1",
+      "lessonId": "lesson-10",
+      "vi": "Chị đã kết hôn chưa?",
+      "ru": "Вы замужем?"
+    },
+    {
+      "id": "l10-dialogue-marriage-woman-a1",
+      "lessonId": "lesson-10",
+      "vi": "Vâng, tôi đã kết hôn rồi. Chồng tôi tên là Nikolai.",
+      "ru": "Да, я замужем. Моего мужа зовут Николай."
+    },
+    {
+      "id": "l10-dialogue-marriage-man-q1",
+      "lessonId": "lesson-10",
+      "vi": "Anh đã kết hôn chưa?",
+      "ru": "Вы женаты?"
+    },
+    {
+      "id": "l10-dialogue-marriage-man-a1",
+      "lessonId": "lesson-10",
+      "vi": "Vâng, tôi đã kết hôn rồi. Vợ tôi tên là Svetlana.",
+      "ru": "Да, я женат. Мою жену зовут Светлана."
+    }
+  ],
+  "words": [
+    {
+      "id": "l10-word-family",
+      "lessonId": "lesson-10",
+      "vi": "gia đình",
+      "ru": "семья",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-family"
+      }
+    },
+    {
+      "id": "l10-word-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "ông",
+      "ru": "дедушка",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-grandfather"
+      }
+    },
+    {
+      "id": "l10-word-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "bà",
+      "ru": "бабушка",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-grandmother"
+      }
+    },
+    {
+      "id": "l10-word-maternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "ông ngoại",
+      "ru": "дедушка по маминой линии",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-maternal-grandfather"
+      }
+    },
+    {
+      "id": "l10-word-maternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "bà ngoại",
+      "ru": "бабушка по маминой линии",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-maternal-grandmother"
+      }
+    },
+    {
+      "id": "l10-word-paternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "ông nội",
+      "ru": "дедушка по папиной линии",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-paternal-grandfather"
+      }
+    },
+    {
+      "id": "l10-word-paternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "bà nội",
+      "ru": "бабушка по папиной линии",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-paternal-grandmother"
+      }
+    },
+    {
+      "id": "l10-word-mother",
+      "lessonId": "lesson-10",
+      "vi": "mẹ",
+      "ru": "мама",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-mother"
+      }
+    },
+    {
+      "id": "l10-word-father",
+      "lessonId": "lesson-10",
+      "vi": "bố",
+      "ru": "папа",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-father"
+      }
+    },
+    {
+      "id": "l10-word-older-brother-part",
+      "lessonId": "lesson-10",
+      "vi": "anh",
+      "ru": "старший брат; обращение к мужчине",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-older-brother-part"
+      }
+    },
+    {
+      "id": "l10-word-older-sister-part",
+      "lessonId": "lesson-10",
+      "vi": "chị",
+      "ru": "старшая сестра; обращение к женщине",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-older-sister-part"
+      }
+    },
+    {
+      "id": "l10-word-younger-part",
+      "lessonId": "lesson-10",
+      "vi": "em",
+      "ru": "младший брат или младшая сестра",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-younger-part"
+      }
+    },
+    {
+      "id": "l10-word-male",
+      "lessonId": "lesson-10",
+      "vi": "trai",
+      "ru": "мужской пол (в сочетаниях о родственниках)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-male"
+      }
+    },
+    {
+      "id": "l10-word-female",
+      "lessonId": "lesson-10",
+      "vi": "gái",
+      "ru": "женский пол (в сочетаниях о родственниках)",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-female"
+      }
+    },
+    {
+      "id": "l10-word-older-brother",
+      "lessonId": "lesson-10",
+      "vi": "anh trai",
+      "ru": "старший брат",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-older-brother"
+      }
+    },
+    {
+      "id": "l10-word-younger-brother",
+      "lessonId": "lesson-10",
+      "vi": "em trai",
+      "ru": "младший брат",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-younger-brother"
+      }
+    },
+    {
+      "id": "l10-word-older-sister",
+      "lessonId": "lesson-10",
+      "vi": "chị gái",
+      "ru": "старшая сестра",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-older-sister"
+      }
+    },
+    {
+      "id": "l10-word-younger-sister",
+      "lessonId": "lesson-10",
+      "vi": "em gái",
+      "ru": "младшая сестра",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-younger-sister"
+      }
+    },
+    {
+      "id": "l10-word-wife",
+      "lessonId": "lesson-10",
+      "vi": "vợ",
+      "ru": "жена",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-wife"
+      }
+    },
+    {
+      "id": "l10-word-husband",
+      "lessonId": "lesson-10",
+      "vi": "chồng",
+      "ru": "муж",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-husband"
+      }
+    },
+    {
+      "id": "l10-word-child",
+      "lessonId": "lesson-10",
+      "vi": "con",
+      "ru": "ребёнок; дети",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-child"
+      }
+    },
+    {
+      "id": "l10-word-son",
+      "lessonId": "lesson-10",
+      "vi": "con trai",
+      "ru": "сын",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-son"
+      }
+    },
+    {
+      "id": "l10-word-daughter",
+      "lessonId": "lesson-10",
+      "vi": "con gái",
+      "ru": "дочь",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-daughter"
+      }
+    },
+    {
+      "id": "l10-word-who",
+      "lessonId": "lesson-10",
+      "vi": "ai",
+      "ru": "кто",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-who"
+      }
+    },
+    {
+      "id": "l10-word-possession",
+      "lessonId": "lesson-10",
+      "vi": "của",
+      "ru": "принадлежность: чей-либо; кого-либо",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-possession"
+      }
+    },
+    {
+      "id": "l10-word-age",
+      "lessonId": "lesson-10",
+      "vi": "tuổi",
+      "ru": "возраст в годах; лет",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-age"
+      }
+    },
+    {
+      "id": "l10-word-how-many",
+      "lessonId": "lesson-10",
+      "vi": "bao nhiêu",
+      "ru": "сколько",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-how-many"
+      }
+    },
+    {
+      "id": "l10-word-now",
+      "lessonId": "lesson-10",
+      "vi": "bây giờ",
+      "ru": "сейчас",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-now"
+      }
+    },
+    {
+      "id": "l10-word-live",
+      "lessonId": "lesson-10",
+      "vi": "sống",
+      "ru": "жить",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-live"
+      }
+    },
+    {
+      "id": "l10-word-study",
+      "lessonId": "lesson-10",
+      "vi": "học",
+      "ru": "учиться",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-study"
+      }
+    },
+    {
+      "id": "l10-word-school",
+      "lessonId": "lesson-10",
+      "vi": "trường",
+      "ru": "школа",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-school"
+      }
+    },
+    {
+      "id": "l10-word-local",
+      "lessonId": "lesson-10",
+      "vi": "địa phương",
+      "ru": "местный; местность",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-local"
+      }
+    },
+    {
+      "id": "l10-word-class",
+      "lessonId": "lesson-10",
+      "vi": "lớp",
+      "ru": "класс",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-class"
+      }
+    },
+    {
+      "id": "l10-word-work",
+      "lessonId": "lesson-10",
+      "vi": "làm việc",
+      "ru": "работать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-work"
+      }
+    },
+    {
+      "id": "l10-word-bank",
+      "lessonId": "lesson-10",
+      "vi": "ngân hàng",
+      "ru": "банк",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-bank"
+      }
+    },
+    {
+      "id": "l10-word-marry",
+      "lessonId": "lesson-10",
+      "vi": "kết hôn",
+      "ru": "вступать в брак",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-word-marry"
+      }
+    },
+    {
+      "id": "l10-use-family-live",
+      "lessonId": "lesson-10",
+      "vi": "Gia đình tôi sống ở Việt Nam.",
+      "ru": "Моя семья живёт во Вьетнаме.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-family-live"
+      }
+    },
+    {
+      "id": "l10-use-mother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là mẹ tôi.",
+      "ru": "Это моя мама.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-mother"
+      }
+    },
+    {
+      "id": "l10-use-father",
+      "lessonId": "lesson-10",
+      "vi": "Đây là bố tôi.",
+      "ru": "Это мой папа.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-father"
+      }
+    },
+    {
+      "id": "l10-use-maternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "Đây là ông ngoại tôi.",
+      "ru": "Это мой дедушка по маминой линии.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-maternal-grandfather"
+      }
+    },
+    {
+      "id": "l10-use-maternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là bà ngoại tôi.",
+      "ru": "Это моя бабушка по маминой линии.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-maternal-grandmother"
+      }
+    },
+    {
+      "id": "l10-use-paternal-grandfather",
+      "lessonId": "lesson-10",
+      "vi": "Đây là ông nội tôi.",
+      "ru": "Это мой дедушка по папиной линии.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-paternal-grandfather"
+      }
+    },
+    {
+      "id": "l10-use-paternal-grandmother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là bà nội tôi.",
+      "ru": "Это моя бабушка по папиной линии.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-paternal-grandmother"
+      }
+    },
+    {
+      "id": "l10-use-older-brother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là anh trai tôi.",
+      "ru": "Это мой старший брат.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-older-brother"
+      }
+    },
+    {
+      "id": "l10-use-younger-brother",
+      "lessonId": "lesson-10",
+      "vi": "Đây là em trai tôi.",
+      "ru": "Это мой младший брат.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-younger-brother"
+      }
+    },
+    {
+      "id": "l10-use-older-sister",
+      "lessonId": "lesson-10",
+      "vi": "Đây là chị gái tôi.",
+      "ru": "Это моя старшая сестра.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-older-sister"
+      }
+    },
+    {
+      "id": "l10-use-younger-sister",
+      "lessonId": "lesson-10",
+      "vi": "Đây là em gái tôi.",
+      "ru": "Это моя младшая сестра.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-younger-sister"
+      }
+    },
+    {
+      "id": "l10-use-wife",
+      "lessonId": "lesson-10",
+      "vi": "Đây là vợ tôi.",
+      "ru": "Это моя жена.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-wife"
+      }
+    },
+    {
+      "id": "l10-use-husband",
+      "lessonId": "lesson-10",
+      "vi": "Đây là chồng tôi.",
+      "ru": "Это мой муж.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-husband"
+      }
+    },
+    {
+      "id": "l10-use-possessive-daughter",
+      "lessonId": "lesson-10",
+      "vi": "Đây là con gái của tôi.",
+      "ru": "Это моя дочь.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-possessive-daughter"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-q1",
+      "lessonId": "lesson-10",
+      "vi": "Đây là ai?",
+      "ru": "Кто это?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q1"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-a1",
+      "lessonId": "lesson-10",
+      "vi": "Đây là con gái tôi.",
+      "ru": "Это моя дочь.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a1"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-q2",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh tên là gì?",
+      "ru": "Как зовут твою дочь?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q2"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-a2",
+      "lessonId": "lesson-10",
+      "vi": "Con gái tôi tên là Varvara.",
+      "ru": "Мою дочь зовут Варвара.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a2"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-q3",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоей дочери?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q3"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-a3",
+      "lessonId": "lesson-10",
+      "vi": "Con gái tôi mười hai tuổi.",
+      "ru": "Моей дочери 12 лет.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a3"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-q4",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh có sống ở Việt Nam không?",
+      "ru": "Твоя дочь живёт во Вьетнаме?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q4"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-a4",
+      "lessonId": "lesson-10",
+      "vi": "Có, con gái tôi sống ở Việt Nam và học ở một trường địa phương.",
+      "ru": "Да, моя дочь живёт во Вьетнаме и ходит в местную школу.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a4"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-q5",
+      "lessonId": "lesson-10",
+      "vi": "Con gái anh học lớp mấy?",
+      "ru": "В каком классе учится твоя дочь?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q5"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-a5",
+      "lessonId": "lesson-10",
+      "vi": "Con gái tôi học lớp sáu.",
+      "ru": "Моя дочь учится в шестом классе.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a5"
+      }
+    },
+    {
+      "id": "l10-dialogue-daughter-a6",
+      "lessonId": "lesson-10",
+      "vi": "Bây giờ con gái tôi mười hai tuổi.",
+      "ru": "Сейчас моей дочери 12 лет.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a6"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-q1",
+      "lessonId": "lesson-10",
+      "vi": "Con trai anh tên là gì?",
+      "ru": "Как зовут твоего сына?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q1"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-a1",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi tên là Maxim.",
+      "ru": "Моего сына зовут Максим.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a1"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-q2",
+      "lessonId": "lesson-10",
+      "vi": "Bây giờ con trai anh ở đâu?",
+      "ru": "Где сейчас твой сын?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q2"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-a2",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi sống ở Nga.",
+      "ru": "Мой сын живёт в России.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a2"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-q3",
+      "lessonId": "lesson-10",
+      "vi": "Con trai anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоему сыну?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q3"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-a3",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi hai mươi bảy tuổi.",
+      "ru": "Моему сыну 27 лет.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a3"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-q4",
+      "lessonId": "lesson-10",
+      "vi": "Con trai anh làm nghề gì?",
+      "ru": "Кем работает твой сын?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q4"
+      }
+    },
+    {
+      "id": "l10-dialogue-son-a4",
+      "lessonId": "lesson-10",
+      "vi": "Con trai tôi làm việc ở ngân hàng.",
+      "ru": "Мой сын работает в банке.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a4"
+      }
+    },
+    {
+      "id": "l10-dialogue-marriage-woman-q1",
+      "lessonId": "lesson-10",
+      "vi": "Chị đã kết hôn chưa?",
+      "ru": "Вы замужем?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-woman-q1"
+      }
+    },
+    {
+      "id": "l10-dialogue-marriage-woman-a1",
+      "lessonId": "lesson-10",
+      "vi": "Vâng, tôi đã kết hôn rồi. Chồng tôi tên là Nikolai.",
+      "ru": "Да, я замужем. Моего мужа зовут Николай.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-woman-a1"
+      }
+    },
+    {
+      "id": "l10-dialogue-marriage-man-q1",
+      "lessonId": "lesson-10",
+      "vi": "Anh đã kết hôn chưa?",
+      "ru": "Вы женаты?",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-man-q1"
+      }
+    },
+    {
+      "id": "l10-dialogue-marriage-man-a1",
+      "lessonId": "lesson-10",
+      "vi": "Vâng, tôi đã kết hôn rồi. Vợ tôi tên là Svetlana.",
+      "ru": "Да, я женат. Мою жену зовут Светлана.",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-man-a1"
+      }
+    },
+    {
+      "vi": "gia đình",
+      "ru": "семья",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/0"
+      }
+    },
+    {
+      "vi": "ông",
+      "ru": "дедушка",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/1"
+      }
+    },
+    {
+      "vi": "bà",
+      "ru": "бабушка",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/2"
+      }
+    },
+    {
+      "vi": "ông ngoại",
+      "ru": "дедушка по маминой линии",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/3"
+      }
+    },
+    {
+      "vi": "bà ngoại",
+      "ru": "бабушка по маминой линии",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/4"
+      }
+    },
+    {
+      "vi": "ông nội",
+      "ru": "дедушка по папиной линии",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/5"
+      }
+    },
+    {
+      "vi": "bà nội",
+      "ru": "бабушка по папиной линии",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/6"
+      }
+    },
+    {
+      "vi": "mẹ",
+      "ru": "мама",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/7"
+      }
+    },
+    {
+      "vi": "bố",
+      "ru": "папа",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/1/items/8"
+      }
+    },
+    {
+      "vi": "Ông",
+      "ru": "дедушка, bà — бабушка. Ngoại уточняет мамину линию, nội — папину.",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/2/0"
+      }
+    },
+    {
+      "vi": "anh",
+      "ru": "старший брат; обращение к мужчине",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "chị",
+      "ru": "старшая сестра; обращение к женщине",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "em",
+      "ru": "младший брат или младшая сестра",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/2"
+      }
+    },
+    {
+      "vi": "trai",
+      "ru": "мужской пол (в сочетаниях о родственниках)",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "gái",
+      "ru": "женский пол (в сочетаниях о родственниках)",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "anh trai",
+      "ru": "старший брат",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/5"
+      }
+    },
+    {
+      "vi": "em trai",
+      "ru": "младший брат",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/6"
+      }
+    },
+    {
+      "vi": "chị gái",
+      "ru": "старшая сестра",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/7"
+      }
+    },
+    {
+      "vi": "em gái",
+      "ru": "младшая сестра",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/3/items/8"
+      }
+    },
+    {
+      "vi": "Anh",
+      "ru": "старший брат, chị — старшая сестра, em — младший брат или младшая сестра.",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/4/0"
+      }
+    },
+    {
+      "vi": "vợ",
+      "ru": "жена",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/5/items/0"
+      }
+    },
+    {
+      "vi": "chồng",
+      "ru": "муж",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/5/items/1"
+      }
+    },
+    {
+      "vi": "con",
+      "ru": "ребёнок; дети",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/5/items/2"
+      }
+    },
+    {
+      "vi": "con trai",
+      "ru": "сын",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/5/items/3"
+      }
+    },
+    {
+      "vi": "con gái",
+      "ru": "дочь",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/5/items/4"
+      }
+    },
+    {
+      "vi": "ai",
+      "ru": "кто",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/0"
+      }
+    },
+    {
+      "vi": "của",
+      "ru": "принадлежность: чей-либо; кого-либо",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/1"
+      }
+    },
+    {
+      "vi": "tuổi",
+      "ru": "возраст в годах; лет",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/2"
+      }
+    },
+    {
+      "vi": "bao nhiêu",
+      "ru": "сколько",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/3"
+      }
+    },
+    {
+      "vi": "bây giờ",
+      "ru": "сейчас",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/4"
+      }
+    },
+    {
+      "vi": "sống",
+      "ru": "жить",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/5"
+      }
+    },
+    {
+      "vi": "học",
+      "ru": "учиться",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/6"
+      }
+    },
+    {
+      "vi": "trường",
+      "ru": "школа",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/7"
+      }
+    },
+    {
+      "vi": "địa phương",
+      "ru": "местный; местность",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/8"
+      }
+    },
+    {
+      "vi": "lớp",
+      "ru": "класс",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/9"
+      }
+    },
+    {
+      "vi": "làm việc",
+      "ru": "работать",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/10"
+      }
+    },
+    {
+      "vi": "ngân hàng",
+      "ru": "банк",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/11"
+      }
+    },
+    {
+      "vi": "kết hôn",
+      "ru": "вступать в брак",
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/7/items/12"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "kind": "pattern",
+      "heading": "5. Мой, моя: принадлежность",
+      "formula": "Родственник + tôi / родственник + của tôi",
+      "formulaNote": "После обозначения родственника можно сразу поставить tôi. Вариант с của тоже подходит.",
+      "examples": [
+        {
+          "vi": "mẹ tôi",
+          "ru": "моя мама"
+        },
+        {
+          "vi": "bố tôi",
+          "ru": "мой папа"
+        },
+        {
+          "vi": "vợ tôi",
+          "ru": "моя жена"
+        },
+        {
+          "vi": "con gái tôi",
+          "ru": "моя дочь"
+        },
+        {
+          "vi": "Đây là con gái của tôi.",
+          "ru": "Это моя дочь."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/8"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "6. Кто это?",
+      "formula": "Đây là ai? — Đây là + родственник + tôi.",
+      "formulaNote": "Đây — это; là — быть, являться; ai — кто.",
+      "examples": [
+        {
+          "vi": "Đây là ai?",
+          "ru": "Кто это?"
+        },
+        {
+          "vi": "Đây là mẹ tôi.",
+          "ru": "Это моя мама."
+        },
+        {
+          "vi": "Đây là chị gái tôi.",
+          "ru": "Это моя старшая сестра."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/9"
+      }
+    },
+    {
+      "kind": "pattern",
+      "heading": "8. Женат / замужем",
+      "formula": "Anh / Chị đã kết hôn chưa? — Tôi đã kết hôn rồi.",
+      "formulaNote": "Kết hôn — вступать в брак. Đã kết hôn rồi — уже женат / замужем. Конструкция подходит и мужчине, и женщине.",
+      "examples": [
+        {
+          "vi": "Chị đã kết hôn chưa?",
+          "ru": "Вы замужем?"
+        },
+        {
+          "vi": "Anh đã kết hôn chưa?",
+          "ru": "Вы женаты?"
+        },
+        {
+          "vi": "Vâng, tôi đã kết hôn rồi.",
+          "ru": "Да, я женат / замужем."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/11"
+      }
+    }
+  ],
+  "examples": [
+    {
+      "vi": "Gia đình tôi sống ở Việt Nam.",
+      "ru": "Моя семья живёт во Вьетнаме.",
+      "tokens": [
+        "Gia",
+        "đình",
+        "tôi",
+        "sống",
+        "ở",
+        "Việt",
+        "Nam"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-family-live"
+      }
+    },
+    {
+      "vi": "Đây là mẹ tôi.",
+      "ru": "Это моя мама.",
+      "tokens": [
+        "Đây",
+        "là",
+        "mẹ",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-mother"
+      }
+    },
+    {
+      "vi": "Đây là bố tôi.",
+      "ru": "Это мой папа.",
+      "tokens": [
+        "Đây",
+        "là",
+        "bố",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-father"
+      }
+    },
+    {
+      "vi": "Đây là ông ngoại tôi.",
+      "ru": "Это мой дедушка по маминой линии.",
+      "tokens": [
+        "Đây",
+        "là",
+        "ông",
+        "ngoại",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-maternal-grandfather"
+      }
+    },
+    {
+      "vi": "Đây là bà ngoại tôi.",
+      "ru": "Это моя бабушка по маминой линии.",
+      "tokens": [
+        "Đây",
+        "là",
+        "bà",
+        "ngoại",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-maternal-grandmother"
+      }
+    },
+    {
+      "vi": "Đây là ông nội tôi.",
+      "ru": "Это мой дедушка по папиной линии.",
+      "tokens": [
+        "Đây",
+        "là",
+        "ông",
+        "nội",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-paternal-grandfather"
+      }
+    },
+    {
+      "vi": "Đây là bà nội tôi.",
+      "ru": "Это моя бабушка по папиной линии.",
+      "tokens": [
+        "Đây",
+        "là",
+        "bà",
+        "nội",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-paternal-grandmother"
+      }
+    },
+    {
+      "vi": "Đây là anh trai tôi.",
+      "ru": "Это мой старший брат.",
+      "tokens": [
+        "Đây",
+        "là",
+        "anh",
+        "trai",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-older-brother"
+      }
+    },
+    {
+      "vi": "Đây là em trai tôi.",
+      "ru": "Это мой младший брат.",
+      "tokens": [
+        "Đây",
+        "là",
+        "em",
+        "trai",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-younger-brother"
+      }
+    },
+    {
+      "vi": "Đây là chị gái tôi.",
+      "ru": "Это моя старшая сестра.",
+      "tokens": [
+        "Đây",
+        "là",
+        "chị",
+        "gái",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-older-sister"
+      }
+    },
+    {
+      "vi": "Đây là em gái tôi.",
+      "ru": "Это моя младшая сестра.",
+      "tokens": [
+        "Đây",
+        "là",
+        "em",
+        "gái",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-younger-sister"
+      }
+    },
+    {
+      "vi": "Đây là vợ tôi.",
+      "ru": "Это моя жена.",
+      "tokens": [
+        "Đây",
+        "là",
+        "vợ",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-wife"
+      }
+    },
+    {
+      "vi": "Đây là chồng tôi.",
+      "ru": "Это мой муж.",
+      "tokens": [
+        "Đây",
+        "là",
+        "chồng",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-husband"
+      }
+    },
+    {
+      "vi": "Đây là con gái của tôi.",
+      "ru": "Это моя дочь.",
+      "tokens": [
+        "Đây",
+        "là",
+        "con",
+        "gái",
+        "của",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-use-possessive-daughter"
+      }
+    },
+    {
+      "vi": "Đây là ai?",
+      "ru": "Кто это?",
+      "tokens": [
+        "Đây",
+        "là",
+        "ai"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q1"
+      }
+    },
+    {
+      "vi": "Đây là con gái tôi.",
+      "ru": "Это моя дочь.",
+      "tokens": [
+        "Đây",
+        "là",
+        "con",
+        "gái",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a1"
+      }
+    },
+    {
+      "vi": "Con gái anh tên là gì?",
+      "ru": "Как зовут твою дочь?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q2"
+      }
+    },
+    {
+      "vi": "Con gái tôi tên là Varvara.",
+      "ru": "Мою дочь зовут Варвара.",
+      "tokens": [
+        "Con",
+        "gái",
+        "tôi",
+        "tên",
+        "là",
+        "Varvara"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a2"
+      }
+    },
+    {
+      "vi": "Con gái anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоей дочери?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q3"
+      }
+    },
+    {
+      "vi": "Con gái tôi mười hai tuổi.",
+      "ru": "Моей дочери 12 лет.",
+      "tokens": [
+        "Con",
+        "gái",
+        "tôi",
+        "mười",
+        "hai",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a3"
+      }
+    },
+    {
+      "vi": "Con gái anh có sống ở Việt Nam không?",
+      "ru": "Твоя дочь живёт во Вьетнаме?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "có",
+        "sống",
+        "ở",
+        "Việt",
+        "Nam",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q4"
+      }
+    },
+    {
+      "vi": "Có, con gái tôi sống ở Việt Nam và học ở một trường địa phương.",
+      "ru": "Да, моя дочь живёт во Вьетнаме и ходит в местную школу.",
+      "tokens": [
+        "Có",
+        "con",
+        "gái",
+        "tôi",
+        "sống",
+        "ở",
+        "Việt",
+        "Nam",
+        "và",
+        "học",
+        "ở",
+        "một",
+        "trường",
+        "địa",
+        "phương"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a4"
+      }
+    },
+    {
+      "vi": "Con gái anh học lớp mấy?",
+      "ru": "В каком классе учится твоя дочь?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "học",
+        "lớp",
+        "mấy"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-q5"
+      }
+    },
+    {
+      "vi": "Con gái tôi học lớp sáu.",
+      "ru": "Моя дочь учится в шестом классе.",
+      "tokens": [
+        "Con",
+        "gái",
+        "tôi",
+        "học",
+        "lớp",
+        "sáu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a5"
+      }
+    },
+    {
+      "vi": "Bây giờ con gái tôi mười hai tuổi.",
+      "ru": "Сейчас моей дочери 12 лет.",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "con",
+        "gái",
+        "tôi",
+        "mười",
+        "hai",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-daughter-a6"
+      }
+    },
+    {
+      "vi": "Con trai anh tên là gì?",
+      "ru": "Как зовут твоего сына?",
+      "tokens": [
+        "Con",
+        "trai",
+        "anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q1"
+      }
+    },
+    {
+      "vi": "Con trai tôi tên là Maxim.",
+      "ru": "Моего сына зовут Максим.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "tên",
+        "là",
+        "Maxim"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a1"
+      }
+    },
+    {
+      "vi": "Bây giờ con trai anh ở đâu?",
+      "ru": "Где сейчас твой сын?",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "con",
+        "trai",
+        "anh",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q2"
+      }
+    },
+    {
+      "vi": "Con trai tôi sống ở Nga.",
+      "ru": "Мой сын живёт в России.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "sống",
+        "ở",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a2"
+      }
+    },
+    {
+      "vi": "Con trai anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоему сыну?",
+      "tokens": [
+        "Con",
+        "trai",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q3"
+      }
+    },
+    {
+      "vi": "Con trai tôi hai mươi bảy tuổi.",
+      "ru": "Моему сыну 27 лет.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "hai",
+        "mươi",
+        "bảy",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a3"
+      }
+    },
+    {
+      "vi": "Con trai anh làm nghề gì?",
+      "ru": "Кем работает твой сын?",
+      "tokens": [
+        "Con",
+        "trai",
+        "anh",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-q4"
+      }
+    },
+    {
+      "vi": "Con trai tôi làm việc ở ngân hàng.",
+      "ru": "Мой сын работает в банке.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "làm",
+        "việc",
+        "ở",
+        "ngân",
+        "hàng"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-son-a4"
+      }
+    },
+    {
+      "vi": "Chị đã kết hôn chưa?",
+      "ru": "Вы замужем?",
+      "tokens": [
+        "Chị",
+        "đã",
+        "kết",
+        "hôn",
+        "chưa"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-woman-q1"
+      }
+    },
+    {
+      "vi": "Vâng, tôi đã kết hôn rồi. Chồng tôi tên là Nikolai.",
+      "ru": "Да, я замужем. Моего мужа зовут Николай.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "đã",
+        "kết",
+        "hôn",
+        "rồi",
+        "Chồng",
+        "tôi",
+        "tên",
+        "là",
+        "Nikolai"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-woman-a1"
+      }
+    },
+    {
+      "vi": "Anh đã kết hôn chưa?",
+      "ru": "Вы женаты?",
+      "tokens": [
+        "Anh",
+        "đã",
+        "kết",
+        "hôn",
+        "chưa"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-man-q1"
+      }
+    },
+    {
+      "vi": "Vâng, tôi đã kết hôn rồi. Vợ tôi tên là Svetlana.",
+      "ru": "Да, я женат. Мою жену зовут Светлана.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "đã",
+        "kết",
+        "hôn",
+        "rồi",
+        "Vợ",
+        "tôi",
+        "tên",
+        "là",
+        "Svetlana"
+      ],
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l10-dialogue-marriage-man-a1"
+      }
+    },
+    {
+      "vi": "Ông",
+      "ru": "дедушка, bà — бабушка. Ngoại уточняет мамину линию, nội — папину.",
+      "tokens": [
+        "Ông"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/2/0"
+      }
+    },
+    {
+      "vi": "Anh",
+      "ru": "старший брат, chị — старшая сестра, em — младший брат или младшая сестра.",
+      "tokens": [
+        "Anh"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/4/0"
+      }
+    },
+    {
+      "vi": "mẹ tôi",
+      "ru": "моя мама",
+      "tokens": [
+        "mẹ",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/8/examples/0"
+      }
+    },
+    {
+      "vi": "bố tôi",
+      "ru": "мой папа",
+      "tokens": [
+        "bố",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/8/examples/1"
+      }
+    },
+    {
+      "vi": "vợ tôi",
+      "ru": "моя жена",
+      "tokens": [
+        "vợ",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/8/examples/2"
+      }
+    },
+    {
+      "vi": "con gái tôi",
+      "ru": "моя дочь",
+      "tokens": [
+        "con",
+        "gái",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/8/examples/3"
+      }
+    },
+    {
+      "vi": "Đây là con gái của tôi.",
+      "ru": "Это моя дочь.",
+      "tokens": [
+        "Đây",
+        "là",
+        "con",
+        "gái",
+        "của",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/8/examples/4"
+      }
+    },
+    {
+      "vi": "Đây là ai?",
+      "ru": "Кто это?",
+      "tokens": [
+        "Đây",
+        "là",
+        "ai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/9/examples/0"
+      }
+    },
+    {
+      "vi": "Đây là mẹ tôi.",
+      "ru": "Это моя мама.",
+      "tokens": [
+        "Đây",
+        "là",
+        "mẹ",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/9/examples/1"
+      }
+    },
+    {
+      "vi": "Đây là chị gái tôi.",
+      "ru": "Это моя старшая сестра.",
+      "tokens": [
+        "Đây",
+        "là",
+        "chị",
+        "gái",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/9/examples/2"
+      }
+    },
+    {
+      "vi": "Chị đã kết hôn chưa?",
+      "ru": "Вы замужем?",
+      "tokens": [
+        "Chị",
+        "đã",
+        "kết",
+        "hôn",
+        "chưa"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/11/examples/0"
+      }
+    },
+    {
+      "vi": "Anh đã kết hôn chưa?",
+      "ru": "Вы женаты?",
+      "tokens": [
+        "Anh",
+        "đã",
+        "kết",
+        "hôn",
+        "chưa"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/11/examples/1"
+      }
+    },
+    {
+      "vi": "Vâng, tôi đã kết hôn rồi.",
+      "ru": "Да, я женат / замужем.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "đã",
+        "kết",
+        "hôn",
+        "rồi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/11/examples/2"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Đây là ai?",
+      "ru": "Кто это?",
+      "tokens": [
+        "Đây",
+        "là",
+        "ai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/0"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Đây là con gái tôi.",
+      "ru": "Это моя дочь.",
+      "tokens": [
+        "Đây",
+        "là",
+        "con",
+        "gái",
+        "tôi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/1"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con gái anh tên là gì?",
+      "ru": "Как зовут твою дочь?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/2"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con gái tôi tên là Varvara.",
+      "ru": "Мою дочь зовут Варвара.",
+      "tokens": [
+        "Con",
+        "gái",
+        "tôi",
+        "tên",
+        "là",
+        "Varvara"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/3"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con gái anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоей дочери?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/4"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con gái tôi mười hai tuổi.",
+      "ru": "Моей дочери 12 лет.",
+      "tokens": [
+        "Con",
+        "gái",
+        "tôi",
+        "mười",
+        "hai",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/5"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con gái anh có sống ở Việt Nam không?",
+      "ru": "Твоя дочь живёт во Вьетнаме?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "có",
+        "sống",
+        "ở",
+        "Việt",
+        "Nam",
+        "không"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/6"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Có, con gái tôi sống ở Việt Nam và học ở một trường địa phương.",
+      "ru": "Да, моя дочь живёт во Вьетнаме и ходит в местную школу.",
+      "tokens": [
+        "Có",
+        "con",
+        "gái",
+        "tôi",
+        "sống",
+        "ở",
+        "Việt",
+        "Nam",
+        "và",
+        "học",
+        "ở",
+        "một",
+        "trường",
+        "địa",
+        "phương"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/7"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con gái anh học lớp mấy?",
+      "ru": "В каком классе учится твоя дочь?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "học",
+        "lớp",
+        "mấy"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/8"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con gái tôi học lớp sáu.",
+      "ru": "Моя дочь учится в шестом классе.",
+      "tokens": [
+        "Con",
+        "gái",
+        "tôi",
+        "học",
+        "lớp",
+        "sáu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/9"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con gái anh bao nhiêu tuổi?",
+      "ru": "Сколько ей лет?",
+      "tokens": [
+        "Con",
+        "gái",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/10"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Bây giờ con gái tôi mười hai tuổi.",
+      "ru": "Сейчас моей дочери 12 лет.",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "con",
+        "gái",
+        "tôi",
+        "mười",
+        "hai",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13/lines/11"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con trai anh tên là gì?",
+      "ru": "Как зовут твоего сына?",
+      "tokens": [
+        "Con",
+        "trai",
+        "anh",
+        "tên",
+        "là",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/0"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con trai tôi tên là Maxim.",
+      "ru": "Моего сына зовут Максим.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "tên",
+        "là",
+        "Maxim"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/1"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Bây giờ con trai anh ở đâu?",
+      "ru": "Где сейчас твой сын?",
+      "tokens": [
+        "Bây",
+        "giờ",
+        "con",
+        "trai",
+        "anh",
+        "ở",
+        "đâu"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/2"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con trai tôi sống ở Nga.",
+      "ru": "Мой сын живёт в России.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "sống",
+        "ở",
+        "Nga"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/3"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con trai anh bao nhiêu tuổi?",
+      "ru": "Сколько лет твоему сыну?",
+      "tokens": [
+        "Con",
+        "trai",
+        "anh",
+        "bao",
+        "nhiêu",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/4"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con trai tôi hai mươi bảy tuổi.",
+      "ru": "Моему сыну 27 лет.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "hai",
+        "mươi",
+        "bảy",
+        "tuổi"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/5"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Con trai anh làm nghề gì?",
+      "ru": "Кем работает твой сын?",
+      "tokens": [
+        "Con",
+        "trai",
+        "anh",
+        "làm",
+        "nghề",
+        "gì"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/6"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Con trai tôi làm việc ở ngân hàng.",
+      "ru": "Мой сын работает в банке.",
+      "tokens": [
+        "Con",
+        "trai",
+        "tôi",
+        "làm",
+        "việc",
+        "ở",
+        "ngân",
+        "hàng"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14/lines/7"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Chị đã kết hôn chưa?",
+      "ru": "Вы замужем?",
+      "tokens": [
+        "Chị",
+        "đã",
+        "kết",
+        "hôn",
+        "chưa"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/15/lines/0"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Vâng, tôi đã kết hôn rồi. Chồng tôi tên là Nikolai.",
+      "ru": "Да, я замужем. Моего мужа зовут Николай.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "đã",
+        "kết",
+        "hôn",
+        "rồi",
+        "Chồng",
+        "tôi",
+        "tên",
+        "là",
+        "Nikolai"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/15/lines/1"
+      }
+    },
+    {
+      "speaker": "Вопрос",
+      "vi": "Anh đã kết hôn chưa?",
+      "ru": "Вы женаты?",
+      "tokens": [
+        "Anh",
+        "đã",
+        "kết",
+        "hôn",
+        "chưa"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/16/lines/0"
+      }
+    },
+    {
+      "speaker": "Ответ",
+      "vi": "Vâng, tôi đã kết hôn rồi. Vợ tôi tên là Svetlana.",
+      "ru": "Да, я женат. Мою жену зовут Светлана.",
+      "tokens": [
+        "Vâng",
+        "tôi",
+        "đã",
+        "kết",
+        "hôn",
+        "rồi",
+        "Vợ",
+        "tôi",
+        "tên",
+        "là",
+        "Svetlana"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/16/lines/1"
+      }
+    }
+  ],
+  "dialogues": [
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: дочь, возраст и школа",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Đây là ai?",
+          "ru": "Кто это?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Đây là con gái tôi.",
+          "ru": "Это моя дочь."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh tên là gì?",
+          "ru": "Как зовут твою дочь?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con gái tôi tên là Varvara.",
+          "ru": "Мою дочь зовут Варвара."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh bao nhiêu tuổi?",
+          "ru": "Сколько лет твоей дочери?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con gái tôi mười hai tuổi.",
+          "ru": "Моей дочери 12 лет."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh có sống ở Việt Nam không?",
+          "ru": "Твоя дочь живёт во Вьетнаме?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Có, con gái tôi sống ở Việt Nam và học ở một trường địa phương.",
+          "ru": "Да, моя дочь живёт во Вьетнаме и ходит в местную школу."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh học lớp mấy?",
+          "ru": "В каком классе учится твоя дочь?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con gái tôi học lớp sáu.",
+          "ru": "Моя дочь учится в шестом классе."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh bao nhiêu tuổi?",
+          "ru": "Сколько ей лет?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Bây giờ con gái tôi mười hai tuổi.",
+          "ru": "Сейчас моей дочери 12 лет."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/13"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: сын, место жительства и работа",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Con trai anh tên là gì?",
+          "ru": "Как зовут твоего сына?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi tên là Maxim.",
+          "ru": "Моего сына зовут Максим."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Bây giờ con trai anh ở đâu?",
+          "ru": "Где сейчас твой сын?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi sống ở Nga.",
+          "ru": "Мой сын живёт в России."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con trai anh bao nhiêu tuổi?",
+          "ru": "Сколько лет твоему сыну?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi hai mươi bảy tuổi.",
+          "ru": "Моему сыну 27 лет."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con trai anh làm nghề gì?",
+          "ru": "Кем работает твой сын?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi làm việc ở ngân hàng.",
+          "ru": "Мой сын работает в банке."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/14"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: вопрос женщине",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Chị đã kết hôn chưa?",
+          "ru": "Вы замужем?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Vâng, tôi đã kết hôn rồi. Chồng tôi tên là Nikolai.",
+          "ru": "Да, я замужем. Моего мужа зовут Николай."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/15"
+      }
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: вопрос мужчине",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Anh đã kết hôn chưa?",
+          "ru": "Вы женаты?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Vâng, tôi đã kết hôn rồi. Vợ tôi tên là Svetlana.",
+          "ru": "Да, я женат. Мою жену зовут Светлана."
+        }
+      ],
+      "source": {
+        "file": "src/content/theory/lesson10.ts",
+        "pointer": "/sections/16"
+      }
+    }
+  ],
+  "theory": [
+    {
+      "kind": "text",
+      "heading": "Gia đình — Семья",
+      "paragraphs": [
+        "Учимся называть членов семьи, различать родственников по маминой и папиной линии и рассказывать о возрасте, учёбе, работе и браке."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "1. Родители, бабушки и дедушки",
+      "items": [
+        {
+          "vi": "gia đình",
+          "ru": "семья"
+        },
+        {
+          "vi": "ông",
+          "ru": "дедушка"
+        },
+        {
+          "vi": "bà",
+          "ru": "бабушка"
+        },
+        {
+          "vi": "ông ngoại",
+          "ru": "дедушка по маминой линии"
+        },
+        {
+          "vi": "bà ngoại",
+          "ru": "бабушка по маминой линии"
+        },
+        {
+          "vi": "ông nội",
+          "ru": "дедушка по папиной линии"
+        },
+        {
+          "vi": "bà nội",
+          "ru": "бабушка по папиной линии"
+        },
+        {
+          "vi": "mẹ",
+          "ru": "мама"
+        },
+        {
+          "vi": "bố",
+          "ru": "папа"
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Мамина и папина линия",
+      "items": [
+        "Ông — дедушка, bà — бабушка. Ngoại уточняет мамину линию, nội — папину.",
+        "Ông ngoại и bà ngoại — родители мамы. Ông nội и bà nội — родители папы."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "2. Братья и сёстры",
+      "note": "Старший или младший — относительно говорящего.",
+      "items": [
+        {
+          "vi": "anh",
+          "ru": "старший брат; обращение к мужчине"
+        },
+        {
+          "vi": "chị",
+          "ru": "старшая сестра; обращение к женщине"
+        },
+        {
+          "vi": "em",
+          "ru": "младший брат или младшая сестра"
+        },
+        {
+          "vi": "trai",
+          "ru": "мужской пол (в сочетаниях о родственниках)"
+        },
+        {
+          "vi": "gái",
+          "ru": "женский пол (в сочетаниях о родственниках)"
+        },
+        {
+          "vi": "anh trai",
+          "ru": "старший брат"
+        },
+        {
+          "vi": "em trai",
+          "ru": "младший брат"
+        },
+        {
+          "vi": "chị gái",
+          "ru": "старшая сестра"
+        },
+        {
+          "vi": "em gái",
+          "ru": "младшая сестра"
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Как устроены эти слова",
+      "items": [
+        "Anh — старший брат, chị — старшая сестра, em — младший брат или младшая сестра.",
+        "Trai уточняет мужской пол, gái — женский: em trai — младший брат, em gái — младшая сестра.",
+        "Anh и chị также используются как обращения. В диалогах anh — обращение к мужчине, chị — к женщине."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "3. Своя семья",
+      "items": [
+        {
+          "vi": "vợ",
+          "ru": "жена"
+        },
+        {
+          "vi": "chồng",
+          "ru": "муж"
+        },
+        {
+          "vi": "con",
+          "ru": "ребёнок; дети"
+        },
+        {
+          "vi": "con trai",
+          "ru": "сын"
+        },
+        {
+          "vi": "con gái",
+          "ru": "дочь"
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "items": [
+        "Con само по себе не уточняет пол и количество детей: это понятно из контекста. Con trai — сын, con gái — дочь."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "4. Слова для вопросов и рассказа о семье",
+      "items": [
+        {
+          "vi": "ai",
+          "ru": "кто"
+        },
+        {
+          "vi": "của",
+          "ru": "принадлежность: чей-либо; кого-либо"
+        },
+        {
+          "vi": "tuổi",
+          "ru": "возраст в годах; лет"
+        },
+        {
+          "vi": "bao nhiêu",
+          "ru": "сколько"
+        },
+        {
+          "vi": "bây giờ",
+          "ru": "сейчас"
+        },
+        {
+          "vi": "sống",
+          "ru": "жить"
+        },
+        {
+          "vi": "học",
+          "ru": "учиться"
+        },
+        {
+          "vi": "trường",
+          "ru": "школа"
+        },
+        {
+          "vi": "địa phương",
+          "ru": "местный; местность"
+        },
+        {
+          "vi": "lớp",
+          "ru": "класс"
+        },
+        {
+          "vi": "làm việc",
+          "ru": "работать"
+        },
+        {
+          "vi": "ngân hàng",
+          "ru": "банк"
+        },
+        {
+          "vi": "kết hôn",
+          "ru": "вступать в брак"
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "5. Мой, моя: принадлежность",
+      "formula": "Родственник + tôi / родственник + của tôi",
+      "formulaNote": "После обозначения родственника можно сразу поставить tôi. Вариант с của тоже подходит.",
+      "examples": [
+        {
+          "vi": "mẹ tôi",
+          "ru": "моя мама"
+        },
+        {
+          "vi": "bố tôi",
+          "ru": "мой папа"
+        },
+        {
+          "vi": "vợ tôi",
+          "ru": "моя жена"
+        },
+        {
+          "vi": "con gái tôi",
+          "ru": "моя дочь"
+        },
+        {
+          "vi": "Đây là con gái của tôi.",
+          "ru": "Это моя дочь."
+        }
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "6. Кто это?",
+      "formula": "Đây là ai? — Đây là + родственник + tôi.",
+      "formulaNote": "Đây — это; là — быть, являться; ai — кто.",
+      "examples": [
+        {
+          "vi": "Đây là ai?",
+          "ru": "Кто это?"
+        },
+        {
+          "vi": "Đây là mẹ tôi.",
+          "ru": "Это моя мама."
+        },
+        {
+          "vi": "Đây là chị gái tôi.",
+          "ru": "Это моя старшая сестра."
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "7. Вопросы о семье",
+      "columns": [
+        "Вьетнамский",
+        "Русский"
+      ],
+      "rows": [
+        [
+          "Con gái anh tên là gì?",
+          "Как зовут твою дочь?"
+        ],
+        [
+          "Con gái anh bao nhiêu tuổi?",
+          "Сколько лет твоей дочери?"
+        ],
+        [
+          "Con gái anh học lớp mấy?",
+          "В каком классе учится твоя дочь?"
+        ],
+        [
+          "Bây giờ con trai anh ở đâu?",
+          "Где сейчас твой сын?"
+        ],
+        [
+          "Con trai anh làm nghề gì?",
+          "Кем работает твой сын?"
+        ]
+      ]
+    },
+    {
+      "kind": "pattern",
+      "heading": "8. Женат / замужем",
+      "formula": "Anh / Chị đã kết hôn chưa? — Tôi đã kết hôn rồi.",
+      "formulaNote": "Kết hôn — вступать в брак. Đã kết hôn rồi — уже женат / замужем. Конструкция подходит и мужчине, и женщине.",
+      "examples": [
+        {
+          "vi": "Chị đã kết hôn chưa?",
+          "ru": "Вы замужем?"
+        },
+        {
+          "vi": "Anh đã kết hôn chưa?",
+          "ru": "Вы женаты?"
+        },
+        {
+          "vi": "Vâng, tôi đã kết hôn rồi.",
+          "ru": "Да, я женат / замужем."
+        }
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "9. Употребление слов в предложениях",
+      "columns": [
+        "Вьетнамский",
+        "Русский"
+      ],
+      "rows": [
+        [
+          "Gia đình tôi sống ở Việt Nam.",
+          "Моя семья живёт во Вьетнаме."
+        ],
+        [
+          "Đây là mẹ tôi.",
+          "Это моя мама."
+        ],
+        [
+          "Đây là bố tôi.",
+          "Это мой папа."
+        ],
+        [
+          "Đây là ông ngoại tôi.",
+          "Это мой дедушка по маминой линии."
+        ],
+        [
+          "Đây là bà ngoại tôi.",
+          "Это моя бабушка по маминой линии."
+        ],
+        [
+          "Đây là ông nội tôi.",
+          "Это мой дедушка по папиной линии."
+        ],
+        [
+          "Đây là bà nội tôi.",
+          "Это моя бабушка по папиной линии."
+        ],
+        [
+          "Đây là anh trai tôi.",
+          "Это мой старший брат."
+        ],
+        [
+          "Đây là em trai tôi.",
+          "Это мой младший брат."
+        ],
+        [
+          "Đây là chị gái tôi.",
+          "Это моя старшая сестра."
+        ],
+        [
+          "Đây là em gái tôi.",
+          "Это моя младшая сестра."
+        ],
+        [
+          "Đây là vợ tôi.",
+          "Это моя жена."
+        ],
+        [
+          "Đây là chồng tôi.",
+          "Это мой муж."
+        ],
+        [
+          "Đây là con gái của tôi.",
+          "Это моя дочь."
+        ]
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: дочь, возраст и школа",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Đây là ai?",
+          "ru": "Кто это?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Đây là con gái tôi.",
+          "ru": "Это моя дочь."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh tên là gì?",
+          "ru": "Как зовут твою дочь?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con gái tôi tên là Varvara.",
+          "ru": "Мою дочь зовут Варвара."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh bao nhiêu tuổi?",
+          "ru": "Сколько лет твоей дочери?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con gái tôi mười hai tuổi.",
+          "ru": "Моей дочери 12 лет."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh có sống ở Việt Nam không?",
+          "ru": "Твоя дочь живёт во Вьетнаме?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Có, con gái tôi sống ở Việt Nam và học ở một trường địa phương.",
+          "ru": "Да, моя дочь живёт во Вьетнаме и ходит в местную школу."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh học lớp mấy?",
+          "ru": "В каком классе учится твоя дочь?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con gái tôi học lớp sáu.",
+          "ru": "Моя дочь учится в шестом классе."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con gái anh bao nhiêu tuổi?",
+          "ru": "Сколько ей лет?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Bây giờ con gái tôi mười hai tuổi.",
+          "ru": "Сейчас моей дочери 12 лет."
+        }
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: сын, место жительства и работа",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Con trai anh tên là gì?",
+          "ru": "Как зовут твоего сына?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi tên là Maxim.",
+          "ru": "Моего сына зовут Максим."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Bây giờ con trai anh ở đâu?",
+          "ru": "Где сейчас твой сын?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi sống ở Nga.",
+          "ru": "Мой сын живёт в России."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con trai anh bao nhiêu tuổi?",
+          "ru": "Сколько лет твоему сыну?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi hai mươi bảy tuổi.",
+          "ru": "Моему сыну 27 лет."
+        },
+        {
+          "speaker": "Вопрос",
+          "vi": "Con trai anh làm nghề gì?",
+          "ru": "Кем работает твой сын?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Con trai tôi làm việc ở ngân hàng.",
+          "ru": "Мой сын работает в банке."
+        }
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: вопрос женщине",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Chị đã kết hôn chưa?",
+          "ru": "Вы замужем?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Vâng, tôi đã kết hôn rồi. Chồng tôi tên là Nikolai.",
+          "ru": "Да, я замужем. Моего мужа зовут Николай."
+        }
+      ]
+    },
+    {
+      "kind": "dialogue",
+      "heading": "Диалог: вопрос мужчине",
+      "lines": [
+        {
+          "speaker": "Вопрос",
+          "vi": "Anh đã kết hôn chưa?",
+          "ru": "Вы женаты?"
+        },
+        {
+          "speaker": "Ответ",
+          "vi": "Vâng, tôi đã kết hôn rồi. Vợ tôi tên là Svetlana.",
+          "ru": "Да, я женат. Мою жену зовут Светлана."
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Обрати внимание",
+      "items": [
+        "Làm nghề gì? спрашивает о профессии. Làm việc ở ngân hàng сообщает место работы — банк; конкретная должность не уточняется.",
+        "Для тренировки сначала идут все слова и выражения, затем предложения с ними. Чтобы сохранить этот порядок, выбери «По порядку»."
+      ]
+    }
+  ]
+}

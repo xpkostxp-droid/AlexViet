@@ -126,6 +126,20 @@
         "examples": 53,
         "dialogues": 1
       }
+    },
+    {
+      "lessonId": "lesson-10",
+      "number": 10,
+      "title": "Семья (Gia đình)",
+      "file": "lesson-10.json",
+      "sha256": "07833705a77b33f38915af9b5b0bc9a8d86b1d360980c64f11afd7dbe59aae27",
+      "counts": {
+        "cards": 73,
+        "words": 111,
+        "grammar": 3,
+        "examples": 74,
+        "dialogues": 4
+      }
     }
   ]
 }
