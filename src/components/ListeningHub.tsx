@@ -16,7 +16,7 @@ export default function ListeningHub({ onBack }: { onBack: () => void }) {
     <span className="badge">Слушаем и понимаем</span><h1 className="screen-title">Аудирование</h1>
     <p className="hint-text">Выберите раздел. Перед каждым уроком — слова с переводом, затем игра на понимание речи.</p>
     <div className="listening-lessons">
-      <button className="lesson-item" onClick={() => setSection('course')}><span className="lesson-number">Наш курс</span><span className="lesson-title">Аудирование по нашим урокам</span><span className="lesson-meta">Слова и предложения из уроков AlexViet</span></button>
+      <button className="lesson-item" onClick={() => setSection('course')}><span className="lesson-number">Наш курс</span><span className="lesson-title">Аудирование по нашим урокам</span><span className="lesson-meta">Материалы появятся позже</span></button>
       <button className="lesson-item" onClick={() => setSection('book1')}><span className="lesson-number">17 уроков</span><span className="lesson-title">Разговорник 1</span><span className="lesson-meta">Знакомые диалоги и сохранённый прогресс</span></button>
       <button className="lesson-item" onClick={() => setSection('book2')}><span className="lesson-number">{phrasebook2PublishedLessons} уроков</span><span className="lesson-title">Разговорник 2</span><span className="lesson-meta">Произношение и новые разговорные ситуации</span></button>
     </div>
