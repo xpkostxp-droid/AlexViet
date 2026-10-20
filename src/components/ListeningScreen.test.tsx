@@ -61,7 +61,7 @@ describe('listening flow', () => {
     await click(button('Деньги')); await click(button('Воспроизвести и начать'));
     for (const p of listeningLessons[9].phrases) {
       await heard();
-      await click(button(p.ru));
+      await click([...host.querySelectorAll<HTMLButtonElement>('.listening-choice')].find(b => b.textContent === p.ru)!);
       await act(async () => vi.advanceTimersByTime(700));
     }
     expect(host.textContent).toContain('Урок пройден!');

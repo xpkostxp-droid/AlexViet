@@ -2,7 +2,7 @@ import { DialogueGameScreen } from './components/DialogueGameScreen';
 import { BackButton } from './components/BackButton';
 import { BigNumbersGameScreen } from './components/BigNumbersGameScreen';
 import { lazy, Suspense, useState } from 'react';
-const ListeningScreen = lazy(() => import('./components/ListeningScreen'));
+const ListeningScreen = lazy(() => import('./components/ListeningHub'));
 import { PhoneGameScreen } from './components/PhoneGameScreen';
 import type { NumberGameRange } from './content/games/ranges';
 import { GamesListScreen } from './components/GamesListScreen';

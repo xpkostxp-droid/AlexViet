@@ -9,10 +9,12 @@ import './listening.css';
 const PROGRESS_KEY = 'alexviet-listening-completed-v1';
 function completedLessons(): string[] {
   const saved = readJSON(PROGRESS_KEY);
-  return Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string' && listeningLessons.some(l => l.id === id)) : [];
+  return Array.isArray(saved) ? saved.filter((id): id is string => typeof id === 'string') : [];
 }
 
-export default function ListeningScreen({ onBack }: { onBack: () => void }) {
+interface Props { onBack: () => void; lessons?: ListeningLesson[]; title?: string; backLabel?: string; description?: string; }
+
+export default function ListeningScreen({ onBack, lessons = listeningLessons, title = 'Аудирование', backLabel = 'На главную', description = 'Изучите слова, прослушайте фразу на вьетнамском и выберите её перевод.' }: Props) {
   const [lesson, setLesson] = useState<ListeningLesson>();
   const [completed, setCompleted] = useState(completedLessons);
   const [stage, setStage] = useState<'vocabulary' | 'game' | 'complete'>('vocabulary');
@@ -23,6 +25,7 @@ export default function ListeningScreen({ onBack }: { onBack: () => void }) {
   const [heard, setHeard] = useState(false);
   const [error, setError] = useState('');
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const speechRef = useRef<SpeechSynthesisUtterance | null>(null);
   const boundary = useRef(0);
   const revision = useRef(0);
   const nextTimer = useRef<ReturnType<typeof setTimeout>>();
@@ -32,6 +35,7 @@ export default function ListeningScreen({ onBack }: { onBack: () => void }) {
 
   function stop() {
     revision.current++;
+    if (speechRef.current) { speechRef.current = null; window.speechSynthesis?.cancel(); }
     boundary.current = 0;
     audioRef.current?.pause();
     cancelAnimationFrame(frame.current);
@@ -72,6 +76,18 @@ export default function ListeningScreen({ onBack }: { onBack: () => void }) {
     if (!lesson) return;
     stop();
     setError('');
+    if (!lesson.audio) {
+      const voice = window.speechSynthesis?.getVoices().find(v => v.lang.toLowerCase().startsWith('vi'));
+      if (!voice) { setError('На устройстве нужен вьетнамский голос. Включите его в настройках озвучивания, затем нажмите «Повторить фразу».'); return; }
+      const token = revision.current;
+      const utterance = new SpeechSynthesisUtterance(item.vi);
+      utterance.voice = voice; utterance.lang = voice.lang;
+      utterance.onend = () => { if (token === revision.current) finishAudio(); };
+      utterance.onerror = () => { if (token === revision.current) { stop(); setError('Не удалось озвучить фразу. Нажмите «Повторить фразу».'); } };
+      speechRef.current = utterance;
+      try { window.speechSynthesis.speak(utterance); setPlaying(true); } catch { stop(); setError('Не удалось включить озвучку. Нажмите «Повторить фразу».'); }
+      return;
+    }
     const audio = getAudio();
     const url = new URL(`${import.meta.env.BASE_URL}${lesson.audio}`, document.baseURI).href;
     if (audio.src !== url) audio.src = url;
@@ -109,6 +125,7 @@ export default function ListeningScreen({ onBack }: { onBack: () => void }) {
       document.removeEventListener('visibilitychange', onVisibility);
       window.removeEventListener('pagehide', onPageHide);
       revision.current++;
+      if (speechRef.current) { speechRef.current = null; window.speechSynthesis?.cancel(); }
       clearTimeout(nextTimer.current);
       cancelAnimationFrame(frame.current);
       const audio = audioRef.current;
@@ -145,11 +162,11 @@ export default function ListeningScreen({ onBack }: { onBack: () => void }) {
   }
 
   if (!lesson) return <div className="screen screen-listening">
-    <BackButton onClick={onBack} label="На главную" />
+    <BackButton onClick={onBack} label={backLabel} />
     <span className="badge">Слушаем и понимаем</span>
-    <h1 className="screen-title">Аудирование</h1>
-    <p className="hint-text">Изучите слова, прослушайте фразу на вьетнамском и выберите её перевод.</p>
-    <div className="listening-lessons">{listeningLessons.map(item => <button className="lesson-item" key={item.id} onClick={() => { setLesson(item); setStage('vocabulary'); window.scrollTo(0, 0); }}>
+    <h1 className="screen-title">{title}</h1>
+    <p className="hint-text">{description}</p>
+    <div className="listening-lessons">{lessons.map(item => <button className="lesson-item" key={item.id} onClick={() => { setLesson(item); setStage('vocabulary'); window.scrollTo(0, 0); }}>
       <span className="lesson-number">Урок {item.number}{completed.includes(item.id) ? ' · ✓ Пройден' : ''}</span>
       <span className="lesson-title">{item.title}</span>
       <span className="lesson-meta">{item.phrases.length} фраз · {item.vocabulary.length} слов и выражений</span>
