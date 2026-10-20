@@ -28,3 +28,13 @@
 @keyframes listening-pulse { from { opacity: .5; } to { opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .listening-sound.is-playing { animation: none; } }
 @media (max-width: 360px) { .listening-vocabulary > div { gap: 10px; padding: 12px; } .listening-choice { padding: 14px 18px; } }
+
+.course-audio-player { position: sticky; top: 0; z-index: 5; padding: 12px 0; background: var(--bg, #f8faf9); }
+.course-audio-player audio { display: block; width: 100%; }
+.course-dialogue { display: grid; gap: 12px; padding-bottom: 24px; }
+.course-dialogue-line { display: grid; gap: 8px; width: 100%; padding: 18px; text-align: left; color: inherit; font: inherit; border: 2px solid transparent; border-radius: 16px; background: rgba(255,255,255,.65); cursor: pointer; scroll-margin-block: 100px 24px; }
+.course-dialogue-line.is-current { border-color: #168c96; background: #dff5f4; color: #123e43; }
+.course-dialogue-line:focus-visible { outline: 3px solid #168c96; outline-offset: 2px; }
+.course-dialogue-vi { font-size: 1.15rem; font-weight: 650; line-height: 1.6; }
+.course-dialogue-ru { font-size: 1rem; line-height: 1.5; opacity: .8; }
+@media (prefers-reduced-motion: reduce) { .course-dialogue-line { scroll-behavior: auto; } }
