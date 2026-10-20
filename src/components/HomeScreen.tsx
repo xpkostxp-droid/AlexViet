@@ -1,3 +1,4 @@
+import { refreshApp } from '../appUpdates';
 import { BookIcon, CardsIcon, ChevronRightIcon, SpeakerOnIcon, GameIcon } from './icons';
 
 interface Props {
@@ -42,6 +43,7 @@ export function HomeScreen({ onOpenTheory, onOpenCards, onOpenPronunciation, onO
           <ChevronRightIcon className="home-tile-chevron" />
         </button>
       </div>
+      <button className="app-refresh" onClick={() => refreshApp()}>↻ Обновить</button>
     </div>
   );
 }
