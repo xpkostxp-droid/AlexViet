@@ -1,0 +1,830 @@
+[
+  {
+    "number": 1,
+    "page": 12,
+    "title": "Шесть тонов",
+    "vocabulary": [
+      {
+        "vi": "tên",
+        "ru": "имя"
+      },
+      {
+        "vi": "nắng",
+        "ru": "солнечный свет"
+      },
+      {
+        "vi": "mùa",
+        "ru": "сезон"
+      },
+      {
+        "vi": "nhỏ",
+        "ru": "маленький"
+      },
+      {
+        "vi": "cũng",
+        "ru": "тоже"
+      },
+      {
+        "vi": "đợi",
+        "ru": "ждать"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "tên",
+        "ru": "имя",
+        "sourceStart": 0.28,
+        "sourceEnd": 0.9
+      },
+      {
+        "vi": "nắng",
+        "ru": "солнечный свет",
+        "sourceStart": 6.05,
+        "sourceEnd": 6.9
+      },
+      {
+        "vi": "mùa",
+        "ru": "сезон",
+        "sourceStart": 11.9,
+        "sourceEnd": 12.85
+      },
+      {
+        "vi": "nhỏ",
+        "ru": "маленький",
+        "sourceStart": 17.9,
+        "sourceEnd": 18.95
+      },
+      {
+        "vi": "cũng",
+        "ru": "тоже",
+        "sourceStart": 23.9,
+        "sourceEnd": 24.7
+      },
+      {
+        "vi": "đợi",
+        "ru": "ждать",
+        "sourceStart": 33.9,
+        "sourceEnd": 34.8
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "page": 14,
+    "title": "Гласные a, ă, â, e, ê, i",
+    "vocabulary": [
+      {
+        "vi": "xa",
+        "ru": "далеко"
+      },
+      {
+        "vi": "mắt",
+        "ru": "глаз"
+      },
+      {
+        "vi": "cần",
+        "ru": "нуждаться; быть необходимым"
+      },
+      {
+        "vi": "khen",
+        "ru": "хвалить"
+      },
+      {
+        "vi": "mến",
+        "ru": "любить; быть расположенным"
+      },
+      {
+        "vi": "đi",
+        "ru": "идти"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "xa",
+        "ru": "далеко",
+        "sourceStart": 1.7,
+        "sourceEnd": 2.7
+      },
+      {
+        "vi": "mắt",
+        "ru": "глаз",
+        "sourceStart": 9.7,
+        "sourceEnd": 10.45
+      },
+      {
+        "vi": "cần",
+        "ru": "нуждаться; быть необходимым",
+        "sourceStart": 17.8,
+        "sourceEnd": 18.6
+      },
+      {
+        "vi": "khen",
+        "ru": "хвалить",
+        "sourceStart": 25.65,
+        "sourceEnd": 26.55
+      },
+      {
+        "vi": "mến",
+        "ru": "любить; быть расположенным",
+        "sourceStart": 33.6,
+        "sourceEnd": 34.45
+      },
+      {
+        "vi": "đi",
+        "ru": "идти",
+        "sourceStart": 41.65,
+        "sourceEnd": 42.55
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "page": 14,
+    "title": "Гласные o, ô, ơ, u, ư и сочетание ai",
+    "vocabulary": [
+      {
+        "vi": "có",
+        "ru": "иметь; да"
+      },
+      {
+        "vi": "không",
+        "ru": "нет; не"
+      },
+      {
+        "vi": "cờ",
+        "ru": "флаг"
+      },
+      {
+        "vi": "cũ",
+        "ru": "старый (о вещи)"
+      },
+      {
+        "vi": "rừng",
+        "ru": "лес"
+      },
+      {
+        "vi": "sai",
+        "ru": "неверный; ошибаться"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "có",
+        "ru": "иметь; да",
+        "sourceStart": 1.7,
+        "sourceEnd": 2.55
+      },
+      {
+        "vi": "không",
+        "ru": "нет; не",
+        "sourceStart": 10.05,
+        "sourceEnd": 10.8
+      },
+      {
+        "vi": "cờ",
+        "ru": "флаг",
+        "sourceStart": 18,
+        "sourceEnd": 18.95
+      },
+      {
+        "vi": "cũ",
+        "ru": "старый (о вещи)",
+        "sourceStart": 25.85,
+        "sourceEnd": 26.8
+      },
+      {
+        "vi": "rừng",
+        "ru": "лес",
+        "sourceStart": 33.85,
+        "sourceEnd": 34.75
+      },
+      {
+        "vi": "sai",
+        "ru": "неверный; ошибаться",
+        "sourceStart": 41.8,
+        "sourceEnd": 42.85
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "page": 14,
+    "title": "Сочетания ao, au, ay, âu, ây",
+    "vocabulary": [
+      {
+        "vi": "cháo",
+        "ru": "каша"
+      },
+      {
+        "vi": "sáu",
+        "ru": "шесть"
+      },
+      {
+        "vi": "chạy",
+        "ru": "бежать"
+      },
+      {
+        "vi": "đâu",
+        "ru": "где"
+      },
+      {
+        "vi": "đẩy",
+        "ru": "толкать"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "cháo",
+        "ru": "каша",
+        "sourceStart": 1.75,
+        "sourceEnd": 2.75
+      },
+      {
+        "vi": "sáu",
+        "ru": "шесть",
+        "sourceStart": 9.85,
+        "sourceEnd": 10.9
+      },
+      {
+        "vi": "chạy",
+        "ru": "бежать",
+        "sourceStart": 17.8,
+        "sourceEnd": 18.8
+      },
+      {
+        "vi": "đâu",
+        "ru": "где",
+        "sourceStart": 25.7,
+        "sourceEnd": 26.7
+      },
+      {
+        "vi": "đẩy",
+        "ru": "толкать",
+        "sourceStart": 33.85,
+        "sourceEnd": 34.85
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "page": 14,
+    "title": "Сочетания eo, êu, ia, iê, iu, oa",
+    "vocabulary": [
+      {
+        "vi": "mèo",
+        "ru": "кошка"
+      },
+      {
+        "vi": "nếu",
+        "ru": "если"
+      },
+      {
+        "vi": "kìa",
+        "ru": "там; вон"
+      },
+      {
+        "vi": "tiếc",
+        "ru": "сожалеть; жаль"
+      },
+      {
+        "vi": "níu",
+        "ru": "цепляться"
+      },
+      {
+        "vi": "hoa",
+        "ru": "цветок"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "mèo",
+        "ru": "кошка",
+        "sourceStart": 1.85,
+        "sourceEnd": 2.95
+      },
+      {
+        "vi": "nếu",
+        "ru": "если",
+        "sourceStart": 9.85,
+        "sourceEnd": 10.75
+      },
+      {
+        "vi": "kìa",
+        "ru": "там; вон",
+        "sourceStart": 17.8,
+        "sourceEnd": 18.75
+      },
+      {
+        "vi": "tiếc",
+        "ru": "сожалеть; жаль",
+        "sourceStart": 25.9,
+        "sourceEnd": 26.65
+      },
+      {
+        "vi": "níu",
+        "ru": "цепляться",
+        "sourceStart": 33.85,
+        "sourceEnd": 34.8
+      },
+      {
+        "vi": "hoa",
+        "ru": "цветок",
+        "sourceStart": 41.95,
+        "sourceEnd": 42.9
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "page": 14,
+    "title": "Сочетания oi, oo, ôi, ơi, ua, ui",
+    "vocabulary": [
+      {
+        "vi": "nói",
+        "ru": "говорить"
+      },
+      {
+        "vi": "soong",
+        "ru": "кастрюля"
+      },
+      {
+        "vi": "đôi",
+        "ru": "пара"
+      },
+      {
+        "vi": "đợi",
+        "ru": "ждать"
+      },
+      {
+        "vi": "lụa",
+        "ru": "шёлк"
+      },
+      {
+        "vi": "núi",
+        "ru": "гора"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "nói",
+        "ru": "говорить",
+        "sourceStart": 1.8,
+        "sourceEnd": 2.8
+      },
+      {
+        "vi": "soong",
+        "ru": "кастрюля",
+        "sourceStart": 9.9,
+        "sourceEnd": 10.95
+      },
+      {
+        "vi": "đôi",
+        "ru": "пара",
+        "sourceStart": 17.75,
+        "sourceEnd": 18.8
+      },
+      {
+        "vi": "đợi",
+        "ru": "ждать",
+        "sourceStart": 25.75,
+        "sourceEnd": 26.8
+      },
+      {
+        "vi": "lụa",
+        "ru": "шёлк",
+        "sourceStart": 33.75,
+        "sourceEnd": 34.75
+      },
+      {
+        "vi": "núi",
+        "ru": "гора",
+        "sourceStart": 41.9,
+        "sourceEnd": 42.9
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "page": 14,
+    "title": "Сочетания uô, uơ, uy, ưa, ưi, iêu",
+    "vocabulary": [
+      {
+        "vi": "uống",
+        "ru": "пить"
+      },
+      {
+        "vi": "thuở",
+        "ru": "пора; период времени"
+      },
+      {
+        "vi": "tủy",
+        "ru": "костный мозг"
+      },
+      {
+        "vi": "trưa",
+        "ru": "полдень"
+      },
+      {
+        "vi": "ngửi",
+        "ru": "нюхать"
+      },
+      {
+        "vi": "nhiều",
+        "ru": "много"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "uống",
+        "ru": "пить",
+        "sourceStart": 1.8,
+        "sourceEnd": 2.7
+      },
+      {
+        "vi": "thuở",
+        "ru": "пора; период времени",
+        "sourceStart": 9.65,
+        "sourceEnd": 10.75
+      },
+      {
+        "vi": "tủy",
+        "ru": "костный мозг",
+        "sourceStart": 17.7,
+        "sourceEnd": 18.75
+      },
+      {
+        "vi": "trưa",
+        "ru": "полдень",
+        "sourceStart": 25.7,
+        "sourceEnd": 26.7
+      },
+      {
+        "vi": "ngửi",
+        "ru": "нюхать",
+        "sourceStart": 33.7,
+        "sourceEnd": 34.7
+      },
+      {
+        "vi": "nhiều",
+        "ru": "много",
+        "sourceStart": 41.9,
+        "sourceEnd": 42.95
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "page": 14,
+    "title": "Сочетания oai, oay, uôi, ươi, ươu",
+    "vocabulary": [
+      {
+        "vi": "xoài",
+        "ru": "манго"
+      },
+      {
+        "vi": "loay hoay",
+        "ru": "возиться; вертеться"
+      },
+      {
+        "vi": "suối",
+        "ru": "ручей"
+      },
+      {
+        "vi": "tươi",
+        "ru": "свежий"
+      },
+      {
+        "vi": "hươu",
+        "ru": "олень"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "xoài",
+        "ru": "манго",
+        "sourceStart": 1.8,
+        "sourceEnd": 2.9
+      },
+      {
+        "vi": "loay hoay",
+        "ru": "возиться; вертеться",
+        "sourceStart": 9.8,
+        "sourceEnd": 11.3
+      },
+      {
+        "vi": "suối",
+        "ru": "ручей",
+        "sourceStart": 19.8,
+        "sourceEnd": 20.8
+      },
+      {
+        "vi": "tươi",
+        "ru": "свежий",
+        "sourceStart": 27.9,
+        "sourceEnd": 28.8
+      },
+      {
+        "vi": "hươu",
+        "ru": "олень",
+        "sourceStart": 35.8,
+        "sourceEnd": 36.8
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "page": 16,
+    "title": "Согласные b, c, ch, d, đ, g, gh",
+    "vocabulary": [
+      {
+        "vi": "biết",
+        "ru": "знать"
+      },
+      {
+        "vi": "cờ",
+        "ru": "флаг"
+      },
+      {
+        "vi": "chia",
+        "ru": "делить"
+      },
+      {
+        "vi": "dày",
+        "ru": "толстый; плотный"
+      },
+      {
+        "vi": "đu đủ",
+        "ru": "папайя"
+      },
+      {
+        "vi": "gà",
+        "ru": "курица"
+      },
+      {
+        "vi": "ghen",
+        "ru": "ревновать"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "biết",
+        "ru": "знать",
+        "sourceStart": 1.7,
+        "sourceEnd": 2.4
+      },
+      {
+        "vi": "cờ",
+        "ru": "флаг",
+        "sourceStart": 9.7,
+        "sourceEnd": 10.45
+      },
+      {
+        "vi": "chia",
+        "ru": "делить",
+        "sourceStart": 17.7,
+        "sourceEnd": 18.45
+      },
+      {
+        "vi": "dày",
+        "ru": "толстый; плотный",
+        "sourceStart": 25.65,
+        "sourceEnd": 26.65
+      },
+      {
+        "vi": "đu đủ",
+        "ru": "папайя",
+        "sourceStart": 33.6,
+        "sourceEnd": 34.85
+      },
+      {
+        "vi": "gà",
+        "ru": "курица",
+        "sourceStart": 41.8,
+        "sourceEnd": 42.7
+      },
+      {
+        "vi": "ghen",
+        "ru": "ревновать",
+        "sourceStart": 49.6,
+        "sourceEnd": 50.5
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "page": 16,
+    "title": "Согласные h, k, kh, l, m, n, ng",
+    "vocabulary": [
+      {
+        "vi": "ho",
+        "ru": "кашлять"
+      },
+      {
+        "vi": "kim",
+        "ru": "игла"
+      },
+      {
+        "vi": "khó",
+        "ru": "трудный"
+      },
+      {
+        "vi": "lo",
+        "ru": "беспокоиться"
+      },
+      {
+        "vi": "máu",
+        "ru": "кровь"
+      },
+      {
+        "vi": "này",
+        "ru": "этот"
+      },
+      {
+        "vi": "ngọt",
+        "ru": "сладкий"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "ho",
+        "ru": "кашлять",
+        "sourceStart": 1.8,
+        "sourceEnd": 2.55
+      },
+      {
+        "vi": "kim",
+        "ru": "игла",
+        "sourceStart": 9.9,
+        "sourceEnd": 10.75
+      },
+      {
+        "vi": "khó",
+        "ru": "трудный",
+        "sourceStart": 17.7,
+        "sourceEnd": 18.7
+      },
+      {
+        "vi": "lo",
+        "ru": "беспокоиться",
+        "sourceStart": 25.8,
+        "sourceEnd": 26.7
+      },
+      {
+        "vi": "máu",
+        "ru": "кровь",
+        "sourceStart": 33.9,
+        "sourceEnd": 34.8
+      },
+      {
+        "vi": "này",
+        "ru": "этот",
+        "sourceStart": 41.85,
+        "sourceEnd": 42.8
+      },
+      {
+        "vi": "ngọt",
+        "ru": "сладкий",
+        "sourceStart": 49.75,
+        "sourceEnd": 50.6
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "page": 16,
+    "title": "Согласные nh, p, ph, q, r, s",
+    "vocabulary": [
+      {
+        "vi": "nhanh",
+        "ru": "быстро"
+      },
+      {
+        "vi": "pic-nic",
+        "ru": "пикник"
+      },
+      {
+        "vi": "phòng",
+        "ru": "комната"
+      },
+      {
+        "vi": "quét",
+        "ru": "подметать"
+      },
+      {
+        "vi": "rồi",
+        "ru": "уже"
+      },
+      {
+        "vi": "sông",
+        "ru": "река"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "nhanh",
+        "ru": "быстро",
+        "sourceStart": 1.8,
+        "sourceEnd": 2.75
+      },
+      {
+        "vi": "pic-nic",
+        "ru": "пикник",
+        "sourceStart": 9.8,
+        "sourceEnd": 10.8
+      },
+      {
+        "vi": "phòng",
+        "ru": "комната",
+        "sourceStart": 17.75,
+        "sourceEnd": 18.75
+      },
+      {
+        "vi": "quét",
+        "ru": "подметать",
+        "sourceStart": 25.9,
+        "sourceEnd": 26.65
+      },
+      {
+        "vi": "rồi",
+        "ru": "уже",
+        "sourceStart": 33.8,
+        "sourceEnd": 34.8
+      },
+      {
+        "vi": "sông",
+        "ru": "река",
+        "sourceStart": 41.85,
+        "sourceEnd": 42.75
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "page": 16,
+    "title": "Согласные t, th, tr, v, x и звук y",
+    "vocabulary": [
+      {
+        "vi": "toán",
+        "ru": "математика"
+      },
+      {
+        "vi": "thường",
+        "ru": "обычно"
+      },
+      {
+        "vi": "trống",
+        "ru": "барабан; пустой"
+      },
+      {
+        "vi": "vội",
+        "ru": "торопиться"
+      },
+      {
+        "vi": "xuống",
+        "ru": "спускаться"
+      },
+      {
+        "vi": "ý chí",
+        "ru": "сила воли"
+      }
+    ],
+    "phrases": [
+      {
+        "vi": "toán",
+        "ru": "математика",
+        "sourceStart": 1.8,
+        "sourceEnd": 2.6
+      },
+      {
+        "vi": "thường",
+        "ru": "обычно",
+        "sourceStart": 9.85,
+        "sourceEnd": 10.85
+      },
+      {
+        "vi": "trống",
+        "ru": "барабан; пустой",
+        "sourceStart": 17.9,
+        "sourceEnd": 18.7
+      },
+      {
+        "vi": "vội",
+        "ru": "торопиться",
+        "sourceStart": 25.8,
+        "sourceEnd": 26.7
+      },
+      {
+        "vi": "xuống",
+        "ru": "спускаться",
+        "sourceStart": 33.95,
+        "sourceEnd": 35
+      },
+      {
+        "vi": "ý chí",
+        "ru": "сила воли",
+        "sourceStart": 41.9,
+        "sourceEnd": 43.2
+      }
+    ]
+  }
+]
