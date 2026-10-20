@@ -6,11 +6,12 @@ import { listeningLessons } from '../src/content/listening/lessons';
 import { courseListeningLessons } from '../src/content/listening/course';
 import { listeningChoices } from '../src/domain/listening';
 
-const source = JSON.parse(fs.readFileSync(new URL('./listening/phrasebook2/source-manifest.json', import.meta.url), 'utf8'));
+const source = JSON.parse(fs.readFileSync(path.resolve('scripts/listening/phrasebook2/source-manifest.json'), 'utf8'));
 describe('three listening collections', () => {
   it('keeps existing identities and gives every new lesson a separate identity', () => {
     expect(listeningLessons).toHaveLength(17);
     expect(courseListeningLessons).toHaveLength(10);
+    for (const lesson of courseListeningLessons) expect(lesson.phrases.length).toBeGreaterThan(0);
     expect(phrasebook2Lessons).toHaveLength(59);
     expect(listeningLessons.map(x => x.id)).toEqual(Array.from({ length: 17 }, (_, i) => `listening-${String(i + 1).padStart(2, '0')}`));
     const ids = [...listeningLessons, ...courseListeningLessons, ...phrasebook2Lessons].map(x => x.id);
