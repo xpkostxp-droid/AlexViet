@@ -80,3 +80,37 @@ describe('listening flow', () => {
     expect(host.textContent).not.toContain('Фраза 2 из');
   });
 });
+
+describe('multiple listening collections and device voice', () => {
+  it('preserves completion from other collections and completes a course with device speech', async () => {
+    const fixture = { id: 'course-test', number: 1, title: 'Тест озвучки', audio: '', vocabulary: [{ vi: 'gia đình', ru: 'семья' }], phrases: [
+      { id: 't1', vi: 'gia đình', ru: 'семья', start: 0, end: 0 },
+      { id: 't2', vi: 'con', ru: 'ребёнок', start: 0, end: 0 },
+      { id: 't3', vi: 'vợ', ru: 'жена', start: 0, end: 0 },
+      { id: 't4', vi: 'chồng', ru: 'муж', start: 0, end: 0 },
+    ] };
+    class Utterance { text: string; constructor(text: string) { this.text = text; } }
+    vi.stubGlobal('SpeechSynthesisUtterance', Utterance);
+    const utterances: { onend?: () => void; text: string }[] = [];
+    const cancel = vi.fn();
+    vi.stubGlobal('speechSynthesis', { getVoices: () => [{ lang: 'vi-VN', name: 'Vietnamese' }], speak: (u: { text: string }) => utterances.push(u), cancel });
+    await act(async () => root.unmount());
+    localStorage.setItem('alexviet-listening-completed-v1', JSON.stringify(['listening-01', 'phrasebook2-13']));
+    root = createRoot(host);
+    await act(async () => root.render(<ListeningScreen onBack={vi.fn()} lessons={[fixture]} title="Наш курс" />));
+    await click(button('Тест озвучки'));
+    expect(FakeAudio.instances).toHaveLength(0);
+    await click(button('Воспроизвести и начать'));
+    for (const p of fixture.phrases) {
+      expect(utterances[utterances.length - 1].text).toBe(p.vi);
+      const choice = [...host.querySelectorAll<HTMLButtonElement>('.listening-choice')].find(b => b.textContent === p.ru)!;
+      expect(choice.disabled).toBe(true);
+      await act(async () => utterances[utterances.length - 1].onend?.());
+      await click(choice);
+      await act(async () => vi.advanceTimersByTime(700));
+    }
+    expect(host.querySelectorAll('.listening-transcript li')).toHaveLength(4);
+    expect(JSON.parse(localStorage.getItem('alexviet-listening-completed-v1')!)).toEqual(['listening-01', 'phrasebook2-13', 'course-test']);
+    expect(cancel).toHaveBeenCalled();
+  });
+});
