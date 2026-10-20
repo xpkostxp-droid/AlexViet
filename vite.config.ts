@@ -2,8 +2,16 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+const buildVersion = new Date().toISOString();
+
 export default defineConfig({
-  plugins: [react()],
+  define: { __APP_VERSION__: JSON.stringify(buildVersion) },
+  plugins: [react(), {
+    name: 'app-version',
+    generateBundle() {
+      this.emitFile({ type: 'asset', fileName: 'version.json', source: JSON.stringify({ version: buildVersion }) });
+    },
+  }],
   // Относительный base — чтобы собранный сайт одинаково работал что на
   // GitHub Pages (адрес вида username.github.io/AlexViet/), что на любом
   // другом хостинге в подпапке или в корне. В сайте нет client-side
