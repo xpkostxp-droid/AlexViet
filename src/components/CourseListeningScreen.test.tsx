@@ -4,6 +4,8 @@ import { describe, expect, it, vi } from 'vitest';
 import CourseListeningScreen from './CourseListeningScreen';
 import { courseListeningLessons } from '../content/listening/course';
 
+vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true);
+
 describe('course dialogue listening', () => {
   it('opens family lesson and highlights the line matching audio time', async () => {
     const host = document.createElement('div');
@@ -24,6 +26,18 @@ describe('course dialogue listening', () => {
     const active = host.querySelector('[aria-current="true"]')!;
     expect(active.textContent).toContain(line.vi);
     expect(active.textContent).toContain(line.ru);
+    expect(host.querySelector('.is-speaking')?.textContent).toBe('Tôi');
+    await act(async () => {
+      audio.currentTime = 4.3;
+      audio.dispatchEvent(new Event('timeupdate', { bubbles: true }));
+    });
+    expect(host.querySelectorAll('.is-speaking')).toHaveLength(1);
+    expect(host.querySelector('.is-speaking')?.textContent).toBe('tên');
+    await act(async () => {
+      audio.currentTime = 6.5;
+      audio.dispatchEvent(new Event('seeked', { bubbles: true }));
+    });
+    expect(host.querySelector('.is-speaking')).toBeNull();
     await act(async () => root.unmount());
     host.remove();
   });
