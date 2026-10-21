@@ -4,6 +4,7 @@ export interface ListeningPhrase {
   ru: string;
   start: number;
   end: number;
+  words?: { text: string; start: number; end: number }[];
 }
 
 export interface ListeningLesson {

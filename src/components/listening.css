@@ -38,3 +38,6 @@
 .course-dialogue-vi { font-size: 1.15rem; font-weight: 650; line-height: 1.6; }
 .course-dialogue-ru { font-size: 1rem; line-height: 1.5; opacity: .8; }
 @media (prefers-reduced-motion: reduce) { .course-dialogue-line { scroll-behavior: auto; } }
+
+.course-word { border-radius: 5px; }
+.course-word.is-speaking { color: #fff; background: #087981; box-shadow: 0 0 0 3px #087981; }
