@@ -41,3 +41,5 @@
 
 .course-word { border-radius: 5px; }
 .course-word.is-speaking { color: #fff; background: #087981; box-shadow: 0 0 0 3px #087981; }
+
+.course-translation-controls [aria-pressed="true"] { border-color: var(--color-primary); background: var(--color-primary-soft); }
