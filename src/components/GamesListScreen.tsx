@@ -1,7 +1,7 @@
 import { BackButton } from './BackButton';
 import { numberGameRanges, type NumberGameRange } from '../content/games/ranges';
 export function GamesListScreen({ onBack, onOpenTravel, onOpenProfessions, onOpenFamily, onOpenNumbers, onOpenBigNumbers, onOpenDialogues }: { onOpenTravel: () => void; onOpenProfessions: () => void; onOpenFamily: () => void; onBack: () => void; onOpenDialogues: () => void; onOpenBigNumbers: () => void; onOpenNumbers: (range: NumberGameRange) => void }) {
-  return <div className="screen">
+  return <div className="screen games-menu-screen">
     <BackButton onClick={onBack} label="На главную" />
     <h1 className="screen-title">Игра</h1>
     <details className="game-lesson-group"><summary className="lesson-item game-menu-item"><span className="lesson-number">Игра · Урок 5 · Профессии и место работы</span></summary>

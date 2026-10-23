@@ -1300,3 +1300,24 @@ a:focus-visible {
 .family-note { font-size: .85rem; opacity: .75; }
 .family-result { text-align: center; }
 .family-result button { margin-top: 12px; }
+
+/* Readable green lesson menu. */
+.games-menu-screen .lesson-item {
+  color: #246448;
+  background: #f2faf4;
+  border: 2px solid #73ae88;
+  box-shadow: 0 3px 10px rgb(48 112 73 / 10%);
+  cursor: pointer;
+}
+.games-menu-screen .lesson-number {
+  color: #236343;
+  font-size: 1.05rem;
+  font-weight: 650;
+  line-height: 1.4;
+}
+.games-menu-screen .game-section-heading { color: #236343; }
+.games-menu-screen .lesson-item:hover { background: #e3f3e7; border-color: #40865c; }
+.games-menu-screen .lesson-item:focus-visible { outline: 3px solid #246448; outline-offset: 3px; }
+.games-menu-screen .game-lesson-group { margin-bottom: 14px; }
+.games-menu-screen .game-lesson-group[open] > summary { background: #dcefe2; border-color: #40865c; margin-bottom: 12px; }
+.games-menu-screen .game-lesson-group > button { margin-bottom: 10px; }
