@@ -1,3 +1,4 @@
+import { FamilyGameScreen } from './components/FamilyGameScreen';
 import { DialogueGameScreen } from './components/DialogueGameScreen';
 import { BackButton } from './components/BackButton';
 import { BigNumbersGameScreen } from './components/BigNumbersGameScreen';
@@ -25,6 +26,7 @@ type Screen =
   | { name: 'home' }
   | { name: 'listening' }
   | { name: 'games-list' }
+  | { name: 'family-game' }
   | { name: 'dialogue-games-list' }
   | { name: 'dialogue-game-setup' }
   | { name: 'dialogue-game'; direction: NumberGameDirection }
@@ -64,7 +66,10 @@ function App() {
       return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
-      return <GamesListScreen onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+      return <GamesListScreen onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+
+    case 'family-game':
+      return <FamilyGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
 
     case 'dialogue-games-list':
       return <div className="screen"><BackButton onClick={() => setScreen({ name: 'games-list' })} label="К играм" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Диалоги</h1><button className="lesson-item game-menu-item" onClick={() => setScreen({ name: 'dialogue-game-setup' })}><span className="game-menu-icon" aria-hidden="true">💬</span><span className="lesson-number">Собери фразу</span><span>17 фраз · Знакомство и возраст</span></button></div>;

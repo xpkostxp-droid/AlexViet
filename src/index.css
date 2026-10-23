@@ -1281,3 +1281,22 @@ a:focus-visible {
 .home-tile-listening .home-tile-icon { width: 26px; height: 26px; flex-shrink: 0; }
 
 .app-refresh { display: block; margin: 16px auto; padding: 10px 18px; border: 1px solid rgba(15,122,114,.25); border-radius: 22px; color: #0f7a72; background: rgba(255,255,255,.85); font: inherit; cursor: pointer; }
+
+/* Lesson 10: family learning and blitz */
+.family-screen { max-width: 720px; }
+.family-picture { display: block; width: min(100%, 320px); max-height: 200px; margin: 0 auto; }
+.family-mode { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+.family-mode strong { font-size: 1.25rem; }
+.family-mode span { line-height: 1.5; }
+.family-card { padding: 12px 16px; background: #fffdf8; border: 1px solid #d5e9e4; border-radius: 24px; text-align: center; }
+.family-card h2 { margin: 8px 0; font-size: clamp(1.2rem, 5vw, 1.7rem); }
+.family-card p { margin: 8px 0; }
+.family-choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+.family-choices button { min-height: 58px; white-space: normal; overflow-wrap: anywhere; font-size: clamp(1rem, 4.5vw, 1.3rem); padding: 12px 8px; }
+.family-choices .family-wrong { background: #fce9e7; border-color: #ce6b62; color: #92473e; opacity: .65; }
+.family-choices .family-correct { background: #d4eee4; border-color: #287d67; color: #205e4f; opacity: 1; }
+.family-feedback { min-height: 46px; text-align: center; }
+.family-counter, .family-note { text-align: center; }
+.family-note { font-size: .85rem; opacity: .75; }
+.family-result { text-align: center; }
+.family-result button { margin-top: 12px; }
