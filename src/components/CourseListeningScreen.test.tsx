@@ -41,4 +41,33 @@ describe('course dialogue listening', () => {
     await act(async () => root.unmount());
     host.remove();
   });
+  it('opens lesson 11, follows its words, and toggles translation without seeking or losing lesson 10', async () => {
+    const host = document.createElement('div'); document.body.append(host);
+    const root = createRoot(host);
+    const button = (text: string) => [...host.querySelectorAll('button')].find(item => item.textContent?.includes(text))!;
+    await act(async () => root.render(<CourseListeningScreen onBack={vi.fn()} />));
+    expect(button('Урок 10')).toBeDefined();
+    await act(async () => button('Урок 11').click());
+    expect(host.querySelector('h1')?.textContent).toContain('Урок 11');
+    const audio = host.querySelector('audio')!;
+    expect(audio.src).toContain('lesson-11.mp3');
+    await act(async () => {
+      audio.currentTime = 3.8;
+      audio.dispatchEvent(new Event('timeupdate', { bubbles: true }));
+    });
+    expect(host.querySelector('.is-speaking')?.textContent).toBe('Hùng');
+    expect(host.querySelectorAll('.course-dialogue-ru')).toHaveLength(12);
+    await act(async () => button('Без перевода').click());
+    expect(host.querySelector('.course-dialogue-ru')).toBeNull();
+    expect(host.querySelectorAll('.course-dialogue-vi')).toHaveLength(12);
+    expect(audio.currentTime).toBe(3.8);
+    await act(async () => button('С переводом').click());
+    expect(host.querySelectorAll('.course-dialogue-ru')).toHaveLength(12);
+    await act(async () => button('К нашим урокам').click());
+    await act(async () => button('Урок 10').click());
+    expect(host.querySelector('h1')?.textContent).toContain('Урок 10 — Семья');
+    expect(host.querySelector('audio')?.src).toContain('family-10.mp3');
+    await act(async () => root.unmount()); host.remove();
+  });
+
 });

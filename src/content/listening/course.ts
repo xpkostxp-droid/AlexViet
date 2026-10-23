@@ -1,4 +1,5 @@
 import type { ListeningLesson } from './types';
+import { courseLesson11 } from './course11';
 
 export const courseListeningLessons: ListeningLesson[] = [
   {
@@ -684,5 +685,6 @@ export const courseListeningLessons: ListeningLesson[] = [
         ]
       }
     ]
-  }
+  },
+  courseLesson11,
 ];

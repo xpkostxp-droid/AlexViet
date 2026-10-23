@@ -12,7 +12,8 @@ const source = JSON.parse(fs.readFileSync(path.resolve('scripts/listening/phrase
 describe('three listening collections', () => {
   it('keeps existing identities and gives every new lesson a separate identity', () => {
     expect(listeningLessons).toHaveLength(17);
-    expect(courseListeningLessons.map(lesson => lesson.number)).toEqual([10]);
+    expect(courseListeningLessons.map(lesson => lesson.number)).toEqual([10, 11]);
+    for (const lesson of courseListeningLessons) expect(fs.existsSync(path.resolve('public', lesson.audio))).toBe(true);
     expect(phrasebook2Lessons).toHaveLength(phrasebook2PublishedLessons);
     expect(listeningLessons.map(x => x.id)).toEqual(Array.from({ length: 17 }, (_, i) => `listening-${String(i + 1).padStart(2, '0')}`));
     const ids = [...listeningLessons, ...courseListeningLessons, ...phrasebook2Lessons].map(x => x.id);
