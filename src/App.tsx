@@ -1,3 +1,4 @@
+import { PeopleGameScreen } from './components/PeopleGameScreen';
 import { NumbersGamesListScreen } from './components/NumbersGamesListScreen';
 import { TravelGameScreen } from './components/TravelGameScreen';
 import { ProfessionsGameScreen } from './components/ProfessionsGameScreen';
@@ -33,6 +34,7 @@ type Screen =
   | { name: 'family-game' }
   | { name: 'professions-game' }
   | { name: 'travel-game' }
+  | { name: 'people-game' }
   | { name: 'dialogue-games-list' }
   | { name: 'dialogue-game-setup' }
   | { name: 'dialogue-game'; direction: NumberGameDirection }
@@ -72,10 +74,13 @@ function App() {
       return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
-      return <GamesListScreen onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
+      return <GamesListScreen onOpenPeople={() => setScreen({ name: 'people-game' })} onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
 
     case 'numbers-games-list':
       return <NumbersGamesListScreen onBack={() => setScreen({ name: 'games-list' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+
+    case 'people-game':
+      return <PeopleGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
 
     case 'travel-game':
       return <TravelGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
