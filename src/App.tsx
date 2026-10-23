@@ -1,3 +1,4 @@
+import { ProfessionsGameScreen } from './components/ProfessionsGameScreen';
 import { FamilyGameScreen } from './components/FamilyGameScreen';
 import { DialogueGameScreen } from './components/DialogueGameScreen';
 import { BackButton } from './components/BackButton';
@@ -27,6 +28,7 @@ type Screen =
   | { name: 'listening' }
   | { name: 'games-list' }
   | { name: 'family-game' }
+  | { name: 'professions-game' }
   | { name: 'dialogue-games-list' }
   | { name: 'dialogue-game-setup' }
   | { name: 'dialogue-game'; direction: NumberGameDirection }
@@ -66,7 +68,10 @@ function App() {
       return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
-      return <GamesListScreen onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+      return <GamesListScreen onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+
+    case 'professions-game':
+      return <ProfessionsGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
 
     case 'family-game':
       return <FamilyGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
