@@ -1,3 +1,4 @@
+import { NumbersGamesListScreen } from './components/NumbersGamesListScreen';
 import { TravelGameScreen } from './components/TravelGameScreen';
 import { ProfessionsGameScreen } from './components/ProfessionsGameScreen';
 import { FamilyGameScreen } from './components/FamilyGameScreen';
@@ -28,6 +29,7 @@ type Screen =
   | { name: 'home' }
   | { name: 'listening' }
   | { name: 'games-list' }
+  | { name: 'numbers-games-list' }
   | { name: 'family-game' }
   | { name: 'professions-game' }
   | { name: 'travel-game' }
@@ -70,7 +72,10 @@ function App() {
       return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
-      return <GamesListScreen onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onBack={() => setScreen({ name: 'home' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+      return <GamesListScreen onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
+
+    case 'numbers-games-list':
+      return <NumbersGamesListScreen onBack={() => setScreen({ name: 'games-list' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
 
     case 'travel-game':
       return <TravelGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
@@ -82,7 +87,7 @@ function App() {
       return <FamilyGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
 
     case 'dialogue-games-list':
-      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'games-list' })} label="К играм" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Диалоги</h1><button className="lesson-item game-menu-item" onClick={() => setScreen({ name: 'dialogue-game-setup' })}><span className="game-menu-icon" aria-hidden="true">💬</span><span className="lesson-number">Собери фразу</span><span>17 фраз · Знакомство и возраст</span></button></div>;
+      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'numbers-games-list' })} label="К уроку 9" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Диалоги</h1><button className="lesson-item game-menu-item" onClick={() => setScreen({ name: 'dialogue-game-setup' })}><span className="game-menu-icon" aria-hidden="true">💬</span><span className="lesson-number">Собери фразу</span><span>17 фраз · Знакомство и возраст</span></button></div>;
 
     case 'dialogue-game-setup':
       return <div className="screen"><BackButton onClick={() => setScreen({ name: 'dialogue-games-list' })} label="К диалогам" /><span className="badge">Урок 9 · Диалоги</span><h1 className="screen-title">Собери фразу</h1><button className="big-button" onClick={() => setScreen({ name: 'dialogue-game', direction: 'vi-ru' })}>Вьетнамский → Русский</button><button className="big-button" onClick={() => setScreen({ name: 'dialogue-game', direction: 'ru-vi' })}>Русский → Вьетнамский</button></div>;
@@ -90,12 +95,12 @@ function App() {
       return <DialogueGameScreen key={screen.direction} direction={screen.direction} onBack={() => setScreen({ name: 'dialogue-game-setup' })} />;
 
     case 'big-numbers-setup':
-      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'games-list' })} label="К играм" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Большие числа</h1><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: false })}>Цифры → Вьетнамский</button><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: true })}>Вьетнамский → Цифры</button></div>;
+      return <div className="screen"><BackButton onClick={() => setScreen({ name: 'numbers-games-list' })} label="К уроку 9" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Большие числа</h1><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: false })}>Цифры → Вьетнамский</button><button className="big-button" onClick={() => setScreen({ name: 'big-numbers-game', reverse: true })}>Вьетнамский → Цифры</button></div>;
     case 'big-numbers-game':
       return <BigNumbersGameScreen key={String(screen.reverse)} reverse={screen.reverse} onBack={() => setScreen({ name: 'big-numbers-setup' })} />;
 
     case 'numbers-game-setup':
-      return <GameDirectionScreen range={screen.range} onBack={() => setScreen({ name: 'games-list' })} onStart={direction => setScreen({ name: 'numbers-game', direction, range: screen.range })} />;
+      return <GameDirectionScreen range={screen.range} onBack={() => setScreen({ name: 'numbers-games-list' })} onStart={direction => setScreen({ name: 'numbers-game', direction, range: screen.range })} />;
 
     case 'numbers-game':
       if(screen.range === 'phone') return <PhoneGameScreen key={screen.direction} direction={screen.direction} onBack={() => setScreen({ name: 'numbers-game-setup', range: 'phone' })} />;
