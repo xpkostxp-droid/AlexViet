@@ -42,7 +42,7 @@ export function FamilyGameScreen({ onBack }: { onBack: () => void }) {
       <button className="lesson-item family-mode" onClick={() => start('blitz')}><strong>⚡ Блиц</strong><span>Вся семья вперемешку, каждое задание один раз. Затем можно повторить ошибки.</span></button>
     </> : current ? <>
       <p className="family-counter">{mode === 'learn' ? `Закреплено: ${mastered} из 19` : review ? `Осталось в повторе: ${queue.length}` : `Карточка ${20 - queue.length} из 19`} · Без таймера</p>
-      <div className="family-card"><FamilyPicture id={current[0]} /><h2>{current[2]}</h2><p>Как это по-вьетнамски?</p></div>
+      <div className="family-card"><FamilyPicture id={current[0]} /><h2>{current[2]}</h2></div>
       <div className="family-choices">{options.map(i => <button key={i} disabled={correct || wrong.includes(i)} className={'choice-button ' + (wrong.includes(i) ? 'family-wrong' : correct && i === index ? 'family-correct' : '')} onClick={() => answer(i)}>{familyWords[i][1]}</button>)}</div>
       <p className="family-feedback" role="status">{correct ? `Верно! ${current[1]}` : wrong.length ? 'Попробуй другой вариант. Это слово добавлено в повтор.' : 'Выбери один из шести вариантов'}</p>
       {correct && <button className="secondary-button" disabled={!voice} onClick={() => speakVietnamese(current[1])}>🔊 Послушать ещё</button>}
