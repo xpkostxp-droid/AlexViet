@@ -1,5 +1,5 @@
 import { BackButton } from './BackButton';
-export function GamesListScreen({ onBack, onOpenPeople, onOpenTravel, onOpenProfessions, onOpenFamily, onOpenLesson9 }: { onOpenPeople: () => void; onBack: () => void; onOpenTravel: () => void; onOpenProfessions: () => void; onOpenFamily: () => void; onOpenLesson9: () => void }) {
+export function GamesListScreen({ onBack, onOpenRestaurant, onOpenPeople, onOpenTravel, onOpenProfessions, onOpenFamily, onOpenLesson9 }: { onOpenRestaurant: () => void; onOpenPeople: () => void; onBack: () => void; onOpenTravel: () => void; onOpenProfessions: () => void; onOpenFamily: () => void; onOpenLesson9: () => void }) {
  return <div className="screen games-menu-screen">
   <BackButton onClick={onBack} label="На главную"/><h1 className="screen-title">Игра</h1>
   {[
@@ -8,6 +8,7 @@ export function GamesListScreen({ onBack, onOpenPeople, onOpenTravel, onOpenProf
    ['Урок 8 · Мы, они и все', onOpenPeople],
    ['Урок 9 · Числительные', onOpenLesson9],
    ['Урок 10 · Семья', onOpenFamily],
+   ['Ресторан', onOpenRestaurant],
   ].map(([title, open]) => <button key={title as string} className="lesson-item game-menu-item game-lesson-group" onClick={open as () => void}><span className="lesson-number">Игра · {title as string}</span></button>)}
  </div>;
 }
