@@ -4,6 +4,7 @@ import { NumbersGamesListScreen } from './components/NumbersGamesListScreen';
 import { TravelGameScreen } from './components/TravelGameScreen';
 import { ProfessionsGameScreen } from './components/ProfessionsGameScreen';
 import { FamilyGameScreen } from './components/FamilyGameScreen';
+import { HouseGameScreen } from './components/HouseGameScreen';
 import { DialogueGameScreen } from './components/DialogueGameScreen';
 import { BackButton } from './components/BackButton';
 import { BigNumbersGameScreen } from './components/BigNumbersGameScreen';
@@ -33,6 +34,7 @@ type Screen =
   | { name: 'games-list' }
   | { name: 'numbers-games-list' }
   | { name: 'family-game' }
+  | { name: 'house-game' }
   | { name: 'professions-game' }
   | { name: 'travel-game' }
   | { name: 'people-game' }
@@ -76,7 +78,7 @@ function App() {
       return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
-      return <GamesListScreen onOpenRestaurant={() => setScreen({ name: 'restaurant-game' })} onOpenPeople={() => setScreen({ name: 'people-game' })} onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
+      return <GamesListScreen onOpenRestaurant={() => setScreen({ name: 'restaurant-game' })} onOpenPeople={() => setScreen({ name: 'people-game' })} onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenHouse={() => setScreen({ name: 'house-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
 
     case 'numbers-games-list':
       return <NumbersGamesListScreen onBack={() => setScreen({ name: 'games-list' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
@@ -95,6 +97,9 @@ function App() {
 
     case 'family-game':
       return <FamilyGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
+
+    case 'house-game':
+      return <HouseGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
 
     case 'dialogue-games-list':
       return <div className="screen"><BackButton onClick={() => setScreen({ name: 'numbers-games-list' })} label="К уроку 9" /><span className="badge">Урок 9 · Числа и возраст</span><h1 className="screen-title">Диалоги</h1><button className="lesson-item game-menu-item" onClick={() => setScreen({ name: 'dialogue-game-setup' })}><span className="game-menu-icon" aria-hidden="true">💬</span><span className="lesson-number">Собери фразу</span><span>17 фраз · Знакомство и возраст</span></button></div>;
