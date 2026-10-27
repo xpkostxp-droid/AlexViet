@@ -1,4 +1,25 @@
-import { AdjectivePicture, adjectivePictureIds } from './AdjectivePicture';
+import { adjectiveLearning } from '../content/games/house';
+const adjectivePngs: Record<string, string> = {
+  'big': './images/games/adjectives/01-big.png',
+  'small': './images/games/adjectives/02-small.png',
+  'high': './images/games/adjectives/03-high.png',
+  'low': './images/games/adjectives/04-low.png',
+  'long': './images/games/adjectives/05-long.png',
+  'short': './images/games/adjectives/06-short.png',
+  'many': './images/games/adjectives/07-many.png',
+  'few': './images/games/adjectives/08-few.png',
+  'beautiful': './images/games/adjectives/09-beautiful.png',
+  'ugly': './images/games/adjectives/10-ugly.png',
+  'good': './images/games/adjectives/11-good.png',
+  'poor': './images/games/adjectives/12-poor.png',
+  'substance': './images/games/adjectives/13-substance.png',
+  'amount': './images/games/adjectives/14-amount.png',
+  'quality': './images/games/adjectives/15-quality.png',
+  'quality-good': './images/games/adjectives/16-quality-good.png',
+  'quality-poor': './images/games/adjectives/17-quality-poor.png',
+  'quality-high': './images/games/adjectives/18-quality-high.png',
+  'product-quality-high': './images/games/adjectives/19-product-quality-high.png',
+};
 function House({ x, y, scale = 1, floors = 1, pretty = false, ugly = false }: { x: number; y: number; scale?: number; floors?: number; pretty?: boolean; ugly?: boolean }) {
   const h = 42 + Math.max(0, floors - 1) * 18;
   return <g transform={`translate(${x} ${y}) scale(${scale})`}>
@@ -56,7 +77,6 @@ function Quality({ level }: { level: 'good'|'poor'|'high' }) {
 }
 
 function Concept({ id }: { id: string }) {
-  if (adjectivePictureIds.includes(id)) return <AdjectivePicture id={id}/>;
   if (id === 'house' || id === 'private-house') return <House x={160} y={155} scale={1.1}/>;
   if (id === 'hotel') return <g><Building x={160} y={158} floors={5} scale={.92}/><text x="160" y="35" textAnchor="middle" fontSize="18" fontWeight="700" fill="#d45f68">HOTEL</text></g>;
   if (id === 'apartment') return <Building x={160} y={158} floors={6} scale={.9}/>;
@@ -110,6 +130,8 @@ function Concept({ id }: { id: string }) {
 }
 
 export function HousePicture({ id }: { id: string }) {
+  const png = adjectivePngs[id];
+  if (png) return <img className="family-picture" src={png} alt={adjectiveLearning.find(item => item[0] === id)?.[2] ?? 'Иллюстрация прилагательного'} width={480} height={300} decoding="async" style={{ objectFit: 'contain', borderRadius: 18 }} />;
   return <svg className="family-picture" viewBox="0 0 320 200" role="img" aria-label="Иллюстрация дома и прилагательного">
     <rect x="4" y="4" width="312" height="192" rx="28" fill="#eef8f6"/>
     <ellipse cx="160" cy="172" rx="122" ry="9" fill="#d8eae6"/>
