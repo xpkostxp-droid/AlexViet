@@ -42,10 +42,18 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
   const index = queue[0];
   const current = items[index];
 
-  const prepare = (next: number[], source: readonly HouseGameItem[], learning = false) => {
+  const prepare = (next: number[], source: readonly HouseGameItem[], learning = false, adjectives = mode === 'adjectives') => {
     setQueue(next);
     if (learning && next.length) introduced.current = Math.max(introduced.current, next[0] + 1);
-    setOptions(next.length ? optionsFor(learning ? source.slice(0, introduced.current) : source, next[0]) : []);
+    if (adjectives && next.length) {
+      const start = Math.floor(next[0] / 3) * 3;
+      const candidates = start === 0
+        ? Array.from({ length: Math.min(3, introduced.current) }, (_, i) => i)
+        : source.map((_, i) => i).slice(start, start + 3);
+      // The final block has one word: add two already learned alternatives.
+      for (let i = start - 1; candidates.length < 3 && start > 0 && i >= 0; i--) candidates.push(i);
+      setOptions(shuffled(candidates));
+    } else setOptions(next.length ? optionsFor(learning ? source.slice(0, introduced.current) : source, next[0]) : []);
     setWrong([]);
     setCorrect(false);
     locked.current = false;
@@ -62,7 +70,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     setErrors([]);
     setReview(false);
     setFirstCorrect(0);
-    prepare(value === 'adjectives' ? adjectiveBlock(0) : value === 'blitz' ? shuffled(source.map((_, i) => i)) : source.map((_, i) => i), source, value !== 'blitz');
+    prepare(value === 'adjectives' ? adjectiveBlock(0) : value === 'blitz' ? shuffled(source.map((_, i) => i)) : source.map((_, i) => i), source, value !== 'blitz', value === 'adjectives');
   };
 
   const exit = () => {
@@ -93,7 +101,8 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     }, 1800);
   };
 
-  const mastered = Object.values(wins).filter(n => n >= 2).length;
+  const required = mode === 'adjectives' ? 3 : 2;
+  const mastered = Object.values(wins).filter(n => n >= required).length;
   const total = items.length;
 
   return <div className="screen family-screen">
@@ -110,7 +119,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       </button>
       <button className="lesson-item family-mode" onClick={() => start('adjectives')}>
         <strong>🎨 Обучение · Прилагательные</strong>
-        <span>19 слов и выражений, по три за раз. Дважды вспомни каждое без ошибки — откроется следующий блок. Качество — в конце. Варианты ответа: от двух до шести.</span>
+        <span>19 слов и выражений, по три за раз. Трижды вспомни каждое без ошибки — откроется следующий блок. Качество — в конце. Не больше трёх вариантов ответа.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('blitz')}>
         <strong>⚡ Блиц · Всё вместе</strong>
@@ -128,6 +137,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       <div className="family-card">
         <HousePicture id={current[0]} />
         <h2>{current[2]}</h2>
+        {mode === 'adjectives' && <p>Чистых ответов: {wins[index] ?? 0} из 3</p>}
       </div>
       <div className="family-choices">
         {options.map(i => <button
@@ -145,7 +155,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       <HousePicture id="blitz-private-beautiful" />
       <h2>{mode === 'blitz' ? review ? 'Повтор завершён!' : 'Блиц завершён!' : 'Раздел выучен!'}</h2>
       <p>{mode !== 'blitz'
-        ? `Все ${total} слов и выражений угаданы дважды без ошибки.`
+        ? `Все ${total} слов и выражений угаданы ${mode === 'adjectives' ? 'трижды' : 'дважды'} без ошибки.`
         : review
           ? 'Все выбранные сочетания пройдены.'
           : `С первой попытки: ${firstCorrect} из ${total}`}</p>
