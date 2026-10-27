@@ -140,6 +140,20 @@
         "examples": 74,
         "dialogues": 4
       }
+    },
+    {
+      "lessonId": "lesson-11",
+      "number": 11,
+      "title": "Дом и прилагательные (Nhà)",
+      "file": "lesson-11.json",
+      "sha256": "871eac31dda804a442321cfd08c2741992d38eb0b2d323e85db427d8ec7d60bf",
+      "counts": {
+        "cards": 37,
+        "words": 78,
+        "grammar": 0,
+        "examples": 11,
+        "dialogues": 0
+      }
     }
   ]
 }

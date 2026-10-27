@@ -19,7 +19,7 @@ export const lesson11Cards: FlashCard[] = [
   { id: 'l11-15', lessonId: 'lesson-11', vi: 'phòng bếp', ru: 'кухня' },
   { id: 'l11-16', lessonId: 'lesson-11', vi: 'phòng khách', ru: 'гостиная' },
   { id: 'l11-17', lessonId: 'lesson-11', vi: 'phòng làm việc', ru: 'кабинет / рабочая комната' },
-  { id: 'l11-18', lessonId: 'lesson-11', vi: 'ban công', ru: 'балкон' },
+  { id: 'l11-18', lessonId: 'lesson-11', vi: 'ban công', ru: 'балкон', imageUrl: `${import.meta.env.BASE_URL}images/games/house/balcony.png` },
   { id: 'l11-19', lessonId: 'lesson-11', vi: 'to', ru: 'большой' },
   { id: 'l11-20', lessonId: 'lesson-11', vi: 'nhỏ', ru: 'маленький' },
   { id: 'l11-21', lessonId: 'lesson-11', vi: 'cao', ru: 'высокий' },

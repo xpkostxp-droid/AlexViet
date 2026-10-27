@@ -1,0 +1,1312 @@
+{
+  "schemaVersion": 1,
+  "lessonId": "lesson-11",
+  "number": 11,
+  "title": "Дом и прилагательные (Nhà)",
+  "cards": [
+    {
+      "id": "l11-01",
+      "lessonId": "lesson-11",
+      "vi": "nhà",
+      "ru": "дом"
+    },
+    {
+      "id": "l11-02",
+      "lessonId": "lesson-11",
+      "vi": "khách sạn",
+      "ru": "отель"
+    },
+    {
+      "id": "l11-03",
+      "lessonId": "lesson-11",
+      "vi": "chung cư",
+      "ru": "многоквартирный дом / жилой комплекс"
+    },
+    {
+      "id": "l11-04",
+      "lessonId": "lesson-11",
+      "vi": "nhà riêng",
+      "ru": "частный дом"
+    },
+    {
+      "id": "l11-05",
+      "lessonId": "lesson-11",
+      "vi": "thuê",
+      "ru": "арендовать"
+    },
+    {
+      "id": "l11-06",
+      "lessonId": "lesson-11",
+      "vi": "chủ nhà",
+      "ru": "хозяин дома / арендодатель"
+    },
+    {
+      "id": "l11-07",
+      "lessonId": "lesson-11",
+      "vi": "đất",
+      "ru": "земля"
+    },
+    {
+      "id": "l11-08",
+      "lessonId": "lesson-11",
+      "vi": "rẻ",
+      "ru": "дешёвый / недорогой"
+    },
+    {
+      "id": "l11-09",
+      "lessonId": "lesson-11",
+      "vi": "tầng",
+      "ru": "этаж"
+    },
+    {
+      "id": "l11-10",
+      "lessonId": "lesson-11",
+      "vi": "thang bộ",
+      "ru": "лестница"
+    },
+    {
+      "id": "l11-11",
+      "lessonId": "lesson-11",
+      "vi": "thang máy",
+      "ru": "лифт"
+    },
+    {
+      "id": "l11-12",
+      "lessonId": "lesson-11",
+      "vi": "phòng",
+      "ru": "комната"
+    },
+    {
+      "id": "l11-13",
+      "lessonId": "lesson-11",
+      "vi": "phòng ngủ",
+      "ru": "спальня"
+    },
+    {
+      "id": "l11-14",
+      "lessonId": "lesson-11",
+      "vi": "phòng vệ sinh",
+      "ru": "туалет / ванная"
+    },
+    {
+      "id": "l11-15",
+      "lessonId": "lesson-11",
+      "vi": "phòng bếp",
+      "ru": "кухня"
+    },
+    {
+      "id": "l11-16",
+      "lessonId": "lesson-11",
+      "vi": "phòng khách",
+      "ru": "гостиная"
+    },
+    {
+      "id": "l11-17",
+      "lessonId": "lesson-11",
+      "vi": "phòng làm việc",
+      "ru": "кабинет / рабочая комната"
+    },
+    {
+      "id": "l11-18",
+      "lessonId": "lesson-11",
+      "vi": "ban công",
+      "ru": "балкон",
+      "imageUrl": "./images/games/house/balcony.png"
+    },
+    {
+      "id": "l11-19",
+      "lessonId": "lesson-11",
+      "vi": "to",
+      "ru": "большой"
+    },
+    {
+      "id": "l11-20",
+      "lessonId": "lesson-11",
+      "vi": "nhỏ",
+      "ru": "маленький"
+    },
+    {
+      "id": "l11-21",
+      "lessonId": "lesson-11",
+      "vi": "cao",
+      "ru": "высокий"
+    },
+    {
+      "id": "l11-22",
+      "lessonId": "lesson-11",
+      "vi": "thấp",
+      "ru": "низкий"
+    },
+    {
+      "id": "l11-23",
+      "lessonId": "lesson-11",
+      "vi": "dài",
+      "ru": "длинный"
+    },
+    {
+      "id": "l11-24",
+      "lessonId": "lesson-11",
+      "vi": "ngắn",
+      "ru": "короткий"
+    },
+    {
+      "id": "l11-25",
+      "lessonId": "lesson-11",
+      "vi": "nhiều",
+      "ru": "много"
+    },
+    {
+      "id": "l11-26",
+      "lessonId": "lesson-11",
+      "vi": "ít",
+      "ru": "мало"
+    },
+    {
+      "id": "l11-27",
+      "lessonId": "lesson-11",
+      "vi": "đẹp",
+      "ru": "красивый"
+    },
+    {
+      "id": "l11-28",
+      "lessonId": "lesson-11",
+      "vi": "xấu",
+      "ru": "некрасивый / плохой"
+    },
+    {
+      "id": "l11-29",
+      "lessonId": "lesson-11",
+      "vi": "tốt",
+      "ru": "хороший"
+    },
+    {
+      "id": "l11-30",
+      "lessonId": "lesson-11",
+      "vi": "kém",
+      "ru": "плохой / низкого качества"
+    },
+    {
+      "id": "l11-31",
+      "lessonId": "lesson-11",
+      "vi": "chất",
+      "ru": "вещество / материал"
+    },
+    {
+      "id": "l11-32",
+      "lessonId": "lesson-11",
+      "vi": "lượng",
+      "ru": "количество / объём"
+    },
+    {
+      "id": "l11-33",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng",
+      "ru": "качество / качественный"
+    },
+    {
+      "id": "l11-34",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng tốt",
+      "ru": "хорошее качество"
+    },
+    {
+      "id": "l11-35",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng kém",
+      "ru": "плохое качество"
+    },
+    {
+      "id": "l11-36",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng cao",
+      "ru": "высокое качество"
+    },
+    {
+      "id": "l11-37",
+      "lessonId": "lesson-11",
+      "vi": "sản phẩm chất lượng cao",
+      "ru": "продукт высокого качества"
+    }
+  ],
+  "words": [
+    {
+      "id": "l11-01",
+      "lessonId": "lesson-11",
+      "vi": "nhà",
+      "ru": "дом",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-01"
+      }
+    },
+    {
+      "id": "l11-02",
+      "lessonId": "lesson-11",
+      "vi": "khách sạn",
+      "ru": "отель",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-02"
+      }
+    },
+    {
+      "id": "l11-03",
+      "lessonId": "lesson-11",
+      "vi": "chung cư",
+      "ru": "многоквартирный дом / жилой комплекс",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-03"
+      }
+    },
+    {
+      "id": "l11-04",
+      "lessonId": "lesson-11",
+      "vi": "nhà riêng",
+      "ru": "частный дом",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-04"
+      }
+    },
+    {
+      "id": "l11-05",
+      "lessonId": "lesson-11",
+      "vi": "thuê",
+      "ru": "арендовать",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-05"
+      }
+    },
+    {
+      "id": "l11-06",
+      "lessonId": "lesson-11",
+      "vi": "chủ nhà",
+      "ru": "хозяин дома / арендодатель",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-06"
+      }
+    },
+    {
+      "id": "l11-07",
+      "lessonId": "lesson-11",
+      "vi": "đất",
+      "ru": "земля",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-07"
+      }
+    },
+    {
+      "id": "l11-08",
+      "lessonId": "lesson-11",
+      "vi": "rẻ",
+      "ru": "дешёвый / недорогой",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-08"
+      }
+    },
+    {
+      "id": "l11-09",
+      "lessonId": "lesson-11",
+      "vi": "tầng",
+      "ru": "этаж",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-09"
+      }
+    },
+    {
+      "id": "l11-10",
+      "lessonId": "lesson-11",
+      "vi": "thang bộ",
+      "ru": "лестница",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-10"
+      }
+    },
+    {
+      "id": "l11-11",
+      "lessonId": "lesson-11",
+      "vi": "thang máy",
+      "ru": "лифт",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-11"
+      }
+    },
+    {
+      "id": "l11-12",
+      "lessonId": "lesson-11",
+      "vi": "phòng",
+      "ru": "комната",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-12"
+      }
+    },
+    {
+      "id": "l11-13",
+      "lessonId": "lesson-11",
+      "vi": "phòng ngủ",
+      "ru": "спальня",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-13"
+      }
+    },
+    {
+      "id": "l11-14",
+      "lessonId": "lesson-11",
+      "vi": "phòng vệ sinh",
+      "ru": "туалет / ванная",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-14"
+      }
+    },
+    {
+      "id": "l11-15",
+      "lessonId": "lesson-11",
+      "vi": "phòng bếp",
+      "ru": "кухня",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-15"
+      }
+    },
+    {
+      "id": "l11-16",
+      "lessonId": "lesson-11",
+      "vi": "phòng khách",
+      "ru": "гостиная",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-16"
+      }
+    },
+    {
+      "id": "l11-17",
+      "lessonId": "lesson-11",
+      "vi": "phòng làm việc",
+      "ru": "кабинет / рабочая комната",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-17"
+      }
+    },
+    {
+      "id": "l11-18",
+      "lessonId": "lesson-11",
+      "vi": "ban công",
+      "ru": "балкон",
+      "imageUrl": "./images/games/house/balcony.png",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-18"
+      }
+    },
+    {
+      "id": "l11-19",
+      "lessonId": "lesson-11",
+      "vi": "to",
+      "ru": "большой",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-19"
+      }
+    },
+    {
+      "id": "l11-20",
+      "lessonId": "lesson-11",
+      "vi": "nhỏ",
+      "ru": "маленький",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-20"
+      }
+    },
+    {
+      "id": "l11-21",
+      "lessonId": "lesson-11",
+      "vi": "cao",
+      "ru": "высокий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-21"
+      }
+    },
+    {
+      "id": "l11-22",
+      "lessonId": "lesson-11",
+      "vi": "thấp",
+      "ru": "низкий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-22"
+      }
+    },
+    {
+      "id": "l11-23",
+      "lessonId": "lesson-11",
+      "vi": "dài",
+      "ru": "длинный",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-23"
+      }
+    },
+    {
+      "id": "l11-24",
+      "lessonId": "lesson-11",
+      "vi": "ngắn",
+      "ru": "короткий",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-24"
+      }
+    },
+    {
+      "id": "l11-25",
+      "lessonId": "lesson-11",
+      "vi": "nhiều",
+      "ru": "много",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-25"
+      }
+    },
+    {
+      "id": "l11-26",
+      "lessonId": "lesson-11",
+      "vi": "ít",
+      "ru": "мало",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-26"
+      }
+    },
+    {
+      "id": "l11-27",
+      "lessonId": "lesson-11",
+      "vi": "đẹp",
+      "ru": "красивый",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-27"
+      }
+    },
+    {
+      "id": "l11-28",
+      "lessonId": "lesson-11",
+      "vi": "xấu",
+      "ru": "некрасивый / плохой",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-28"
+      }
+    },
+    {
+      "id": "l11-29",
+      "lessonId": "lesson-11",
+      "vi": "tốt",
+      "ru": "хороший",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-29"
+      }
+    },
+    {
+      "id": "l11-30",
+      "lessonId": "lesson-11",
+      "vi": "kém",
+      "ru": "плохой / низкого качества",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-30"
+      }
+    },
+    {
+      "id": "l11-31",
+      "lessonId": "lesson-11",
+      "vi": "chất",
+      "ru": "вещество / материал",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-31"
+      }
+    },
+    {
+      "id": "l11-32",
+      "lessonId": "lesson-11",
+      "vi": "lượng",
+      "ru": "количество / объём",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-32"
+      }
+    },
+    {
+      "id": "l11-33",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng",
+      "ru": "качество / качественный",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-33"
+      }
+    },
+    {
+      "id": "l11-34",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng tốt",
+      "ru": "хорошее качество",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-34"
+      }
+    },
+    {
+      "id": "l11-35",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng kém",
+      "ru": "плохое качество",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-35"
+      }
+    },
+    {
+      "id": "l11-36",
+      "lessonId": "lesson-11",
+      "vi": "chất lượng cao",
+      "ru": "высокое качество",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-36"
+      }
+    },
+    {
+      "id": "l11-37",
+      "lessonId": "lesson-11",
+      "vi": "sản phẩm chất lượng cao",
+      "ru": "продукт высокого качества",
+      "source": {
+        "file": "src/content/cards.ts",
+        "pointer": "l11-37"
+      }
+    },
+    {
+      "vi": "khách sạn",
+      "ru": "отель",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/1/items/0"
+      }
+    },
+    {
+      "vi": "chung cư",
+      "ru": "многоквартирный дом / жилой комплекс",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/1/items/1"
+      }
+    },
+    {
+      "vi": "nhà riêng",
+      "ru": "частный дом",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/1/items/2"
+      }
+    },
+    {
+      "vi": "nhà",
+      "ru": "дом",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/0"
+      }
+    },
+    {
+      "vi": "thuê",
+      "ru": "арендовать",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/1"
+      }
+    },
+    {
+      "vi": "chủ nhà",
+      "ru": "хозяин дома / арендодатель",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/2"
+      }
+    },
+    {
+      "vi": "đất",
+      "ru": "земля",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/3"
+      }
+    },
+    {
+      "vi": "rẻ",
+      "ru": "дешёвый / недорогой",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/4"
+      }
+    },
+    {
+      "vi": "tầng",
+      "ru": "этаж",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/5"
+      }
+    },
+    {
+      "vi": "thang bộ",
+      "ru": "лестница",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/6"
+      }
+    },
+    {
+      "vi": "thang máy",
+      "ru": "лифт",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/2/items/7"
+      }
+    },
+    {
+      "vi": "phòng",
+      "ru": "комната",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/0"
+      }
+    },
+    {
+      "vi": "phòng ngủ",
+      "ru": "спальня",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/1"
+      }
+    },
+    {
+      "vi": "phòng vệ sinh",
+      "ru": "туалет / ванная",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/2"
+      }
+    },
+    {
+      "vi": "phòng bếp",
+      "ru": "кухня",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/3"
+      }
+    },
+    {
+      "vi": "phòng khách",
+      "ru": "гостиная",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/4"
+      }
+    },
+    {
+      "vi": "phòng làm việc",
+      "ru": "кабинет / рабочая комната",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/5"
+      }
+    },
+    {
+      "vi": "ban công",
+      "ru": "балкон",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/3/items/6"
+      }
+    },
+    {
+      "vi": "nhà riêng",
+      "ru": "[ня] [зиэн]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/0"
+      }
+    },
+    {
+      "vi": "thuê",
+      "ru": "[туэ]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/1"
+      }
+    },
+    {
+      "vi": "rẻ",
+      "ru": "[зе]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/2"
+      }
+    },
+    {
+      "vi": "phòng ngủ",
+      "ru": "[ну]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/3"
+      }
+    },
+    {
+      "vi": "phòng khách",
+      "ru": "[хат]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/4"
+      }
+    },
+    {
+      "vi": "to",
+      "ru": "большой",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/0"
+      }
+    },
+    {
+      "vi": "nhỏ",
+      "ru": "маленький",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/1"
+      }
+    },
+    {
+      "vi": "cao",
+      "ru": "высокий",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/2"
+      }
+    },
+    {
+      "vi": "thấp",
+      "ru": "низкий",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/3"
+      }
+    },
+    {
+      "vi": "dài",
+      "ru": "длинный",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/4"
+      }
+    },
+    {
+      "vi": "ngắn",
+      "ru": "короткий",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/5"
+      }
+    },
+    {
+      "vi": "nhiều",
+      "ru": "много",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/6"
+      }
+    },
+    {
+      "vi": "ít",
+      "ru": "мало",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/7"
+      }
+    },
+    {
+      "vi": "đẹp",
+      "ru": "красивый",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/8"
+      }
+    },
+    {
+      "vi": "xấu",
+      "ru": "некрасивый / плохой",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/9"
+      }
+    },
+    {
+      "vi": "tốt",
+      "ru": "хороший",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/10"
+      }
+    },
+    {
+      "vi": "kém",
+      "ru": "плохой / низкого качества",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/5/items/11"
+      }
+    },
+    {
+      "vi": "dài",
+      "ru": "[зай]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/6/0"
+      }
+    },
+    {
+      "vi": "ngắn",
+      "ru": "[нган]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/6/1"
+      }
+    },
+    {
+      "vi": "nhiều",
+      "ru": "[ниэу]",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/6/2"
+      }
+    },
+    {
+      "vi": "Chất",
+      "ru": "вещество, материал.",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/8/0"
+      }
+    },
+    {
+      "vi": "Lượng",
+      "ru": "количество, объём.",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/8/1"
+      }
+    },
+    {
+      "vi": "Chất lượng",
+      "ru": "качество; качественный.",
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/8/2"
+      }
+    }
+  ],
+  "grammar": [],
+  "examples": [
+    {
+      "vi": "nhà riêng",
+      "ru": "[ня] [зиэн]",
+      "tokens": [
+        "nhà",
+        "riêng"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/0"
+      }
+    },
+    {
+      "vi": "thuê",
+      "ru": "[туэ]",
+      "tokens": [
+        "thuê"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/1"
+      }
+    },
+    {
+      "vi": "rẻ",
+      "ru": "[зе]",
+      "tokens": [
+        "rẻ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/2"
+      }
+    },
+    {
+      "vi": "phòng ngủ",
+      "ru": "[ну]",
+      "tokens": [
+        "phòng",
+        "ngủ"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/3"
+      }
+    },
+    {
+      "vi": "phòng khách",
+      "ru": "[хат]",
+      "tokens": [
+        "phòng",
+        "khách"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/4/4"
+      }
+    },
+    {
+      "vi": "dài",
+      "ru": "[зай]",
+      "tokens": [
+        "dài"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/6/0"
+      }
+    },
+    {
+      "vi": "ngắn",
+      "ru": "[нган]",
+      "tokens": [
+        "ngắn"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/6/1"
+      }
+    },
+    {
+      "vi": "nhiều",
+      "ru": "[ниэу]",
+      "tokens": [
+        "nhiều"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/6/2"
+      }
+    },
+    {
+      "vi": "Chất",
+      "ru": "вещество, материал.",
+      "tokens": [
+        "Chất"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/8/0"
+      }
+    },
+    {
+      "vi": "Lượng",
+      "ru": "количество, объём.",
+      "tokens": [
+        "Lượng"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/8/1"
+      }
+    },
+    {
+      "vi": "Chất lượng",
+      "ru": "качество; качественный.",
+      "tokens": [
+        "Chất",
+        "lượng"
+      ],
+      "source": {
+        "file": "src/content/theory/lesson11.ts",
+        "pointer": "/sections/8/2"
+      }
+    }
+  ],
+  "dialogues": [],
+  "theory": [
+    {
+      "kind": "text",
+      "heading": "Nhà — Дом",
+      "paragraphs": [
+        "Урок о типах жилья, комнатах, полезных словах для описания дома и базовых прилагательных."
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "1. Три типа жилья",
+      "items": [
+        {
+          "vi": "khách sạn",
+          "ru": "отель"
+        },
+        {
+          "vi": "chung cư",
+          "ru": "многоквартирный дом / жилой комплекс"
+        },
+        {
+          "vi": "nhà riêng",
+          "ru": "частный дом"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "2. Полезные слова про жильё",
+      "items": [
+        {
+          "vi": "nhà",
+          "ru": "дом"
+        },
+        {
+          "vi": "thuê",
+          "ru": "арендовать"
+        },
+        {
+          "vi": "chủ nhà",
+          "ru": "хозяин дома / арендодатель"
+        },
+        {
+          "vi": "đất",
+          "ru": "земля"
+        },
+        {
+          "vi": "rẻ",
+          "ru": "дешёвый / недорогой"
+        },
+        {
+          "vi": "tầng",
+          "ru": "этаж"
+        },
+        {
+          "vi": "thang bộ",
+          "ru": "лестница"
+        },
+        {
+          "vi": "thang máy",
+          "ru": "лифт"
+        }
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "3. Phòng — комнаты",
+      "items": [
+        {
+          "vi": "phòng",
+          "ru": "комната"
+        },
+        {
+          "vi": "phòng ngủ",
+          "ru": "спальня"
+        },
+        {
+          "vi": "phòng vệ sinh",
+          "ru": "туалет / ванная"
+        },
+        {
+          "vi": "phòng bếp",
+          "ru": "кухня"
+        },
+        {
+          "vi": "phòng khách",
+          "ru": "гостиная"
+        },
+        {
+          "vi": "phòng làm việc",
+          "ru": "кабинет / рабочая комната"
+        },
+        {
+          "vi": "ban công",
+          "ru": "балкон"
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Русская транскрипция из конспекта",
+      "items": [
+        "nhà riêng — [ня] [зиэн]",
+        "thuê — [туэ]",
+        "rẻ — [зе]",
+        "phòng ngủ — [ну]",
+        "phòng khách — [хат]"
+      ]
+    },
+    {
+      "kind": "vocab",
+      "heading": "4. Прилагательные",
+      "items": [
+        {
+          "vi": "to",
+          "ru": "большой"
+        },
+        {
+          "vi": "nhỏ",
+          "ru": "маленький"
+        },
+        {
+          "vi": "cao",
+          "ru": "высокий"
+        },
+        {
+          "vi": "thấp",
+          "ru": "низкий"
+        },
+        {
+          "vi": "dài",
+          "ru": "длинный"
+        },
+        {
+          "vi": "ngắn",
+          "ru": "короткий"
+        },
+        {
+          "vi": "nhiều",
+          "ru": "много"
+        },
+        {
+          "vi": "ít",
+          "ru": "мало"
+        },
+        {
+          "vi": "đẹp",
+          "ru": "красивый"
+        },
+        {
+          "vi": "xấu",
+          "ru": "некрасивый / плохой"
+        },
+        {
+          "vi": "tốt",
+          "ru": "хороший"
+        },
+        {
+          "vi": "kém",
+          "ru": "плохой / низкого качества"
+        }
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Транскрипция прилагательных из конспекта",
+      "items": [
+        "dài — [зай]",
+        "ngắn — [нган]",
+        "nhiều — [ниэу]"
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "5. Пары прилагательных",
+      "columns": [
+        "Вьетнамский",
+        "Русский"
+      ],
+      "rows": [
+        [
+          "to — nhỏ",
+          "большой — маленький"
+        ],
+        [
+          "cao — thấp",
+          "высокий — низкий"
+        ],
+        [
+          "dài — ngắn",
+          "длинный — короткий"
+        ],
+        [
+          "nhiều — ít",
+          "много — мало"
+        ],
+        [
+          "đẹp — xấu",
+          "красивый — некрасивый / плохой"
+        ],
+        [
+          "tốt — kém",
+          "хороший — плохой / низкого качества"
+        ]
+      ]
+    },
+    {
+      "kind": "text",
+      "heading": "6. Chất lượng — качество",
+      "paragraphs": [
+        "Chất — вещество, материал.",
+        "Lượng — количество, объём.",
+        "Chất lượng — качество; качественный."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Примеры с chất lượng",
+      "columns": [
+        "Вьетнамский",
+        "Русский"
+      ],
+      "rows": [
+        [
+          "Chất lượng tốt",
+          "хорошее качество"
+        ],
+        [
+          "Chất lượng kém",
+          "плохое качество"
+        ],
+        [
+          "Chất lượng cao",
+          "высокое качество"
+        ],
+        [
+          "Sản phẩm chất lượng cao",
+          "продукт высокого качества"
+        ]
+      ]
+    },
+    {
+      "kind": "tip",
+      "heading": "Как устроены названия комнат",
+      "items": [
+        "phòng + ngủ → phòng ngủ: комната для сна → спальня.",
+        "phòng + khách → phòng khách: комната для гостей → гостиная.",
+        "phòng + làm việc → phòng làm việc: комната для работы → кабинет."
+      ]
+    }
+  ]
+}
