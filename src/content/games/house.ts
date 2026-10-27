@@ -104,3 +104,13 @@ export function advanceAdjectiveBlock(queue: number[], wins: Record<number, numb
   }
   return { ...next, blockStart };
 }
+
+// Keep up to three unfinished words, replacing each mastered word immediately.
+export function advanceHouseLearning(queue: number[], wins: Record<number, number>, failed: boolean, nextWord: number, total: number) {
+  const index = queue[0];
+  const count = failed ? 0 : (wins[index] ?? 0) + 1;
+  const remaining = queue.slice(1);
+  if (count < 3) remaining.push(index);
+  else if (nextWord < total) remaining.push(nextWord++);
+  return { queue: remaining, wins: { ...wins, [index]: count }, nextWord };
+}

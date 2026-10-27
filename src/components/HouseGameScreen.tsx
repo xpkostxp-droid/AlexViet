@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { adjectiveBlock, advanceAdjectiveBlock, adjectiveLearning, advanceHouse, houseBlitz, houseLearning, optionsFor, shuffled, type HouseGameItem } from '../content/games/house';
+import { adjectiveBlock, advanceHouseLearning, adjectiveLearning, advanceHouse, houseBlitz, houseLearning, optionsFor, shuffled, type HouseGameItem } from '../content/games/house';
 import { hasVietnameseVoice, onVoicesChanged, speakVietnamese, stopSpeaking } from '../domain/speech';
 import { BackButton } from './BackButton';
 import { HousePicture } from './HousePicture';
@@ -18,7 +18,7 @@ function titleFor(mode: Mode | null, review: boolean) {
 }
 
 export function HouseGameScreen({ onBack }: { onBack: () => void }) {
-  const [blockStart, setBlockStart] = useState(0);
+  const [nextWord, setNextWord] = useState(3);
   const [mode, setMode] = useState<Mode | null>(null);
   const [queue, setQueue] = useState<number[]>([]);
   const [wins, setWins] = useState<Record<number, number>>({});
@@ -46,12 +46,11 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     setQueue(next);
     if (learning && next.length) introduced.current = Math.max(introduced.current, next[0] + 1);
     if (blockLearning && next.length) {
-      const start = Math.floor(next[0] / 3) * 3;
-      const candidates = start === 0
-        ? Array.from({ length: Math.min(3, introduced.current) }, (_, i) => i)
-        : source.map((_, i) => i).slice(start, start + 3);
-      // The final block has one word: add two already learned alternatives.
-      for (let i = start - 1; candidates.length < 3 && start > 0 && i >= 0; i--) candidates.push(i);
+      const candidates = next.filter(i => i < introduced.current);
+      // At the end, retain familiar distractors without requeueing learned words.
+      for (let i = introduced.current - 1; candidates.length < Math.min(3, introduced.current) && i >= 0; i--) {
+        if (!candidates.includes(i)) candidates.push(i);
+      }
       setOptions(shuffled(candidates));
     } else setOptions(next.length ? optionsFor(learning ? source.slice(0, introduced.current) : source, next[0]) : []);
     setWrong([]);
@@ -64,7 +63,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     stopSpeaking();
     const source = itemsFor(value);
     setMode(value);
-    setBlockStart(0);
+    setNextWord(Math.min(3, source.length));
     introduced.current = 2;
     setWins({});
     setErrors([]);
@@ -92,11 +91,11 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     speakVietnamese(current[1]);
     if (mode === 'blitz' && !review && wrong.length === 0) setFirstCorrect(n => n + 1);
     const next = mode !== 'blitz'
-      ? advanceAdjectiveBlock(queue, wins, wrong.length > 0, blockStart, items.length)
-      : { ...advanceHouse(queue, wins, wrong.length > 0, mode !== 'blitz'), blockStart };
+      ? advanceHouseLearning(queue, wins, wrong.length > 0, nextWord, items.length)
+      : { ...advanceHouse(queue, wins, wrong.length > 0, mode !== 'blitz'), nextWord };
     timer.current = setTimeout(() => {
       setWins(next.wins);
-      setBlockStart(next.blockStart);
+      setNextWord(next.nextWord);
       prepare(next.queue, items, mode !== 'blitz');
     }, 1800);
   };
@@ -115,11 +114,11 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       <HousePicture id="blitz-private-beautiful" />
       <button className="lesson-item family-mode" onClick={() => start('house')}>
         <strong>🏠 Обучение · Дом</strong>
-        <span>18 слов, по три за раз. Три чистых ответа на каждое слово. Не больше трёх вариантов ответа.</span>
+        <span>18 слов, по три за раз. После трёх чистых ответов слово заменяется следующим. Не больше трёх вариантов ответа.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('adjectives')}>
         <strong>🎨 Обучение · Прилагательные</strong>
-        <span>19 слов и выражений, по три за раз. Трижды вспомни каждое без ошибки — откроется следующий блок. Качество — в конце. Не больше трёх вариантов ответа.</span>
+        <span>19 слов и выражений, по три за раз. Трижды вспомни слово без ошибки — его сразу заменит следующее. Качество — в конце. Не больше трёх вариантов ответа.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('blitz')}>
         <strong>⚡ Блиц · Всё вместе</strong>
@@ -133,7 +132,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
             ? `Осталось в повторе: ${queue.length}`
             : `Карточка ${total - queue.length + 1} из ${total}`} · Без таймера
       </p>
-      {mode !== 'blitz' && <p className="family-counter" data-testid="adjective-block">Блок {Math.floor(blockStart / 3) + 1} из {Math.ceil(items.length / 3)} · {adjectiveBlock(blockStart, items.length).map(i => items[i][1]).join(' · ')}</p>}
+      {mode !== 'blitz' && <p className="family-counter" data-testid="adjective-block">Сейчас учим: {queue.map(i => items[i][1]).join(' · ')}</p>}
       <div className="family-card">
         <HousePicture id={current[0]} />
         <h2>{current[2]}</h2>

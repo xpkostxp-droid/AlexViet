@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { adjectiveLearning, advanceHouse, houseBlitz, houseLearning } from './house';
+import { adjectiveLearning, advanceHouseLearning, advanceHouse, houseBlitz, houseLearning } from './house';
 
 describe('lesson 11 house game', () => {
   it('splits learning into house and adjectives', () => {
@@ -29,4 +29,14 @@ describe('lesson 11 house game', () => {
     const result = advanceHouse([0, 1, 2], {}, false, false);
     expect(result.queue).toEqual([1, 2]);
   });
+});
+
+it('replaces each mastered word immediately and keeps a failed word rotating', () => {
+ const next=advanceHouseLearning([0,1,2],{0:2,1:2,2:0},false,3,6);
+ expect(next.queue).toEqual([1,2,3]);expect(next.nextWord).toBe(4);
+ const second=advanceHouseLearning(next.queue,next.wins,false,next.nextWord,6);
+ expect(second.queue).toEqual([2,3,4]);
+ const failed=advanceHouseLearning(second.queue,{...second.wins,2:2},true,second.nextWord,6);
+ expect(failed.queue).toEqual([3,4,2]);expect(failed.wins[2]).toBe(0);
+ expect(failed.nextWord).toBe(5);
 });
