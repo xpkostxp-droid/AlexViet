@@ -1,4 +1,4 @@
-import { adjectiveLearning } from '../content/games/house';
+import { adjectiveLearning, houseLearning, houseBlitz } from '../content/games/house';
 const adjectivePngs: Record<string, string> = {
   'big': './images/games/adjectives/01-big.png',
   'small': './images/games/adjectives/02-small.png',
@@ -130,8 +130,9 @@ function Concept({ id }: { id: string }) {
 }
 
 export function HousePicture({ id }: { id: string }) {
-  const png = adjectivePngs[id];
-  if (png) return <img className="family-picture" src={png} alt={adjectiveLearning.find(item => item[0] === id)?.[2] ?? 'Иллюстрация прилагательного'} width={480} height={300} decoding="async" style={{ objectFit: 'contain', borderRadius: 18 }} />;
+  const housePngs: Record<string, string> = {"house": "private-house", "private-house": "private-house", "apartment": "apartment", "living-room": "living-room", "office": "office", "bedroom": "bedroom", "bathroom": "bathroom", "kitchen": "kitchen", "blitz-apartment-high": "apartment", "blitz-apartment-many-floors": "apartment", "blitz-private-big": "private-house", "blitz-private-beautiful": "private-house", "blitz-bedroom-small": "bedroom", "blitz-bathroom-small": "bathroom", "blitz-kitchen-beautiful": "kitchen", "blitz-office-big": "office"};
+  const png = adjectivePngs[id] ?? (housePngs[id] ? './images/games/house/' + housePngs[id] + '.png' : undefined);
+  if (png) return <img className="family-picture" src={png} alt={[...adjectiveLearning, ...houseLearning, ...houseBlitz].find(item => item[0] === id)?.[2] ?? 'Иллюстрация урока'} width={480} height={300} decoding="async" style={{ objectFit: 'contain', borderRadius: 18 }} />;
   return <svg className="family-picture" viewBox="0 0 320 200" role="img" aria-label="Иллюстрация дома и прилагательного">
     <rect x="4" y="4" width="312" height="192" rx="28" fill="#eef8f6"/>
     <ellipse cx="160" cy="172" rx="122" ry="9" fill="#d8eae6"/>

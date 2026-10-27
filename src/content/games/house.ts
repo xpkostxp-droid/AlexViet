@@ -89,18 +89,18 @@ export function advanceHouse(queue: number[], wins: Record<number, number>, fail
 
 
 export const ADJECTIVE_BLOCK_SIZE = 3;
-export function adjectiveBlock(start: number): number[] {
-  return adjectiveLearning.map((_, i) => i).slice(start, start + ADJECTIVE_BLOCK_SIZE);
+export function adjectiveBlock(start: number, total = adjectiveLearning.length): number[] {
+  return Array.from({ length: total }, (_, i) => i).slice(start, start + ADJECTIVE_BLOCK_SIZE);
 }
-export function advanceAdjectiveBlock(queue: number[], wins: Record<number, number>, failed: boolean, blockStart: number) {
+export function advanceAdjectiveBlock(queue: number[], wins: Record<number, number>, failed: boolean, blockStart: number, total = adjectiveLearning.length) {
   const index = queue[0];
   const count = failed ? 0 : (wins[index] ?? 0) + 1;
   const remaining = queue.slice(1);
   if (count < 3) remaining.push(index);
   const next = { queue: remaining, wins: { ...wins, [index]: count } };
-  if (next.queue.length === 0 && adjectiveBlock(blockStart).every(i => (next.wins[i] ?? 0) >= 3)) {
+  if (next.queue.length === 0 && adjectiveBlock(blockStart, total).every(i => (next.wins[i] ?? 0) >= 3)) {
     const following = blockStart + ADJECTIVE_BLOCK_SIZE;
-    if (following < adjectiveLearning.length) return { ...next, queue: adjectiveBlock(following), blockStart: following };
+    if (following < total) return { ...next, queue: adjectiveBlock(following, total), blockStart: following };
   }
   return { ...next, blockStart };
 }

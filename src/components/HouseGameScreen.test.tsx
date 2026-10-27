@@ -2,7 +2,7 @@ import { act } from 'react';
 import { createRoot } from 'react-dom/client';
 import { afterEach, expect, it, vi } from 'vitest';
 import { HouseGameScreen } from './HouseGameScreen';
-import { adjectiveLearning, houseBlitz } from '../content/games/house';
+import { adjectiveLearning, houseBlitz, houseLearning } from '../content/games/house';
 import { speakVietnamese } from '../domain/speech';
 vi.mock('../domain/speech',()=>({hasVietnameseVoice:()=>true,onVoicesChanged:()=>()=>{},speakVietnamese:vi.fn(),stopSpeaking:vi.fn()}));
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT=true;
@@ -55,4 +55,17 @@ it('starts house learning with two choices, then three for the third word',()=>{
   act(()=>Array.from(host.querySelectorAll<HTMLButtonElement>('.family-choices button')).find(b=>b.textContent===vi)!.click());act(()=>viTimers());
  }
  function viTimers(){vi.advanceTimersByTime(1800);}
+});
+
+it('teaches house in six sequential triples with three clean answers and reset on mistakes',()=>{
+ mount();clickText('Обучение · Дом');const scores:Record<number,number>={};let block=0;let failed=false;
+ while(host.querySelector('.family-card')){
+  const i=houseLearning.findIndex(w=>w[2]===host.querySelector('.family-card h2')?.textContent);const nextBlock=Math.floor(i/3);
+  if(nextBlock>block){for(let j=block*3;j<block*3+3;j++)expect(scores[j]).toBe(3);expect(nextBlock).toBe(block+1);block=nextBlock;}
+  const buttons=Array.from(host.querySelectorAll<HTMLButtonElement>('.family-choices button'));expect(buttons.length).toBeLessThanOrEqual(3);
+  expect(buttons.every(b=>houseLearning.slice(block*3,block*3+3).some(w=>w[1]===b.textContent))).toBe(true);
+  let miss=false;if(i===0&&scores[0]===2&&!failed){act(()=>buttons.find(b=>b.textContent!==houseLearning[i][1])!.click());scores[0]=0;failed=true;miss=true;}
+  act(()=>buttons.find(b=>b.textContent===houseLearning[i][1])!.click());expect(speakVietnamese).toHaveBeenLastCalledWith(houseLearning[i][1]);act(()=>vi.advanceTimersByTime(1800));if(!miss)scores[i]=(scores[i]??0)+1;
+ }
+ expect(block).toBe(5);expect(failed).toBe(true);expect(Object.values(scores)).toHaveLength(18);expect(Object.values(scores).every(n=>n===3)).toBe(true);
 });

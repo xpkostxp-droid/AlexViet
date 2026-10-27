@@ -42,10 +42,10 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
   const index = queue[0];
   const current = items[index];
 
-  const prepare = (next: number[], source: readonly HouseGameItem[], learning = false, adjectives = mode === 'adjectives') => {
+  const prepare = (next: number[], source: readonly HouseGameItem[], learning = false, blockLearning = mode !== 'blitz') => {
     setQueue(next);
     if (learning && next.length) introduced.current = Math.max(introduced.current, next[0] + 1);
-    if (adjectives && next.length) {
+    if (blockLearning && next.length) {
       const start = Math.floor(next[0] / 3) * 3;
       const candidates = start === 0
         ? Array.from({ length: Math.min(3, introduced.current) }, (_, i) => i)
@@ -70,7 +70,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     setErrors([]);
     setReview(false);
     setFirstCorrect(0);
-    prepare(value === 'adjectives' ? adjectiveBlock(0) : value === 'blitz' ? shuffled(source.map((_, i) => i)) : source.map((_, i) => i), source, value !== 'blitz', value === 'adjectives');
+    prepare(value === 'blitz' ? shuffled(source.map((_, i) => i)) : adjectiveBlock(0, source.length), source, value !== 'blitz', value !== 'blitz');
   };
 
   const exit = () => {
@@ -91,8 +91,8 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     setCorrect(true);
     speakVietnamese(current[1]);
     if (mode === 'blitz' && !review && wrong.length === 0) setFirstCorrect(n => n + 1);
-    const next = mode === 'adjectives'
-      ? advanceAdjectiveBlock(queue, wins, wrong.length > 0, blockStart)
+    const next = mode !== 'blitz'
+      ? advanceAdjectiveBlock(queue, wins, wrong.length > 0, blockStart, items.length)
       : { ...advanceHouse(queue, wins, wrong.length > 0, mode !== 'blitz'), blockStart };
     timer.current = setTimeout(() => {
       setWins(next.wins);
@@ -101,7 +101,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     }, 1800);
   };
 
-  const required = mode === 'adjectives' ? 3 : 2;
+  const required = 3;
   const mastered = Object.values(wins).filter(n => n >= required).length;
   const total = items.length;
 
@@ -115,7 +115,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       <HousePicture id="blitz-private-beautiful" />
       <button className="lesson-item family-mode" onClick={() => start('house')}>
         <strong>🏠 Обучение · Дом</strong>
-        <span>18 слов. Начинаем с двух вариантов ответа, постепенно добавляем до шести.</span>
+        <span>18 слов, по три за раз. Три чистых ответа на каждое слово. Не больше трёх вариантов ответа.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('adjectives')}>
         <strong>🎨 Обучение · Прилагательные</strong>
@@ -133,11 +133,11 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
             ? `Осталось в повторе: ${queue.length}`
             : `Карточка ${total - queue.length + 1} из ${total}`} · Без таймера
       </p>
-      {mode === 'adjectives' && <p className="family-counter" data-testid="adjective-block">Блок {Math.floor(blockStart / 3) + 1} из 7 · {adjectiveBlock(blockStart).map(i => adjectiveLearning[i][1]).join(' · ')}</p>}
+      {mode !== 'blitz' && <p className="family-counter" data-testid="adjective-block">Блок {Math.floor(blockStart / 3) + 1} из {Math.ceil(items.length / 3)} · {adjectiveBlock(blockStart, items.length).map(i => items[i][1]).join(' · ')}</p>}
       <div className="family-card">
         <HousePicture id={current[0]} />
         <h2>{current[2]}</h2>
-        {mode === 'adjectives' && <p>Чистых ответов: {wins[index] ?? 0} из 3</p>}
+        {mode !== 'blitz' && <p>Чистых ответов: {wins[index] ?? 0} из 3</p>}
       </div>
       <div className="family-choices">
         {options.map(i => <button
@@ -155,7 +155,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       <HousePicture id="blitz-private-beautiful" />
       <h2>{mode === 'blitz' ? review ? 'Повтор завершён!' : 'Блиц завершён!' : 'Раздел выучен!'}</h2>
       <p>{mode !== 'blitz'
-        ? `Все ${total} слов и выражений угаданы ${mode === 'adjectives' ? 'трижды' : 'дважды'} без ошибки.`
+        ? `Все ${total} слов и выражений угаданы трижды без ошибки.`
         : review
           ? 'Все выбранные сочетания пройдены.'
           : `С первой попытки: ${firstCorrect} из ${total}`}</p>
