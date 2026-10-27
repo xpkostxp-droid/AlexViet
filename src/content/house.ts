@@ -3,7 +3,7 @@ import type { FlashCard } from '../types';
 // Согласованный словарь урока 11. ID постоянные: на них опирается прогресс.
 export const lesson11Cards: FlashCard[] = [
   { id: 'l11-01', lessonId: 'lesson-11', vi: 'nhà', ru: 'дом' },
-  { id: 'l11-02', lessonId: 'lesson-11', vi: 'khách sạn', ru: 'отель' },
+  { id: 'l11-02', lessonId: 'lesson-11', vi: 'khách sạn', ru: 'отель', imageUrl: `${import.meta.env.BASE_URL}images/games/house/hotel.png` },
   { id: 'l11-03', lessonId: 'lesson-11', vi: 'chung cư', ru: 'многоквартирный дом / жилой комплекс' },
   { id: 'l11-04', lessonId: 'lesson-11', vi: 'nhà riêng', ru: 'частный дом' },
   { id: 'l11-05', lessonId: 'lesson-11', vi: 'thuê', ru: 'арендовать' },

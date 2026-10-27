@@ -14,7 +14,8 @@
       "id": "l11-02",
       "lessonId": "lesson-11",
       "vi": "khách sạn",
-      "ru": "отель"
+      "ru": "отель",
+      "imageUrl": "./images/games/house/hotel.png"
     },
     {
       "id": "l11-03",
@@ -244,6 +245,7 @@
       "lessonId": "lesson-11",
       "vi": "khách sạn",
       "ru": "отель",
+      "imageUrl": "./images/games/house/hotel.png",
       "source": {
         "file": "src/content/cards.ts",
         "pointer": "l11-02"
