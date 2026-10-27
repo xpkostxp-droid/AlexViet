@@ -1,3 +1,4 @@
+import { AdjectivePicture, adjectivePictureIds } from './AdjectivePicture';
 function House({ x, y, scale = 1, floors = 1, pretty = false, ugly = false }: { x: number; y: number; scale?: number; floors?: number; pretty?: boolean; ugly?: boolean }) {
   const h = 42 + Math.max(0, floors - 1) * 18;
   return <g transform={`translate(${x} ${y}) scale(${scale})`}>
@@ -55,6 +56,7 @@ function Quality({ level }: { level: 'good'|'poor'|'high' }) {
 }
 
 function Concept({ id }: { id: string }) {
+  if (adjectivePictureIds.includes(id)) return <AdjectivePicture id={id}/>;
   if (id === 'house' || id === 'private-house') return <House x={160} y={155} scale={1.1}/>;
   if (id === 'hotel') return <g><Building x={160} y={158} floors={5} scale={.92}/><text x="160" y="35" textAnchor="middle" fontSize="18" fontWeight="700" fill="#d45f68">HOTEL</text></g>;
   if (id === 'apartment') return <Building x={160} y={158} floors={6} scale={.9}/>;
@@ -114,3 +116,4 @@ export function HousePicture({ id }: { id: string }) {
     <Concept id={id}/>
   </svg>;
 }
+

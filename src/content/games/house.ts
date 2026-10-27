@@ -1,3 +1,4 @@
+import { advanceFamily } from './family';
 export type HouseGameItem = readonly [id: string, vi: string, ru: string];
 
 export const houseLearning: readonly HouseGameItem[] = [
@@ -85,4 +86,18 @@ export function advanceHouse(queue: number[], wins: Record<number, number>, fail
   const next = queue.slice(1);
   if (learning && count < 2) next.splice(Math.min(3, next.length), 0, index);
   return { queue: next, wins: { ...wins, [index]: count } };
+}
+
+
+export const ADJECTIVE_BLOCK_SIZE = 3;
+export function adjectiveBlock(start: number): number[] {
+  return adjectiveLearning.map((_, i) => i).slice(start, start + ADJECTIVE_BLOCK_SIZE);
+}
+export function advanceAdjectiveBlock(queue: number[], wins: Record<number, number>, failed: boolean, blockStart: number) {
+  const next = advanceFamily(queue, wins, failed, true);
+  if (next.queue.length === 0 && adjectiveBlock(blockStart).every(i => (next.wins[i] ?? 0) >= 2)) {
+    const following = blockStart + ADJECTIVE_BLOCK_SIZE;
+    if (following < adjectiveLearning.length) return { ...next, queue: adjectiveBlock(following), blockStart: following };
+  }
+  return { ...next, blockStart };
 }

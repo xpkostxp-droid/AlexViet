@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { adjectiveLearning, advanceHouse, houseBlitz, houseLearning, optionsFor, shuffled, type HouseGameItem } from '../content/games/house';
+import { adjectiveBlock, advanceAdjectiveBlock, adjectiveLearning, advanceHouse, houseBlitz, houseLearning, optionsFor, shuffled, type HouseGameItem } from '../content/games/house';
 import { hasVietnameseVoice, onVoicesChanged, speakVietnamese, stopSpeaking } from '../domain/speech';
 import { BackButton } from './BackButton';
 import { HousePicture } from './HousePicture';
@@ -18,6 +18,7 @@ function titleFor(mode: Mode | null, review: boolean) {
 }
 
 export function HouseGameScreen({ onBack }: { onBack: () => void }) {
+  const [blockStart, setBlockStart] = useState(0);
   const [mode, setMode] = useState<Mode | null>(null);
   const [queue, setQueue] = useState<number[]>([]);
   const [wins, setWins] = useState<Record<number, number>>({});
@@ -40,9 +41,9 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
   const index = queue[0];
   const current = items[index];
 
-  const prepare = (next: number[], source: readonly HouseGameItem[]) => {
+  const prepare = (next: number[], source: readonly HouseGameItem[], learnedEnd = source.length) => {
     setQueue(next);
-    setOptions(next.length ? optionsFor(source, next[0]) : []);
+    setOptions(next.length ? optionsFor(source.slice(0, learnedEnd), next[0]) : []);
     setWrong([]);
     setCorrect(false);
     locked.current = false;
@@ -53,11 +54,12 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     stopSpeaking();
     const source = itemsFor(value);
     setMode(value);
+    setBlockStart(0);
     setWins({});
     setErrors([]);
     setReview(false);
     setFirstCorrect(0);
-    prepare(shuffled(source.map((_, i) => i)), source);
+    prepare(value === 'adjectives' ? adjectiveBlock(0) : shuffled(source.map((_, i) => i)), source, value === 'adjectives' ? 3 : source.length);
   };
 
   const exit = () => {
@@ -78,10 +80,13 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     setCorrect(true);
     speakVietnamese(current[1]);
     if (mode === 'blitz' && !review && wrong.length === 0) setFirstCorrect(n => n + 1);
-    const next = advanceHouse(queue, wins, wrong.length > 0, mode !== 'blitz');
+    const next = mode === 'adjectives'
+      ? advanceAdjectiveBlock(queue, wins, wrong.length > 0, blockStart)
+      : { ...advanceHouse(queue, wins, wrong.length > 0, mode !== 'blitz'), blockStart };
     timer.current = setTimeout(() => {
       setWins(next.wins);
-      prepare(next.queue, items);
+      setBlockStart(next.blockStart);
+      prepare(next.queue, items, mode === 'adjectives' ? Math.min(next.blockStart + 3, items.length) : items.length);
     }, 1800);
   };
 
@@ -102,7 +107,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       </button>
       <button className="lesson-item family-mode" onClick={() => start('adjectives')}>
         <strong>🎨 Обучение · Прилагательные</strong>
-        <span>19 слов и выражений: большой/маленький, высокий/низкий, много/мало, качество и другие.</span>
+        <span>19 слов и выражений, по три за раз. Дважды вспомни каждое без ошибки — откроется следующий блок. Качество — в конце.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('blitz')}>
         <strong>⚡ Блиц · Всё вместе</strong>
@@ -116,6 +121,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
             ? `Осталось в повторе: ${queue.length}`
             : `Карточка ${total - queue.length + 1} из ${total}`} · Без таймера
       </p>
+      {mode === 'adjectives' && <p className="family-counter" data-testid="adjective-block">Блок {Math.floor(blockStart / 3) + 1} из 7 · {adjectiveBlock(blockStart).map(i => adjectiveLearning[i][1]).join(' · ')}</p>}
       <div className="family-card">
         <HousePicture id={current[0]} />
         <h2>{current[2]}</h2>
@@ -129,7 +135,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
         >{items[i][1]}</button>)}
       </div>
       <p className="family-feedback" role="status">
-        {correct ? `Верно! ${current[1]}` : wrong.length ? 'Попробуй другой вариант. Это задание добавлено в повтор.' : 'Выбери один из шести вариантов'}
+        {correct ? `Верно! ${current[1]}` : wrong.length ? 'Попробуй другой вариант. Это задание добавлено в повтор.' : 'Выбери правильный вариант'}
       </p>
       {correct && <button className="secondary-button" disabled={!voice} onClick={() => speakVietnamese(current[1])}>🔊 Послушать ещё</button>}
     </> : <div className="family-result">
@@ -155,3 +161,4 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     {mode && !voice && <p className="family-note">Для озвучки нужен вьетнамский голос на устройстве. Играть можно без звука.</p>}
   </div>;
 }
+
