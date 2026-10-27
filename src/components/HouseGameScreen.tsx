@@ -133,10 +133,9 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
             : `Карточка ${total - queue.length + 1} из ${total}`} · Без таймера
       </p>
       {mode !== 'blitz' && <p className="family-counter" data-testid="adjective-block">Сейчас учим: {queue.map(i => items[i][1]).join(' · ')}</p>}
-      <div className="family-card">
+      <div className="family-card house-game-card">
         <HousePicture id={current[0]} />
         <h2>{current[2]}</h2>
-        {mode !== 'blitz' && <p>Чистых ответов: {wins[index] ?? 0} из 3</p>}
       </div>
       <div className="family-choices">
         {options.map(i => <button

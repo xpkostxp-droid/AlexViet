@@ -1321,3 +1321,8 @@ a:focus-visible {
 .games-menu-screen .game-lesson-group { margin-bottom: 14px; }
 .games-menu-screen .game-lesson-group[open] > summary { background: #dcefe2; border-color: #40865c; margin-bottom: 12px; }
 .games-menu-screen .game-lesson-group > button { margin-bottom: 10px; }
+
+/* Lesson 11: edge-to-edge illustration with only the translation below. */
+.house-game-card { padding: 0; overflow: hidden; }
+.house-game-card .family-picture { display: block; width: 100%; max-width: none; height: auto; max-height: none; margin: 0; border-radius: 0 !important; }
+.house-game-card h2 { margin: 0; padding: 14px 16px 18px; }
