@@ -31,6 +31,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
   const [voice, setVoice] = useState(hasVietnameseVoice);
   const timer = useRef<ReturnType<typeof setTimeout>>();
   const locked = useRef(false);
+  const introduced = useRef(2);
 
   useEffect(() => {
     const off = onVoicesChanged(() => setVoice(hasVietnameseVoice()));
@@ -41,9 +42,10 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
   const index = queue[0];
   const current = items[index];
 
-  const prepare = (next: number[], source: readonly HouseGameItem[], learnedEnd = source.length) => {
+  const prepare = (next: number[], source: readonly HouseGameItem[], learning = false) => {
     setQueue(next);
-    setOptions(next.length ? optionsFor(source.slice(0, learnedEnd), next[0]) : []);
+    if (learning && next.length) introduced.current = Math.max(introduced.current, next[0] + 1);
+    setOptions(next.length ? optionsFor(learning ? source.slice(0, introduced.current) : source, next[0]) : []);
     setWrong([]);
     setCorrect(false);
     locked.current = false;
@@ -55,11 +57,12 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     const source = itemsFor(value);
     setMode(value);
     setBlockStart(0);
+    introduced.current = 2;
     setWins({});
     setErrors([]);
     setReview(false);
     setFirstCorrect(0);
-    prepare(value === 'adjectives' ? adjectiveBlock(0) : shuffled(source.map((_, i) => i)), source, value === 'adjectives' ? 3 : source.length);
+    prepare(value === 'adjectives' ? adjectiveBlock(0) : value === 'blitz' ? shuffled(source.map((_, i) => i)) : source.map((_, i) => i), source, value !== 'blitz');
   };
 
   const exit = () => {
@@ -86,7 +89,7 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
     timer.current = setTimeout(() => {
       setWins(next.wins);
       setBlockStart(next.blockStart);
-      prepare(next.queue, items, mode === 'adjectives' ? Math.min(next.blockStart + 3, items.length) : items.length);
+      prepare(next.queue, items, mode !== 'blitz');
     }, 1800);
   };
 
@@ -103,11 +106,11 @@ export function HouseGameScreen({ onBack }: { onBack: () => void }) {
       <HousePicture id="blitz-private-beautiful" />
       <button className="lesson-item family-mode" onClick={() => start('house')}>
         <strong>🏠 Обучение · Дом</strong>
-        <span>18 слов: жильё, комнаты, этаж, лестница, лифт, аренда и другие слова урока.</span>
+        <span>18 слов. Начинаем с двух вариантов ответа, постепенно добавляем до шести.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('adjectives')}>
         <strong>🎨 Обучение · Прилагательные</strong>
-        <span>19 слов и выражений, по три за раз. Дважды вспомни каждое без ошибки — откроется следующий блок. Качество — в конце.</span>
+        <span>19 слов и выражений, по три за раз. Дважды вспомни каждое без ошибки — откроется следующий блок. Качество — в конце. Варианты ответа: от двух до шести.</span>
       </button>
       <button className="lesson-item family-mode" onClick={() => start('blitz')}>
         <strong>⚡ Блиц · Всё вместе</strong>

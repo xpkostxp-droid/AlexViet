@@ -35,3 +35,22 @@ it('keeps the 20 blitz combinations and visits each once',()=>{
  for(let i=0;i<20;i++){const ru=host.querySelector('.family-card h2')!.textContent!;expect(seen.has(ru)).toBe(false);seen.add(ru);act(()=>Array.from(host.querySelectorAll<HTMLButtonElement>('.family-choices button')).find(b=>b.textContent===houseBlitz.find(w=>w[2]===ru)![1])!.click());act(()=>vi.advanceTimersByTime(1800));}
  expect(seen.size).toBe(20);expect(host.textContent).toContain('С первой попытки: 20 из 20');
 });
+it('grows adjective choices only as words appear and never exceeds six',()=>{
+ mount();clickText('Обучение · Прилагательные');let highest=1;
+ while(host.querySelector('.family-card')){
+  const i=currentIndex();highest=Math.max(highest,i);
+  const buttons=Array.from(host.querySelectorAll('.family-choices button'));
+  expect(buttons.length).toBe(Math.min(6,highest+1));
+  for(const b of buttons)expect(adjectiveLearning.slice(0,highest+1).some(w=>w[1]===b.textContent)).toBe(true);
+  answer();
+ }
+ clickText('Сыграть заново');expect(host.querySelectorAll('.family-choices button')).toHaveLength(2);
+});
+it('starts house learning with two choices, then three for the third word',()=>{
+ mount();clickText('Обучение · Дом');
+ for(const [vi,count] of [['nhà',2],['khách sạn',2],['chung cư',3]] as const){
+  expect(host.querySelectorAll('.family-choices button')).toHaveLength(count);
+  act(()=>Array.from(host.querySelectorAll<HTMLButtonElement>('.family-choices button')).find(b=>b.textContent===vi)!.click());act(()=>viTimers());
+ }
+ function viTimers(){vi.advanceTimersByTime(1800);}
+});
