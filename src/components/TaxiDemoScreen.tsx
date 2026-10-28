@@ -39,7 +39,7 @@ function draw(ctx:CanvasRenderingContext2D,car:Car,time:number,stage:number,ligh
  // Road: moving dashed markings give continuous driving sensation.
  ctx.fillStyle='#c5c6b6';ctx.fillRect(115,0,162,H);ctx.fillStyle='#4d5a63';ctx.fillRect(121,0,150,H);
  ctx.fillStyle='#f6efce';ctx.fillRect(122,0,3,H);ctx.fillRect(268,0,3,H);
- ctx.fillStyle='#e7d69b';for(let y=-48+(scroll%65);y<H;y+=65)ctx.fillRect(170,y,3,32);ctx.fillRect(220,y,3,32);
+ ctx.fillStyle='#e7d69b';for(let y=-48+(scroll%65);y<H;y+=65){ctx.fillRect(170,y,3,32);ctx.fillRect(220,y,3,32);}
  // Cross road at active intersection, approaching then passing.
  const crossY=160+((time*.035)%700)-360;
  if(stage!==2 && crossY>-110&&crossY<H+110){
