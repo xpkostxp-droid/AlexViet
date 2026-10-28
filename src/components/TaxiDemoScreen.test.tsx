@@ -8,9 +8,9 @@ it('keeps one journey, stops for a second, accelerates, finishes and restarts', 
  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true);
  vi.stubGlobal('requestAnimationFrame', (callback: FrameRequestCallback) => { frame = callback; return 1; });
  vi.stubGlobal('cancelAnimationFrame', vi.fn());
- vi.stubGlobal('speechSynthesis', { cancel: vi.fn(), speak: vi.fn() });
+ vi.stubGlobal('speechSynthesis', { cancel: vi.fn(), resume: vi.fn(), getVoices: () => [{ lang: 'vi-VN' }], speak: vi.fn() });
  vi.stubGlobal('SpeechSynthesisUtterance', class {});
- const ctx = new Proxy({}, { get: () => vi.fn(), set: () => true });
+ const noop = () => {}; const ctx = new Proxy({}, { get: () => noop, set: () => true });
  vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(ctx as CanvasRenderingContext2D);
  const host = document.createElement('div'); document.body.append(host); const root = createRoot(host);
  const tick = (seconds: number) => { act(() => { for (let i = 0; i < seconds * 20; i++) { time += 50; frame(time); } }); };
@@ -22,10 +22,18 @@ it('keeps one journey, stops for a second, accelerates, finishes and restarts', 
   tick(6); expect(host.textContent).toContain('Rẽ phải!'); click('Направо');
   until('Dừng lại!'); click('Стоп'); until('Стоим перед светофором');
   tick(.15); expect(host.textContent).toContain('0 км/ч'); tick(.5); expect(host.textContent).toContain('Стоим перед светофором');
-  until('Зелёный!'); until('Đi thẳng!'); click('Прямо');
+  until('Зелёный!'); click('Вперёд'); until('Đi thẳng!'); click('Прямо');
   until('Đi nhanh lên!'); click('Быстрее'); tick(1); expect(host.textContent).toContain('50 км/ч');
   until('Rẽ trái!'); click('Налево'); until('Поездка завершена');
-  expect(host.textContent).toContain('100% пути'); expect(host.textContent).toContain('⭐ 5');
+  expect(host.textContent).toContain('100% пути'); expect(host.textContent).toContain('⭐ 5'); expect(speechSynthesis.speak).toHaveBeenCalled(); expect(speechSynthesis.resume).toHaveBeenCalled();
   click('Ещё одна поездка'); expect(host.textContent).toContain('Ошибок: 0'); expect(host.textContent).toContain('0% пути');
+  click('Направо'); until('Dừng lại!');
+  // A red-light violation is no longer silently stopped by the simulator.
+  until('удар сбоку'); tick(1); expect(host.textContent).toContain('Игра окончена');
+  click('Ещё одна поездка'); click('Направо'); until('Dừng lại!'); click('Стоп'); until('Зелёный!');
+  tick(.7); expect(host.textContent).not.toContain('удар сзади'); tick(.5);
+  expect(host.textContent).toContain('удар сзади'); expect(host.textContent).toContain('Игра окончена');
+  // The voice is unlocked by a user gesture and uses an explicit Vietnamese voice.
+  expect(speechSynthesis.speak).toHaveBeenCalled();
  } finally { act(() => root.unmount()); host.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals(); }
 });
