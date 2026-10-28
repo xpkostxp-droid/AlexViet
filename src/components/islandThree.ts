@@ -21,7 +21,7 @@ export async function mountIsland(canvas:HTMLCanvasElement, initial:number[]):Pr
  const base=mesh(new THREE.CylinderGeometry(6.9,6.2,1.35,56),sand,0,-.7,0,island);base.scale.z=.82;
  const top=mesh(new THREE.CylinderGeometry(6.25,6.7,.35,56),grass,0,.12,0,island);top.scale.z=.79;
  const water=mesh(new THREE.CylinderGeometry(35,35,.1,64),mat('#20a9cb',.28),0,-1.65,0);water.receiveShadow=false;
- const waves=Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;const ring=mesh(new THREE.TorusGeometry(8+i*.32,.025,4,80),mat(i%2?'#b6f7ec':'#8bdce7'),0,-1.55,0);ring.rotation.x=-Math.PI/2;ring.scale.y=.76;return ring});
+ Array.from({length:12},(_,i)=>{const a=i*Math.PI/6;const ring=mesh(new THREE.TorusGeometry(8+i*.32,.025,4,80),mat(i%2?'#b6f7ec':'#8bdce7'),0,-1.55,0);ring.rotation.x=-Math.PI/2;ring.scale.y=.76;return ring});
  // Stone path and small landscape details.
  for(let i=0;i<12;i++){const a=i*.38;box(.72,.06,.54,sand,-3.4+i*.55,.36,Math.sin(a)*.35,island)}
  function palm(x:number,z:number,scale=1,parent:any=island){const g=new THREE.Group();g.position.set(x,.32,z);g.scale.setScalar(scale);parent.add(g);const trunk=cylinder(.12,.22,2.1,wood,0,1.05,0,g);trunk.rotation.z=.1;for(let i=0;i<7;i++){const a=i*Math.PI*2/7;const f=mesh(new THREE.ConeGeometry(.45,2.2,5),leaf,Math.cos(a)*.65,2.2,Math.sin(a)*.65,g);f.rotation.z=Math.PI/2;f.rotation.y=-a;}ball(.34,leaf,0,2.2,0,g);return g}
