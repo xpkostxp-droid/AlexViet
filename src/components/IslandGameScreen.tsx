@@ -51,7 +51,7 @@ export function IslandGameScreen({onBack}:{onBack:()=>void}){
   <div className="island-viewport" onPointerDown={e=>{drag.current={x:e.clientX,y:e.clientY,a:angle,t:tilt};e.currentTarget.setPointerCapture(e.pointerId)}} onPointerMove={e=>{if(!drag.current)return;setAngle(drag.current.a+(e.clientX-drag.current.x)*.55);setTilt(Math.max(38,Math.min(76,drag.current.t-(e.clientY-drag.current.y)*.25)))}} onPointerUp={()=>drag.current=null} onPointerCancel={()=>drag.current=null}>
    <div className="island-sky"><span>☁️</span><span>☁️</span></div>
    <div className="island-water"/>
-   <div className="island-world" style={{transform:`translate(-50%,-50%) scale(${zoom}) rotateX(${tilt}deg) rotateZ(${angle}deg)`}}>
+   <div className="island-world" style={{transform:`translate(-50%,-50%) scale(${zoom}) rotateX(${tilt}deg) rotateZ(${angle}deg)`, '--camera-angle': `${angle}deg`, '--camera-tilt': `${tilt}deg`} as React.CSSProperties}>
     <div className="island-shadow"/><div className="island-sand"/><div className="island-grass"/>
     <div className="island-path"/>
     <div className="island-decoration island-rock" style={{left:'14%',top:'55%'}}>🪨</div>
