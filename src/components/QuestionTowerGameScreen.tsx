@@ -18,6 +18,7 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
  const [best,setBest]=useState(()=>Number(localStorage.getItem('alexviet-question-tower-best')||0));
  const timer=useRef<ReturnType<typeof setTimeout>|null>(null);const lock=useRef(false);
  const recordQueue=useRef<number[]>([]);
+ const failedQuestion=useRef<number|null>(null);
  const total=counts.reduce((a,b)=>a+b,0);
  const next=(c:number[],previous:number,record:boolean)=>{
   const group=Array.from({length:5},(_,i)=>i).find(g=>c.slice(g*3,g*3+3).some(x=>x<3))??4;
@@ -30,6 +31,7 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
     const all=words.map((_,i)=>i);
     let shuffled=mix(all);
     if(shuffled[0]===previous){shuffled=[...shuffled.slice(1),shuffled[0]];}
+    if(failedQuestion.current!==null){shuffled=shuffled.filter(i=>i!==failedQuestion.current);shuffled.unshift(failedQuestion.current);failedQuestion.current=null;}
     recordQueue.current=shuffled;
    }
    target=recordQueue.current.shift()!;
@@ -38,16 +40,16 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
   }
   if(record){setRemaining(5);deadline.current=Date.now()+5000;}setQ(target);setOptions(mix(pool.filter(i=>i!==target)).slice(0,2).concat(target).sort(()=>Math.random()-.5));
  };
- const start=(m:'learn'|'record')=>{if(timer.current)clearTimeout(timer.current);lock.current=false;deadline.current=null;setCrashed(false);setEndReason(null);setRemaining(5);recordQueue.current=[];setMode(m);setCounts(Array(15).fill(0));setBlocks([]);setDone(false);setFeedback(null);setReverse(false);next(Array(15).fill(0),-1,m==='record')};
+ const start=(m:'learn'|'record')=>{if(timer.current)clearTimeout(timer.current);lock.current=false;deadline.current=null;setCrashed(false);setEndReason(null);setRemaining(5);recordQueue.current=[];if(m==='learn')failedQuestion.current=null;setMode(m);setCounts(Array(15).fill(0));setBlocks([]);setDone(false);setFeedback(null);setReverse(false);next(Array(15).fill(0),-1,m==='record')};
  const answer=(i:number)=>{
   if(lock.current||done||!mode)return;
-  if(i!==q){setFeedback('wrong');if(mode==='record'){deadline.current=null;lock.current=true;setCrashed(true);setEndReason('wrong');setDone(true)}else{if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>setFeedback(null),650)}return}
+  if(i!==q){setFeedback('wrong');if(mode==='record'){failedQuestion.current=q;deadline.current=null;lock.current=true;setCrashed(true);setEndReason('wrong');setDone(true)}else{if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>setFeedback(null),650)}return}
   lock.current=true;deadline.current=null;setFeedback('right');speak(words[q][0]);const newBlocks=[...blocks,q];setBlocks(newBlocks);
   if(mode==='record'){if(newBlocks.length>best){setBest(newBlocks.length);localStorage.setItem('alexviet-question-tower-best',String(newBlocks.length))}}
   const updated=counts.map((n,j)=>j===q?Math.min(3,n+1):n);if(mode==='learn')setCounts(updated);
   timer.current=setTimeout(()=>{if(mode==='learn'&&updated.every(n=>n>=3))setDone(true);else{next(updated,q,mode==='record');if(mode==='record')setReverse(newBlocks.length%2===0)}setFeedback(null);lock.current=false},1500);
  };
- useEffect(()=>{if(mode!=='record'||done)return;const id=setInterval(()=>{if(deadline.current===null||lock.current)return;const left=Math.max(0,(deadline.current-Date.now())/1000);setRemaining(left);if(left<=0){deadline.current=null;lock.current=true;setFeedback('wrong');setEndReason('timeout');setCrashed(true);setDone(true)}},50);return()=>clearInterval(id)},[mode,done]);
+ useEffect(()=>{if(mode!=='record'||done)return;const id=setInterval(()=>{if(deadline.current===null||lock.current)return;const left=Math.max(0,(deadline.current-Date.now())/1000);setRemaining(left);if(left<=0){failedQuestion.current=q;deadline.current=null;lock.current=true;setFeedback('wrong');setEndReason('timeout');setCrashed(true);setDone(true)}},50);return()=>clearInterval(id)},[mode,done]);
  useEffect(()=>()=>{if(timer.current)clearTimeout(timer.current);window.speechSynthesis?.cancel()},[]);
  return <div className="screen qt-screen"><BackButton onClick={onBack} label="К дополнительным играм"/><h1 className="screen-title">🏗️ Башня вопросов</h1>
  {!mode?<div className="qt-start"><p>15 вопросительных слов · кубики подпрыгивают, башня качается</p><button className="big-button" onClick={()=>start('learn')}>📚 Обучение</button><button className="big-button" onClick={()=>start('record')}>⚡ Блиц · Башня на выживание</button><p>Лучший результат: {best} кубиков</p></div>:<>
