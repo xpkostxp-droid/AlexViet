@@ -14,6 +14,8 @@ const stages:Stage[]=[
 function say(s:string){try{const u=new SpeechSynthesisUtterance(s);u.lang='vi-VN';u.rate=.82;const v=speechSynthesis.getVoices();u.voice=v.find(x=>x.lang.toLowerCase().startsWith('vi')&&/north|hanoi/i.test(x.name))||v.find(x=>x.lang.toLowerCase().startsWith('vi'))||null;speechSynthesis.cancel();speechSynthesis.speak(u)}catch{}}
 type Car={x:number;y:number;angle:number;speed:number;targetAngle:number;crash:number;turning:boolean};
 const W=390,H=490;
+// Taxi occupies the centre lane (x=196); other vehicles use x=151 and x=240.
+// Each lane has enough clearance for the complete car sprite, including its shadow.
 function draw(ctx:CanvasRenderingContext2D,car:Car,time:number,stage:number,light:boolean){
  ctx.clearRect(0,0,W,H);
  ctx.fillStyle='#83c56f';ctx.fillRect(0,0,W,H);
@@ -33,23 +35,24 @@ function draw(ctx:CanvasRenderingContext2D,car:Car,time:number,stage:number,ligh
   for(let k=0;k<3;k++){const px=x+22+k*44,py=y+156;ctx.fillStyle='#835d3a';ctx.fillRect(px-3,py-2,6,22);ctx.fillStyle='#2c9859';ctx.beginPath();ctx.arc(px,py-5,17,0,Math.PI*2);ctx.fill();ctx.fillStyle='#50b66a';ctx.beginPath();ctx.arc(px-5,py-10,9,0,Math.PI*2);ctx.fill()}
  }
  // Road: moving dashed markings give continuous driving sensation.
- ctx.fillStyle='#c5c6b6';ctx.fillRect(139,0,112,H);ctx.fillStyle='#4d5a63';ctx.fillRect(146,0,98,H);
- ctx.fillStyle='#f6efce';ctx.fillRect(148,0,3,H);ctx.fillRect(240,0,3,H);
- ctx.fillStyle='#e7d69b';for(let y=-48+(scroll%65);y<H;y+=65)ctx.fillRect(193,y,4,32);
+ ctx.fillStyle='#c5c6b6';ctx.fillRect(110,0,172,H);ctx.fillStyle='#4d5a63';ctx.fillRect(117,0,158,H);
+ ctx.fillStyle='#f6efce';ctx.fillRect(119,0,3,H);ctx.fillRect(270,0,3,H);
+ ctx.fillStyle='#e7d69b';for(let y=-48+(scroll%65);y<H;y+=65)ctx.fillRect(194,y,4,32);
  // Cross road at active intersection, approaching then passing.
  const crossY=160+((time*.035)%700)-360;
  if(stage!==2 && crossY>-110&&crossY<H+110){
   ctx.fillStyle='#bfc4b9';ctx.fillRect(0,crossY-66,W,132);
   ctx.fillStyle='#4d5a63';ctx.fillRect(0,crossY-58,W,116);
-  ctx.fillStyle='#f3ebc5';for(let i=0;i<7;i++){ctx.fillRect(151+i*13,crossY-68,7,23);ctx.fillRect(151+i*13,crossY+45,7,23)}
+  ctx.fillStyle='#f3ebc5';for(let i=0;i<7;i++){ctx.fillRect(120+i*21,crossY-68,11,23);ctx.fillRect(120+i*21,crossY+45,11,23)}
   ctx.fillStyle='#e7d69b';for(let x=0;x<W;x+=57)ctx.fillRect(x,crossY-2,28,4);
  }
  // Stop line and signal ahead of taxi, when active.
- if(stage===1||stage===2){ctx.fillStyle='#f6f3e8';ctx.fillRect(146,113,98,7);ctx.fillStyle='#333b40';ctx.fillRect(259,61,15,50);ctx.fillStyle=light?'#ff484b':'#5a2727';ctx.beginPath();ctx.arc(266,74,5,0,7);ctx.fill();ctx.fillStyle=light?'#26533c':'#36f08b';ctx.beginPath();ctx.arc(266,98,5,0,7);ctx.fill()}
+ if(stage===1||stage===2){ctx.fillStyle='#f6f3e8';ctx.fillRect(117,113,158,7);ctx.fillStyle='#333b40';ctx.fillRect(284,61,15,50);ctx.fillStyle=light?'#ff484b':'#5a2727';ctx.beginPath();ctx.arc(291,74,5,0,7);ctx.fill();ctx.fillStyle=light?'#26533c':'#36f08b';ctx.beginPath();ctx.arc(291,98,5,0,7);ctx.fill()}
  // Other traffic: soft shadow and cars.
  function traffic(x:number,y:number,color:string){ctx.save();ctx.translate(x,y);ctx.fillStyle='#27373a55';ctx.fillRect(-13,-23,30,51);ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(-13,-25,26,49,6);ctx.fill();ctx.fillStyle='#bce5ef';ctx.fillRect(-9,-14,18,12);ctx.fillRect(-9,7,18,9);ctx.fillStyle='#ffe0a1';ctx.fillRect(-10,-24,7,3);ctx.fillRect(3,-24,7,3);ctx.restore()}
- traffic(171,((time*.07+100)%650)-100,'#d85e6a');
- traffic(224,H-((time*.04+130)%680),'#e8e8e3');
+ // Dedicated adjacent lanes: traffic never overlaps the taxi's central lane.
+ traffic(151,((time*.07+100)%650)-100,'#d85e6a');
+ traffic(240,H-((time*.04+130)%680),'#e8e8e3');
  // Taxi shadow and detailed overhead car.
  ctx.save();ctx.translate(car.x,car.y);ctx.rotate(car.angle);
  if(car.crash>0)ctx.translate(Math.sin(time*.25)*car.crash*2,Math.cos(time*.2)*car.crash);
