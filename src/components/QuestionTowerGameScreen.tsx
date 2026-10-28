@@ -11,7 +11,7 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
  const [q,setQ]=useState(0);const [options,setOptions]=useState<number[]>([0,1,2]);
  const [reverse,setReverse]=useState(false);const [feedback,setFeedback]=useState<'right'|'wrong'|null>(null);
  const [done,setDone]=useState(false);
- const [remaining,setRemaining]=useState(3);
+ const [remaining,setRemaining]=useState(5);
  const [crashed,setCrashed]=useState(false);
  const [endReason,setEndReason]=useState<'wrong'|'timeout'|null>(null);
  const deadline=useRef<number|null>(null);
@@ -24,9 +24,9 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
   const needed=record?pool:pool.filter(i=>c[i]<3);
   const candidates=needed.filter(i=>i!==previous);
   const target=mix(candidates.length?candidates:needed)[0];
-  if(record){setRemaining(3);deadline.current=Date.now()+3000;}setQ(target);setOptions(mix(pool.filter(i=>i!==target)).slice(0,2).concat(target).sort(()=>Math.random()-.5));
+  if(record){setRemaining(5);deadline.current=Date.now()+5000;}setQ(target);setOptions(mix(pool.filter(i=>i!==target)).slice(0,2).concat(target).sort(()=>Math.random()-.5));
  };
- const start=(m:'learn'|'record')=>{if(timer.current)clearTimeout(timer.current);lock.current=false;deadline.current=null;setCrashed(false);setEndReason(null);setRemaining(3);setMode(m);setCounts(Array(15).fill(0));setBlocks([]);setDone(false);setFeedback(null);setReverse(false);next(Array(15).fill(0),-1,m==='record')};
+ const start=(m:'learn'|'record')=>{if(timer.current)clearTimeout(timer.current);lock.current=false;deadline.current=null;setCrashed(false);setEndReason(null);setRemaining(5);setMode(m);setCounts(Array(15).fill(0));setBlocks([]);setDone(false);setFeedback(null);setReverse(false);next(Array(15).fill(0),-1,m==='record')};
  const answer=(i:number)=>{
   if(lock.current||done||!mode)return;
   if(i!==q){setFeedback('wrong');if(mode==='record'){deadline.current=null;lock.current=true;setCrashed(true);setEndReason('wrong');setDone(true)}else{if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>setFeedback(null),650)}return}
@@ -39,8 +39,8 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
  useEffect(()=>()=>{if(timer.current)clearTimeout(timer.current);window.speechSynthesis?.cancel()},[]);
  return <div className="screen qt-screen"><BackButton onClick={onBack} label="К дополнительным играм"/><h1 className="screen-title">🏗️ Башня вопросов</h1>
  {!mode?<div className="qt-start"><p>15 вопросительных слов · кубики подпрыгивают, башня качается</p><button className="big-button" onClick={()=>start('learn')}>📚 Обучение</button><button className="big-button" onClick={()=>start('record')}>⚡ Блиц · Башня на выживание</button><p>Лучший результат: {best} кубиков</p></div>:<>
- <div className="qt-top"><span>{mode==='learn'?'Обучение · '+(Math.min(5,Math.floor(total/9)+1))+'/5' :'Блиц · 3 секунды'}</span><span>{mode==='learn'?total+'/45':blocks.length+' кубиков'}</span></div>
- {mode==='record'&&!done&&<div className="qt-timer" aria-label={'Осталось '+Math.ceil(remaining)+' секунды'}><strong>{Math.ceil(remaining)}</strong><div className="qt-timer-track"><div className="qt-timer-fill" style={{width:(remaining/3*100)+'%'}}/></div></div>}
+ <div className="qt-top"><span>{mode==='learn'?'Обучение · '+(Math.min(5,Math.floor(total/9)+1))+'/5'  :'Блиц · 5 секунд'}</span><span>{mode==='learn'?total+'/45':blocks.length+' кубиков'}</span></div>
+ {mode==='record'&&!done&&<div className="qt-timer" aria-label={'Осталось '+Math.ceil(remaining)+' секунды'}><strong>{Math.ceil(remaining)}</strong><div className="qt-timer-track"><div className="qt-timer-fill" style={{width:(remaining/5*100)+'%'}}/></div></div>}
  <div className="qt-question"><small>{done?'Результат':reverse?'Выбери перевод':'Переведи на вьетнамский'}</small><strong>{done?(mode==='learn'?'Башня построена! 🎉':(endReason==='timeout'?'Время вышло!':'Ошибка!')+' · '+blocks.length+' кубиков'):words[q][reverse?0:1]}</strong></div>
  <div className={'qt-scene '+(crashed?'qt-crashed':'')}><div className="qt-cloud">☁️</div><div className={'qt-stack '+(crashed?'qt-collapse':'')}>{blocks.slice(-9).reverse().map((index,i)=><div className={'qt-block qt-color-'+Math.floor(index/3)+(i===0&&feedback==='right'?' qt-new':'')} key={blocks.length-1-i}>{words[index][0]}</div>)}<div className="qt-ground"/></div><div className="qt-floor">{mode==='learn'?'Золотых этажей: '+Math.floor(counts.filter(n=>n===3).length/3):'Рекорд: '+best}</div></div>
  {done&&mode==='record'&&<p className="qt-result">{endReason==='timeout'?'⏰ Время вышло!':'💥 Башня рухнула!'} Рекорд: {best} кубиков</p>}
