@@ -1,3 +1,4 @@
+import { QuestionTowerGameScreen } from './components/QuestionTowerGameScreen';
 import { RestaurantGameScreen } from './components/RestaurantGameScreen';
 import { PeopleGameScreen } from './components/PeopleGameScreen';
 import { NumbersGamesListScreen } from './components/NumbersGamesListScreen';
@@ -38,6 +39,7 @@ type Screen =
   | { name: 'professions-game' }
   | { name: 'travel-game' }
   | { name: 'people-game' }
+  | { name: 'question-tower' }
   | { name: 'restaurant-game' }
   | { name: 'dialogue-games-list' }
   | { name: 'dialogue-game-setup' }
@@ -79,10 +81,13 @@ function App() {
       return <Suspense fallback={<div className="screen"><BackButton onClick={() => setScreen({ name: 'home' })} label="На главную" /><p role="status">Загружаем аудирование…</p></div>}><ListeningScreen onBack={() => setScreen({ name: 'home' })} /></Suspense>;
 
     case 'games-list':
-      return <GamesListScreen category={gamesCategory} onCategoryChange={setGamesCategory} onOpenRestaurant={() => setScreen({ name: 'restaurant-game' })} onOpenPeople={() => setScreen({ name: 'people-game' })} onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenHouse={() => setScreen({ name: 'house-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
+      return <GamesListScreen category={gamesCategory} onCategoryChange={setGamesCategory} onOpenQuestionTower={() => setScreen({ name: 'question-tower' })} onOpenRestaurant={() => setScreen({ name: 'restaurant-game' })} onOpenPeople={() => setScreen({ name: 'people-game' })} onBack={() => setScreen({ name: 'home' })} onOpenTravel={() => setScreen({ name: 'travel-game' })} onOpenProfessions={() => setScreen({ name: 'professions-game' })} onOpenFamily={() => setScreen({ name: 'family-game' })} onOpenHouse={() => setScreen({ name: 'house-game' })} onOpenLesson9={() => setScreen({ name: 'numbers-games-list' })} />;
 
     case 'numbers-games-list':
       return <NumbersGamesListScreen onBack={() => setScreen({ name: 'games-list' })} onOpenDialogues={() => setScreen({ name: 'dialogue-games-list' })} onOpenBigNumbers={() => setScreen({ name: 'big-numbers-setup' })} onOpenNumbers={range => setScreen({ name: 'numbers-game-setup', range })} />;
+
+    case 'question-tower':
+      return <QuestionTowerGameScreen onBack={() => { setGamesCategory('extra'); setScreen({ name: 'games-list' }); }} />;
 
     case 'restaurant-game':
       return <RestaurantGameScreen onBack={() => setScreen({ name: 'games-list' })} />;
