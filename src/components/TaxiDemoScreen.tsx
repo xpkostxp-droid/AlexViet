@@ -12,7 +12,7 @@ const stages:Stage[]=[
  {label:'Дорога к пляжу',vi:'Đi thẳng!',ru:'Прямо',correct:'straight',type:'drive'}
 ];
 function say(s:string){try{const u=new SpeechSynthesisUtterance(s);u.lang='vi-VN';u.rate=.82;const v=speechSynthesis.getVoices();u.voice=v.find(x=>x.lang.toLowerCase().startsWith('vi')&&/north|hanoi/i.test(x.name))||v.find(x=>x.lang.toLowerCase().startsWith('vi'))||null;speechSynthesis.cancel();speechSynthesis.speak(u)}catch{}}
-type Car={x:number;y:number;angle:number;speed:number;targetAngle:number;crash:number;turning:boolean};
+type Car={x:number;y:number;angle:number;speed:number;targetAngle:number;crash:number;turning:boolean;turnStart:number;turnDirection:number;turnProgress:number;cameraAngle:number};
 const W=390,H=490;
 const LANE_CENTERS=[146,196,246] as const;
 // Three 50px-wide lanes. Car sprites are 32px wide, leaving 18px clearance.
@@ -20,6 +20,8 @@ const LANE_CENTERS=[146,196,246] as const;
 // Traffic uses the centers of the adjacent lanes.
 function draw(ctx:CanvasRenderingContext2D,car:Car,time:number,stage:number,light:boolean){
  ctx.clearRect(0,0,W,H);
+ ctx.save();
+ if(car.turning){ctx.translate(car.x,car.y);ctx.rotate(-car.cameraAngle);ctx.translate(-car.x,-car.y);}
  ctx.fillStyle='#83c56f';ctx.fillRect(0,0,W,H);
  // Tropical city blocks with tiled walkways.
  const scroll=(time*.025)%260;
@@ -41,7 +43,7 @@ function draw(ctx:CanvasRenderingContext2D,car:Car,time:number,stage:number,ligh
  ctx.fillStyle='#f6efce';ctx.fillRect(122,0,3,H);ctx.fillRect(268,0,3,H);
  ctx.fillStyle='#e7d69b';for(let y=-48+(scroll%65);y<H;y+=65){ctx.fillRect(170,y,3,32);ctx.fillRect(220,y,3,32);}
  // Cross road at active intersection, approaching then passing.
- const crossY=160+((time*.035)%700)-360;
+ const crossY=car.turning ? car.y : 160+((time*.035)%700)-360;
  if(stage!==2 && crossY>-110&&crossY<H+110){
   ctx.fillStyle='#bfc4b9';ctx.fillRect(0,crossY-66,W,132);
   ctx.fillStyle='#4d5a63';ctx.fillRect(0,crossY-58,W,116);
@@ -70,22 +72,23 @@ function draw(ctx:CanvasRenderingContext2D,car:Car,time:number,stage:number,ligh
  ctx.fillStyle='#fff';ctx.beginPath();ctx.roundRect(-10,-3,20,11,2);ctx.fill();ctx.fillStyle='#262c31';ctx.font='bold 7px sans-serif';ctx.textAlign='center';ctx.fillText('TAXI',0,5);
  if(car.crash>0){ctx.strokeStyle='#fff2a1';ctx.lineWidth=3;for(let i=0;i<8;i++){const a=i*Math.PI/4+time*.02;ctx.beginPath();ctx.moveTo(Math.cos(a)*28,Math.sin(a)*36);ctx.lineTo(Math.cos(a)*42,Math.sin(a)*52);ctx.stroke()}}
  ctx.restore();
+ ctx.restore();
  // Minimal heads-up street labels.
  ctx.fillStyle='#0d3443aa';ctx.beginPath();ctx.roundRect(10,12,135,30,8);ctx.fill();ctx.fillStyle='white';ctx.font='bold 12px system-ui';ctx.fillText('NHA TRANG  •  TAXI',20,31);
 }
 export function TaxiDemoScreen({onBack}:{onBack:()=>void}){
- const canvas=useRef<HTMLCanvasElement>(null),car=useRef<Car>({x:LANE_CENTERS[1],y:330,angle:0,speed:1,targetAngle:0,crash:0,turning:false});
+ const canvas=useRef<HTMLCanvasElement>(null),car=useRef<Car>({x:LANE_CENTERS[1],y:330,angle:0,speed:1,targetAngle:0,crash:0,turning:false,turnStart:0,turnDirection:0,turnProgress:0,cameraAngle:0});
  const [remaining,setRemaining]=useState(4),[mistakes,setMistakes]=useState(0);
  const deadline=useRef(0),actRef=useRef<(a:Action)=>void>(()=>{});
  const [stage,setStage]=useState(0),[status,setStatus]=useState('Нажми «Начать поездку»'),[running,setRunning]=useState(false),[busy,setBusy]=useState(false),[textMode,setTextMode]=useState(true),[score,setScore]=useState(0);
  const clock=useRef(0),timeout=useRef<number|undefined>(undefined),runningRef=useRef(false),stageRef=useRef(0),busyRef=useRef(false);
- useEffect(()=>{const el=canvas.current;if(!el)return;const ctx=el.getContext('2d');if(!ctx)return;let raf=0,last=0;const frame=(t:number)=>{const dt=Math.min(40,t-last||16);last=t;if(runningRef.current){clock.current+=dt*car.current.speed;const c=car.current;c.angle+=(c.targetAngle-c.angle)*Math.min(1,dt*.006);if(c.crash>0)c.crash=Math.max(0,c.crash-dt*.004);c.speed+=((busyRef.current?0.45:0.82)-c.speed)*.025}if(runningRef.current&&!busyRef.current){const seconds=Math.max(0,(deadline.current-t)/1000);setRemaining(v=>Math.ceil(seconds)===v?v:Math.ceil(seconds));if(seconds===0)actRef.current('timeout' as Action)}draw(ctx,car.current,clock.current,stageRef.current,stageRef.current===1);raf=requestAnimationFrame(frame)};raf=requestAnimationFrame(frame);return()=>cancelAnimationFrame(raf)},[]);
+ useEffect(()=>{const el=canvas.current;if(!el)return;const ctx=el.getContext('2d');if(!ctx)return;let raf=0,last=0;const frame=(t:number)=>{const dt=Math.min(40,t-last||16);last=t;if(runningRef.current){clock.current+=dt*car.current.speed;const c=car.current;if(c.turning){const p=Math.min(1,(t-c.turnStart)/1700);c.turnProgress=p;const smooth=p*p*(3-2*p);c.angle=c.turnDirection*Math.PI/2*smooth;c.cameraAngle=c.angle;c.x=196+c.turnDirection*48*smooth;c.y=330-48*Math.sin(p*Math.PI);if(p>=1){c.turning=false;c.angle=0;c.cameraAngle=0;c.x=196;c.y=330;}}else{c.angle+=(c.targetAngle-c.angle)*Math.min(1,dt*.006);}if(c.crash>0)c.crash=Math.max(0,c.crash-dt*.004);c.speed+=((busyRef.current?0.45:0.82)-c.speed)*.025}if(runningRef.current&&!busyRef.current){const seconds=Math.max(0,(deadline.current-t)/1000);setRemaining(v=>Math.ceil(seconds)===v?v:Math.ceil(seconds));if(seconds===0)actRef.current('timeout' as Action)}draw(ctx,car.current,clock.current,stageRef.current,stageRef.current===1);raf=requestAnimationFrame(frame)};raf=requestAnimationFrame(frame);return()=>cancelAnimationFrame(raf)},[]);
  useEffect(()=>()=>{if(timeout.current)window.clearTimeout(timeout.current);runningRef.current=false},[]);
  const start=()=>{if(timeout.current)clearTimeout(timeout.current);clock.current=0;car.current={x:LANE_CENTERS[1],y:330,angle:0,speed:1,targetAngle:0,crash:0,turning:false};setStage(0);stageRef.current=0;setScore(0);setMistakes(0);deadline.current=performance.now()+5500;setRemaining(6);setRunning(true);runningRef.current=true;setBusy(false);busyRef.current=false;setStatus('Слушай пассажира!');say(stages[0].vi)};
  const act=(a:Action)=>{if(!runningRef.current||busyRef.current)return;busyRef.current=true;setBusy(true);const s=stages[stageRef.current],correct=a===s.correct;const c=car.current;
-  if(correct){setScore(n=>n+1);setStatus('✓ Верно! '+s.ru);if(a==='left'||a==='right'){c.targetAngle=a==='left'?-Math.PI/2:Math.PI/2}else if(a==='stop'){c.speed=0}else if(a==='go'){c.speed=1}}
-  else{setMistakes(n=>n+1);if(s.type==='light'){c.crash=10;setStatus('💥 Авария! Надо было: '+s.ru)}else{c.targetAngle=a==='left'?-Math.PI/2:a==='right'?Math.PI/2:0;setStatus('↪ Не туда! Машина свернула на соседнюю улицу. Возвращаемся.');}}
-  timeout.current=window.setTimeout(()=>{c.targetAngle=0;c.crash=0;if(stageRef.current>=stages.length-1){runningRef.current=false;setRunning(false);setStatus('🏁 Поездка завершена! Можно попробовать ещё раз.');setBusy(false);busyRef.current=false;return}stageRef.current++;setStage(stageRef.current);setStatus('Слушай следующую команду');deadline.current=performance.now()+4500;setRemaining(5);busyRef.current=false;setBusy(false);say(stages[stageRef.current].vi)},correct?1450:2300);
+  if(correct){setScore(n=>n+1);setStatus('✓ Верно! '+s.ru);if(a==='left'||a==='right'){c.turning=true;c.turnStart=performance.now();c.turnDirection=a==='left'?-1:1;c.turnProgress=0;c.targetAngle=0}else if(a==='stop'){c.speed=0}else if(a==='go'){c.speed=1}}
+  else{setMistakes(n=>n+1);if(s.type==='light'){c.crash=10;setStatus('💥 Авария! Надо было: '+s.ru)}else{if(a==='left'||a==='right'){c.turning=true;c.turnStart=performance.now();c.turnDirection=a==='left'?-1:1;c.turnProgress=0;}setStatus('↪ Не туда! Машина свернула на соседнюю улицу. Возвращаемся.');}}
+  timeout.current=window.setTimeout(()=>{c.targetAngle=0;c.crash=0;if(stageRef.current>=stages.length-1){runningRef.current=false;setRunning(false);setStatus('🏁 Поездка завершена! Можно попробовать ещё раз.');setBusy(false);busyRef.current=false;return}stageRef.current++;setStage(stageRef.current);setStatus('Слушай следующую команду');deadline.current=performance.now()+4500;setRemaining(5);busyRef.current=false;setBusy(false);say(stages[stageRef.current].vi)},correct&&s.type==='turn'?1950:correct?1450:2300);
  };
  actRef.current=act;
  const current=stages[stage];
