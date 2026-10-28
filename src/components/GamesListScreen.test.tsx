@@ -5,7 +5,7 @@ import { GamesListScreen, type GamesCategory } from './GamesListScreen';
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
 it('shows lesson buttons and opens family without number games', () => {
  const host=document.createElement('div');const root=createRoot(host);const family=vi.fn();const house=vi.fn();const numbers=vi.fn();
- function Menu(){const [category,setCategory]=useState<GamesCategory>(null);return <GamesListScreen category={category} onCategoryChange={setCategory} onOpenRestaurant={()=>{}} onOpenPeople={()=>{}} onBack={()=>{}} onOpenTravel={()=>{}} onOpenProfessions={()=>{}} onOpenFamily={family} onOpenHouse={house} onOpenLesson9={numbers}/>;}
+ function Menu(){const [category,setCategory]=useState<GamesCategory>(null);return <GamesListScreen category={category} onCategoryChange={setCategory} onOpenRestaurant={()=>{}} onOpenQuestionTower={()=>{}} onOpenPeople={()=>{}} onBack={()=>{}} onOpenTravel={()=>{}} onOpenProfessions={()=>{}} onOpenFamily={family} onOpenHouse={house} onOpenLesson9={numbers}/>;}
  act(()=>root.render(<Menu/>));
  expect(host.querySelectorAll('.game-menu-item')).toHaveLength(2);
  expect(host.textContent).not.toContain('Урок 10');
