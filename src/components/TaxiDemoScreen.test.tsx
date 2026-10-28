@@ -1,39 +1,23 @@
 import { act } from 'react';
 import { createRoot } from 'react-dom/client';
 import { expect, it, vi } from 'vitest';
+import { Drive, UTURN } from '../games/taxi/drive';
 import { TaxiDemoScreen } from './TaxiDemoScreen';
-
-it('keeps one journey, stops for a second, accelerates, finishes and restarts', () => {
- let frame: FrameRequestCallback = () => {}, time = 0;
+const mock = vi.hoisted(() => ({ startRide: vi.fn(), action: vi.fn(), repeat: vi.fn(), destroy: vi.fn(), publish: undefined as undefined | ((view: ReturnType<Drive['snapshot']>) => void) }));
+vi.mock('../games/taxi/TaxiScene', () => ({ createTaxiGame: (_parent: HTMLElement, publish: typeof mock.publish, _speak: unknown, ready: () => void) => { mock.publish = publish; ready(); return { game: { destroy: mock.destroy }, scene: { startRide: mock.startRide, action: mock.action, repeat: mock.repeat } }; } }));
+it('loads Phaser only for Taxi, forwards every control and destroys the engine on exit', async () => {
  vi.stubGlobal('IS_REACT_ACT_ENVIRONMENT', true);
- vi.stubGlobal('requestAnimationFrame', (callback: FrameRequestCallback) => { frame = callback; return 1; });
- vi.stubGlobal('cancelAnimationFrame', vi.fn());
- vi.stubGlobal('speechSynthesis', { cancel: vi.fn(), resume: vi.fn(), getVoices: () => [{ lang: 'vi-VN' }], speak: vi.fn() });
- vi.stubGlobal('SpeechSynthesisUtterance', class {});
- const noop = () => {}; const ctx = new Proxy({}, { get: () => noop, set: () => true });
- vi.spyOn(HTMLCanvasElement.prototype, 'getContext').mockReturnValue(ctx as CanvasRenderingContext2D);
+ vi.stubGlobal('speechSynthesis', { getVoices: () => [], cancel: vi.fn() });
  const host = document.createElement('div'); document.body.append(host); const root = createRoot(host);
- const tick = (seconds: number) => { act(() => { for (let i = 0; i < seconds * 20; i++) { time += 50; frame(time); } }); };
- const click = (text: string) => act(() => { const button = Array.from(host.querySelectorAll('button')).find(b => b.textContent?.includes(text)); expect(button).toBeTruthy(); button!.click(); });
- const until = (text: string) => { for (let i = 0; i < 600 && !host.textContent?.includes(text); i++) tick(.1); expect(host.textContent).toContain(text); };
+ const click = (text: string) => act(() => Array.from(host.querySelectorAll('button')).find(b => b.textContent?.includes(text))!.click());
  try {
-  act(() => root.render(<TaxiDemoScreen onBack={() => {}} />)); click('Начать поездку');
-  until('Rẽ phải!'); click('Налево'); expect(host.textContent).toContain('Ошибок: 1');
-  tick(6); expect(host.textContent).toContain('Rẽ phải!'); click('Направо');
-  until('Dừng lại!'); click('Стоп'); until('Стоим перед светофором');
-  tick(.15); expect(host.textContent).toContain('0 км/ч'); tick(.5); expect(host.textContent).toContain('Стоим перед светофором');
-  until('Зелёный!'); click('Вперёд'); until('Đi thẳng!'); click('Прямо');
-  until('Đi nhanh lên!'); click('Быстрее'); tick(1); expect(host.textContent).toContain('50 км/ч');
-  until('Rẽ trái!'); click('Налево'); until('Поездка завершена');
-  expect(host.textContent).toContain('100% пути'); expect(host.textContent).toContain('⭐ 5'); expect(speechSynthesis.speak).toHaveBeenCalled(); expect(speechSynthesis.resume).toHaveBeenCalled();
-  click('Ещё одна поездка'); expect(host.textContent).toContain('Ошибок: 0'); expect(host.textContent).toContain('0% пути');
-  click('Направо'); until('Dừng lại!');
-  // A red-light violation is no longer silently stopped by the simulator.
-  until('удар сбоку'); tick(1); expect(host.textContent).toContain('Игра окончена');
-  click('Ещё одна поездка'); click('Направо'); until('Dừng lại!'); click('Стоп'); until('Зелёный!');
-  tick(.7); expect(host.textContent).not.toContain('удар сзади'); tick(.5);
-  expect(host.textContent).toContain('удар сзади'); expect(host.textContent).toContain('Игра окончена');
-  // The voice is unlocked by a user gesture and uses an explicit Vietnamese voice.
-  expect(speechSynthesis.speak).toHaveBeenCalled();
- } finally { act(() => root.unmount()); host.remove(); vi.restoreAllMocks(); vi.unstubAllGlobals(); }
+  await act(async () => { root.render(<TaxiDemoScreen onBack={() => {}} />); }); click('Начать поездку'); expect(mock.startRide).toHaveBeenCalledOnce();
+  const d = new Drive(); d.start(); act(() => mock.publish!(d.snapshot()));
+  click('Налево'); expect(mock.action).toHaveBeenCalledWith('left');
+  d.accepted = true; act(() => mock.publish!(d.snapshot())); click('Стоп'); expect(mock.action).toHaveBeenCalledWith('stop');
+  expect(host.textContent).not.toContain('Разворот'); d.distance = UTURN - 250; act(() => mock.publish!(d.snapshot()));
+  click('Разворот'); expect(mock.action).toHaveBeenCalledWith('uturn');
+  d.step = 1; d.distance = 850; act(() => mock.publish!(d.snapshot())); expect(host.querySelector('.taxi-signal')?.textContent).toContain('КРАСНЫЙ');
+  d.green = true; act(() => mock.publish!(d.snapshot())); expect(host.querySelector('.taxi-signal')?.textContent).toContain('ЗЕЛЁНЫЙ');
+ } finally { act(() => root.unmount()); expect(mock.destroy).toHaveBeenCalledWith(true); host.remove(); vi.unstubAllGlobals(); }
 });
