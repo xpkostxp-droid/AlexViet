@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { BackButton } from './BackButton';
 import './IslandGameScreen.css';
 
@@ -24,10 +24,11 @@ export function IslandGameScreen({onBack}:{onBack:()=>void}){
  const [current,setCurrent]=useState(()=>Math.floor(Math.random()*words.length));
  const [turn,setTurn]=useState(0);
  const [message,setMessage]=useState('Выбирай перевод — и строй остров!');
- const [angle,setAngle]=useState(-18);
- const [tilt,setTilt]=useState(58);
- const [zoom,setZoom]=useState(1);
- const drag=useRef<{x:number;y:number;a:number;t:number}|null>(null);
+ const canvas=useRef<HTMLCanvasElement>(null);
+ const sceneApi=useRef<{setBuilt:(ids:number[])=>void;zoom:(d:number)=>void;reset:()=>void;dispose:()=>void}|null>(null);
+ const [sceneError,setSceneError]=useState('');
+ useEffect(()=>{let cancelled=false;let cleanup:(()=>void)|undefined;import('./islandThree').then(m=>{if(!canvas.current||cancelled)return;return m.mountIsland(canvas.current,built)}).then(api=>{if(!api)return;if(cancelled){api.dispose();return}sceneApi.current=api;cleanup=()=>api.dispose()}).catch(()=>{if(!cancelled)setSceneError('Не удалось загрузить 3D-движок. Проверь интернет и обнови страницу.')});return()=>{cancelled=true;cleanup?.();sceneApi.current=null}},[]);
+ useEffect(()=>{sceneApi.current?.setBuilt(built)},[built]);
  const locked=useRef(false);
  const shown=useMemo(()=>[current,...shuffle(words.map((_,i)=>i).filter(i=>i!==current)).slice(0,2)], [current,turn]);
  const choices=useMemo(()=>shuffle(shown),[shown]);
@@ -47,20 +48,12 @@ export function IslandGameScreen({onBack}:{onBack:()=>void}){
  return <div className="screen island-screen">
   <BackButton onClick={onBack} label="К дополнительным играм"/>
   <h1 className="screen-title">🏝️ Остров знаний</h1>
-  <p className="island-subtitle">3D-концепт · 10 слов · построено {built.length}/10</p>
-  <div className="island-viewport" onPointerDown={e=>{drag.current={x:e.clientX,y:e.clientY,a:angle,t:tilt};e.currentTarget.setPointerCapture(e.pointerId)}} onPointerMove={e=>{if(!drag.current)return;setAngle(drag.current.a+(e.clientX-drag.current.x)*.55);setTilt(Math.max(38,Math.min(76,drag.current.t-(e.clientY-drag.current.y)*.25)))}} onPointerUp={()=>drag.current=null} onPointerCancel={()=>drag.current=null}>
-   <div className="island-sky"><span>☁️</span><span>☁️</span></div>
-   <div className="island-water"/>
-   <div className="island-world" style={{transform:`translate(-50%,-50%) scale(${zoom}) rotateX(${tilt}deg) rotateZ(${angle}deg)`, '--camera-angle': `${angle}deg`, '--camera-tilt': `${tilt}deg`} as React.CSSProperties}>
-    <div className="island-shadow"/><div className="island-sand"/><div className="island-grass"/>
-    <div className="island-path"/>
-    <div className="island-decoration island-rock" style={{left:'14%',top:'55%'}}>🪨</div>
-    <div className="island-decoration" style={{left:'78%',top:'44%'}}>🌴</div>
-    <div className="island-decoration" style={{left:'13%',top:'18%'}}>🌴</div>
-    {words.map((w,i)=><div key={w.vi} className={'island-object '+(built.includes(i)?'island-object-built':'island-object-ghost')} style={{left:w.x+'%',top:w.y+'%'}}><span className="island-object-art">{built.includes(i)?w.object:'✧'}</span>{built.includes(i)&&<span className="island-object-label">{w.vi}</span>}</div>)}
-   </div>
-   <div className="island-controls"><button onPointerDown={e=>e.stopPropagation()} onClick={()=>setZoom(z=>Math.min(1.6,z+.15))} aria-label="Приблизить">＋</button><button onPointerDown={e=>e.stopPropagation()} onClick={()=>setZoom(z=>Math.max(.7,z-.15))} aria-label="Отдалить">−</button><button onPointerDown={e=>e.stopPropagation()} onClick={()=>{setAngle(-18);setTilt(58);setZoom(1)}} aria-label="Сбросить камеру">⟳</button></div>
-   <div className="island-hint">Проведи пальцем, чтобы повернуть остров</div>
+  <p className="island-subtitle">Three.js · 10 слов · построено {built.length}/10</p>
+  <div className="island-viewport island-viewport-3d">
+   <canvas ref={canvas} className="island-canvas" aria-label="Трёхмерный тропический остров, вращается пальцем"/>
+   {sceneError && <div className="island-scene-error">{sceneError}</div>}
+   <div className="island-controls"><button onClick={()=>sceneApi.current?.zoom(-2)} aria-label="Приблизить">＋</button><button onClick={()=>sceneApi.current?.zoom(2)} aria-label="Отдалить">−</button><button onClick={()=>sceneApi.current?.reset()} aria-label="Сбросить камеру">⟳</button></div>
+   <div className="island-hint">Проведи пальцем, чтобы повернуть настоящий 3D-остров</div>
   </div>
   <div className="island-question"><div className="island-prompt">Как по-вьетнамски «{words[current].ru}»?</div><div className="island-options">{answerOptions.map((i,k)=><button key={k} onClick={()=>choose(i)}>{words[i].vi}</button>)}</div><div className="island-feedback" role="status">{message}</div></div>
   <p className="island-footnote">Прогресс сохраняется на этом устройстве. Правильный ответ строит объект, ошибка убирает его.</p>
