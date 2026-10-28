@@ -1,7 +1,8 @@
 import Phaser from 'phaser';
-import { Action, Drive, DriveView, roadPose, FINISH } from './drive';
+import { Action, Drive, DriveView } from './drive';
+import { AGENTS, AgentSpec, agentSpawn, agentMotion, taxiMotion } from './traffic';
 
-type Agent = { sprite: Phaser.Physics.Arcade.Image; role: 'left' | 'right' | 'rear' | 'cross'; offset: number; lane: number };
+type Agent = { sprite: Phaser.Physics.Arcade.Image; spec: AgentSpec };
 export class TaxiScene extends Phaser.Scene {
  readonly drive = new Drive();
  private taxi!: Phaser.Physics.Arcade.Image;
@@ -18,12 +19,7 @@ export class TaxiScene extends Phaser.Scene {
  create() {
   this.drawWorld(); this.makeCarTexture('taxi', 0xf5bd2b, true); this.makeCarTexture('coral', 0xe06e6b); this.makeCarTexture('blue', 0x62a5d4); this.makeCarTexture('white', 0xe6ece7);
   this.taxi = this.car(0, 600, 'taxi').setDepth(20);
-  this.traffic = [
-   { sprite: this.car(-58, 610, 'coral'), role: 'left', offset: -10, lane: -58 },
-   { sprite: this.car(58, 610, 'white'), role: 'right', offset: -10, lane: 58 },
-   { sprite: this.car(0, 725, 'blue'), role: 'rear', offset: -125, lane: 0 },
-   { sprite: this.car(480, -220, 'coral'), role: 'cross', offset: 0, lane: 0 },
-  ];
+  this.traffic = AGENTS.map(spec => { const p = agentSpawn(spec); return { sprite: this.car(p.x, p.y, spec.texture), spec }; });
   for (const agent of this.traffic) this.physics.add.overlap(this.taxi, agent.sprite, () => this.impact());
   this.cameras.main.setBackgroundColor('#82b993'); this.followCamera(1);
   this.publish(this.drive.snapshot()); this.ready();
@@ -85,8 +81,7 @@ export class TaxiScene extends Phaser.Scene {
  startRide() {
   this.physics.resume(); this.drive.start(); this.crashReported = false; this.lastPrompt = ''; this.elapsed = 0;
   this.taxi.clearTint(); this.taxi.body!.reset(0, 600); this.taxi.setRotation(0).setVelocity(0, 0);
-  for (const agent of this.traffic) { const p = roadPose(Math.max(-200, agent.offset)); agent.sprite.body!.reset(p.x + agent.lane, p.y); agent.sprite.setVelocity(0, 0).clearTint(); }
-  this.traffic[3].sprite.body!.reset(480, -220);
+  for (const agent of this.traffic) { const p = agentSpawn(agent.spec); agent.sprite.body!.reset(p.x, p.y); agent.sprite.setVelocity(0, 0).clearTint(); }
   this.setSignal(false); this.followCamera(1); this.speak(this.drive.command.vi); this.lastPrompt = '0'; this.publish(this.drive.snapshot());
  }
  action(action: Action) { this.drive.input(action); this.publish(this.drive.snapshot()); }
@@ -100,10 +95,6 @@ export class TaxiScene extends Phaser.Scene {
   const heading = this.taxi.rotation; const camera = this.cameras.main;
   const wanted = -heading; this.cameraHeading += Phaser.Math.Angle.Wrap(wanted - this.cameraHeading) * blend; camera.setRotation(this.cameraHeading);
   camera.centerOn(this.taxi.x + Math.sin(heading) * 90, this.taxi.y - Math.cos(heading) * 90);
- }
- private velocityToward(sprite: Phaser.Physics.Arcade.Image, x: number, y: number, max: number) {
-  const dx = x - sprite.x, dy = y - sprite.y; const length = Math.hypot(dx, dy);
-  const speed = Math.min(max, length * 7); sprite.setVelocity(length ? dx / length * speed : 0, length ? dy / length * speed : 0);
  }
  private impact() {
   if (this.crashReported || (this.drive.phase !== 'driving' && this.drive.phase !== 'crashing')) return;
@@ -121,29 +112,12 @@ export class TaxiScene extends Phaser.Scene {
   // Small fixed substeps keep braking and route decisions stable on slower phones.
   let remaining = dt; while (remaining > 0) { const step = Math.min(remaining, 1 / 60); d.update(step); remaining -= step; }
   if (d.green !== this.greenShown) this.setSignal(d.green);
-  if (d.phase === 'driving') {
-   const p = roadPose(d.distance);
-   this.taxi.rotation = p.heading;
-   if (d.speed < .1) this.taxi.setVelocity(0, 0);
-   else { const ahead = roadPose(Math.min(FINISH, d.distance + d.speed * .07)); this.velocityToward(this.taxi, ahead.x, ahead.y, d.speed * 1.3); }
-  } else if (d.phase === 'crashing') {
-   const turn = d.deviation === 'left' ? -Math.PI / 2 : d.deviation === 'right' ? Math.PI / 2 : d.deviation === 'uturn' ? Math.PI : 0;
-   const h = d.deviationHeading + turn * Math.min(1, d.deviationTime / .55); this.taxi.setRotation(h).setVelocity(Math.sin(h) * d.speed, -Math.cos(h) * d.speed);
-  } else { this.taxi.setVelocity(0, 0); }
+  const motion = taxiMotion(d, this.taxi);
+  this.taxi.setRotation(motion.heading).setVelocity(motion.x, motion.y);
   if (d.phase === 'driving' || d.phase === 'crashing') {
    for (const agent of this.traffic) {
-    if (d.threat === agent.role && d.phase === 'crashing') {
-     // The existing neighbouring car pursues the actual taxi body; only a
-     // physics overlap ends the game. No timer fabricates an impact.
-     this.velocityToward(agent.sprite, this.taxi.x + Math.sin(this.taxi.rotation) * d.speed * .12, this.taxi.y - Math.cos(this.taxi.rotation) * d.speed * .12, 290);
-     const body = agent.sprite.body as Phaser.Physics.Arcade.Body; agent.sprite.rotation = Math.atan2(body.velocity.x, -body.velocity.y);
-    } else if (agent.role === 'cross') {
-     const y = d.green ? -235 : -240 + Math.sin(this.elapsed * .7) * 30;
-     this.velocityToward(agent.sprite, 480, y, 65); agent.sprite.rotation = Math.PI;
-    } else {
-     const p = roadPose(d.distance + agent.offset);
-     this.velocityToward(agent.sprite, p.x + Math.cos(p.heading) * agent.lane, p.y + Math.sin(p.heading) * agent.lane, d.targetSpeed * 1.5); agent.sprite.rotation = p.heading;
-    }
+    const velocity = agentMotion(d, agent.spec, agent.sprite, this.taxi, this.taxi.rotation, this.elapsed);
+    agent.sprite.setVelocity(velocity.x, velocity.y).setRotation(velocity.heading);
    }
   }
   this.followCamera(1 - Math.exp(-dt * 8));
