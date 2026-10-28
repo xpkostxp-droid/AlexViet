@@ -2,7 +2,8 @@
 // Three.js is delivered as a pinned ES module; the rest of AlexViet has no 3D download.
 type SceneApi = { setBuilt:(ids:number[])=>void; zoom:(delta:number)=>void; reset:()=>void; dispose:()=>void };
 export async function mountIsland(canvas:HTMLCanvasElement, initial:number[]):Promise<SceneApi>{
- const THREE:any = await import(/* @vite-ignore */ 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js');
+ const moduleUrl = 'https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js';
+ const THREE:any = await import(/* @vite-ignore */ moduleUrl);
  const scene=new THREE.Scene();scene.background=new THREE.Color('#8ed8f6');scene.fog=new THREE.Fog('#8ed8f6',28,60);
  const camera=new THREE.PerspectiveCamera(42,1,.1,100);let azimuth=.65,elevation=.82,distance=19;
  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false,powerPreference:'low-power'});
