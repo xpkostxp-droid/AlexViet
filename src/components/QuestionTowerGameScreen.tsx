@@ -17,16 +17,28 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
  const deadline=useRef<number|null>(null);
  const [best,setBest]=useState(()=>Number(localStorage.getItem('alexviet-question-tower-best')||0));
  const timer=useRef<ReturnType<typeof setTimeout>|null>(null);const lock=useRef(false);
+ const recordQueue=useRef<number[]>([]);
  const total=counts.reduce((a,b)=>a+b,0);
  const next=(c:number[],previous:number,record:boolean)=>{
   const group=Array.from({length:5},(_,i)=>i).find(g=>c.slice(g*3,g*3+3).some(x=>x<3))??4;
   const pool=record?words.map((_,i)=>i):[group*3,group*3+1,group*3+2];
   const needed=record?pool:pool.filter(i=>c[i]<3);
   const candidates=needed.filter(i=>i!==previous);
-  const target=mix(candidates.length?candidates:needed)[0];
+  let target:number;
+  if(record){
+   if(recordQueue.current.length===0){
+    const all=words.map((_,i)=>i);
+    let shuffled=mix(all);
+    if(shuffled[0]===previous){shuffled=[...shuffled.slice(1),shuffled[0]];}
+    recordQueue.current=shuffled;
+   }
+   target=recordQueue.current.shift()!;
+  }else{
+   target=mix(candidates.length?candidates:needed)[0];
+  }
   if(record){setRemaining(5);deadline.current=Date.now()+5000;}setQ(target);setOptions(mix(pool.filter(i=>i!==target)).slice(0,2).concat(target).sort(()=>Math.random()-.5));
  };
- const start=(m:'learn'|'record')=>{if(timer.current)clearTimeout(timer.current);lock.current=false;deadline.current=null;setCrashed(false);setEndReason(null);setRemaining(5);setMode(m);setCounts(Array(15).fill(0));setBlocks([]);setDone(false);setFeedback(null);setReverse(false);next(Array(15).fill(0),-1,m==='record')};
+ const start=(m:'learn'|'record')=>{if(timer.current)clearTimeout(timer.current);lock.current=false;deadline.current=null;setCrashed(false);setEndReason(null);setRemaining(5);recordQueue.current=[];setMode(m);setCounts(Array(15).fill(0));setBlocks([]);setDone(false);setFeedback(null);setReverse(false);next(Array(15).fill(0),-1,m==='record')};
  const answer=(i:number)=>{
   if(lock.current||done||!mode)return;
   if(i!==q){setFeedback('wrong');if(mode==='record'){deadline.current=null;lock.current=true;setCrashed(true);setEndReason('wrong');setDone(true)}else{if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>setFeedback(null),650)}return}
