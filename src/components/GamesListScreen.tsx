@@ -1,6 +1,6 @@
 import { BackButton } from './BackButton';
 export type GamesCategory = 'lessons' | 'extra' | null;
-export function GamesListScreen({ category, onCategoryChange, onBack, onOpenRestaurant, onOpenQuestionTower, onOpenIsland, onOpenSuperBlitz, onOpenPeople, onOpenTravel, onOpenProfessions, onOpenFamily, onOpenHouse, onOpenLesson9 }: { category: GamesCategory; onCategoryChange: (category: GamesCategory) => void; onOpenRestaurant: () => void; onOpenQuestionTower: () => void; onOpenIsland?: () => void; onOpenSuperBlitz: () => void; onOpenPeople: () => void; onBack: () => void; onOpenTravel: () => void; onOpenProfessions: () => void; onOpenFamily: () => void; onOpenHouse: () => void; onOpenLesson9: () => void }) {
+export function GamesListScreen({ category, onCategoryChange, onBack, onOpenRestaurant, onOpenQuestionTower, onOpenSuperBlitz, onOpenPeople, onOpenTravel, onOpenProfessions, onOpenFamily, onOpenHouse, onOpenLesson9 }: { category: GamesCategory; onCategoryChange: (category: GamesCategory) => void; onOpenRestaurant: () => void; onOpenQuestionTower: () => void; onOpenSuperBlitz: () => void; onOpenPeople: () => void; onBack: () => void; onOpenTravel: () => void; onOpenProfessions: () => void; onOpenFamily: () => void; onOpenHouse: () => void; onOpenLesson9: () => void }) {
  return <div className="screen games-menu-screen">
   <BackButton onClick={category ? () => onCategoryChange(null) : onBack} label={category ? 'К разделам игр' : 'На главную'}/>
   <h1 className="screen-title">{category === 'lessons' ? 'Игры по урокам' : category === 'extra' ? 'Дополнительные' : 'Игры'}</h1>
@@ -8,7 +8,6 @@ export function GamesListScreen({ category, onCategoryChange, onBack, onOpenRest
    <button className="lesson-item game-menu-item game-lesson-group" onClick={() => onCategoryChange('lessons')}><span className="lesson-number">Игры по урокам</span></button>
    <button className="lesson-item game-menu-item game-lesson-group" onClick={() => onCategoryChange('extra')}><span className="lesson-number">Дополнительные</span></button>
   </>}
-  {category === 'extra' && onOpenIsland && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenIsland}><span className="lesson-number">🏝️ Остров знаний · 10 слов (концепт)</span></button>}
   {category === 'extra' && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenQuestionTower}><span className="lesson-number">🏗️ Башня вопросов · 15 слов</span></button>}
   {category === 'extra' && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenSuperBlitz}><span className="lesson-number">🏗️ Вопросы · Суперблиц · 24 слова</span></button>}
   {category === 'extra' && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenRestaurant}><span className="lesson-number">Игра · Ресторан</span></button>}
