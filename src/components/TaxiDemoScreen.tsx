@@ -32,8 +32,8 @@ function say(text: string, failed: () => void) {
   synth.speak(utterance);
  } catch { failed(); }
 }
-type Ride = { distance: number; speed: number; target: number; active: boolean; step: number; accepted: boolean; stopTime: number; green: boolean; score: number; mistakes: number; go: boolean; greenTime: number; crash: 'side' | 'rear' | null; crashTime: number; trafficTime: number };
-const newRide = (): Ride => ({ distance: 0, speed: 75, target: 75, active: false, step: -1, accepted: false, stopTime: 0, green: false, score: 0, mistakes: 0, go: false, greenTime: 0, crash: null, crashTime: 0, trafficTime: 0 });
+type Ride = { distance: number; speed: number; target: number; active: boolean; step: number; accepted: boolean; stopTime: number; green: boolean; score: number; mistakes: number; go: boolean; greenTime: number; greenSince: number; crash: 'side' | 'rear' | null; crashTime: number; trafficTime: number };
+const newRide = (): Ride => ({ distance: 0, speed: 75, target: 75, active: false, step: -1, accepted: false, stopTime: 0, green: false, score: 0, mistakes: 0, go: false, greenTime: 0, greenSince: 0, crash: null, crashTime: 0, trafficTime: 0 });
 function render(ctx: CanvasRenderingContext2D, ride: Ride) {
  const p = pose(ride.distance);
  ctx.fillStyle = '#83c56f'; ctx.fillRect(0, 0, 390, 490);
@@ -111,9 +111,9 @@ export function TaxiDemoScreen({ onBack }: { onBack: () => void }) {
     if (command?.action === 'stop' && r.accepted && r.distance >= 649.9 && !r.green) {
      r.speed = 0; r.stopTime += dt;
      setStatus('Стоим перед светофором…');
-     if (r.stopTime >= 1) { r.green = true; r.greenTime = 0; setStatus('Зелёный! Нажми «Вперёд» за секунду.'); speak('Đi tiếp!'); }
+     if (r.stopTime >= 1) { r.green = true; r.greenTime = 0; r.greenSince = now; setStatus('Зелёный! Нажми «Вперёд» за секунду.'); speak('Đi tiếp!'); }
     }
-    if (r.green && !r.go && r.active) { r.greenTime += dt; if (r.greenTime > 1) crash('rear'); }
+    if (r.green && !r.go && r.active) { r.greenTime = (now - r.greenSince) / 1000; if (r.greenTime > 1) crash('rear'); }
     const complete = command && r.accepted && (command.action === 'stop' ? r.go : r.distance >= command.end);
     const next = r.step + 1;
     if ((!command || complete) && next < commands.length && r.distance >= commands[next].at) {
