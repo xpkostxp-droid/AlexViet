@@ -22,7 +22,6 @@ function speak(s:string){try{const u=new SpeechSynthesisUtterance(s);u.lang='vi-
 export function IslandGameScreen({onBack}:{onBack:()=>void}){
  const [built,setBuilt]=useState<number[]>(load);
  const [current,setCurrent]=useState(()=>Math.floor(Math.random()*words.length));
- const [options,setOptions]=useState<number[]>(()=>shuffle([0,1,2]).map((_,i)=>i)); 
  const [turn,setTurn]=useState(0);
  const [message,setMessage]=useState('Выбирай перевод — и строй остров!');
  const [angle,setAngle]=useState(-18);
