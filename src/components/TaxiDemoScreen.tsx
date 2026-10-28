@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { BackButton } from './BackButton';
-import { Action, COMMANDS, Drive, EAST, FINISH, STOP } from '../games/taxi/drive';
+import { Action, DESTINATIONS, Drive, WORDS } from '../games/taxi/drive';
 import type { createTaxiGame } from '../games/taxi/TaxiScene';
 import './TaxiDemoScreen.css';
 
@@ -29,27 +29,29 @@ export function TaxiDemoScreen({ onBack }: { onBack: () => void }) {
   }).catch(() => { if (!disposed) setError('Не удалось загрузить игру. Обнови страницу и попробуй снова.'); });
   return () => { disposed = true; engine.current?.game.destroy(true); engine.current = undefined; if ('speechSynthesis' in window) window.speechSynthesis.cancel(); };
  }, []);
- const command = COMMANDS[view.step];
- const active = view.phase === 'driving', ended = view.phase === 'gameover' || view.phase === 'finished';
- const signalVisible = view.distance > EAST + 65 && view.distance < STOP + 170;
- const actions: [Action, string, string][] = [['left', '←', 'Налево'], ['straight', '↑', 'Прямо'], ['right', '→', 'Направо'], ['stop', '■', 'Стоп'], ['go', '▶', 'Вперёд'], ['fast', '»', 'Быстрее']];
- if (view.uturnVisible) actions.push(['uturn', '↶', 'Разворот']);
+ const active = view.phase === 'driving' || view.phase === 'waiting', ended = view.phase === 'finished';
+ const instruction = WORDS[view.instruction];
+ const actions: Action[] = ['left', 'straight', 'right', 'uturn'];
+ const destination = DESTINATIONS.find(d => d.id === view.goal)!;
  return <div className="screen taxi-demo">
   <BackButton onClick={onBack} label="К дополнительным играм"/>
-  <div className="taxi-heading"><div><h1 className="screen-title">🚕 Такси Нячанг</h1><p className="taxi-subtitle">Отель → Пляж · слушай и управляй</p></div><span className="taxi-engine-tag">Phaser</span></div>
+  <div className="taxi-heading"><div><h1 className="screen-title">🚕 Такси Нячанг</h1><p className="taxi-subtitle">Навигатор · доедь до цели</p></div></div>
+  {!active && !ended && <label className="taxi-destination">Куда едем? <select value={view.goal} disabled={!ready} onChange={e => engine.current?.scene.selectGoal(e.target.value)}>{DESTINATIONS.map(d => <option key={d.id} value={d.id}>{d.icon} {d.name}</option>)}</select></label>}
   <div className="taxi-stage">
-   <div ref={mount} className="taxi-engine" role="img" aria-label="Дорога, такси, соседние машины и светофоры"/>
-   <div className="taxi-hud"><span>{Math.round(view.distance / FINISH * 100)}% пути</span><span>⭐ {view.score}</span><span>{Math.round(view.speed * .4)} км/ч</span></div>
-   {signalVisible && <div className={'taxi-signal ' + (view.green ? 'green' : 'red')}><i/>{view.green ? 'ЗЕЛЁНЫЙ' : 'КРАСНЫЙ'}{view.green && command.action === 'go' && !view.accepted && active && <b>{view.reaction.toFixed(1)} с</b>}</div>}
-   {(ended || view.phase === 'crashing') && <div className="taxi-result"><strong>{view.phase === 'finished' ? '🏖 Приехали!' : view.phase === 'crashing' ? '⚠ Опасный манёвр' : '💥 Авария'}</strong><span>{view.message}</span></div>}
+   <div ref={mount} className="taxi-engine" role="img" aria-label="Постоянная карта кварталов с маршрутом от отеля до цели"/>
+   <div className="taxi-hud"><span>{destination.icon} {destination.name}</span><span>{Math.round(view.remaining)} м до цели</span></div>
+   {active && <div className="taxi-navigation"><b aria-label={instruction.ru}>{instruction.arrow}</b><div><strong>{view.phase === 'waiting' ? 'Выбери направление' : `Через ${Math.round(view.metresToTurn)} м`}</strong><span>{instruction.ru}</span></div></div>}
+   {ended && <div className="taxi-result"><strong>🏁 Вы приехали!</strong><span>{destination.name} · {Math.round(view.travelled)} м пути</span></div>}
+   <button className="taxi-map-button" onClick={() => engine.current?.scene.toggleMap()} disabled={!ready}>🗺 Вся карта / ближе</button>
   </div>
   <div className="taxi-panel">
-   <div className="taxi-prompt"><span>{active && view.prompt ? 'Пассажир просит' : active ? 'В пути' : ended ? 'Поездка завершена' : 'Готов к поездке?'}</span><button onClick={() => engine.current?.scene.repeat()} disabled={!active || !view.prompt} aria-label="Повторить команду">🔊</button></div>
-   <strong>{active && view.prompt ? textMode ? command.vi : '🎧 Слушай команду' : active ? '🚕 Следи за дорогой' : view.phase === 'finished' ? 'Доехали до пляжа' : view.phase === 'gameover' ? 'Попробуем ещё раз?' : 'Поехали?'}</strong>
-   <p role="status">{error || view.message}</p>{audioError && <p className="taxi-audio-error" role="alert">{audioError}</p>}
-   {!active && view.phase !== 'crashing' ? <button className="taxi-start" disabled={!ready || !!error} onClick={() => engine.current?.scene.startRide()}>{!ready ? 'Загружаем игру…' : ended ? '🚕 Новая поездка' : '🚕 Начать поездку'}</button> : <div className="taxi-actions">{actions.map(([action, icon, label]) => <button key={action} disabled={!active} onClick={() => engine.current?.scene.action(action)}><span>{icon}</span><small>{label}</small></button>)}</div>}
-   <label className="taxi-mode"><input type="checkbox" checked={!textMode} onChange={e => setTextMode(!e.target.checked)}/> Только аудирование — скрыть команду</label>
+   <p role="status">{error || view.message}</p>
+   {!active ? <button className="taxi-start" disabled={!ready || !!error} onClick={() => engine.current?.scene.startRide()}>{!ready ? 'Загружаем карту…' : ended ? '🚕 Ещё одна поездка' : '🚕 Поехали'}</button> : <div className="taxi-actions taxi-navigator-actions">{actions.map(action => <button key={action} onClick={() => engine.current?.scene.action(action)} aria-pressed={view.queued === action}><span>{WORDS[action].vi}</span>{textMode && <small>{WORDS[action].ru}</small>}</button>)}</div>}
+   {active && <p className="taxi-queued">{view.queued ? `Выбрано: ${WORDS[view.queued].vi}` : 'Без выбора едем прямо'}</p>}
+   <label className="taxi-mode"><input type="checkbox" checked={textMode} onChange={e => setTextMode(e.target.checked)}/> Русские подсказки на кнопках</label>
+   <button className="taxi-voice" onClick={() => engine.current?.scene.repeat()} disabled={!active}>🔊 Озвучить ближайший манёвр</button>
+   {audioError && <p className="taxi-audio-error" role="alert">{audioError}</p>}
   </div>
-  <p className="taxi-disclaimer">Кнопки управляют машиной. Повороты — на перекрёстках, разворот — у знака. На красный остановись, на зелёный тронься за секунду.</p>
+  <p className="taxi-disclaimer">Пропустил поворот — маршрут перестроится. Если прямо дороги нет, такси ждёт выбора. Можно ездить сколько угодно: поездка закончится у цели.</p>
  </div>;
 }

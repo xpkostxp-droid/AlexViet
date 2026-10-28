@@ -1,87 +1,69 @@
-export type Action = 'left' | 'right' | 'straight' | 'stop' | 'go' | 'fast' | 'uturn';
-export type Threat = 'left' | 'right' | 'rear' | 'cross';
-export type Point = { x: number; y: number; heading: number };
-const R = 80, ARC = Math.PI * R / 2;
-export const RIGHT = 520;
-export const EAST = RIGHT + ARC;
-export const STOP = EAST + 320;
-export const LEFT = EAST + 940;
-export const NORTH = LEFT + ARC;
-export const UTURN = NORTH + 520;
-export const SOUTH = UTURN + Math.PI * 75;
-export const FINISH = SOUTH + 650;
-export function roadPose(s: number): Point {
- if (s < RIGHT) return { x: 0, y: 600 - s, heading: 0 };
- if (s < EAST) { const a = (s - RIGHT) / R; return { x: 80 - 80 * Math.cos(a), y: 80 - 80 * Math.sin(a), heading: a }; }
- if (s < LEFT) return { x: 80 + s - EAST, y: 0, heading: Math.PI / 2 };
- if (s < NORTH) { const a = (s - LEFT) / R; return { x: 1020 + 80 * Math.sin(a), y: -80 + 80 * Math.cos(a), heading: Math.PI / 2 - a }; }
- if (s < UTURN) return { x: 1100, y: -80 - (s - NORTH), heading: 0 };
- if (s < SOUTH) { const a = (s - UTURN) / 75; return { x: 1175 - 75 * Math.cos(a), y: -600 - 75 * Math.sin(a), heading: a }; }
- return { x: 1250, y: -600 + s - SOUTH, heading: Math.PI };
+export type Action = 'left' | 'right' | 'straight' | 'uturn';
+export type Node = { id: string; x: number; y: number };
+export const SIZE = 5, BLOCK = 300;
+export const NODES: Node[] = Array.from({ length: SIZE * SIZE }, (_, i) => ({ id: `${i % SIZE},${Math.floor(i / SIZE)}`, x: i % SIZE * BLOCK, y: Math.floor(i / SIZE) * BLOCK }));
+export const START = '0,4';
+export const DESTINATIONS = [{ id: '4,0', name: 'Пляж', icon: '🏖' }, { id: '3,2', name: 'Рынок', icon: '🛍' }, { id: '1,0', name: 'Храм', icon: '⛩' }];
+export const WORDS: Record<Action, { vi: string; ru: string; arrow: string }> = {
+ left: { vi: 'Rẽ trái', ru: 'Налево', arrow: '←' }, right: { vi: 'Rẽ phải', ru: 'Направо', arrow: '→' }, straight: { vi: 'Đi thẳng', ru: 'Прямо', arrow: '↑' }, uturn: { vi: 'Quay đầu', ru: 'Разворот', arrow: '↶' },
+};
+export const node = (id: string) => NODES.find(n => n.id === id)!;
+export function neighbours(id: string) {
+ const p = node(id);
+ // Every street is bidirectional. Boundary junctions are real T-junctions.
+ return [[BLOCK, 0], [0, -BLOCK], [-BLOCK, 0], [0, BLOCK]].map(([x, y]) => NODES.find(n => n.x === p.x + x && n.y === p.y + y)).filter((n): n is Node => !!n).map(n => n.id);
 }
-export const COMMANDS = [
- { at: 0, end: EAST + 45, action: 'right', vi: 'Rẽ phải!', ru: 'На перекрёстке направо', mark: RIGHT },
- { at: EAST + 110, end: STOP, action: 'stop', vi: 'Dừng lại!', ru: 'Остановись перед красным светофором', mark: STOP },
- { at: STOP, end: STOP + 55, action: 'go', vi: 'Đi tiếp!', ru: 'Зелёный! Вперёд — одна секунда на старт', mark: STOP },
- { at: STOP + 100, end: STOP + 200, action: 'straight', vi: 'Đi thẳng!', ru: 'Продолжай прямо', mark: STOP + 210 },
- { at: STOP + 260, end: STOP + 360, action: 'fast', vi: 'Đi nhanh lên!', ru: 'Ускорься', mark: STOP + 380 },
- { at: LEFT - 180, end: NORTH + 25, action: 'left', vi: 'Rẽ trái!', ru: 'На перекрёстке налево', mark: LEFT },
- { at: UTURN - 250, end: SOUTH + 40, action: 'uturn', vi: 'Quay đầu!', ru: 'Развернись в обозначенном месте', mark: UTURN },
-] as const;
-export type DriveView = ReturnType<Drive['snapshot']>;
-/** Road decisions and speed control; collisions are reported by Phaser Arcade Physics. */
-export class Drive {
- phase: 'ready' | 'driving' | 'crashing' | 'gameover' | 'finished' = 'ready';
- distance = 0; speed = 0; targetSpeed = 90; step = 0; accepted = false; score = 0;
- green = false; stoppedFor = 0; greenElapsed = 0; threat: Threat | null = null;
- deviation: Action | null = null; deviationTime = 0; deviationHeading = 0;
- message = 'Слушай пассажира. Кнопки управляют машиной: ошибка может закончиться аварией.';
- get command() { return COMMANDS[this.step]; }
- get prompt() { return this.phase === 'driving' && !this.accepted && this.distance >= this.command.at; }
- start() { Object.assign(this, new Drive()); this.phase = 'driving'; this.speed = 90; this.message = this.command.ru; }
- fail(threat: Threat, action: Action, message: string) {
-  if (this.phase !== 'driving') return;
-  this.phase = 'crashing'; this.threat = threat; this.deviation = action;
-  this.deviationHeading = roadPose(this.distance).heading; this.deviationTime = 0; this.message = message;
+export function shortestPath(from: string, goal: string): string[] {
+ const queue = [from], previous = new Map<string, string | null>([[from, null]]);
+ for (let i = 0; i < queue.length; i++) {
+  const id = queue[i]; if (id === goal) break;
+  for (const next of neighbours(id)) if (!previous.has(next)) { previous.set(next, id); queue.push(next); }
  }
+ if (!previous.has(goal)) return [];
+ const path: string[] = []; let id: string | null = goal;
+ while (id !== null) { path.unshift(id); id = previous.get(id) ?? null; } return path;
+}
+export const headingBetween = (a: string, b: string) => { const p = node(a), q = node(b); return (Math.round(Math.atan2(q.x - p.x, p.y - q.y) / (Math.PI / 2)) + 4) % 4; };
+export const turnFor = (incoming: number, outgoing: number): Action => (['straight', 'right', 'uturn', 'left'] as const)[(outgoing - incoming + 4) % 4];
+export class Drive {
+ phase: 'ready' | 'driving' | 'waiting' | 'finished' = 'ready';
+ from = START; to = '0,3'; progress = 0; heading = 0; queued: Action | null = null;
+ goal = DESTINATIONS[0].id; travelled = 0; reroutes = 0; revision = 0;
+ message = 'Посмотри маршрут на карте. Выбери направление кнопкой перед перекрёстком.';
+ get junction() { return this.phase === 'waiting' ? this.from : this.to; }
+ get route() { return shortestPath(this.junction, this.goal); }
+ get instruction(): Action { const path = this.route; return path.length > 1 ? turnFor(this.heading, headingBetween(path[0], path[1])) : 'straight'; }
+ get remaining() { if (this.phase === 'finished') return 0; return (this.phase === 'waiting' ? 0 : BLOCK - this.progress) + Math.max(0, this.route.length - 1) * BLOCK; }
+ get position() { const a = node(this.from), b = node(this.to), t = this.progress / BLOCK; return { x: a.x + (b.x - a.x) * t, y: a.y + (b.y - a.y) * t, heading: this.heading * Math.PI / 2 }; }
+ selectGoal(goal: string) { if (this.phase !== 'ready' || !DESTINATIONS.some(d => d.id === goal)) return; this.goal = goal; this.revision++; }
+ start() { const goal = this.goal; Object.assign(this, new Drive()); this.goal = goal; this.phase = 'driving'; this.message = 'Едем к цели. Стрелка показывает ближайший манёвр.'; this.revision++; }
  input(action: Action) {
-  if (this.phase !== 'driving') return;
-  // Buttons never silently ignore a dangerous manoeuvre, even between commands.
-  if (!this.prompt || action !== this.command.action) {
-   if (action === 'stop') this.fail('rear', action, 'Резкая остановка в потоке: машина сзади не успевает затормозить.');
-   else if (action === 'left' || action === 'right' || action === 'uturn') this.fail(action === 'left' ? 'left' : 'right', action, 'Опасный манёвр вне маршрута: столкновение с соседней машиной.');
-   else if (this.command.action === 'stop' || (this.command.action === 'go' && !this.green)) this.fail('cross', action, 'Проезд на красный: поперечный поток.');
-   else this.fail('right', action, 'Неверная команда: пересечение с соседним потоком.');
-   return;
-  }
-  if (action === 'stop' && this.distance > STOP + 8) { this.fail('cross', action, 'Слишком поздно: стоп-линия уже позади.'); return; }
-  this.accepted = true; this.score++;
-  if (action === 'fast') this.targetSpeed = 135;
-  if (action === 'go') this.targetSpeed = 90;
-  this.message = action === 'stop' ? 'Тормозим к стоп-линии…' : action === 'fast' ? 'Ускоряемся.' : action === 'go' ? 'Трогаемся на зелёный.' : 'Принято. Следи за дорогой.';
+  if (this.phase !== 'driving' && this.phase !== 'waiting') return;
+  if (this.phase === 'waiting') this.depart(action);
+  else { this.queued = action; this.message = `${WORDS[action].vi} — выполняем на ближайшем перекрёстке.`; }
+ }
+ private depart(action: Action) {
+  const current = this.from, incoming = this.heading;
+  const outgoing = (incoming + ({ straight: 0, right: 1, uturn: 2, left: 3 }[action])) % 4;
+  const next = neighbours(current).find(id => headingBetween(current, id) === outgoing);
+  if (!next) { this.phase = 'waiting'; this.queued = null; this.message = 'В этом направлении дороги нет. Выбери другой поворот.'; this.revision++; return; }
+  const preferred = shortestPath(current, this.goal)[1];
+  this.to = next; this.heading = outgoing; this.progress = 0; this.queued = null; this.phase = 'driving'; this.revision++;
+  if (next !== preferred) { this.reroutes++; this.message = 'Маршрут перестроен. Продолжаем к той же цели.'; }
+  else this.message = 'Едем дальше. Следующий манёвр — на стрелке.';
  }
  update(seconds: number) {
-  if (this.phase === 'crashing') { this.deviationTime += seconds; this.speed = this.deviation === 'stop' || this.threat === 'rear' ? Math.max(0, this.speed - seconds * 300) : Math.max(65, this.speed); return; }
   if (this.phase !== 'driving') return;
-  const c = this.command; let target = this.targetSpeed;
-  if (c.action === 'stop' && this.accepted) target = Math.min(target, Math.sqrt(Math.max(0, STOP - this.distance) * 130));
-  if (c.action === 'go' && !this.accepted) target = 0;
-  const curve = (this.distance >= RIGHT - 65 && this.distance < EAST) || (this.distance >= LEFT - 65 && this.distance < NORTH) || (this.distance >= UTURN - 65 && this.distance < SOUTH);
-  if (curve) target = Math.min(target, 70);
-  this.speed += Math.sign(target - this.speed) * Math.min(Math.abs(target - this.speed), seconds * 85);
-  this.distance += this.speed * seconds;
-  if (c.action === 'stop' && this.accepted && this.distance >= STOP - .5) {
-   this.distance = STOP; this.speed = 0; this.stoppedFor += seconds; this.message = 'Красный. Стоим перед стоп-линией.';
-   if (this.stoppedFor >= 1) { this.green = true; this.step++; this.accepted = false; this.greenElapsed = 0; this.message = this.command.ru; }
-   return;
+  let distance = Math.max(0, seconds) * 100;
+  while (distance > 0 && this.phase === 'driving') {
+   const step = Math.min(distance, BLOCK - this.progress); this.progress += step; this.travelled += step; distance -= step;
+   if (this.progress < BLOCK) break;
+   const chosen = this.queued ?? 'straight'; this.from = this.to; this.progress = 0;
+   if (this.from === this.goal) { this.to = this.from; this.phase = 'finished'; this.message = '🏁 Вы приехали! Цель достигнута.'; this.revision++; break; }
+   this.phase = 'waiting'; this.to = this.from; this.depart(chosen);
+   if (this.phase === 'waiting' && chosen === 'straight') this.message = 'Прямо дороги нет. Выбери поворот — такси подождёт.';
   }
-  if (c.action === 'go' && !this.accepted) { this.greenElapsed += seconds; if (this.greenElapsed > 1) this.fail('rear', 'stop', 'Не тронулся на зелёный за секунду: машина сзади приближается.'); }
-  if (!this.accepted && this.distance >= c.mark + (c.action === 'stop' ? 35 : 2)) {
-   this.fail(c.action === 'stop' ? 'cross' : 'right', 'straight', c.action === 'stop' ? 'Проезд на красный: поперечный поток.' : 'Пропущен манёвр: выезд в другой поток.');
-  }
-  if (this.phase === 'driving' && this.accepted && this.distance >= c.end && this.step < COMMANDS.length - 1) { this.step++; this.accepted = false; this.message = this.distance >= this.command.at ? this.command.ru : 'Едем дальше. Следующая команда появится по дороге.'; }
-  if (this.phase === 'driving' && this.distance >= FINISH) { this.distance = FINISH; this.phase = 'finished'; this.speed = 0; this.message = '🏖 Приехали на пляж!'; }
  }
- collide() { if (this.phase === 'driving' || this.phase === 'crashing') { this.phase = 'gameover'; this.speed = 0; this.message = '💥 Авария. ' + this.message; } }
- snapshot() { return { phase: this.phase, distance: this.distance, speed: this.speed, step: this.step, prompt: this.prompt, accepted: this.accepted, score: this.score, green: this.green, reaction: Math.max(0, 1 - this.greenElapsed), message: this.message, uturnVisible: this.distance >= UTURN - 330 }; }
+ snapshot() { return { phase: this.phase, position: this.position, goal: this.goal, remaining: this.remaining, travelled: this.travelled, reroutes: this.reroutes, instruction: this.instruction, queued: this.queued, message: this.message, route: this.phase === 'waiting' ? this.route : [this.from, ...this.route], junction: this.junction, metresToTurn: this.phase === 'waiting' ? 0 : BLOCK - this.progress, revision: this.revision }; }
 }
+export type DriveView = ReturnType<Drive['snapshot']>;

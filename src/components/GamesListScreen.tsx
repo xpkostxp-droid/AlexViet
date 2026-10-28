@@ -8,7 +8,7 @@ export function GamesListScreen({ category, onCategoryChange, onBack, onOpenRest
    <button className="lesson-item game-menu-item game-lesson-group" onClick={() => onCategoryChange('lessons')}><span className="lesson-number">Игры по урокам</span></button>
    <button className="lesson-item game-menu-item game-lesson-group" onClick={() => onCategoryChange('extra')}><span className="lesson-number">Дополнительные</span></button>
   </>}
-  {category === 'extra' && onOpenTaxi && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenTaxi}><span className="lesson-number">🚕 Такси Нячанг · Анимационный прототип</span></button>}
+  {category === 'extra' && onOpenTaxi && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenTaxi}><span className="lesson-number">🚕 Такси Нячанг · Навигатор по кварталам</span></button>}
   {category === 'extra' && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenQuestionTower}><span className="lesson-number">🏗️ Башня вопросов · 15 слов</span></button>}
   {category === 'extra' && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenSuperBlitz}><span className="lesson-number">🏗️ Вопросы · Суперблиц · 24 слова</span></button>}
   {category === 'extra' && <button className="lesson-item game-menu-item game-lesson-group" onClick={onOpenRestaurant}><span className="lesson-number">Игра · Ресторан</span></button>}
