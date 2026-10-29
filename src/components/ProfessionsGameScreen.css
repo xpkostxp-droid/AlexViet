@@ -1,0 +1,16 @@
+.work-group-list { display: grid; gap: 16px; margin-top: 20px; }
+.work-group-list .big-button { display: grid; gap: 8px; text-align: left; background: #107b70; color: white; }
+.work-group-list span { font-size: .95rem; font-weight: 500; }
+.work-status { display: flex; align-items: center; justify-content: space-between; margin: 4px 0 8px; font-size: 1.15rem; }
+.work-clock { display: grid; place-items: center; width: 44px; height: 44px; border: 3px solid #8cbeb4; border-radius: 50%; font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.work-timebar { height: 5px; background: #dce7df; border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+.work-timebar > div { height: 100%; background: #168477; }
+.work-blitz .work-prompt { padding: 8px 12px; }
+.work-prompt svg { display: block; width: 100%; max-height: 210px; margin: auto; }
+.work-blitz .work-prompt h2 { font-size: clamp(1.35rem, 5.4vw, 1.9rem); line-height: 1.3; }
+.work-blitz .work-prompt-text { min-height: 235px; display: grid; align-items: center; }
+.work-blitz .work-prompt-text h2 { font-size: clamp(2rem, 8vw, 3.2rem); overflow-wrap: normal; }
+.work-blitz .work-options { grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+.work-blitz .work-options button { min-height: 68px; padding: 12px 16px; font-size: clamp(1.15rem, 4.8vw, 1.55rem); line-height: 1.25; font-weight: 700; overflow-wrap: normal; }
+.work-feedback { min-height: 2.6em; margin: 10px 0 0; }
+@media (max-height: 700px) { .work-prompt svg { max-height: 145px; } .work-blitz .work-prompt-text { min-height: 170px; } .work-blitz .work-options button { min-height: 56px; } }

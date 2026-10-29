@@ -1,34 +1,70 @@
 import { act } from 'react';
 import { createRoot } from 'react-dom/client';
-import { afterEach, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, expect, it, vi } from 'vitest';
 import { ProfessionsGameScreen } from './ProfessionsGameScreen';
-import { professionWords as familyWords, workIndices, workOptions } from '../content/games/professions';
+import { professionWords, workBlitzTasks, workBlitzOptions, workBlitzAnswer } from '../content/games/professions';
+vi.mock('../domain/speech', () => ({ speakVietnamese: vi.fn(), stopSpeaking: vi.fn() }));
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
 let root: ReturnType<typeof createRoot>;
 let host: HTMLDivElement;
-afterEach(() => { act(() => root.unmount()); host.remove(); vi.useRealTimers(); });
-it('finishes blitz, records first-attempt mistakes and repeats only failed cards', () => {
-  vi.useFakeTimers(); host = document.createElement('div'); document.body.append(host); root = createRoot(host);
+beforeEach(() => {
+  vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout', 'setInterval', 'clearInterval', 'performance'] });
+  localStorage.clear(); host = document.createElement('div'); document.body.append(host); root = createRoot(host);
   act(() => root.render(<ProfessionsGameScreen onBack={() => {}} />));
-  expect(workIndices('all')).toHaveLength(29);
-  for (const category of ['all', 'people', 'places', 'actions'] as const) {
-    const pool = workIndices(category);
-    for (const index of pool) { const options = workOptions(index, pool); expect(new Set(options).size).toBe(6); expect(options).toContain(index); expect(options.every(i => pool.includes(i))).toBe(true); }
+});
+afterEach(() => { act(() => root.unmount()); host.remove(); vi.useRealTimers(); });
+function click(text: string) { act(() => Array.from(host.querySelectorAll('button')).find(b => b.textContent?.trim() === text || b.querySelector('strong')?.textContent === text)!.click()); }
+function start(group = 'Профессии') { click(group); click('Начать блиц'); }
+function correctAnswer() {
+  const prompt = host.querySelector('.work-prompt h2')!.textContent;
+  const reverse = host.querySelector('.work-prompt h2')!.getAttribute('lang') === 'vi';
+  const word = professionWords.find(w => w[reverse ? 1 : 2] === prompt)!;
+  return word[reverse ? 2 : 1];
+}
+it('has two groups, every word twice, three options and only question distractors for questions', () => {
+  expect(host.querySelectorAll('.work-group-list button')).toHaveLength(2);
+  expect(host.textContent).not.toContain('Обучение');
+  for (const group of ['professions', 'work'] as const) {
+    const tasks = workBlitzTasks(group);
+    expect(tasks).toHaveLength(group === 'professions' ? 30 : 28);
+    expect(new Set(tasks.map(t => `${t.index}:${t.reverse}`)).size).toBe(tasks.length);
+    for (const task of tasks) {
+      const options = workBlitzOptions(task, group);
+      expect(new Set(options).size).toBe(3); expect(options).toContain(workBlitzAnswer(task));
+      if (professionWords[task.index][0].startsWith('ask-')) expect(options.every(o => o.endsWith('?'))).toBe(true);
+    }
   }
-  act(() => (Array.from(host.querySelectorAll('button')).find(b => b.textContent?.includes('⚡ Блиц'))!).click());
-  for (let i = 0; i < 29; i++) {
-    const ru = host.querySelector('.family-card h2')!.textContent;
-    const viWord = familyWords.find(w => w[2] === ru)![1];
-    const choices = Array.from(host.querySelectorAll<HTMLButtonElement>('.family-choices button'));
-    if (i === 0) { const wrong = choices.find(b => b.textContent !== viWord)!; act(() => wrong.click()); expect(wrong.disabled).toBe(true); }
-    act(() => choices.find(b => b.textContent === viWord)!.click());
-    act(() => vi.advanceTimersByTime(1800));
+});
+it('continues after mistakes and timeout, locks double answers, stores isolated best with correct response time', () => {
+  start();
+  for (let i = 0; i < 30; i++) {
+    const correct = correctAnswer();
+    if (i === 0) {
+      act(() => vi.advanceTimersByTime(1000));
+      const wrong = Array.from(host.querySelectorAll<HTMLButtonElement>('.work-options button')).find(b => b.textContent !== correct)!;
+      act(() => { wrong.click(); wrong.click(); });
+      expect(host.querySelectorAll('.family-correct')).toHaveLength(1);
+    } else if (i === 1) {
+      act(() => vi.advanceTimersByTime(5000)); expect(host.textContent).toContain('Время вышло');
+    } else {
+      act(() => vi.advanceTimersByTime(1000)); click(correct);
+    }
+    act(() => vi.advanceTimersByTime(1600));
   }
-  expect(host.textContent).toContain('С первой попытки: 28 из 29');
-  act(() => Array.from(host.querySelectorAll('button')).find(b => b.textContent?.includes('Повторить ошибки'))!.click());
-  expect(host.textContent).toContain('Осталось в повторе: 1');
-  const ru = host.querySelector('.family-card h2')!.textContent;
-  act(() => Array.from(host.querySelectorAll<HTMLButtonElement>('.family-choices button')).find(b => b.textContent === familyWords.find(w => w[2] === ru)![1])!.click());
-  act(() => vi.advanceTimersByTime(1800));
-  expect(host.textContent).toContain('Повтор завершён!');
+  expect(host.textContent).toContain('Правильно: 28 из 30');
+  expect(host.textContent).toContain('Ошибок: 2');
+  expect(host.textContent).toContain('28,00 сек');
+  expect(JSON.parse(localStorage.getItem('alexViet.test.work-blitz.v1.professions')!)).toEqual({ correct: 28, time: 28000 });
+  expect(localStorage.getItem('work-blitz.v1.professions')).toBeNull();
+});
+it('pauses a hidden question until explicit resume and excludes the pause from time', () => {
+  start('Места, действия и вопросы');
+  act(() => vi.advanceTimersByTime(1000));
+  Object.defineProperty(document, 'hidden', { configurable: true, value: true });
+  act(() => document.dispatchEvent(new Event('visibilitychange')));
+  act(() => vi.advanceTimersByTime(15000)); expect(host.textContent).toContain('Игра на паузе');
+  Object.defineProperty(document, 'hidden', { configurable: true, value: false });
+  click('Продолжить'); act(() => vi.advanceTimersByTime(1000)); click(correctAnswer());
+  expect(host.textContent).toContain('Верно!');
+  act(() => vi.advanceTimersByTime(1600)); expect(host.querySelector('.work-status')!.textContent).toContain('2/28 · ✓ 1');
 });

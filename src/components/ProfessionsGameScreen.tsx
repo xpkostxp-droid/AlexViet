@@ -1,62 +1,111 @@
 import { useEffect, useRef, useState } from 'react';
-import { advanceFamily, shuffled } from '../content/games/family';
-import { professionWords as familyWords, workOptions, workIndices, workCategories, type WorkCategory } from '../content/games/professions';
-import { hasVietnameseVoice, onVoicesChanged, speakVietnamese, stopSpeaking } from '../domain/speech';
+import { professionWords, workBlitzGroups, workBlitzTasks, workBlitzAnswer, workBlitzOptions, type WorkBlitzGroup, type WorkTask } from '../content/games/professions';
+import { readJSON, writeJSON } from '../domain/storage';
+import { speakVietnamese, stopSpeaking } from '../domain/speech';
 import { BackButton } from './BackButton';
-import { ProfessionPicture as FamilyPicture } from './ProfessionPicture';
-type Mode = 'learn' | 'blitz';
+import { ProfessionPicture } from './ProfessionPicture';
+import './ProfessionsGameScreen.css';
+type Result = { correct: number; time: number };
+const formatTime = (ms: number) => (ms / 1000).toFixed(2).replace('.', ',');
+function savedBest(group: WorkBlitzGroup): Result | null {
+  const value = readJSON('work-blitz.v1.' + group) as Result | undefined;
+  return value && Number.isFinite(value.correct) && Number.isFinite(value.time) ? value : null;
+}
 export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
-  const [category, setCategory] = useState<WorkCategory>('all');
-  const pool = workIndices(category);
-  const total = pool.length;
-  const [mode, setMode] = useState<Mode | null>(null);
-  const [queue, setQueue] = useState<number[]>([]);
-  const [wins, setWins] = useState<Record<number, number>>({});
-  const [errors, setErrors] = useState<number[]>([]);
-  const [review, setReview] = useState(false);
-  const [firstCorrect, setFirstCorrect] = useState(0);
-  const [options, setOptions] = useState<number[]>([]);
-  const [wrong, setWrong] = useState<number[]>([]);
-  const [correct, setCorrect] = useState(false);
-  const [voice, setVoice] = useState(hasVietnameseVoice);
-  const timer = useRef<ReturnType<typeof setTimeout>>();
-  const locked = useRef(false);
-  useEffect(() => { const off = onVoicesChanged(() => setVoice(hasVietnameseVoice())); return () => { off(); clearTimeout(timer.current); stopSpeaking(); }; }, []);
-  const index = queue[0];
-  const current = familyWords[index];
-  const prepare = (next: number[]) => { setQueue(next); setOptions(next.length ? workOptions(next[0], pool) : []); setWrong([]); setCorrect(false); locked.current = false; };
-  const start = (value: Mode) => { clearTimeout(timer.current); stopSpeaking(); setMode(value); setWins({}); setErrors([]); setReview(false); setFirstCorrect(0); prepare(shuffled(pool)); };
-  const exit = () => { clearTimeout(timer.current); stopSpeaking(); locked.current = false; setMode(null); };
-  const answer = (selected: number) => {
-    if (locked.current || wrong.includes(selected)) return;
-    if (selected !== index) { setWrong(w => [...w, selected]); setErrors(e => e.includes(index) ? e : [...e, index]); return; }
-    locked.current = true; setCorrect(true); speakVietnamese(current[1]);
-    if (mode === 'blitz' && !review && wrong.length === 0) setFirstCorrect(n => n + 1);
-    const next = advanceFamily(queue, wins, wrong.length > 0, mode === 'learn');
-    timer.current = setTimeout(() => { setWins(next.wins); prepare(next.queue); }, 1800);
+  const [group, setGroup] = useState<WorkBlitzGroup | null>(null);
+  const [tasks, setTasks] = useState<WorkTask[]>([]);
+  const [position, setPosition] = useState(0);
+  const [options, setOptions] = useState<string[]>([]);
+  const [phase, setPhase] = useState<'intro' | 'playing' | 'feedback' | 'result'>('intro');
+  const [remaining, setRemaining] = useState(5000);
+  const [paused, setPaused] = useState(false);
+  const [selected, setSelected] = useState<string | null>(null);
+  const [score, setScore] = useState<Result>({ correct: 0, time: 0 });
+  const [best, setBest] = useState<Result | null>(null);
+  const elapsed = useRef(0);
+  const started = useRef(0);
+  const locked = useRef(true);
+  const current = tasks[position];
+  const word = current && professionWords[current.index];
+  const answer = current && workBlitzAnswer(current);
+  const title = workBlitzGroups.find(g => g.id === group);
+  const prepare = (next: WorkTask[], at: number, category: WorkBlitzGroup) => {
+    setPosition(at); setOptions(workBlitzOptions(next[at], category)); setSelected(null);
+    elapsed.current = 0; started.current = performance.now(); locked.current = false;
+    setRemaining(5000); setPaused(false); setPhase('playing');
   };
-  const mastered = Object.values(wins).filter(n => n >= 2).length;
-  return <div className="screen family-screen">
-    <BackButton onClick={mode ? exit : onBack} label={mode ? 'К выбору режима' : 'К играм'} />
-    <span className="badge">Урок 5 · Профессии и место работы</span><h1 className="screen-title">{mode === 'learn' ? 'Учимся узнавать профессии' : mode === 'blitz' ? review ? 'Повтор ошибок' : 'Блиц · Профессии' : 'Профессии и место работы'}</h1>
-    {!mode ? <>
-      <p>{total} слов и выражений · Картинки с русскими подписями · Без таймера</p>
-      <FamilyPicture id="engineer" />
-      <div className="family-choices">{workCategories.map(([value, label]) => <button key={value} className={'choice-button ' + (category === value ? 'choice-button-active' : '')} aria-pressed={category === value} onClick={() => setCategory(value)}>{label}</button>)}</div>
-      <button className="lesson-item family-mode" onClick={() => start('learn')}><strong>🌱 Обучение</strong><span>Выбирай из шести вариантов. Дважды ответь без ошибки, чтобы закрепить слово. Сложные слова вернутся позже.</span></button>
-      <button className="lesson-item family-mode" onClick={() => start('blitz')}><strong>⚡ Блиц</strong><span>Слова выбранной группы вперемешку, каждое задание один раз. Затем можно повторить ошибки.</span></button>
-    </> : current ? <>
-      <p className="family-counter">{mode === 'learn' ? `Закреплено: ${mastered} из ${total}` : review ? `Осталось в повторе: ${queue.length}` : `Карточка ${total + 1 - queue.length} из ${total}`} · Без таймера</p>
-      <div className="family-card"><FamilyPicture id={current[0]} /><h2>{current[2]}</h2></div>
-      <div className="family-choices">{options.map(i => <button key={i} disabled={correct || wrong.includes(i)} className={'choice-button ' + (wrong.includes(i) ? 'family-wrong' : correct && i === index ? 'family-correct' : '')} onClick={() => answer(i)}>{familyWords[i][1]}</button>)}</div>
-      <p className="family-feedback" role="status">{correct ? `Верно! ${current[1]}` : wrong.length ? 'Попробуй другой вариант. Это слово добавлено в повтор.' : 'Выбери один из шести вариантов'}</p>
-      {correct && <button className="secondary-button" disabled={!voice} onClick={() => speakVietnamese(current[1])}>🔊 Послушать ещё</button>}
-    </> : <div className="family-result">
-      <FamilyPicture id="engineer" /><h2>{mode === 'learn' ? 'Все слова закреплены!' : review ? 'Повтор завершён!' : 'Блиц завершён!'}</h2>
-      <p>{mode === 'learn' ? `Все ${total} слов и выражений угаданы дважды без ошибки.` : review ? 'Все выбранные слова пройдены.' : `С первой попытки: ${firstCorrect} из ${total}`}</p>
-      {mode === 'blitz' && errors.length > 0 && <><p>Для повторения: {errors.map(i => familyWords[i][2].toLowerCase()).join(', ')}.</p><button className="big-button" onClick={() => { const next = shuffled(errors); setErrors([]); setReview(true); prepare(next); }}>Повторить ошибки · {errors.length}</button></>}
-      <button className="big-button" onClick={() => start(mode)}>Сыграть заново</button><button className="secondary-button" onClick={exit}>К выбору режима</button>
-    </div>}
-    {mode && !voice && <p className="family-note">Для озвучки нужен вьетнамский голос на устройстве. Играть можно без звука.</p>}
+  const start = () => {
+    if (!group) return;
+    stopSpeaking(); const next = workBlitzTasks(group); setTasks(next);
+    setScore({ correct: 0, time: 0 }); prepare(next, 0, group);
+  };
+  const finishAnswer = (choice: string | null) => {
+    if (locked.current || paused || !current) return;
+    locked.current = true;
+    const time = Math.min(5000, elapsed.current + performance.now() - started.current);
+    if (time >= 5000) choice = null;
+    setRemaining(Math.max(0, 5000 - time)); setSelected(choice);
+    if (choice === answer) setScore(s => ({ correct: s.correct + 1, time: s.time + time }));
+    setPhase('feedback'); speakVietnamese(professionWords[current.index][1]);
+  };
+  useEffect(() => {
+    if (phase !== 'playing' || paused) return;
+    const tick = () => {
+      const left = Math.max(0, 5000 - elapsed.current - (performance.now() - started.current));
+      setRemaining(left); if (left === 0) finishAnswer(null);
+    };
+    const timer = setInterval(tick, 40);
+    const hide = () => {
+      if (document.hidden && !locked.current) {
+        elapsed.current += performance.now() - started.current;
+        setPaused(true); stopSpeaking();
+      }
+    };
+    document.addEventListener('visibilitychange', hide);
+    return () => { clearInterval(timer); document.removeEventListener('visibilitychange', hide); };
+  }, [phase, paused, position]);
+  useEffect(() => {
+    if (phase !== 'feedback' || !group) return;
+    const timer = setTimeout(() => {
+      if (position + 1 < tasks.length) prepare(tasks, position + 1, group);
+      else {
+        const old = savedBest(group);
+        const improved = !old || score.correct > old.correct || (score.correct === old.correct && score.time < old.time);
+        if (improved) writeJSON('work-blitz.v1.' + group, score);
+        setBest(improved ? score : old); setPhase('result'); stopSpeaking();
+      }
+    }, 1600);
+    return () => clearTimeout(timer);
+  }, [phase, position, group, tasks, score]);
+  useEffect(() => () => { stopSpeaking(); }, []);
+  const back = () => {
+    stopSpeaking(); locked.current = true; setPhase('intro'); setTasks([]); setPaused(false);
+    if (phase === 'intro') { if (group) setGroup(null); else onBack(); }
+  };
+  return <div className="screen family-screen work-blitz">
+    <BackButton onClick={back} label={group ? 'Назад' : 'К играм'} />
+    <span className="badge">Урок 5 · Профессии и работа</span>
+    <h1 className="screen-title">{title?.label ?? 'Профессии и работа'}</h1>
+    {!group ? <div className="work-group-list">{workBlitzGroups.map(g => <button className="big-button" key={g.id} onClick={() => { setGroup(g.id); setBest(savedBest(g.id)); }}><strong>{g.label}</strong><span>{g.words} слов и выражений · {g.words * 2} заданий</span></button>)}</div>
+      : phase === 'intro' ? <div className="family-result">
+        <p>{title!.words * 2} заданий · Два направления · 5 секунд на ответ</p>
+        {best && <p>🏆 Рекорд: {best.correct} из {title!.words * 2} · {formatTime(best.time)} сек</p>}
+        <button className="big-button" onClick={start}>Начать блиц</button>
+      </div> : phase === 'result' ? <div className="family-result" role="status">
+        <h2>Блиц завершён!</h2><p>Правильно: {score.correct} из {tasks.length}</p>
+        <p>Ошибок: {tasks.length - score.correct}</p><p>Время правильных ответов: {formatTime(score.time)} сек</p>
+        {best && <p>🏆 Рекорд: {best.correct} из {tasks.length} · {formatTime(best.time)} сек</p>}
+        <button className="big-button" onClick={start}>Сыграть ещё</button>
+      </div> : word && <>
+        <div className="work-status"><strong>{position + 1}/{tasks.length} · ✓ {score.correct}</strong><span className="work-clock" aria-label="Осталось секунд">{Math.ceil(remaining / 1000)}</span></div>
+        <div className="work-timebar"><div style={{ width: `${remaining / 50}%` }} /></div>
+        <div className={'family-card work-prompt ' + (current.reverse ? 'work-prompt-text' : '')}>
+          {!current.reverse && <ProfessionPicture id={word[0]} />}
+          <h2 lang={current.reverse ? 'vi' : 'ru'}>{current.reverse ? word[1] : word[2]}</h2>
+        </div>
+        {paused ? <button className="big-button" onClick={() => { started.current = performance.now(); setPaused(false); }}>Продолжить</button> : <div className="family-choices work-options">{options.map(option => <button key={option} lang={current.reverse ? 'ru' : 'vi'} disabled={phase !== 'playing'} className={'choice-button ' + (phase === 'feedback' ? option === answer ? 'family-correct' : option === selected ? 'family-wrong' : '' : '')} onClick={() => finishAnswer(option)}>{option}</button>)}</div>}
+        <p className="family-feedback work-feedback" role="status">{paused ? 'Игра на паузе' : phase === 'feedback' ? selected === answer ? 'Верно!' : `${selected === null ? 'Время вышло.' : 'Неверно.'} ${answer}` : 'Выбери перевод'}</p>
+      </>}
+    <p className="family-note">🧪 Тестовая игра · без общего рейтинга</p>
   </div>;
 }
