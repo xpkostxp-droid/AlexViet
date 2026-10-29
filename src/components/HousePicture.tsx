@@ -1,24 +1,24 @@
 import { adjectiveLearning, houseLearning, houseBlitz } from '../content/games/house';
 const adjectivePngs: Record<string, string> = {
-  'big': './images/games/adjectives/01-big.png',
-  'small': './images/games/adjectives/02-small.png',
-  'high': './images/games/adjectives/03-high.png',
-  'low': './images/games/adjectives/04-low.png',
-  'long': './images/games/adjectives/05-long.png',
-  'short': './images/games/adjectives/06-short.png',
-  'many': './images/games/adjectives/07-many.png',
-  'few': './images/games/adjectives/08-few.png',
-  'beautiful': './images/games/adjectives/09-beautiful.png',
-  'ugly': './images/games/adjectives/10-ugly.png',
-  'good': './images/games/adjectives/11-good.png',
-  'poor': './images/games/adjectives/12-poor.png',
-  'substance': './images/games/adjectives/13-substance.png',
-  'amount': './images/games/adjectives/14-amount.png',
-  'quality': './images/games/adjectives/15-quality.png',
-  'quality-good': './images/games/adjectives/16-quality-good.png',
-  'quality-poor': './images/games/adjectives/17-quality-poor.png',
-  'quality-high': './images/games/adjectives/18-quality-high.png',
-  'product-quality-high': './images/games/adjectives/19-product-quality-high.png',
+  'big': '/AlexViet/images/games/adjectives/01-big.png',
+  'small': '/AlexViet/images/games/adjectives/02-small.png',
+  'high': '/AlexViet/images/games/adjectives/03-high.png',
+  'low': '/AlexViet/images/games/adjectives/04-low.png',
+  'long': '/AlexViet/images/games/adjectives/05-long.png',
+  'short': '/AlexViet/images/games/adjectives/06-short.png',
+  'many': '/AlexViet/images/games/adjectives/07-many.png',
+  'few': '/AlexViet/images/games/adjectives/08-few.png',
+  'beautiful': '/AlexViet/images/games/adjectives/09-beautiful.png',
+  'ugly': '/AlexViet/images/games/adjectives/10-ugly.png',
+  'good': '/AlexViet/images/games/adjectives/11-good.png',
+  'poor': '/AlexViet/images/games/adjectives/12-poor.png',
+  'substance': '/AlexViet/images/games/adjectives/13-substance.png',
+  'amount': '/AlexViet/images/games/adjectives/14-amount.png',
+  'quality': '/AlexViet/images/games/adjectives/15-quality.png',
+  'quality-good': '/AlexViet/images/games/adjectives/16-quality-good.png',
+  'quality-poor': '/AlexViet/images/games/adjectives/17-quality-poor.png',
+  'quality-high': '/AlexViet/images/games/adjectives/18-quality-high.png',
+  'product-quality-high': '/AlexViet/images/games/adjectives/19-product-quality-high.png',
 };
 function House({ x, y, scale = 1, floors = 1, pretty = false, ugly = false }: { x: number; y: number; scale?: number; floors?: number; pretty?: boolean; ugly?: boolean }) {
   const h = 42 + Math.max(0, floors - 1) * 18;
@@ -131,7 +131,7 @@ function Concept({ id }: { id: string }) {
 
 export function HousePicture({ id }: { id: string }) {
   const housePngs: Record<string, string> = {"hotel": "hotel", "blitz-hotel-high": "hotel", "balcony": "balcony", "blitz-balcony-long": "balcony-long", "blitz-balcony-short": "balcony-short", "house": "private-house", "private-house": "private-house", "apartment": "apartment", "living-room": "living-room", "office": "office", "bedroom": "bedroom", "bathroom": "bathroom", "kitchen": "kitchen", "blitz-apartment-high": "apartment", "blitz-apartment-many-floors": "apartment", "blitz-private-big": "private-house", "blitz-private-beautiful": "private-house", "blitz-bedroom-small": "bedroom", "blitz-bathroom-small": "bathroom", "blitz-kitchen-beautiful": "kitchen", "blitz-office-big": "office"};
-  const png = adjectivePngs[id] ?? (housePngs[id] ? './images/games/house/' + housePngs[id] + '.png' : undefined);
+  const png = adjectivePngs[id] ?? (housePngs[id] ? '/AlexViet/images/games/house/' + housePngs[id] + '.png' : undefined);
   if (png) return <img className="family-picture" src={png} alt={[...adjectiveLearning, ...houseLearning, ...houseBlitz].find(item => item[0] === id)?.[2] ?? 'Иллюстрация урока'} width={480} height={300} decoding="async" style={{ objectFit: 'contain', borderRadius: 18 }} />;
   return <svg className="family-picture" viewBox="0 0 320 200" role="img" aria-label="Иллюстрация дома и прилагательного">
     <rect x="4" y="4" width="312" height="192" rx="28" fill="#eef8f6"/>

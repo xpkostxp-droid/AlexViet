@@ -16,7 +16,7 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
  const [crashed,setCrashed]=useState(false);
  const [endReason,setEndReason]=useState<'wrong'|'timeout'|null>(null);
  const deadline=useRef<number|null>(null);
- const [best,setBest]=useState(()=>Number(localStorage.getItem('alexviet-question-tower-best')||0));
+ const [best,setBest]=useState(()=>Number(localStorage.getItem('alexViet.test.alexviet-question-tower-best')||0));
  const timer=useRef<ReturnType<typeof setTimeout>|null>(null);const lock=useRef(false);
  const recordQueue=useRef<number[]>([]);
  const failedQuestion=useRef<number|null>(null);
@@ -48,7 +48,7 @@ export function QuestionTowerGameScreen({onBack}:{onBack:()=>void}){
   if(lock.current||done||!mode)return;
   if(i!==q){setFeedback('wrong');if(mode==='record'){failedQuestion.current=q;deadline.current=null;lock.current=true;setCrashed(true);sounds.current.crash();setEndReason('wrong');setDone(true)}else{if(timer.current)clearTimeout(timer.current);timer.current=setTimeout(()=>setFeedback(null),650)}return}
   lock.current=true;deadline.current=null;setFeedback('right');speak(words[q][0]);const newBlocks=[...blocks,q];setBlocks(newBlocks);
-  if(mode==='record'){if(newBlocks.length>best){setBest(newBlocks.length);localStorage.setItem('alexviet-question-tower-best',String(newBlocks.length))}}
+  if(mode==='record'){if(newBlocks.length>best){setBest(newBlocks.length);localStorage.setItem('alexViet.test.alexviet-question-tower-best',String(newBlocks.length))}}
   const updated=counts.map((n,j)=>j===q?Math.min(3,n+1):n);if(mode==='learn')setCounts(updated);
   timer.current=setTimeout(()=>{if(mode==='learn'&&updated.every(n=>n>=3))setDone(true);else{next(updated,q,mode==='record');if(mode==='record')setReverse(newBlocks.length%2===0)}setFeedback(null);lock.current=false},1500);
  };

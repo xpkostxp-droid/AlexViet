@@ -26,7 +26,7 @@ export function QuestionsBlitzScreen({onBack}:{onBack:()=>void}){
  const [seconds,setSeconds]=useState(5);
  const [failed,setFailed]=useState<'wrong'|'timeout'|null>(null);
  const [feedback,setFeedback]=useState(false);
- const [best,setBest]=useState(()=>Number(localStorage.getItem(bestKey)||0));
+ const [best,setBest]=useState(()=>Number(localStorage.getItem('alexViet.test.'+bestKey)||0));
  const [retry,setRetry]=useState<number|null>(null);
  const deadline=useRef<number|null>(null);
  const pending=useRef<ReturnType<typeof setTimeout>|null>(null);
@@ -69,7 +69,7 @@ export function QuestionsBlitzScreen({onBack}:{onBack:()=>void}){
   locked.current=true;deadline.current=null;setFeedback(true);
   speak(cards[q][0]);
   const updated=[...blocks,q];setBlocks(updated);
-  if(updated.length>best){setBest(updated.length);localStorage.setItem(bestKey,String(updated.length));}
+  if(updated.length>best){setBest(updated.length);localStorage.setItem('alexViet.test.'+bestKey,String(updated.length));}
   pending.current=setTimeout(()=>{
    setFeedback(false);
    const remaining=queue.slice(1);

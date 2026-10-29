@@ -21,13 +21,13 @@ describe('loadProgress', () => {
   });
 
   it('не падает на повреждённых данных и возвращает пустое хранилище', () => {
-    window.localStorage.setItem('vietCards.progress.v1', '{не json');
+    window.localStorage.setItem('alexViet.test.vietCards.progress.v1', '{не json');
     const store = loadProgress();
     expect(store.records).toEqual({});
   });
 
   it('игнорирует данные без нужных полей', () => {
-    window.localStorage.setItem('vietCards.progress.v1', JSON.stringify({ foo: 'bar' }));
+    window.localStorage.setItem('alexViet.test.vietCards.progress.v1', JSON.stringify({ foo: 'bar' }));
     const store = loadProgress();
     expect(store.records).toEqual({});
   });

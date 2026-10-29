@@ -5,12 +5,12 @@ afterEach(() => { stop?.(); sessionStorage.clear(); vi.restoreAllMocks(); });
 const settle = async () => { await Promise.resolve(); await Promise.resolve(); };
 describe('app updates', () => {
   it('reloads a new version on launch without removing study progress', async () => {
-    localStorage.setItem('vietCards.progress.v1', 'saved');
+    localStorage.setItem('alexViet.test.vietCards.progress.v1', 'saved');
     const reload = vi.fn();
     stop = startAppUpdates({ currentVersion: 'old', fetchVersion: async () => 'new', reload });
     await settle();
     expect(reload).toHaveBeenCalledWith('new');
-    expect(localStorage.getItem('vietCards.progress.v1')).toBe('saved');
+    expect(localStorage.getItem('alexViet.test.vietCards.progress.v1')).toBe('saved');
     window.dispatchEvent(new Event('pageshow'));
     await settle();
     expect(reload).toHaveBeenCalledTimes(1);

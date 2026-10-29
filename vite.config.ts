@@ -17,7 +17,8 @@ export default defineConfig({
   // другом хостинге в подпапке или в корне. В сайте нет client-side
   // роутинга по URL (вся навигация — состояние React), поэтому
   // относительные пути ничего не ломают.
-  base: './',
+  base: '/AlexViet/',
+  build: { rollupOptions: { input: { main: 'index.html', test: 'test/index.html' } } },
   test: {
     environment: 'jsdom',
     globals: true,

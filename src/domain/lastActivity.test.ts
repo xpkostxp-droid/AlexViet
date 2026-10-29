@@ -11,12 +11,12 @@ describe('loadLastActivity', () => {
   });
 
   it('не падает на повреждённых данных', () => {
-    window.localStorage.setItem('vietCards.lastActivity.v1', '{не json');
+    window.localStorage.setItem('alexViet.test.vietCards.lastActivity.v1', '{не json');
     expect(loadLastActivity()).toBeNull();
   });
 
   it('игнорирует данные без нужных полей', () => {
-    window.localStorage.setItem('vietCards.lastActivity.v1', JSON.stringify({ foo: 'bar' }));
+    window.localStorage.setItem('alexViet.test.vietCards.lastActivity.v1', JSON.stringify({ foo: 'bar' }));
     expect(loadLastActivity()).toBeNull();
   });
 

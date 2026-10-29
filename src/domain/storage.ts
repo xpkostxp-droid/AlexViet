@@ -13,7 +13,7 @@ export function hasLocalStorage(): boolean {
 export function readJSON(key: string): unknown {
   if (!hasLocalStorage()) return undefined;
   try {
-    const raw = window.localStorage.getItem(key);
+    const raw = window.localStorage.getItem('alexViet.test.' + key);
     if (!raw) return undefined;
     return JSON.parse(raw) as unknown;
   } catch {
@@ -24,7 +24,7 @@ export function readJSON(key: string): unknown {
 export function writeJSON(key: string, value: unknown): void {
   if (!hasLocalStorage()) return;
   try {
-    window.localStorage.setItem(key, JSON.stringify(value));
+    window.localStorage.setItem('alexViet.test.' + key, JSON.stringify(value));
   } catch {
     // Хранилище недоступно (например, приватный режим) — тихо игнорируем.
   }

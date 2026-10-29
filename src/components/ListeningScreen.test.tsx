@@ -66,7 +66,7 @@ describe('listening flow', () => {
     }
     expect(host.textContent).toContain('Урок пройден!');
     expect(host.querySelectorAll('.listening-transcript li')).toHaveLength(8);
-    expect(JSON.parse(localStorage.getItem('alexviet-listening-completed-v1')!)).toEqual(['listening-10']);
+    expect(JSON.parse(localStorage.getItem('alexViet.test.alexviet-listening-completed-v1')!)).toEqual(['listening-10']);
   });
   it('does not advance after a loading error or after leaving with a pending answer', async () => {
     await click(button('Приветствия')); await click(button('Воспроизвести и начать'));
@@ -95,7 +95,7 @@ describe('multiple listening collections and device voice', () => {
     const cancel = vi.fn();
     vi.stubGlobal('speechSynthesis', { getVoices: () => [{ lang: 'vi-VN', name: 'Vietnamese' }], speak: (u: { text: string }) => utterances.push(u), cancel });
     await act(async () => root.unmount());
-    localStorage.setItem('alexviet-listening-completed-v1', JSON.stringify(['listening-01', 'phrasebook2-13']));
+    localStorage.setItem('alexViet.test.alexviet-listening-completed-v1', JSON.stringify(['listening-01', 'phrasebook2-13']));
     root = createRoot(host);
     await act(async () => root.render(<ListeningScreen onBack={vi.fn()} lessons={[fixture]} title="Наш курс" />));
     await click(button('Тест озвучки'));
@@ -110,7 +110,7 @@ describe('multiple listening collections and device voice', () => {
       await act(async () => vi.advanceTimersByTime(700));
     }
     expect(host.querySelectorAll('.listening-transcript li')).toHaveLength(4);
-    expect(JSON.parse(localStorage.getItem('alexviet-listening-completed-v1')!)).toEqual(['listening-01', 'phrasebook2-13', 'course-test']);
+    expect(JSON.parse(localStorage.getItem('alexViet.test.alexviet-listening-completed-v1')!)).toEqual(['listening-01', 'phrasebook2-13', 'course-test']);
     expect(cancel).toHaveBeenCalled();
   });
 });
