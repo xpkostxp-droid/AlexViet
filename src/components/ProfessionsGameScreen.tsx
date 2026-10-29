@@ -32,7 +32,7 @@ export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
   const prepare = (next: WorkTask[], at: number, category: WorkBlitzGroup) => {
     setPosition(at); setOptions(workBlitzOptions(next[at], category)); setSelected(null);
     elapsed.current = 0; started.current = performance.now(); locked.current = false;
-    setRemaining(5000); setPaused(false); setPhase('playing');
+    setRemaining(5000); setPaused(document.hidden); setPhase('playing');
   };
   const start = () => {
     if (!group) return;
