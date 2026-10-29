@@ -3,13 +3,15 @@ import { createRoot } from 'react-dom/client';
 import { afterEach, beforeEach, expect, it, vi } from 'vitest';
 import { ProfessionsGameScreen } from './ProfessionsGameScreen';
 import { professionWords, workBlitzTasks, workBlitzOptions, workBlitzAnswer } from '../content/games/professions';
+const sounds = vi.hoisted(() => ({ ready: vi.fn(), beep: vi.fn(), close: vi.fn() }));
+vi.mock('./gameSounds', () => ({ makeGameSound: () => sounds }));
 vi.mock('../domain/speech', () => ({ speakVietnamese: vi.fn(), stopSpeaking: vi.fn() }));
 (globalThis as any).IS_REACT_ACT_ENVIRONMENT = true;
 let root: ReturnType<typeof createRoot>;
 let host: HTMLDivElement;
 beforeEach(() => {
   vi.useFakeTimers({ toFake: ['setTimeout', 'clearTimeout', 'setInterval', 'clearInterval', 'performance'] });
-  localStorage.clear(); host = document.createElement('div'); document.body.append(host); root = createRoot(host);
+  vi.clearAllMocks(); localStorage.clear(); host = document.createElement('div'); document.body.append(host); root = createRoot(host);
   act(() => root.render(<ProfessionsGameScreen onBack={() => {}} />));
 });
 afterEach(() => { act(() => root.unmount()); host.remove(); vi.useRealTimers(); });
@@ -67,4 +69,13 @@ it('pauses a hidden question until explicit resume and excludes the pause from t
   click('Продолжить'); act(() => vi.advanceTimersByTime(1000)); click(correctAnswer());
   expect(host.textContent).toContain('Верно!');
   act(() => vi.advanceTimersByTime(1600)); expect(host.querySelector('.work-status')!.textContent).toContain('2/28 · ✓ 1');
+});
+
+it('beeps once on 3, 2, 1 and stops after an answer', () => {
+  start(); expect(sounds.ready).toHaveBeenCalled();
+  act(() => vi.advanceTimersByTime(4000));
+  expect(sounds.beep.mock.calls.map(c => c[0])).toEqual([3, 2, 1]);
+  click(correctAnswer());
+  act(() => vi.advanceTimersByTime(1500));
+  expect(sounds.beep).toHaveBeenCalledTimes(3);
 });

@@ -1,16 +1,27 @@
 .work-group-list { display: grid; gap: 16px; margin-top: 20px; }
 .work-group-list .big-button { display: grid; gap: 8px; text-align: left; background: #107b70; color: white; }
 .work-group-list span { font-size: .95rem; font-weight: 500; }
-.work-status { display: flex; align-items: center; justify-content: space-between; margin: 4px 0 8px; font-size: 1.15rem; }
-.work-clock { display: grid; place-items: center; width: 44px; height: 44px; border: 3px solid #8cbeb4; border-radius: 50%; font-size: 1.5rem; font-weight: 800; font-variant-numeric: tabular-nums; }
-.work-timebar { height: 5px; background: #dce7df; border-radius: 8px; overflow: hidden; margin-bottom: 12px; }
+.screen.work-active { gap: 8px; }
+.work-active > .badge { display: none; }
+.work-active > .screen-title { margin: 0; font-size: 1.15rem; }
+.work-status { display: flex; align-items: center; justify-content: space-between; height: 40px; margin: 0; font-size: 1.15rem; font-variant-numeric: tabular-nums; flex-shrink: 0; }
+.work-clock { display: grid; place-items: center; width: 40px; height: 40px; border: 3px solid #8cbeb4; border-radius: 50%; font-size: 1.4rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+.work-timebar { height: 5px; flex-shrink: 0; background: #dce7df; border-radius: 8px; overflow: hidden; margin: 0 0 4px; }
 .work-timebar > div { height: 100%; background: #168477; }
-.work-blitz .work-prompt { padding: 8px 12px; }
-.work-prompt svg { display: block; width: 100%; max-height: 210px; margin: auto; }
-.work-blitz .work-prompt h2 { font-size: clamp(1.35rem, 5.4vw, 1.9rem); line-height: 1.3; }
-.work-blitz .work-prompt-text { min-height: 235px; display: grid; align-items: center; }
-.work-blitz .work-prompt-text h2 { font-size: clamp(2rem, 8vw, 3.2rem); overflow-wrap: normal; }
-.work-blitz .work-options { grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
-.work-blitz .work-options button { min-height: 68px; padding: 12px 16px; font-size: clamp(1.15rem, 4.8vw, 1.55rem); line-height: 1.25; font-weight: 700; overflow-wrap: normal; }
-.work-feedback { min-height: 2.6em; margin: 10px 0 0; }
-@media (max-height: 700px) { .work-prompt svg { max-height: 145px; } .work-blitz .work-prompt-text { min-height: 170px; } .work-blitz .work-options button { min-height: 56px; } }
+.work-blitz .work-prompt { box-sizing: border-box; height: 224px; min-height: 224px; flex: 0 0 224px; padding: 8px 12px; display: grid; grid-template-rows: 148px 1fr; align-items: center; }
+.work-blitz .work-prompt svg { display: block; width: 100%; height: 148px; max-height: 148px; margin: 0 auto; }
+.work-blitz .work-prompt h2 { margin: 0; font-size: clamp(1.2rem, 5vw, 1.6rem); line-height: 1.2; text-align: center; }
+.work-blitz .work-prompt-text { grid-template-rows: 1fr; }
+.work-blitz .work-prompt-text h2 { font-size: clamp(1.8rem, 7.5vw, 2.8rem); overflow-wrap: normal; }
+.work-blitz .work-options { grid-template-columns: 1fr; grid-template-rows: repeat(3, 72px); gap: 8px; margin: 2px 0 0; flex-shrink: 0; }
+.work-blitz .work-options button { box-sizing: border-box; height: 72px; min-height: 72px; padding: 8px 12px; font-size: clamp(1.05rem, 4.5vw, 1.4rem); line-height: 1.2; font-weight: 700; overflow-wrap: normal; text-align: center; display: flex; align-items: center; justify-content: center; }
+.work-blitz .work-feedback { box-sizing: border-box; height: 48px; min-height: 48px; flex: 0 0 48px; margin: 0; display: flex; align-items: center; justify-content: center; font-size: .95rem; line-height: 1.2; }
+.work-active > .family-note { margin: 0; font-size: .75rem; }
+@media (max-height: 740px) {
+ .screen.work-active { gap: 6px; }
+ .work-blitz .work-prompt { height: 188px; min-height: 188px; flex-basis: 188px; grid-template-rows: 118px 1fr; }
+ .work-blitz .work-prompt svg { height: 118px; max-height: 118px; }
+ .work-blitz .work-prompt-text { grid-template-rows: 1fr; }
+ .work-blitz .work-options { grid-template-rows: repeat(3, 64px); }
+ .work-blitz .work-options button { height: 64px; min-height: 64px; }
+}

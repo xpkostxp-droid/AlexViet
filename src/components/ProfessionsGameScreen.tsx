@@ -5,6 +5,7 @@ import { speakVietnamese, stopSpeaking } from '../domain/speech';
 import { BackButton } from './BackButton';
 import { ProfessionPicture } from './ProfessionPicture';
 import './ProfessionsGameScreen.css';
+import { makeGameSound } from './gameSounds';
 type Result = { correct: number; time: number };
 const formatTime = (ms: number) => (ms / 1000).toFixed(2).replace('.', ',');
 function savedBest(group: WorkBlitzGroup): Result | null {
@@ -22,6 +23,8 @@ export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
   const [selected, setSelected] = useState<string | null>(null);
   const [score, setScore] = useState<Result>({ correct: 0, time: 0 });
   const [best, setBest] = useState<Result | null>(null);
+  const audio = useRef(makeGameSound());
+  const lastBeep = useRef<number | null>(null);
   const elapsed = useRef(0);
   const started = useRef(0);
   const locked = useRef(true);
@@ -31,12 +34,13 @@ export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
   const title = workBlitzGroups.find(g => g.id === group);
   const prepare = (next: WorkTask[], at: number, category: WorkBlitzGroup) => {
     setPosition(at); setOptions(workBlitzOptions(next[at], category)); setSelected(null);
+    lastBeep.current = null;
     elapsed.current = 0; started.current = performance.now(); locked.current = false;
     setRemaining(5000); setPaused(document.hidden); setPhase('playing');
   };
   const start = () => {
     if (!group) return;
-    stopSpeaking(); const next = workBlitzTasks(group); setTasks(next);
+    audio.current.ready(); stopSpeaking(); const next = workBlitzTasks(group); setTasks(next);
     setScore({ correct: 0, time: 0 }); prepare(next, 0, group);
   };
   const finishAnswer = (choice: string | null) => {
@@ -52,7 +56,10 @@ export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
     if (phase !== 'playing' || paused) return;
     const tick = () => {
       const left = Math.max(0, 5000 - elapsed.current - (performance.now() - started.current));
-      setRemaining(left); if (left === 0) finishAnswer(null);
+      setRemaining(left);
+      const digit = Math.ceil(left / 1000);
+      if (digit >= 1 && digit <= 3 && lastBeep.current !== digit) { lastBeep.current = digit; audio.current.beep(digit); }
+      if (left === 0) finishAnswer(null);
     };
     const timer = setInterval(tick, 40);
     const hide = () => {
@@ -77,12 +84,12 @@ export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
     }, 1600);
     return () => clearTimeout(timer);
   }, [phase, position, group, tasks, score]);
-  useEffect(() => () => { stopSpeaking(); }, []);
+  useEffect(() => () => { stopSpeaking(); audio.current.close(); }, []);
   const back = () => {
     stopSpeaking(); locked.current = true; setPhase('intro'); setTasks([]); setPaused(false);
     if (phase === 'intro') { if (group) setGroup(null); else onBack(); }
   };
-  return <div className="screen family-screen work-blitz">
+  return <div className={"screen family-screen work-blitz" + (phase === 'playing' || phase === 'feedback' ? ' work-active' : '')}>
     <BackButton onClick={back} label={group ? 'Назад' : 'К играм'} />
     <span className="badge">Урок 5 · Профессии и работа</span>
     <h1 className="screen-title">{title?.label ?? 'Профессии и работа'}</h1>
@@ -103,7 +110,7 @@ export function ProfessionsGameScreen({ onBack }: { onBack: () => void }) {
           {!current.reverse && <ProfessionPicture id={word[0]} />}
           <h2 lang={current.reverse ? 'vi' : 'ru'}>{current.reverse ? word[1] : word[2]}</h2>
         </div>
-        {paused ? <button className="big-button" onClick={() => { started.current = performance.now(); setPaused(false); }}>Продолжить</button> : <div className="family-choices work-options">{options.map(option => <button key={option} lang={current.reverse ? 'ru' : 'vi'} disabled={phase !== 'playing'} className={'choice-button ' + (phase === 'feedback' ? option === answer ? 'family-correct' : option === selected ? 'family-wrong' : '' : '')} onClick={() => finishAnswer(option)}>{option}</button>)}</div>}
+        {paused ? <button className="big-button" onClick={() => { audio.current.ready(); started.current = performance.now(); setPaused(false); }}>Продолжить</button> : <div className="family-choices work-options">{options.map(option => <button key={option} lang={current.reverse ? 'ru' : 'vi'} disabled={phase !== 'playing'} className={'choice-button ' + (phase === 'feedback' ? option === answer ? 'family-correct' : option === selected ? 'family-wrong' : '' : '')} onClick={() => finishAnswer(option)}>{option}</button>)}</div>}
         <p className="family-feedback work-feedback" role="status">{paused ? 'Игра на паузе' : phase === 'feedback' ? selected === answer ? 'Верно!' : `${selected === null ? 'Время вышло.' : 'Неверно.'} ${answer}` : 'Выбери перевод'}</p>
       </>}
     <p className="family-note">🧪 Тестовая игра · без общего рейтинга</p>
